@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SIGNOVA Controlled Storage: Do not commit raw videos, archives, or keypoint dumps
+data/videos/
+data/raw/
+data/raw_p2_metadata/
+*.mp4
+*.mov
+*.avi
+*.tar.gz
+*.zip
+*.npy
