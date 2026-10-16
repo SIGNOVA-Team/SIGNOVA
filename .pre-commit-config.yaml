@@ -1,0 +1,40 @@
+# SIGNOVA Automated Pre-Commit Configuration
+# Ensures every commit adheres to project quality gates automatically
+
+default_stages: [pre-commit]
+fail_fast: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+        args: ['--maxkb=51200']
+      - id: check-json
+      - id: check-merge-conflict
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.10
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: signova-domain-guardrails
+        name: SIGNOVA Domain & Linguistic Guardrails
+        entry: python scripts/ci/check_project_quality.py
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: signova-pytest
+        name: SIGNOVA Automated Test Suite
+        entry: python -m pytest -v
+        language: system
+        pass_filenames: false
+        always_run: true

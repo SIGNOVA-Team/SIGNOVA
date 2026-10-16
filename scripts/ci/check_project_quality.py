@@ -15,6 +15,9 @@ import re
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 # Color styling for CLI output
 GREEN = "\033[92m"
 RED = "\033[91m"

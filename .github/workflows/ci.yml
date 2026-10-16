@@ -3,13 +3,10 @@ name: SIGNOVA CI/CD — Quality, Security & Test Suite
 on:
   push:
     branches:
-      - main
-      - karsl
-      - develop
+      - "**"
   pull_request:
     branches:
-      - main
-      - develop
+      - "**"
   workflow_dispatch:
 
 concurrency:
