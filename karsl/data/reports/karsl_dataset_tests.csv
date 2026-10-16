@@ -1,0 +1,13 @@
+test,passed
+500 active classes,True
+75095 active samples,True
+All samples PASS,True
+No duplicate hashes,True
+Unique class mapping,True
+All labels mapped,True
+Three evaluation folds,True
+No duplicate IDs within folds,True
+Exact sample coverage,True
+Signer independent splits,True
+500 classes in each split,True
+No missing labels,True

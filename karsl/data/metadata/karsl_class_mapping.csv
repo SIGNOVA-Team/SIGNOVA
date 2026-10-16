@@ -1,0 +1,501 @@
+﻿model_index,sign_id,arabic_original,english_original,arabic_reviewed,english_reviewed,label_changed,english_duplicate,language,label_review_status,label_reviewer,label_note,class_name
+0,1,0,0,0,0,False,False,ArSL,original,,,001_0
+1,2,1,1,1,1,False,False,ArSL,original,,,002_1
+2,3,2,2,2,2,False,False,ArSL,original,,,003_2
+3,4,3,3,3,3,False,False,ArSL,original,,,004_3
+4,5,4,4,4,4,False,False,ArSL,original,,,005_4
+5,6,5,5,5,5,False,False,ArSL,original,,,006_5
+6,7,6,6,6,6,False,False,ArSL,original,,,007_6
+7,8,7,7,7,7,False,False,ArSL,original,,,008_7
+8,9,8,8,8,8,False,False,ArSL,original,,,009_8
+9,10,9,9,9,9,False,False,ArSL,original,,,010_9
+10,11,10,10,10,10,False,False,ArSL,original,,,011_10
+11,12,20,20,20,20,False,False,ArSL,original,,,012_20
+12,13,30,30,30,30,False,False,ArSL,original,,,013_30
+13,14,40,40,40,40,False,False,ArSL,original,,,014_40
+14,15,50,50,50,50,False,False,ArSL,original,,,015_50
+15,16,60,60,60,60,False,False,ArSL,original,,,016_60
+16,17,70,70,70,70,False,False,ArSL,original,,,017_70
+17,18,80,80,80,80,False,False,ArSL,original,,,018_80
+18,19,90,90,90,90,False,False,ArSL,original,,,019_90
+19,20,100,100,100,100,False,False,ArSL,original,,,020_100
+20,21,200,200,200,200,False,False,ArSL,original,,,021_200
+21,22,300,300,300,300,False,False,ArSL,original,,,022_300
+22,23,400,400,400,400,False,False,ArSL,original,,,023_400
+23,24,500,500,500,500,False,False,ArSL,original,,,024_500
+24,25,600,600,600,600,False,False,ArSL,original,,,025_600
+25,26,700,700,700,700,False,False,ArSL,original,,,026_700
+26,29,1000,1000,1000,1000,False,False,ArSL,original,,,029_1000
+27,30,1000000,1000000,1000000,1000000,False,False,ArSL,original,,,030_1000000
+28,31,10000000,10000000,10000000,10000000,False,False,ArSL,original,,,031_10000000
+29,32,ا,alif,ا,alif,False,False,ArSL,original,,,032_alif
+30,33,ب,baa,ب,baa,False,False,ArSL,original,,,033_baa
+31,34,ت,ta,ت,ta,False,False,ArSL,original,,,034_ta
+32,35,ث,tha,ث,tha,False,False,ArSL,original,,,035_tha
+33,36,ج,Jiim,ج,Jiim,False,False,ArSL,original,,,036_Jiim
+34,37,ح,Haa,ح,Haa,False,True,ArSL,original,,,037_Haa
+35,38,خ,kha,خ,kha,False,False,ArSL,original,,,038_kha
+36,39,د,daal,د,daal,False,False,ArSL,original,,,039_daal
+37,40,ذ,thal,ذ,thal,False,False,ArSL,original,,,040_thal
+38,41,ر,raa,ر,raa,False,False,ArSL,original,,,041_raa
+39,42,ز,zay,ز,zay,False,False,ArSL,original,,,042_zay
+40,43,س,siin,س,siin,False,False,ArSL,original,,,043_siin
+41,44,ش,shiin,ش,shiin,False,False,ArSL,original,,,044_shiin
+42,45,ص,Saad,ص,Saad,False,False,ArSL,original,,,045_Saad
+43,46,ض,Daad,ض,Daad,False,False,ArSL,original,,,046_Daad
+44,47,ط,Taa,ط,Taa,False,False,ArSL,original,,,047_Taa
+45,48,ظ,Zaa,ظ,Zaa,False,False,ArSL,original,,,048_Zaa
+46,49,ع,Ayn,ع,Ayn,False,False,ArSL,original,,,049_Ayn
+47,50,غ,ghayn,غ,ghayn,False,False,ArSL,original,,,050_ghayn
+48,51,ف,faa,ف,faa,False,False,ArSL,original,,,051_faa
+49,52,ق,qaaf,ق,qaaf,False,False,ArSL,original,,,052_qaaf
+50,53,ك,kaaf,ك,kaaf,False,False,ArSL,original,,,053_kaaf
+51,54,ل,laam,ل,laam,False,False,ArSL,original,,,054_laam
+52,55,م,miim,م,miim,False,False,ArSL,original,,,055_miim
+53,56,ن,noon,ن,noon,False,False,ArSL,original,,,056_noon
+54,57,ه,haa,ه,haa,False,True,ArSL,original,,,057_haa
+55,58,و,waaw,و,waaw,False,False,ArSL,original,,,058_waaw
+56,59,ي,yaa,ي,yaa,False,False,ArSL,original,,,059_yaa
+57,60,ة,taa marbuuTa,ة,taa marbuuTa,False,False,ArSL,original,,,060_taa_marbuuTa
+58,61,أ,alif with hamza above,أ,alif with hamza above,False,False,ArSL,original,,,061_alif_with_hamza_above
+59,62,ؤ,Waaw with hamza,ؤ,Waaw with hamza,False,False,ArSL,original,,,062_Waaw_with_hamza
+60,63,ئ,Alif maqsoura with hamza,ئ,Alif maqsoura with hamza,False,False,ArSL,original,,,063_Alif_maqsoura_with_hamza
+61,64,ئـ,hamza on line,ئـ,hamza on line,False,False,ArSL,original,,,064_hamza_on_line
+62,65,ء,hamza,ء,hamza,False,False,ArSL,original,,,065_hamza
+63,66,إ,alif with hamza below,إ,alif with hamza below,False,False,ArSL,original,,,066_alif_with_hamza_below
+64,67,آ,ALif with maad,آ,ALif with maad,False,False,ArSL,original,,,067_ALif_with_maad
+65,68,ى,Alif maqsoura,ى,Alif maqsoura,False,False,ArSL,original,,,068_Alif_maqsoura
+66,69,لا,laam Alif,لا,laam Alif,False,False,ArSL,original,,,069_laam_Alif
+67,70,ال,Al,ال,Al,False,False,ArSL,original,,,070_Al
+68,71,هيكل عظمي,Skeleton,هيكل عظمي,Skeleton,False,False,ArSL,original,,,071_Skeleton
+69,72,جمجة,skull,جمجة,skull,False,False,ArSL,original,,,072_skull
+70,73,عمود فقري,Backbone,عمود فقري,Backbone,False,False,ArSL,original,,,073_Backbone
+71,74,قفص صدري,Chest,قفص صدري,Chest,False,False,ArSL,original,,,074_Chest
+72,75,جهاز تنفسي,Respiratory device,جهاز تنفسي,Respiratory system,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,075_Respiratory_system
+73,76,قصبة هوائية,Trachea,قصبة هوائية,Trachea,False,False,ArSL,original,,,076_Trachea
+74,77,رئتان,lungs,رئتان,lungs,False,False,ArSL,original,,,077_lungs
+75,78,شهيق - زفير,Ins and Outs,شهيق - زفير,Inhalation and exhalation,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,078_Inhalation_and_exhalation
+76,79,جهاز هضمي,digestive system,جهاز هضمي,digestive system,False,False,ArSL,original,,,079_digestive_system
+77,80,وجه,Face,وجه,Face,False,False,ArSL,original,,,080_Face
+78,81,بلعوم,pharynx,بلعوم,pharynx,False,False,ArSL,original,,,081_pharynx
+79,82,كبد,liver,كبد,liver,False,False,ArSL,original,,,082_liver
+80,83,البنكرياس,pancreas,البنكرياس,pancreas,False,False,ArSL,original,,,083_pancreas
+81,84,الأمعاء الدقيقة,Small intestine,الأمعاء الدقيقة,Small intestine,False,False,ArSL,original,,,084_Small_intestine
+82,85,الأمعاء الغليظة,Large intestine,الأمعاء الغليظة,Large intestine,False,False,ArSL,original,,,085_Large_intestine
+83,86,الزائدة الدودية,Appendix,الزائدة الدودية,Appendix,False,False,ArSL,original,,,086_Appendix
+84,87,جهاز عصبي,nervous system,جهاز عصبي,nervous system,False,False,ArSL,original,,,087_nervous_system
+85,88,قلب,heart,قلب,heart,False,False,ArSL,original,,,088_heart
+86,89,حواس خمس,five senses,حواس خمس,five senses,False,False,ArSL,original,,,089_five_senses
+87,90,عضلة,muscle,عضلة,muscle,False,False,ArSL,original,,,090_muscle
+88,91,أنسجة,tissue,أنسجة,tissue,False,False,ArSL,original,,,091_tissue
+89,92,مستشفى,hospital,مستشفى,hospital,False,False,ArSL,original,,,092_hospital
+90,93,إسعافات أولية,first aid,إسعافات أولية,first aid,False,False,ArSL,original,,,093_first_aid
+91,94,جرح نازف,wound,جرح نازف,wound,False,False,ArSL,original,,,094_wound
+92,95,حروق,burning,حروق,burns,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,095_burns
+93,96,مخدر/ بنج,anesthetist,مخدر/ بنج,anesthesia,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,096_anesthesia
+94,97,عملية جراحية,surgery,عملية جراحية,surgery,False,False,ArSL,original,,,097_surgery
+95,98,شاش / ضمادة,gauze,شاش / ضمادة,gauze,False,False,ArSL,original,,,098_gauze
+96,99,شريط لاصق / بلاستر,adhesive tape,شريط لاصق / بلاستر,adhesive tape,False,False,ArSL,original,,,099_adhesive_tape
+97,100,صيدلية,pharmacy,صيدلية,pharmacy,False,False,ArSL,original,,,100_pharmacy
+98,101,تحليل دم,blood analysis,تحليل دم,blood analysis,False,False,ArSL,original,,,101_blood_analysis
+99,102,فحص سريري,physical examination,فحص سريري,physical examination,False,False,ArSL,original,,,102_physical_examination
+100,103,فحص النظر,sight examination,فحص النظر,eye examination,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,103_eye_examination
+101,104,ميزان حرارة,thermometer,ميزان حرارة,thermometer,False,True,ArSL,original,,,104_thermometer
+102,105,سماعة أذن,stethoscope,سماعة أذن,stethoscope,False,False,ArSL,original,,,105_stethoscope
+103,106,جهاز قياس الضغط,sphygmometroscope,جهاز قياس الضغط,sphygmomanometer,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,106_sphygmomanometer
+104,107,نبض القلب,pulse,نبض القلب,pulse,False,False,ArSL,original,,,107_pulse
+105,108,تحليل طبي,analysis,تحليل طبي,analysis,False,False,ArSL,original,,,108_analysis
+106,109,معمل التحاليل / مختبر,analysis laboratory,معمل التحاليل / مختبر,analysis laboratory,False,False,ArSL,original,,,109_analysis_laboratory
+107,110,صورة اشعة,ray photo,صورة اشعة,X-ray image,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,110_X-ray_image
+108,111,التهاب,inflammation,التهاب,inflammation,False,False,ArSL,original,,,111_inflammation
+109,112,تورم,swelling,تورم,swelling,False,False,ArSL,original,,,112_swelling
+110,113,زكام,cold,زكام,cold,False,False,ArSL,original,,,113_cold
+111,114,عدوى,infection,عدوى,infection,False,False,ArSL,original,,,114_infection
+112,115,صداع,headache,صداع,headache,False,False,ArSL,original,,,115_headache
+113,116,ألم,pain,ألم,pain,False,False,ArSL,original,,,116_pain
+114,117,حمى,fever,حمى,fever,False,False,ArSL,original,,,117_fever
+115,118,إسهال,diarrhea,إسهال,diarrhea,False,False,ArSL,original,,,118_diarrhea
+116,119,إمساك,constipation,إمساك,constipation,False,False,ArSL,original,,,119_constipation
+117,120,مغص,colic,مغص,colic,False,False,ArSL,original,,,120_colic
+118,121,مرض السكر / سكري,diabetes,مرض السكر / سكري,diabetes,False,False,ArSL,original,,,121_diabetes
+119,122,أزمة قلبية,heart attack,أزمة قلبية,heart attack,False,False,ArSL,original,,,122_heart_attack
+120,123,سرطان,cancer,سرطان,cancer,False,False,ArSL,original,,,123_cancer
+121,124,مرض فقدان المناعة / الإيدز,Aids,مرض فقدان المناعة / الإيدز,Aids,False,False,ArSL,original,,,124_Aids
+122,125,تساقط الشعر,Loss of hair,تساقط الشعر,Loss of hair,False,False,ArSL,original,,,125_Loss_of_hair
+123,126,سكتة قلبية,Heart failure,سكتة قلبية,Heart failure,False,False,ArSL,original,,,126_Heart_failure
+124,127,شلل نصفي,hemiplegia,شلل نصفي,hemiplegia,False,False,ArSL,original,,,127_hemiplegia
+125,128,شلل دماغي,Cerebral paralysis,شلل دماغي,Cerebral paralysis,False,False,ArSL,original,,,128_Cerebral_paralysis
+126,129,ضغط الدم,blood pressure,ضغط الدم,blood pressure,False,False,ArSL,original,,,129_blood_pressure
+127,130,حساسية,allergy,حساسية,allergy,False,False,ArSL,original,,,130_allergy
+128,131,حكة / هرش,itch,حكة / هرش,itch,False,False,ArSL,original,,,131_itch
+129,132,دواء,medicine,دواء,medicine,False,False,ArSL,original,,,132_medicine
+130,133,دورة شهرية,monthly circulation,دورة شهرية,menstrual cycle,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,133_menstrual_cycle
+131,134,مريض / مرض,sick,مريض / مرض,sick,False,False,ArSL,original,,,134_sick
+132,135,كبسولة,capsule,كبسولة,capsule,False,False,ArSL,original,,,135_capsule
+133,136,دواء شراب,liquid medicine,دواء شراب,liquid medicine,False,False,ArSL,original,,,136_liquid_medicine
+134,137,مرهم,ointment,مرهم,ointment,False,False,ArSL,original,,,137_ointment
+135,138,قطارة,dropper,قطارة,dropper,False,False,ArSL,original,,,138_dropper
+136,139,أخذ إبرة,acupuncture,أخذ إبرة,receive an injection,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,139_receive_an_injection
+137,140,تلقيح,pollination,تلقيح,fertilization,True,False,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,"Arabic word can mean pollination, fertilization or vaccination; gloss uncertain",140_fertilization
+138,141,تطعيم,inoculation,تطعيم,inoculation,False,False,ArSL,original,,,141_inoculation
+139,142,أشعة ليزر,laser ray,أشعة ليزر,laser ray,False,False,ArSL,original,,,142_laser_ray
+140,143,مخدرات,drug's,مخدرات,drug's,False,False,ArSL,original,,,143_drug's
+141,144,إدمان,addiction,إدمان,addiction,False,False,ArSL,original,,,144_addiction
+142,145,توحد / أوتيزم,oneness,توحد / أوتيزم,autism,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,145_autism
+143,146,منغولي,mongoloid,منغولي,mongoloid,False,False,ArSL,original,,,146_mongoloid
+144,147,بكتريا,bacterium,بكتريا,bacterium,False,False,ArSL,original,,,147_bacterium
+145,148,جرثومة,microbe,جرثومة,microbe,False,False,ArSL,original,,,148_microbe
+146,149,فيروس,virus,فيروس,virus,False,False,ArSL,original,,,149_virus
+147,150,إنتشار,spread,إنتشار,spread,False,False,ArSL,original,,,150_spread
+148,151,إعاقة,hindrance,إعاقة,hindrance,False,False,ArSL,original,,,151_hindrance
+149,152,إعاقة ذهنية,mentality hindrance,إعاقة ذهنية,intellectual disability,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,152_intellectual_disability
+150,153,اعاقة جسدية,physical disability,اعاقة جسدية,physical disability,False,False,ArSL,original,,,153_physical_disability
+151,154,اعاقة بصرية,visual impairment,اعاقة بصرية,visual impairment,False,False,ArSL,original,,,154_visual_impairment
+152,155,إعاقة سمعية,hearing hindrance,إعاقة سمعية,hearing disability,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,155_hearing_disability
+153,156,وباء,epidemic,وباء,epidemic,False,False,ArSL,original,,,156_epidemic
+154,157,مناعة,immunity,مناعة,immunity,False,False,ArSL,original,,,157_immunity
+155,158,عصب,nerve,عصب,nerve,False,False,ArSL,original,,,158_nerve
+156,159,معافى,healthy,معافى,healthy,False,False,ArSL,original,,,159_healthy
+157,160,يأكل,eat,يأكل,eat,False,False,ArSL,original,,,160_eat
+158,161,يشرب,drink,يشرب,drink,False,False,ArSL,original,,,161_drink
+159,162,ينام,sleep,ينام,sleep,False,False,ArSL,original,,,162_sleep
+160,163,يستيقظ,wake up,يستيقظ,wake up,False,False,ArSL,original,,,163_wake_up
+161,164,يسمع,hear,يسمع,hear,False,False,ArSL,original,,,164_hear
+162,165,يسكت,silence,يسكت,silence,False,False,ArSL,original,,,165_silence
+163,166,يشم,inhale,يشم,smell,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,166_smell
+164,167,يصعد,rise,يصعد,rise,False,False,ArSL,original,,,167_rise
+165,168,ينزل,descend,ينزل,descend,False,False,ArSL,original,,,168_descend
+166,169,يفتح,open,يفتح,open,False,False,ArSL,original,,,169_open
+167,170,يقفل ( يغلق ),close,يقفل ( يغلق ),close,False,False,ArSL,original,,,170_close
+168,171,يبني,build,يبني,build,False,False,ArSL,original,,,171_build
+169,172,يكسر,break,يكسر,break,False,False,ArSL,original,,,172_break
+170,173,يمشي,walk,يمشي,walk,False,False,ArSL,original,,,173_walk
+171,174,يحب,love,يحب,love,False,False,ArSL,original,,,174_love
+172,175,يكره,hate,يكره,hate,False,False,ArSL,original,,,175_hate
+173,176,يشوي,grill,يشوي,grill,False,False,ArSL,original,,,176_grill
+174,177,يحرث,plow,يحرث,plow,False,False,ArSL,original,,,177_plow
+175,178,يزرع,plant,يزرع,plant,False,False,ArSL,original,,,178_plant
+176,179,يسقي,irrigate,يسقي,irrigate,False,False,ArSL,original,,,179_irrigate
+177,180,يحصد,harvest,يحصد,harvest,False,False,ArSL,original,,,180_harvest
+178,181,يفكر,think,يفكر,think,False,False,ArSL,original,,,181_think
+179,182,يساعد,help,يساعد,help,False,False,ArSL,original,,,182_help
+180,183,يدخن,smoke,يدخن,smoke,False,False,ArSL,original,,,183_smoke
+181,184,يدعم,support,يدعم,support,False,False,ArSL,original,,,184_support
+182,185,يختار,choose,يختار,choose,False,False,ArSL,original,,,185_choose
+183,186,ينادي,call,ينادي,call,False,False,ArSL,original,,,186_call
+184,187,يتنامى,grow,يتنامى,grow,False,False,ArSL,original,,,187_grow
+185,188,يصبغ,dye,يصبغ,dye,False,False,ArSL,original,,,188_dye
+186,189,يقف,stand,يقف,stand,False,False,ArSL,original,,,189_stand
+187,190,يستحم,bathe,يستحم,bathe,False,False,ArSL,original,,,190_bathe
+188,191,يدخل,enter,يدخل,enter,False,False,ArSL,original,,,191_enter
+189,192,أسرة,family,أسرة,family,False,False,ArSL,original,,,192_family
+190,193,جدة,grandmother,جدة,grandmother,False,False,ArSL,original,,,193_grandmother
+191,194,جد,grandfather,جد,grandfather,False,False,ArSL,original,,,194_grandfather
+192,195,أب,father,أب,father,False,False,ArSL,original,,,195_father
+193,196,أم,mother,أم,mother,False,False,ArSL,original,,,196_mother
+194,197,أخت,sister,أخت,sister,False,False,ArSL,original,,,197_sister
+195,198,أخ,brother,أخ,brother,False,False,ArSL,original,,,198_brother
+196,199,بنت,girl,بنت,girl,False,False,ArSL,original,,,199_girl
+197,200,رضيع,baby,رضيع,baby,False,False,ArSL,original,,,200_baby
+198,201,توأم,twin,توأم,twin,False,False,ArSL,original,,,201_twin
+199,202,رجل,man,رجل,man,False,False,ArSL,original,,,202_man
+200,203,شاب,young man,شاب,young man,False,False,ArSL,original,,,203_young_man
+201,204,شابة,young woman,شابة,young woman,False,False,ArSL,original,,,204_young_woman
+202,205,حفيد,grandchild,حفيد,grandchild,False,False,ArSL,original,,,205_grandchild
+203,206,زواج,wedding,زواج,wedding,False,False,ArSL,original,,,206_wedding
+204,207,حمل,pregnant,حمل,pregnant,False,False,ArSL,original,,,207_pregnant
+205,208,ولادة,childbirth,ولادة,childbirth,False,False,ArSL,original,,,208_childbirth
+206,209,عم,uncle,عم,uncle,False,False,ArSL,original,,,209_uncle
+207,210,عمة,aunt,عمة,aunt,False,False,ArSL,original,,,210_aunt
+208,211,خال,maternal uncle,خال,maternal uncle,False,False,ArSL,original,,,211_maternal_uncle
+209,212,خالة,maternal aunt,خالة,maternal aunt,False,False,ArSL,original,,,212_maternal_aunt
+210,213,ابن الأخ,nephew,ابن الأخ,nephew,False,True,ArSL,original,,,213_nephew
+211,214,ابن الأخت,nephew,ابن الأخت,nephew,False,True,ArSL,original,,,214_nephew
+212,215,ابن العم,cousin,ابن العم,cousin,False,False,ArSL,original,,,215_cousin
+213,216,ابن,son,ابن,son,False,False,ArSL,original,,,216_son
+214,217,ابنة,daughter,ابنة,daughter,False,False,ArSL,original,,,217_daughter
+215,218,ناس,people,ناس,people,False,False,ArSL,original,,,218_people
+216,219,طلاق,divorce,طلاق,divorce,False,False,ArSL,original,,,219_divorce
+217,220,خطوبة,engagement,خطوبة,engagement,False,False,ArSL,original,,,220_engagement
+218,221,حفلة,party,حفلة,party,False,False,ArSL,original,,,221_party
+219,222,وفاة,death,وفاة,death,False,False,ArSL,original,,,222_death
+220,223,طفل,child,طفل,child,False,False,ArSL,original,,,223_child
+221,224,جميل,beautiful,جميل,beautiful,False,False,ArSL,original,,,224_beautiful
+222,225,قبيح,ugly,قبيح,ugly,False,False,ArSL,original,,,225_ugly
+223,226,طويل,long,طويل,long,False,False,ArSL,original,,,226_long
+224,227,قصير,short,قصير,short,False,False,ArSL,original,,,227_short
+225,228,نحيف,thin,نحيف,thin,False,False,ArSL,original,,,228_thin
+226,229,سمين,fat,سمين,fat,False,False,ArSL,original,,,229_fat
+227,230,غني,rich,غني,rich,False,False,ArSL,original,,,230_rich
+228,231,فقير,poor,فقير,poor,False,False,ArSL,original,,,231_poor
+229,232,محبط,offended,محبط,frustrated,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,232_frustrated
+230,233,مشمئز,disgusted,مشمئز,disgusted,False,False,ArSL,original,,,233_disgusted
+231,234,مرتبك,confused,مرتبك,confused,False,True,ArSL,original,,,234_confused
+232,235,قلق,worried,قلق,worried,False,False,ArSL,original,,,235_worried
+233,236,مشوش,deranged,مشوش,confused,True,True,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,236_confused
+234,237,خائف,afraid,خائف,afraid,False,False,ArSL,original,,,237_afraid
+235,238,سعيد (مسرور),happy,سعيد (مسرور),happy,False,False,ArSL,original,,,238_happy
+236,239,حزين,sad,حزين,sad,False,False,ArSL,original,,,239_sad
+237,240,شجاع,courageous,شجاع,courageous,False,False,ArSL,original,,,240_courageous
+238,241,جبان,coward,جبان,coward,False,False,ArSL,original,,,241_coward
+239,242,طموح,ambitious,طموح,ambitious,False,False,ArSL,original,,,242_ambitious
+240,243,معجب,admirable,معجب,admirer,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,243_admirer
+241,244,غائر من,to be jealous of,غائر من,jealous of,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,244_jealous_of
+242,245,غائر على,to protect jealously,غائر على,protective of,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,245_protective_of
+243,246,ودود,affectionate,ودود,affectionate,False,False,ArSL,original,,,246_affectionate
+244,247,كريم,generous,كريم,generous,False,False,ArSL,original,,,247_generous
+245,248,بخيل,miserly,بخيل,miserly,False,False,ArSL,original,,,248_miserly
+246,249,طماع,greedy,طماع,greedy,False,False,ArSL,original,,,249_greedy
+247,250,كذاب,liar,كذاب,liar,False,False,ArSL,original,,,250_liar
+248,251,أناني,selfish,أناني,selfish,False,False,ArSL,original,,,251_selfish
+249,252,متكبر,proud,متكبر,proud,False,False,ArSL,original,,,252_proud
+250,253,متواضع,humble,متواضع,humble,False,False,ArSL,original,,,253_humble
+251,254,شعور,feeling,شعور,feeling,False,False,ArSL,original,,,254_feeling
+252,255,تعب,tired,تعب,tired,False,False,ArSL,original,,,255_tired
+253,256,بكاء,crying,بكاء,crying,False,False,ArSL,original,,,256_crying
+254,257,احتقار,contempt,احتقار,contempt,False,False,ArSL,original,,,257_contempt
+255,258,اعتماد على الذات,self-dependence,اعتماد على الذات,self-dependence,False,False,ArSL,original,,,258_self-dependence
+256,259,خفيف,light,خفيف,light,False,False,ArSL,original,,,259_light
+257,260,ثقيل,heavy,ثقيل,heavy,False,False,ArSL,original,,,260_heavy
+258,261,قديم,old,قديم,old,False,False,ArSL,original,,,261_old
+259,262,حسد,envy,حسد,envy,False,False,ArSL,original,,,262_envy
+260,263,صدق,believe,صدق,believe,False,False,ArSL,original,,,263_believe
+261,264,غدر,betrayal,غدر,betrayal,False,False,ArSL,original,,,264_betrayal
+262,265,صبر,patient,صبر,patient,False,False,ArSL,original,,,265_patient
+263,266,لوم,blame,لوم,blame,False,False,ArSL,original,,,266_blame
+264,267,الحق,truth,الحق,truth,False,False,ArSL,original,,,267_truth
+265,268,خيانة,treason,خيانة,treason,False,False,ArSL,original,,,268_treason
+266,269,إيثار,preference,إيثار,preference,False,False,ArSL,original,,,269_preference
+267,270,تضحية,self sacrifice,تضحية,self sacrifice,False,False,ArSL,original,,,270_self_sacrifice
+268,271,شفقة,pity,شفقة,pity,False,False,ArSL,original,,,271_pity
+269,272,ذكي,intelligent,ذكي,intelligent,False,False,ArSL,original,,,272_intelligent
+270,273,أمام,in front of,أمام,in front of,False,False,ArSL,original,,,273_in_front_of
+271,274,بجانب,side,بجانب,next to,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,274_next_to
+272,275,بعيد,far,بعيد,far,False,False,ArSL,original,,,275_far
+273,276,بين,between,بين,between,False,False,ArSL,original,,,276_between
+274,277,تحت,under,تحت,under,False,False,ArSL,original,,,277_under
+275,278,حول,around,حول,around,False,False,ArSL,original,,,278_around
+276,279,خارج,outside,خارج,outside,False,False,ArSL,original,,,279_outside
+277,280,خلف,back,خلف,back,False,False,ArSL,original,,,280_back
+278,281,داخل,inside,داخل,inside,False,False,ArSL,original,,,281_inside
+279,282,فوق,up,فوق,up,False,False,ArSL,original,,,282_up
+280,283,قريب,near,قريب,near,False,False,ArSL,original,,,283_near
+281,284,من خلال,through,من خلال,through,False,False,ArSL,original,,,284_through
+282,285,هنا,here,هنا,here,False,False,ArSL,original,,,285_here
+283,286,هناك,there,هناك,there,False,False,ArSL,original,,,286_there
+284,287,يسار,left,يسار,left,False,False,ArSL,original,,,287_left
+285,288,يمين,right,يمين,right,False,False,ArSL,original,,,288_right
+286,289,أهلا وسهلاً,welcome,أهلا وسهلاً,welcome,False,False,ArSL,original,,,289_welcome
+287,290,السلام عليكم,greeting,السلام عليكم,Peace be upon you,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,290_Peace_be_upon_you
+288,291,تفضل,here you are,تفضل,here you are,False,False,ArSL,original,,,291_here_you_are
+289,292,جار,neighbor,جار,neighbor,False,False,ArSL,original,,,292_neighbor
+290,293,شكراً,thanks,شكراً,thanks,False,False,ArSL,original,,,293_thanks
+291,294,صديق,friend,صديق,friend,False,False,ArSL,original,,,294_friend
+292,295,ضيف,guest,ضيف,guest,False,False,ArSL,original,,,295_guest
+293,296,عدو,enemy,عدو,enemy,False,False,ArSL,original,,,296_enemy
+294,297,عيب,fault,عيب,fault,False,False,ArSL,original,,,297_fault
+295,298,هدية,gift,هدية,gift,False,False,ArSL,original,,,298_gift
+296,299,بيت,house,بيت,house,False,False,ArSL,original,,,299_house
+297,300,جدار,wall,جدار,wall,False,False,ArSL,original,,,300_wall
+298,301,سقف,roof,سقف,roof,False,False,ArSL,original,,,301_roof
+299,302,باب,door,باب,door,False,False,ArSL,original,,,302_door
+300,303,شباك,window,شباك,window,False,False,ArSL,original,,,303_window
+301,304,غرفة,room,غرفة,room,False,False,ArSL,original,,,304_room
+302,305,غرفة نوم,bedroom,غرفة نوم,bedroom,False,False,ArSL,original,,,305_bedroom
+303,306,سرير,bed,سرير,bed,False,False,ArSL,original,,,306_bed
+304,307,مرتبة سرير ( حشية),mattress,مرتبة سرير ( حشية),mattress,False,False,ArSL,original,,,307_mattress
+305,308,شرشف ( غطاء سرير),bedsheet,شرشف ( غطاء سرير),bedsheet,False,False,ArSL,original,,,308_bedsheet
+306,309,وسادة ( مخدة),pillow,وسادة ( مخدة),pillow,False,False,ArSL,original,,,309_pillow
+307,310,شماعة ( مشجب),clothes rail,شماعة ( مشجب),clothes rail,False,False,ArSL,original,,,310_clothes_rail
+308,311,خزانة ملابس,wardrobe,خزانة ملابس,wardrobe,False,False,ArSL,original,,,311_wardrobe
+309,312,مطبخ,kitchen,مطبخ,kitchen,False,False,ArSL,original,,,312_kitchen
+310,313,فرن غازي,Oven,فرن غازي,Oven,False,False,ArSL,original,,,313_Oven
+311,314,بوتاغاز (طابخ),cooker,بوتاغاز (طابخ),cooker,False,False,ArSL,original,,,314_cooker
+312,315,طبق ( صحن),dish,طبق ( صحن),dish,False,False,ArSL,original,,,315_dish
+313,316,سكين,knife,سكين,knife,False,False,ArSL,original,,,316_knife
+314,317,شوكة,fork,شوكة,fork,False,False,ArSL,original,,,317_fork
+315,318,ملعقة,spoon,ملعقة,spoon,False,False,ArSL,original,,,318_spoon
+316,319,فنجان,cupful,فنجان,demitasse cup,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,319_demitasse_cup
+317,320,مجمد (فريزر),freezer,مجمد (فريزر),freezer,False,False,ArSL,original,,,320_freezer
+318,321,كأس ( كوب),cup,كأس ( كوب),cup,False,False,ArSL,original,,,321_cup
+319,322,حافظ حرارة ( ترمس),thermos,حافظ حرارة ( ترمس),thermos,False,False,ArSL,original,,,322_thermos
+320,323,غرفة طعام,food room,غرفة طعام,dining room,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,323_dining_room
+321,324,إبريق,pitcher,إبريق,pitcher,False,False,ArSL,original,,,324_pitcher
+322,325,طاولة,table,طاولة,table,False,False,ArSL,original,,,325_table
+323,326,كنكة ( دلة),dalah,كنكة ( دلة),dalah,False,False,ArSL,original,,,326_dalah
+324,327,دورة مياه (حمام),bathroom,دورة مياه (حمام),bathroom,False,False,ArSL,original,,,327_bathroom
+325,328,كرسي,chair,كرسي,chair,False,False,ArSL,original,,,328_chair
+326,329,غسالة,washing machine,غسالة,washing machine,False,False,ArSL,original,,,329_washing_machine
+327,330,منشفة,towel carpet,منشفة,towel,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,330_towel
+328,331,سجادة (زربية),carpet,سجادة (زربية),carpet,False,False,ArSL,original,,,331_carpet
+329,332,موكيت ( فرش أرضي) moquette,moquette,موكيت ( فرش أرضي) moquette,wall-to-wall carpet,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,332_wall-to-wall_carpet
+330,333,ثريا (نجفة),chandelier,ثريا (نجفة),chandelier,False,False,ArSL,original,,,333_chandelier
+331,334,مسجل,cassette,مسجل,cassette,False,False,ArSL,original,,,334_cassette
+332,335,شريط كاست,cassette tape,شريط كاست,cassette tape,False,False,ArSL,original,,,335_cassette_tape
+333,336,تلفزيون (تلفاز),television,تلفزيون (تلفاز),television,False,False,ArSL,original,,,336_television
+334,337,طبق هوائي (دش),satellite,طبق هوائي (دش),satellite dish,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,337_satellite_dish
+335,338,شريط فيديو,video tape,شريط فيديو,video tape,False,False,ArSL,original,,,338_video_tape
+336,339,كاميرا فيديو,video camera,كاميرا فيديو,video camera,False,False,ArSL,original,,,339_video_camera
+337,340,كاميرا فوتوغرافية,photo camera,كاميرا فوتوغرافية,camera,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,340_camera
+338,341,هاتف ( تلفون),telephone,هاتف ( تلفون),telephone,False,False,ArSL,original,,,341_telephone
+339,342,غرفة ضيوف,guests room,غرفة ضيوف,guest room,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,342_guest_room
+340,343,فيديو,video,فيديو,video,False,False,ArSL,original,,,343_video
+341,344,مبخرة,censer,مبخرة,censer,False,False,ArSL,original,,,344_censer
+342,345,مدفأة,heater,مدفأة,heater,False,False,ArSL,original,,,345_heater
+343,346,مفتاح,key,مفتاح,key,False,False,ArSL,original,,,346_key
+344,347,مروحة,fan,مروحة,fan,False,False,ArSL,original,,,347_fan
+345,348,تدفئة مركزية,central heater,تدفئة مركزية,central heater,False,False,ArSL,original,,,348_central_heater
+346,349,كهرباء,electrics,كهرباء,electricity,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,349_electricity
+347,350,مكيف,air conditioner,مكيف,air conditioner,False,False,ArSL,original,,,350_air_conditioner
+348,351,سلك كهربائي,wire,سلك كهربائي,wire,False,False,ArSL,original,,,351_wire
+349,352,قابس كهربائي ( فيش),plug,قابس كهربائي ( فيش),plug,False,False,ArSL,original,,,352_plug
+350,353,حقيبة سفر,bag,حقيبة سفر,bag,False,False,ArSL,original,,,353_bag
+351,354,مكواة,iron,مكواة,iron,False,False,ArSL,original,,,354_iron
+352,355,ميزان حرارة جوي,thermometer,ميزان حرارة جوي,thermometer,False,True,ArSL,original,,,355_thermometer
+353,356,الله تعالى,God,الله تعالى,God,False,False,ArSL,original,,,356_God
+354,357,محمد رسول الله,Muhammad is the Messenger of Allah,محمد رسول الله,Muhammad is the Messenger of Allah,False,False,ArSL,original,,,357_Muhammad_is_the_Messenger_of_Allah
+355,358,عيسى المسيح,Essa Christ,عيسى المسيح,Jesus Christ,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,358_Jesus_Christ
+356,359,القرآن الكريم,The Holy Quran,القرآن الكريم,The Holy Quran,False,False,ArSL,original,,,359_The_Holy_Quran
+357,360,الخلفاء الراشدون,Rightly Guided Caliphs,الخلفاء الراشدون,Rightly Guided Caliphs,False,False,ArSL,original,,,360_Rightly_Guided_Caliphs
+358,361,السنة النبوية,Sunnah,السنة النبوية,Sunnah,False,False,ArSL,original,,,361_Sunnah
+359,362,أركان الإسلام,Pillars of Islam,أركان الإسلام,Pillars of Islam,False,False,ArSL,original,,,362_Pillars_of_Islam
+360,363,أركان الإيمان,Pillars of Faith,أركان الإيمان,Pillars of Faith,False,False,ArSL,original,,,363_Pillars_of_Faith
+361,364,الشهادتين,The two certificates,الشهادتين,the two testimonies of faith,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,364_the_two_testimonies_of_faith
+362,365,يصلي / الصلاة,pray,يصلي / الصلاة,pray,False,False,ArSL,original,,,365_pray
+363,366,الزكاة,zakat,الزكاة,zakat,False,False,ArSL,original,,,366_zakat
+364,367,الصوم,Fasting,الصوم,Fasting,False,False,ArSL,original,,,367_Fasting
+365,368,العمرة,Umrah,العمرة,Umrah,False,False,ArSL,original,,,368_Umrah
+366,369,الحج,Pilgrimage,الحج,Pilgrimage,False,False,ArSL,original,,,369_Pilgrimage
+367,370,ملائكة,Angels,ملائكة,Angels,False,False,ArSL,original,,,370_Angels
+368,371,رسول,messenger,رسول,messenger,False,False,ArSL,original,,,371_messenger
+369,372,يوم القيامة,Doomsday,يوم القيامة,Doomsday,False,False,ArSL,original,,,372_Doomsday
+370,373,القضاء والقدر,Fate and destiny,القضاء والقدر,Fate and destiny,False,False,ArSL,original,,,373_Fate_and_destiny
+371,374,أركان الصلاة,Pillars of prayer,أركان الصلاة,Pillars of prayer,False,False,ArSL,original,,,374_Pillars_of_prayer
+372,375,خير,Good,خير,Good,False,False,ArSL,original,,,375_Good
+373,376,النية,Intention,النية,Intention,False,False,ArSL,original,,,376_Intention
+374,377,شر,Evil,شر,Evil,False,False,ArSL,original,,,377_Evil
+375,378,طهارة,purity,طهارة,purity,False,False,ArSL,original,,,378_purity
+376,379,مبطلات الصلاة,Prayer invalidators,مبطلات الصلاة,Prayer invalidators,False,False,ArSL,original,,,379_Prayer_invalidators
+377,380,تيمم,tayammum,تيمم,tayammum,False,False,ArSL,original,,,380_tayammum
+378,381,يتوضأ / وضوء,ablution,يتوضأ / وضوء,ablution,False,False,ArSL,original,,,381_ablution
+379,382,يؤذن,authorized,يؤذن,call to prayer,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,382_call_to_prayer
+380,383,مسح على الخفين,Wipe on the slippers,مسح على الخفين,wiping over the khuffs,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,383_wiping_over_the_khuffs
+381,384,صلاة الفجر,Al-fajr prayer,صلاة الفجر,Al-fajr prayer,False,False,ArSL,original,,,384_Al-fajr_prayer
+382,385,صلاة الظهر,Salat Aduher,صلاة الظهر,Salat Aduher,False,False,ArSL,original,,,385_Salat_Aduher
+383,386,صلاة العصر,Asr prayer,صلاة العصر,Asr prayer,False,False,ArSL,original,,,386_Asr_prayer
+384,387,صلاة المغرب,Maghreb's prayer,صلاة المغرب,Maghreb's prayer,False,False,ArSL,original,,,387_Maghreb's_prayer
+385,388,صلاة العشاء,eshaa pray,صلاة العشاء,eshaa pray,False,False,ArSL,original,,,388_eshaa_pray
+386,389,خطبة,speech,خطبة,speech,False,False,ArSL,original,,,389_speech
+387,390,خطبة الجمعة,Friday sermon,خطبة الجمعة,Friday sermon,False,False,ArSL,original,,,390_Friday_sermon
+388,391,خطيب,Fiance,خطيب,fiancé,True,False,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,"Arabic word can mean fiance or preacher; neighbouring signs are religious terms, so preacher is plausible",391_fiancé
+389,392,خطبة العيد,Eid sermon,خطبة العيد,Eid sermon,False,False,ArSL,original,,,392_Eid_sermon
+390,393,مسجد,Mosque,مسجد,Mosque,False,False,ArSL,original,,,393_Mosque
+391,394,سورة,surah,سورة,surah,False,False,ArSL,original,,,394_surah
+392,395,إمام,Before,إمام,imam,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,395_imam
+393,396,سورة الفاتحة,Al-Fatihah,سورة الفاتحة,Al-Fatihah,False,False,ArSL,original,,,396_Al-Fatihah
+394,397,آية,any,آية,verse,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,397_verse
+395,398,ليلة القدر,Night of Power,ليلة القدر,Night of Power,False,False,ArSL,original,,,398_Night_of_Power
+396,399,عيد,Feast,عيد,Feast,False,False,ArSL,original,,,399_Feast
+397,400,عيد الفطر,Eid al-Fitr,عيد الفطر,Eid al-Fitr,False,False,ArSL,original,,,400_Eid_al-Fitr
+398,401,عيد الأضحى,Eid al-Adha,عيد الأضحى,Eid al-Adha,False,False,ArSL,original,,,401_Eid_al-Adha
+399,402,إحرام,Ihram,إحرام,Ihram,False,False,ArSL,original,,,402_Ihram
+400,403,مكة,Mecca,مكة,Mecca,False,False,ArSL,original,,,403_Mecca
+401,404,الكعبة,Kaaba,الكعبة,Kaaba,False,False,ArSL,original,,,404_Kaaba
+402,405,المدينة المنورة,Medina,المدينة المنورة,Medina,False,False,ArSL,original,,,405_Medina
+403,406,منى,Mona,منى,Mina (the pilgrimage site),True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,406_Mina_(the_pilgrimage_site)
+404,407,جبل عرفات,Arafat Mountain,جبل عرفات,Arafat Mountain,False,False,ArSL,original,,,407_Arafat_Mountain
+405,408,الصفا والمروة,Safa and Marwa,الصفا والمروة,Safa and Marwa,False,False,ArSL,original,,,408_Safa_and_Marwa
+406,409,مزدلفة,Muzdalifah,مزدلفة,Muzdalifah,False,False,ArSL,original,,,409_Muzdalifah
+407,410,رمي الجمرات,Throwing pebbles,رمي الجمرات,Throwing pebbles,False,False,ArSL,original,,,410_Throwing_pebbles
+408,411,طواف,circumambulation,طواف,circumambulation,False,False,ArSL,original,,,411_circumambulation
+409,412,ماء زمزم,Zamzam water,ماء زمزم,Zamzam water,False,False,ArSL,original,,,412_Zamzam_water
+410,413,الأضحية,the sacrifice,الأضحية,the sacrifice,False,False,ArSL,original,,,413_the_sacrifice
+411,414,فك الإحرام,break the ihram,فك الإحرام,break the ihram,False,False,ArSL,original,,,414_break_the_ihram
+412,415,طواف الوداع,farewell circumambulation,طواف الوداع,farewell circumambulation,False,False,ArSL,original,,,415_farewell_circumambulation
+413,416,المسجد الأقصى,Al-Aqsa Mosque,المسجد الأقصى,Al-Aqsa Mosque,False,False,ArSL,original,,,416_Al-Aqsa_Mosque
+414,417,يسبح,swim,يسبح,swim,False,False,ArSL,original,,,417_swim
+415,418,الحمد لله,Thank God,الحمد لله,Thank God,False,False,ArSL,original,,,418_Thank_God
+416,419,سبحان الله,How great is our God,سبحان الله,Glory be to Allah,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,419_Glory_be_to_Allah
+417,420,إيمان,Faith,إيمان,Faith,False,False,ArSL,original,,,420_Faith
+418,421,الشرك بالله,Polytheism,الشرك بالله,Polytheism,False,False,ArSL,original,,,421_Polytheism
+419,422,أعوذ بالله,I seek refuge in God,أعوذ بالله,I seek refuge in God,False,False,ArSL,original,,,422_I_seek_refuge_in_God
+420,423,شيطان,Satan,شيطان,Satan,False,False,ArSL,original,,,423_Satan
+421,424,جن,genie,جن,jinn,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,424_jinn
+422,425,الضالون,the lost,الضالون,the lost,False,False,ArSL,original,,,425_the_lost
+423,426,المغضوب عليهم,angered them,المغضوب عليهم,those who incurred anger,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,426_those_who_incurred_anger
+424,427,صنم,fetish,صنم,idol,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,427_idol
+425,428,زنى,fornication,زنى,fornication,False,False,ArSL,original,,,428_fornication
+426,429,الجنة,the Paradise,الجنة,the Paradise,False,False,ArSL,original,,,429_the_Paradise
+427,430,النار,fire,النار,fire,False,False,ArSL,original,,,430_fire
+428,431,روح,spirit,روح,spirit,False,False,ArSL,original,,,431_spirit
+429,432,حقوق,rights,حقوق,rights,False,False,ArSL,original,,,432_rights
+430,433,واجبات,Duties,واجبات,Duties,False,True,ArSL,original,,,433_Duties
+431,434,حسنات,Deeds,حسنات,Deeds,False,False,ArSL,original,,,434_Deeds
+432,435,سيئات,sins,سيئات,sins,False,False,ArSL,original,,,435_sins
+433,436,حلال,halal,حلال,halal,False,False,ArSL,original,,,436_halal
+434,437,حرام,forbidden,حرام,forbidden,False,False,ArSL,original,,,437_forbidden
+435,438,مغفرة,forgiveness,مغفرة,forgiveness,False,False,ArSL,original,,,438_forgiveness
+436,439,دين,religion,دين,religion,False,False,ArSL,original,,,439_religion
+437,440,مسيحي,Christian,مسيحي,Christian,False,False,ArSL,original,,,440_Christian
+438,441,يهودي,Jewish,يهودي,Jewish,False,False,ArSL,original,,,441_Jewish
+439,442,كنيسة,church,كنيسة,church,False,False,ArSL,original,,,442_church
+440,443,إسراء ومعراج,Isra and Miraj,إسراء ومعراج,Isra and Miraj,False,False,ArSL,original,,,443_Isra_and_Miraj
+441,444,حواء,Eve,حواء,Eve,False,False,ArSL,original,,,444_Eve
+442,445,آدم,Adam,آدم,Adam,False,False,ArSL,original,,,445_Adam
+443,446,صدقة,charity,صدقة,charity,False,False,ArSL,original,,,446_charity
+444,447,نبي,Prophet,نبي,Prophet,False,False,ArSL,original,,,447_Prophet
+445,448,هداية,guidance,هداية,guidance,False,False,ArSL,original,,,448_guidance
+446,449,أمانة,honesty,أمانة,honesty,False,False,ArSL,original,,,449_honesty
+447,450,شهيد,martyr,شهيد,martyr,False,False,ArSL,original,,,450_martyr
+448,451,حقوق الوالدين,Parental rights,حقوق الوالدين,Parental rights,False,False,ArSL,original,,,451_Parental_rights
+449,452,عقوق الوالدين,Disobedience to parents,عقوق الوالدين,Disobedience to parents,False,False,ArSL,original,,,452_Disobedience_to_parents
+450,453,مسلم,Muslim,مسلم,Muslim,False,False,ArSL,original,,,453_Muslim
+451,454,رحمة,Mercy,رحمة,Mercy,False,False,ArSL,original,,,454_Mercy
+452,455,عيد رأس السنة,New Year's Holiday,عيد رأس السنة,New Year's Holiday,False,False,ArSL,original,,,455_New_Year's_Holiday
+453,456,فروض,homework,فروض,duties,True,True,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,Arabic word can mean duties or homework; gloss uncertain,456_duties
+454,457,قبة الصخرة,Dome of the Rock,قبة الصخرة,Dome of the Rock,False,False,ArSL,original,,,457_Dome_of_the_Rock
+455,458,خلق,Create,خلق,Create,False,False,ArSL,original,,,458_Create
+456,459,مهندس,engineer,مهندس,engineer,False,False,ArSL,original,,,459_engineer
+457,460,مصور فوتوغرافي,photographer,مصور فوتوغرافي,photographer,False,False,ArSL,original,,,460_photographer
+458,461,جزار / قصاب,Meat man,جزار / قصاب,butcher,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,461_butcher
+459,462,سائق,driver,سائق,driver,False,False,ArSL,original,,,462_driver
+460,463,صائغ,jeweler,صائغ,jeweler,False,False,ArSL,original,,,463_jeweler
+461,464,خادم,servant,خادم,servant,False,False,ArSL,original,,,464_servant
+462,465,رئيس قسم,chairman,رئيس قسم,chairman,False,False,ArSL,original,,,465_chairman
+463,466,حداد,blacksmith,حداد,blacksmith,False,False,ArSL,original,,,466_blacksmith
+464,467,لحام كهربائي,weld,لحام كهربائي,electric welder,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,467_electric_welder
+465,468,مترجم لغة الإشارة,Sign language translator,مترجم لغة الإشارة,Sign language translator,False,False,ArSL,original,,,468_Sign_language_translator
+466,469,مذيع,announcer,مذيع,announcer,False,False,ArSL,original,,,469_announcer
+467,470,مترجم لغات,translator,مترجم لغات,translator,False,False,ArSL,original,,,470_translator
+468,471,مدير,manager,مدير,manager,False,False,ArSL,original,,,471_manager
+469,472,سفير,ambassador,سفير,ambassador,False,False,ArSL,original,,,472_ambassador
+470,473,وزير,minister,وزير,minister,False,False,ArSL,original,,,473_minister
+471,474,ملك / سلطان,King,ملك / سلطان,King,False,False,ArSL,original,,,474_King
+472,475,أمير البلاد / رئيس الجمهورية,Premier Minister,أمير البلاد / رئيس الجمهورية,president,True,False,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,Arabic label covers emir and president; English gloss covers one meaning,475_president
+473,476,شيخ,sheikh,شيخ,sheikh,False,False,ArSL,original,,,476_sheikh
+474,477,محافظ / وال,governor,محافظ / وال,governor,False,False,ArSL,original,,,477_governor
+475,478,ولي عهد / وكيل وزارة,under secretary of state,ولي عهد / وكيل وزارة,undersecretary,True,False,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,Arabic label covers crown prince and undersecretary; English gloss covers one meaning,478_undersecretary
+476,479,رئيس مجلس الشعب (النواب),speaker,رئيس مجلس الشعب (النواب),speaker,False,False,ArSL,original,,,479_speaker
+477,480,أمين عام,general secretary,أمين عام,general secretary,False,False,ArSL,original,,,480_general_secretary
+478,481,صحفي,journalist,صحفي,journalist,False,False,ArSL,original,,,481_journalist
+479,482,رسام,draftsman,رسام,draftsman,False,False,ArSL,original,,,482_draftsman
+480,483,خياط / تارزي,tailor,خياط / تارزي,tailor,False,False,ArSL,original,,,483_tailor
+481,484,ضابط,policeman,ضابط,policeman,False,False,ArSL,original,,,484_policeman
+482,485,طيار,pilot,طيار,pilot,False,False,ArSL,original,,,485_pilot
+483,486,جندي,soldier,جندي,soldier,False,False,ArSL,original,,,486_soldier
+484,487,حلاق,barber,حلاق,barber,False,False,ArSL,original,,,487_barber
+485,488,صباغ,dyer,صباغ,dyer,False,False,ArSL,original,,,488_dyer
+486,489,رجل إطفاء / دفاع مدني,fireman,رجل إطفاء / دفاع مدني,fireman,False,False,ArSL,original,,,489_fireman
+487,490,نجار,carpenter,نجار,carpenter,False,False,ArSL,original,,,490_carpenter
+488,491,معلم / مدرس,teacher,معلم / مدرس,teacher,False,False,ArSL,original,,,491_teacher
+489,492,طباخ,chef,طباخ,chef,False,False,ArSL,original,,,492_chef
+490,493,فلاح,farmer,فلاح,farmer,False,False,ArSL,original,,,493_farmer
+491,494,موظف,agent,موظف,employee,True,False,ArSL,english_gloss_corrected_no_expert_review,radwa sayed,,494_employee
+492,495,أمين صندوق,treasurer,أمين صندوق,treasurer,False,False,ArSL,original,,,495_treasurer
+493,496,صيدلي,pharmacist,صيدلي,pharmacist,False,False,ArSL,original,,,496_pharmacist
+494,497,طبيب,doctor,طبيب,doctor,False,False,ArSL,original,,,497_doctor
+495,498,ممرضة,nurse,ممرضة,nurse,False,True,ArSL,original,,,498_nurse
+496,499,ممرض,orderly,ممرض,nurse,True,True,ArSL,gloss_uncertain_needs_expert_check,radwa sayed,Same English gloss as sign 498; use class_name to tell them apart,499_nurse
+497,500,محام,lawyer,محام,lawyer,False,False,ArSL,original,,,500_lawyer
+498,501,انتقال,traveling,انتقال,traveling,False,False,ArSL,original,,,501_traveling
+499,502,تعيين,appointment,تعيين,appointment,False,False,ArSL,original,,,502_appointment

@@ -1,0 +1,10 @@
+fold,split,samples,classes
+fold_1,test,3083,62
+fold_1,train,2590,62
+fold_1,validation,3120,62
+fold_2,test,3120,62
+fold_2,train,3083,62
+fold_2,validation,2590,62
+fold_3,test,2590,62
+fold_3,train,3120,62
+fold_3,validation,3083,62

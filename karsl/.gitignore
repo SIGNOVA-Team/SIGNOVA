@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+*.npy
+*.npz
+*.7z
+*.mp4

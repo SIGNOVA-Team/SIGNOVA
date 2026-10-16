@@ -1,0 +1,10 @@
+fold,split,signer,samples,classes
+fold_1,train,S03,24985,500
+fold_1,validation,S02,25215,500
+fold_1,test,S01,24895,500
+fold_2,train,S01,24895,500
+fold_2,validation,S03,24985,500
+fold_2,test,S02,25215,500
+fold_3,train,S02,25215,500
+fold_3,validation,S01,24895,500
+fold_3,test,S03,24985,500
