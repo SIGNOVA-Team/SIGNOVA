@@ -42,6 +42,11 @@ Run from the karsl directory:
     python -m scripts.validate_dataset
     python -m unittest discover -s tests -v
 
+Or run from the repository root:
+
+    python -m pytest karsl/tests/test_dataset.py -v
+
+
 ## Data Access
 Raw video archives and NPY keypoints are not included.
 Raw videos originate from the official KArSL-502 dataset.

@@ -1,9 +1,9 @@
 # SIGNOVA — Sign Language & Multimodal Assistive Communication
 
-[![CI - Test Suite](https://img.shields.io/badge/tests-7%20passed-brightgreen.svg)](tests/)
+[![CI - Test Suite](https://img.shields.io/badge/tests-8%20passed-brightgreen.svg)](tests/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![License: CC-BY-NC-4.0](https://img.shields.io/badge/License-CC--BY--NC--4.0-lightgrey.svg)](LICENSE)
-[![Track: P2 Datasets](https://img.shields.io/badge/P2%20Datasets-Verified-success.svg)](data/)
+[![Track: Datasets](https://img.shields.io/badge/Datasets-Verified-success.svg)](data/)
 
 > **SIGNOVA** is an assistive communication system bridging sign language, speech, and text for Egyptian Arabic and English users.
 > **Mission Principle:** *Egypt-First*. Egyptian Sign Language (ESL) and Egyptian Arabic are the primary communication pair. ASL and English are secondary tracks.
@@ -21,6 +21,7 @@ SIGNOVA is designed as an assistive communication prototype connecting sign lang
 - **P1 — WLASL:** Secondary ASL isolated-sign baseline (Official GitHub).
 - **P2 — How2Sign:** Future continuous ASL research reference (~80h multimodal).
 - **P2 — ArabSign:** Continuous Arabic Sign Language (ArSL) research reference (9,335 samples, 50 sentences).
+- **Benchmark — KArSL-502:** Arabic Sign Language (ArSL) 500-class isolated-sign benchmark & keypoints dataset ([KArSL documentation](karsl/README.md)).
 
 ---
 
@@ -72,6 +73,13 @@ SIGNOVA/
 │   ├── dataset_card_arabsign.md             # Standard dataset card for ArabSign
 │   └── decisions/
 │       └── ADR_001_p2_datasets_evaluation.md# Architecture Decision Record for P2
+├── karsl/                                   # KArSL-502 dataset engineering & benchmarks
+│   ├── README.md                            # KArSL overview, QC, and keypoints benchmark
+│   ├── data/                                # Metadata, splits, and QC reports
+│   ├── docs/                                # KArSL dataset card and handoff
+│   ├── notebooks/                           # Verification notebooks (inventory, QC, keypoints)
+│   ├── scripts/                             # Validation scripts
+│   └── tests/                               # Automated integrity tests
 ├── scripts/
 │   ├── data_pipeline/
 │   │   ├── download_p2_metadata.py          # Metadata & code downloader
@@ -90,9 +98,9 @@ SIGNOVA/
 - `pip install pytest pandas` (optional: `torch` for ML baselines)
 
 ### Running Automated Tests
-Run the test suite to verify schema conformity, row counts, and zero-signer leakage:
+Run the entire test suite across all verified datasets:
 ```bash
-python -m pytest tests/test_p2_datasets.py -v
+python -m pytest -v
 ```
 
 ### Displaying Dataset Summaries
