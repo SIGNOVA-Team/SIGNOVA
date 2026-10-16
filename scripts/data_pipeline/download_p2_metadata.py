@@ -7,9 +7,9 @@ Automates downloading of official annotations, metadata, and code archives for:
 
 import os
 import sys
+import urllib.error
 import urllib.request
 import zipfile
-import shutil
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -45,7 +45,7 @@ def setup_p2_data(target_dir):
         if not os.path.exists(dst) or os.path.getsize(dst) == 0:
             try:
                 download_file(url, dst)
-            except Exception as e:
+            except (urllib.error.URLError, TimeoutError, OSError) as e:
                 print(f"Failed to download {fname}: {e}")
         else:
             print(f"Already exists: {fname}")
@@ -56,7 +56,7 @@ def setup_p2_data(target_dir):
     if not os.path.exists(zip_dst) or os.path.getsize(zip_dst) == 0:
         try:
             download_file(ARABSIGN_CODE_ZIP, zip_dst)
-        except Exception as e:
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
             print(f"Failed to download ArabSign zip: {e}")
     else:
         print("Already exists: ArabSign-EncoderDec.zip")
@@ -73,5 +73,7 @@ def setup_p2_data(target_dir):
 
 
 if __name__ == "__main__":
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw_p2_metadata"))
+    base_dir = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw_p2_metadata")
+    )
     setup_p2_data(base_dir)

@@ -9,11 +9,11 @@ Generates:
   - ArabSign sentence mappings
 """
 
-import os
-import sys
 import csv
-import re
 import glob
+import os
+import re
+import sys
 
 # Ensure UTF-8 output
 sys.stdout.reconfigure(encoding="utf-8")
@@ -43,7 +43,7 @@ CANONICAL_COLUMNS = [
     "license_id",
     "qc_status",
     "qc_flags",
-    "checksum"
+    "checksum",
 ]
 
 
@@ -52,7 +52,7 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
     splits = {
         "train": os.path.join(source_dir, "scratch_how2sign_train.csv"),
         "val": os.path.join(source_dir, "scratch_how2sign_val.csv"),
-        "test": os.path.join(source_dir, "scratch_how2sign_test.csv")
+        "test": os.path.join(source_dir, "scratch_how2sign_test.csv"),
     }
 
     canonical_rows = []
@@ -63,9 +63,9 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
             print(f"Warning: {filepath} not found. Skipping {split_name}.")
             continue
 
-        with open(filepath, mode="r", encoding="utf-8", errors="ignore") as f:
+        with open(filepath, encoding="utf-8", errors="ignore") as f:
             reader = csv.DictReader(f, delimiter="\t")
-            for idx, r in enumerate(reader):
+            for _idx, r in enumerate(reader):
                 video_id = r.get("VIDEO_ID", "").strip()
                 video_name = r.get("VIDEO_NAME", "").strip()
                 sentence_id = r.get("SENTENCE_ID", "").strip()
@@ -93,37 +93,41 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
                 if signer_id in ["1", "2", "3", "5", "8"]:
                     qc_flags = "SIGNER_OVERLAP_ACROSS_SPLITS"
 
-                canonical_rows.append({
-                    "sample_id": sample_id,
-                    "source_dataset": "How2Sign",
-                    "source_sample_id": sentence_name,
-                    "sign_language": "ASL",
-                    "original_label": sentence,
-                    "gloss_label": sentence,  # Aligned English text
-                    "signer_id": signer_id,
-                    "session_id": video_id,
-                    "relative_video_path": rel_path,
-                    "fps": 25.0,
-                    "duration_sec": duration,
-                    "width": 1920,
-                    "height": 1080,
-                    "split": split_name,
-                    "split_version": "v1.0-official",
-                    "license_id": "CC-BY-NC-4.0",
-                    "qc_status": qc_status,
-                    "qc_flags": qc_flags,
-                    "checksum": "NOT_CALCULATED_REMOTE"
-                })
+                canonical_rows.append(
+                    {
+                        "sample_id": sample_id,
+                        "source_dataset": "How2Sign",
+                        "source_sample_id": sentence_name,
+                        "sign_language": "ASL",
+                        "original_label": sentence,
+                        "gloss_label": sentence,  # Aligned English text
+                        "signer_id": signer_id,
+                        "session_id": video_id,
+                        "relative_video_path": rel_path,
+                        "fps": 25.0,
+                        "duration_sec": duration,
+                        "width": 1920,
+                        "height": 1080,
+                        "split": split_name,
+                        "split_version": "v1.0-official",
+                        "license_id": "CC-BY-NC-4.0",
+                        "qc_status": qc_status,
+                        "qc_flags": qc_flags,
+                        "checksum": "NOT_CALCULATED_REMOTE",
+                    }
+                )
 
-                split_rows.append({
-                    "sample_id": sample_id,
-                    "source_sample_id": sentence_name,
-                    "signer_id": signer_id,
-                    "session_id": video_id,
-                    "split": split_name,
-                    "split_version": "v1.0-official",
-                    "rationale": "Official How2Sign topic/video partition (inherits How2 speech splits; signer overlap present)"
-                })
+                split_rows.append(
+                    {
+                        "sample_id": sample_id,
+                        "source_sample_id": sentence_name,
+                        "signer_id": signer_id,
+                        "session_id": video_id,
+                        "split": split_name,
+                        "split_version": "v1.0-official",
+                        "rationale": "Official How2Sign topic/video partition (inherits How2 speech splits; signer overlap present)",
+                    }
+                )
 
     # Write canonical metadata
     with open(output_meta_path, mode="w", encoding="utf-8", newline="") as f:
@@ -134,13 +138,30 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
 
     # Write split manifest
     with open(output_split_path, mode="w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["sample_id", "source_sample_id", "signer_id", "session_id", "split", "split_version", "rationale"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "sample_id",
+                "source_sample_id",
+                "signer_id",
+                "session_id",
+                "split",
+                "split_version",
+                "rationale",
+            ],
+        )
         writer.writeheader()
         writer.writerows(split_rows)
     print(f"Wrote {len(split_rows)} How2Sign split rows to {output_split_path}")
 
 
-def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, output_split_indep_path, output_sentences_path):
+def process_arabsign(
+    extracted_dir,
+    output_meta_path,
+    output_split_dep_path,
+    output_split_indep_path,
+    output_sentences_path,
+):
     print("Processing ArabSign...")
     data_dir = os.path.join(extracted_dir, "ArabSign-EncoderDec", "EncoderDec", "data")
     gt_path = os.path.join(data_dir, "groundTruth.txt")
@@ -148,7 +169,7 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
     # Load 50 ground truth sentences
     gt_sentences = {}
     if os.path.exists(gt_path):
-        with open(gt_path, mode="r", encoding="utf-8", errors="ignore") as f:
+        with open(gt_path, encoding="utf-8", errors="ignore") as f:
             for idx, line in enumerate(f, 1):
                 clean_line = line.strip()
                 if clean_line:
@@ -158,11 +179,31 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
     sentence_info = {
         1: ("In the name of Allah", "Religion", "اسم الله"),
         2: ("Praise be to Allah", "Religion", "الحمد الله"),
-        3: ("All Arab Deaf and Hearing people", "Deaf Culture", "جميع الصم العرب  السامع"),
-        4: ("Peace be upon you, and Allah's mercy and blessings", "Greeting", "السلام عليكم رحمة الله بركة"),
-        5: ("Today I present to you another program", "Presentation", "اليوم اقدم انتم برنامج اخر"),
-        6: ("Subject of studying Arabic Sign Language", "Education", "موضوع دراسة لغة الاشارة العربية"),
-        7: ("Today's words are varied in religion", "Religion", "كلمات اليوم متفرقة في الدين"),
+        3: (
+            "All Arab Deaf and Hearing people",
+            "Deaf Culture",
+            "جميع الصم العرب  السامع",
+        ),
+        4: (
+            "Peace be upon you, and Allah's mercy and blessings",
+            "Greeting",
+            "السلام عليكم رحمة الله بركة",
+        ),
+        5: (
+            "Today I present to you another program",
+            "Presentation",
+            "اليوم اقدم انتم برنامج اخر",
+        ),
+        6: (
+            "Subject of studying Arabic Sign Language",
+            "Education",
+            "موضوع دراسة لغة الاشارة العربية",
+        ),
+        7: (
+            "Today's words are varied in religion",
+            "Religion",
+            "كلمات اليوم متفرقة في الدين",
+        ),
         8: ("Also ordinary words", "General", "ايضا كلمات عادية"),
         9: ("No partners with Allah", "Religion", "لا شرك الله"),
         10: ("Allah is the Greatest", "Religion", "الله اكبر"),
@@ -179,18 +220,42 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
         21: ("Allah created people for worship", "Religion", "الله خلق الناس عبادة"),
         22: ("Thank you", "Social", "شكرا انتم"),
         23: ("You are always welcome", "Social", "ترحيب انتم دائما"),
-        24: ("Also wish his sign is cooperation to you", "Deaf Culture", "ايضا تمني اشارة-هو التعاون لكم"),
-        25: ("Teaching sign language with gestures/mimics", "Education", "تعليم لغة الاشارة مع الامائيات"),
+        24: (
+            "Also wish his sign is cooperation to you",
+            "Deaf Culture",
+            "ايضا تمني اشارة-هو التعاون لكم",
+        ),
+        25: (
+            "Teaching sign language with gestures/mimics",
+            "Education",
+            "تعليم لغة الاشارة مع الامائيات",
+        ),
         26: ("I love learning sign language", "Education", "انا حب تعليم لغة الاشارة"),
         27: ("I travel", "Daily Life", "انا سفر"),
         28: ("Where is Saudi Arabia?", "Geography", "اين السعودية"),
         29: ("Tomorrow there might be an exam", "Education", "غدا احتمال في امتحان"),
-        30: ("The body interacts with the word", "Sign Linguistics", "الجسم تفاعل مع الكلمة"),
-        31: ("Deaf wish their sign is for all hearing", "Deaf Culture", "الصم تمني اشارة-هم جميع السامع"),
-        32: ("Interact with the deaf, communicate", "Deaf Culture", "تفاعل مع الصم تواصل"),
+        30: (
+            "The body interacts with the word",
+            "Sign Linguistics",
+            "الجسم تفاعل مع الكلمة",
+        ),
+        31: (
+            "Deaf wish their sign is for all hearing",
+            "Deaf Culture",
+            "الصم تمني اشارة-هم جميع السامع",
+        ),
+        32: (
+            "Interact with the deaf, communicate",
+            "Deaf Culture",
+            "تفاعل مع الصم تواصل",
+        ),
         33: ("Body interacts with...", "Sign Linguistics", "تفاعل الجسم مع"),
         34: ("Here we conclude / that is enough", "Social", "هنا نكتفي"),
-        35: ("May Allah bring meeting with you", "Social / Religious", "الله لقاء انتم"),
+        35: (
+            "May Allah bring meeting with you",
+            "Social / Religious",
+            "الله لقاء انتم",
+        ),
         36: ("May Allah accept the work/deeds", "Religion", "الله قبول عمل"),
         37: ("Wish from Allah benefit", "Religion", "تمني الله فائدة"),
         38: ("We and you all", "Social", "نحن انتم جميع"),
@@ -202,10 +267,14 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
         44: ("Day of Resurrection", "Religion", "يوم القيامة"),
         45: ("The five prayers", "Religion", "الصلة الخمس"),
         46: ("Friday sermon", "Religion", "خطبة الجمعة"),
-        47: ("Tomorrow meeting, in the name of Allah", "Social / Religious", "لقاء غدا اسم الله"),
+        47: (
+            "Tomorrow meeting, in the name of Allah",
+            "Social / Religious",
+            "لقاء غدا اسم الله",
+        ),
         48: ("Continuance to you / carry on", "Social", "استمرار انتم"),
         49: ("Allah knows best", "Religion", "الله اعلم"),
-        50: ("Acquisition of sign language", "Education", "اكتساب لغة الاشارة")
+        50: ("Acquisition of sign language", "Education", "اكتساب لغة الاشارة"),
     }
 
     # Write arabsign_sentences_mapping.csv
@@ -213,25 +282,41 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
     for s_id in range(1, 51):
         gt_text = gt_sentences.get(s_id, "")
         info = sentence_info.get(s_id, ("Unknown", "General", gt_text))
-        sentence_rows.append({
-            "sentence_id": s_id,
-            "arsl_gloss_structure": gt_text,
-            "spoken_arabic_standard": info[2],
-            "english_translation": info[0],
-            "domain_category": info[1],
-            "sign_count": len(gt_text.split()),
-            "source_origin": "KFUPM / Hamzah Luqman (2023) - Saudi/Pan-Arab ArSL"
-        })
+        sentence_rows.append(
+            {
+                "sentence_id": s_id,
+                "arsl_gloss_structure": gt_text,
+                "spoken_arabic_standard": info[2],
+                "english_translation": info[0],
+                "domain_category": info[1],
+                "sign_count": len(gt_text.split()),
+                "source_origin": "KFUPM / Hamzah Luqman (2023) - Saudi/Pan-Arab ArSL",
+            }
+        )
 
     with open(output_sentences_path, mode="w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["sentence_id", "arsl_gloss_structure", "spoken_arabic_standard", "english_translation", "domain_category", "sign_count", "source_origin"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "sentence_id",
+                "arsl_gloss_structure",
+                "spoken_arabic_standard",
+                "english_translation",
+                "domain_category",
+                "sign_count",
+                "source_origin",
+            ],
+        )
         writer.writeheader()
         writer.writerows(sentence_rows)
     print(f"Wrote 50 ArabSign sentence mappings to {output_sentences_path}")
 
     # Process all sample CSVs
-    all_files = sorted(glob.glob(os.path.join(data_dir, "*_train.csv")) + glob.glob(os.path.join(data_dir, "*_test.csv")))
-    
+    all_files = sorted(
+        glob.glob(os.path.join(data_dir, "*_train.csv"))
+        + glob.glob(os.path.join(data_dir, "*_test.csv"))
+    )
+
     unique_samples = {}
     signer_dep_splits = []
 
@@ -240,7 +325,7 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
         fold_id = fname.split("_")[0]  # '01' to '06'
         sub_split = fname.split("_")[1].replace(".csv", "")  # 'train' or 'test'
 
-        with open(fpath, mode="r", encoding="utf-8", errors="ignore") as f:
+        with open(fpath, encoding="utf-8", errors="ignore") as f:
             reader = csv.reader(f)
             for row in reader:
                 if len(row) < 7:
@@ -249,7 +334,7 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
                 sentence_num = int(row[1].strip())
                 orig_path = row[2].strip()
                 max_len = row[3].strip()
-                class_id = row[4].strip()
+                _class_id = row[4].strip()
                 arsl_gloss = row[5].strip()
                 arabic_text = row[6].strip()
 
@@ -273,7 +358,9 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
                         "session_id": f"signer_{signer_id}_sess",
                         "relative_video_path": f"videos/arabsign/color/{signer_id}/{sample_basename}.mp4",
                         "fps": 30.0,
-                        "duration_sec": round(float(max_len) / 30.0, 3) if max_len.isdigit() else 2.67,
+                        "duration_sec": round(float(max_len) / 30.0, 3)
+                        if max_len.isdigit()
+                        else 2.67,
                         "width": 1920,
                         "height": 1080,
                         "split": "all_pool",  # Specific split assigned in manifests
@@ -281,17 +368,19 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
                         "license_id": "Non-Commercial-Academic-KFUPM",
                         "qc_status": "PASS",
                         "qc_flags": "DIALECT_NOT_ESL",  # Critical reminder: ArSL is NOT ESL
-                        "checksum": "NOT_CALCULATED_REMOTE"
+                        "checksum": "NOT_CALCULATED_REMOTE",
                     }
 
                 # Record signer-dependent fold split
-                signer_dep_splits.append({
-                    "sample_id": sample_id,
-                    "fold_signer": fold_id,
-                    "split": sub_split,
-                    "split_version": f"v1.0-fold{fold_id}",
-                    "rationale": f"Author signer-dependent split for signer {fold_id} (train={orig_split})"
-                })
+                signer_dep_splits.append(
+                    {
+                        "sample_id": sample_id,
+                        "fold_signer": fold_id,
+                        "split": sub_split,
+                        "split_version": f"v1.0-fold{fold_id}",
+                        "rationale": f"Author signer-dependent split for signer {fold_id} (train={orig_split})",
+                    }
+                )
 
     # Build canonical rows
     canonical_rows = list(unique_samples.values())
@@ -305,10 +394,21 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
 
     # Write signer-dependent split manifest
     with open(output_split_dep_path, mode="w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["sample_id", "fold_signer", "split", "split_version", "rationale"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "sample_id",
+                "fold_signer",
+                "split",
+                "split_version",
+                "rationale",
+            ],
+        )
         writer.writeheader()
         writer.writerows(signer_dep_splits)
-    print(f"Wrote {len(signer_dep_splits)} ArabSign signer-dependent split rows to {output_split_dep_path}")
+    print(
+        f"Wrote {len(signer_dep_splits)} ArabSign signer-dependent split rows to {output_split_dep_path}"
+    )
 
     # Generate SIGNOVA Group-Aware Signer-Independent Split:
     # 6 signers: Signers 01, 02, 03, 04 -> TRAIN (~67.7%)
@@ -326,20 +426,34 @@ def process_arabsign(extracted_dir, output_meta_path, output_split_dep_path, out
         else:
             part = "train"
 
-        signer_indep_splits.append({
-            "sample_id": s["sample_id"],
-            "source_sample_id": s["source_sample_id"],
-            "signer_id": sid,
-            "split": part,
-            "split_version": "v1.0-signer-independent",
-            "rationale": f"Signer-independent partition (Signers 01-04 train, 05 val, 06 test) preventing signer leakage"
-        })
+        signer_indep_splits.append(
+            {
+                "sample_id": s["sample_id"],
+                "source_sample_id": s["source_sample_id"],
+                "signer_id": sid,
+                "split": part,
+                "split_version": "v1.0-signer-independent",
+                "rationale": "Signer-independent partition (Signers 01-04 train, 05 val, 06 test) preventing signer leakage",
+            }
+        )
 
     with open(output_split_indep_path, mode="w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["sample_id", "source_sample_id", "signer_id", "split", "split_version", "rationale"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "sample_id",
+                "source_sample_id",
+                "signer_id",
+                "split",
+                "split_version",
+                "rationale",
+            ],
+        )
         writer.writeheader()
         writer.writerows(signer_indep_splits)
-    print(f"Wrote {len(signer_indep_splits)} ArabSign signer-independent split rows to {output_split_indep_path}")
+    print(
+        f"Wrote {len(signer_indep_splits)} ArabSign signer-independent split rows to {output_split_indep_path}"
+    )
 
 
 def main():

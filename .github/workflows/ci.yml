@@ -1,0 +1,166 @@
+name: SIGNOVA CI/CD — Quality, Security & Test Suite
+
+on:
+  push:
+    branches:
+      - main
+      - karsl
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # =========================================================================
+  # 1. Code Quality & Linting
+  # =========================================================================
+  code-quality:
+    name: 🎨 Lint & Formatting (Ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Linting Tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff>=0.4.0
+
+      - name: Verify Code Style (Ruff Check)
+        run: python -m ruff check .
+
+      - name: Verify Code Formatting (Ruff Format)
+        run: python -m ruff format --check .
+
+  # =========================================================================
+  # 2. Security & Vulnerability Analysis
+  # =========================================================================
+  security-audit:
+    name: 🛡️ Security Audit (Bandit)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Security Tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install bandit>=1.7.0 pyyaml>=6.0.0
+
+      - name: Run Bandit Security Scan
+        run: python -m bandit -r scripts karsl/scripts -c pyproject.toml
+
+  # =========================================================================
+  # 3. Domain Guardrails & Git Hygiene
+  # =========================================================================
+  domain-guardrails:
+    name: 🔍 Domain Guardrails & Hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run SIGNOVA Quality & Linguistic Guardrails
+        run: python scripts/ci/check_project_quality.py
+
+  # =========================================================================
+  # 4. Automated Test Suite & Dataset Integrity
+  # =========================================================================
+  test-and-datasets:
+    name: 🧪 Automated Tests & Dataset Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Project Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Create Reports Directory
+        run: mkdir -p reports
+
+      - name: Run Unified Pytest Suite
+        run: python -m pytest --junitxml=reports/junit-results.xml
+
+      - name: Validate KArSL Dataset Manifests Directly
+        working-directory: karsl
+        run: python -m scripts.validate_dataset
+
+      - name: Verify P2 Summary Exporter CLI
+        run: python scripts/export_p2_summary.py
+
+      - name: Upload Test Results Artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results-junit
+          path: reports/junit-results.xml
+          retention-days: 14
+
+  # =========================================================================
+  # 5. Pipeline Summary & Status Gate
+  # =========================================================================
+  ci-status-gate:
+    name: 🏁 CI Pipeline Gate
+    needs: [code-quality, security-audit, domain-guardrails, test-and-datasets]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate Pipeline Results & Publish Step Summary
+        run: |
+          STATUS_QUALITY="${{ needs.code-quality.result }}"
+          STATUS_SECURITY="${{ needs.security-audit.result }}"
+          STATUS_GUARDRAILS="${{ needs.domain-guardrails.result }}"
+          STATUS_TESTS="${{ needs.test-and-datasets.result }}"
+
+          echo "## 📊 SIGNOVA CI/CD Quality Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check / Gate | Status | Description |" >> $GITHUB_STEP_SUMMARY
+          echo "| :--- | :--- | :--- |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Code Quality & Formatting** | $STATUS_QUALITY | Ruff style, imports, and PEP8 formatting |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Security Audit** | $STATUS_SECURITY | Bandit vulnerability analysis |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Domain Guardrails** | $STATUS_GUARDRAILS | ADR-001 ArSL!=ESL rules, notebook JSON, secrets & file hygiene |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Test Suite & Datasets** | $STATUS_TESTS | Pytest unit suite, How2Sign, ArabSign, and KArSL validation |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "$STATUS_QUALITY" = "success" ] && [ "$STATUS_SECURITY" = "success" ] && [ "$STATUS_GUARDRAILS" = "success" ] && [ "$STATUS_TESTS" = "success" ]; then
+            echo "🎉 **ALL CI/CD GATES PASSED SUCCESSFULLY! Ready for review / merge.**" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          else
+            echo "❌ **ONE OR MORE CI/CD GATES FAILED. Please check the logs above.**" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi

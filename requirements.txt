@@ -1,0 +1,5 @@
+# SIGNOVA Core Runtime Dependencies
+# Python >= 3.12 required
+
+pandas>=2.2.0
+numpy>=1.26.0

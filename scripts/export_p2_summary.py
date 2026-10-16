@@ -5,9 +5,9 @@ Displays high-level statistical summaries and distributions of:
   - ArabSign
 """
 
+import csv
 import os
 import sys
-import csv
 from collections import Counter
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -18,8 +18,15 @@ SPLITS_DIR = os.path.join(ROOT_DIR, "data", "splits")
 
 
 def print_table(title, headers, rows):
-    print(f"\n{'='*70}\n {title}\n{'='*70}")
-    fmt = " | ".join([f"{{:<{w}}}" for w in [max(len(str(r[i])) for r in [headers] + rows) + 2 for i in range(len(headers))]])
+    print(f"\n{'=' * 70}\n {title}\n{'=' * 70}")
+    fmt = " | ".join(
+        [
+            f"{{:<{w}}}"
+            for w in [
+                max(len(str(r[i])) for r in [headers] + rows) + 2 for i in range(len(headers))
+            ]
+        ]
+    )
     print(fmt.format(*headers))
     print("-" * 70)
     for r in rows:
@@ -28,7 +35,7 @@ def print_table(title, headers, rows):
 
 def summarize_how2sign():
     csv_path = os.path.join(METADATA_DIR, "how2sign_canonical_metadata.csv")
-    with open(csv_path, "r", encoding="utf-8") as f:
+    with open(csv_path, encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
     splits = Counter(r["split"] for r in reader)
@@ -37,11 +44,17 @@ def summarize_how2sign():
 
     rows = [
         ["Total Sentences", len(reader)],
-        ["Train Split", f"{splits['train']} ({splits['train']/len(reader)*100:.1f}%)"],
-        ["Val Split", f"{splits['val']} ({splits['val']/len(reader)*100:.1f}%)"],
-        ["Test Split", f"{splits['test']} ({splits['test']/len(reader)*100:.1f}%)"],
+        [
+            "Train Split",
+            f"{splits['train']} ({splits['train'] / len(reader) * 100:.1f}%)",
+        ],
+        ["Val Split", f"{splits['val']} ({splits['val'] / len(reader) * 100:.1f}%)"],
+        ["Test Split", f"{splits['test']} ({splits['test'] / len(reader) * 100:.1f}%)"],
         ["Unique Signers", len(signers)],
-        ["Avg Duration (sec)", f"{sum(durations)/len(durations):.2f}" if durations else "N/A"],
+        [
+            "Avg Duration (sec)",
+            f"{sum(durations) / len(durations):.2f}" if durations else "N/A",
+        ],
         ["Max Duration (sec)", f"{max(durations):.2f}" if durations else "N/A"],
         ["Min Duration (sec)", f"{min(durations):.2f}" if durations else "N/A"],
     ]
@@ -50,12 +63,12 @@ def summarize_how2sign():
 
 def summarize_arabsign():
     csv_path = os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv")
-    with open(csv_path, "r", encoding="utf-8") as f:
+    with open(csv_path, encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
     signers = Counter(r["signer_id"] for r in reader)
     indep_path = os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv")
-    with open(indep_path, "r", encoding="utf-8") as f:
+    with open(indep_path, encoding="utf-8") as f:
         indep_reader = list(csv.DictReader(f))
     indep_splits = Counter(r["split"] for r in indep_reader)
 

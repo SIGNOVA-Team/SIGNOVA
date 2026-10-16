@@ -1,9 +1,11 @@
 # SIGNOVA — Sign Language & Multimodal Assistive Communication
 
+[![CI/CD Pipeline](https://github.com/SIGNOVA-Team/SIGNOVA/actions/workflows/ci.yml/badge.svg)](https://github.com/SIGNOVA-Team/SIGNOVA/actions/workflows/ci.yml)
 [![CI - Test Suite](https://img.shields.io/badge/tests-8%20passed-brightgreen.svg)](tests/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Security: Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 [![License: CC-BY-NC-4.0](https://img.shields.io/badge/License-CC--BY--NC--4.0-lightgrey.svg)](LICENSE)
-[![Track: Datasets](https://img.shields.io/badge/Datasets-Verified-success.svg)](data/)
 
 > **SIGNOVA** is an assistive communication system bridging sign language, speech, and text for Egyptian Arabic and English users.
 > **Mission Principle:** *Egypt-First*. Egyptian Sign Language (ESL) and Egyptian Arabic are the primary communication pair. ASL and English are secondary tracks.
@@ -81,35 +83,62 @@ SIGNOVA/
 │   ├── scripts/                             # Validation scripts
 │   └── tests/                               # Automated integrity tests
 ├── scripts/
+│   ├── ci/
+│   │   └── check_project_quality.py         # Automated project quality, hygiene & ADR guardrails
 │   ├── data_pipeline/
 │   │   ├── download_p2_metadata.py          # Metadata & code downloader
 │   │   └── generate_canonical_p2_metadata.py# Canonical parser & split builder
 │   └── export_p2_summary.py                 # Summary statistics printer
-└── tests/
-    └── test_p2_datasets.py                  # Automated test suite (schemas, zero leakage)
+├── tests/
+│   └── test_p2_datasets.py                  # Automated test suite (schemas, zero leakage)
+├── .github/workflows/ci.yml                 # Production-grade GitHub Actions CI/CD Pipeline
+├── pyproject.toml                           # Modern project config (Ruff, Pytest, Bandit)
+├── requirements.txt                         # Runtime dependencies
+└── requirements-dev.txt                     # Development, QA & CI dependencies
 ```
 
 ---
 
-## 4. Quickstart & Verification
+## 4. Quickstart, Quality Checks & Verification
 
 ### Prerequisites
 - Python 3.12+
-- `pip install pytest pandas` (optional: `torch` for ML baselines)
+```bash
+pip install -r requirements-dev.txt
+```
 
-### Running Automated Tests
-Run the entire test suite across all verified datasets:
+### 1. Automated Test Suite
+Run the unified test suite across all verified datasets (P2 and KArSL):
 ```bash
 python -m pytest -v
 ```
 
-### Displaying Dataset Summaries
+### 2. Project Quality & Domain Guardrails Check
+Run the comprehensive quality gate (checks secrets, forbidden binary files, notebook JSON validity, ADR-001 linguistic rules):
+```bash
+python scripts/ci/check_project_quality.py
+```
+
+### 3. Code Quality, Formatting & Security Audit
+Run Ruff linting, formatting check, and Bandit security scans:
+```bash
+# Code style and import sorting
+python -m ruff check .
+
+# Code formatting
+python -m ruff format --check .
+
+# Security scan
+python -m bandit -r scripts karsl/scripts -c pyproject.toml
+```
+
+### 4. Displaying Dataset Summaries
 Print the verified dataset distributions and split metrics:
 ```bash
 python scripts/export_p2_summary.py
 ```
 
-### Re-generating Canonical Metadata
+### 5. Re-generating Canonical Metadata
 To re-process raw annotations into canonical manifests:
 ```bash
 python scripts/data_pipeline/generate_canonical_p2_metadata.py

@@ -1,0 +1,15 @@
+# SIGNOVA Development & CI Dependencies
+-r requirements.txt
+
+# Testing & Assertions
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
+# Code Quality & Formatting
+ruff>=0.4.0
+
+# Security Analysis
+bandit>=1.7.0
+
+# Configuration & Utilities
+pyyaml>=6.0.0
