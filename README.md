@@ -98,6 +98,11 @@ SIGNOVA/
 │   ├── notebooks/                           # Verification notebooks (inventory, QC, keypoints)
 │   ├── scripts/                             # Validation scripts
 │   └── tests/                               # Automated integrity tests
+├── wlasl/                                   # WLASL-2000 dataset preprocessing & link checking
+│   ├── README.md                            # WLASL overview, link-check metrics, and usage
+│   ├── data/                                # Filtered splits, labels, and URL status
+│   ├── docs/                                # Detailed link verification report
+│   └── scripts/                             # Metadata cleaner, link checker & keypoints extractor
 ├── scripts/
 │   ├── ci/
 │   │   └── check_project_quality.py         # Automated project quality, hygiene & ADR guardrails

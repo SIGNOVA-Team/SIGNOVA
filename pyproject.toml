@@ -57,7 +57,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["scripts", "karsl"]
+known-first-party = ["scripts", "karsl", "wlasl"]
 
 [tool.ruff.format]
 quote-style = "double"

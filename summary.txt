@@ -1,7 +1,0 @@
-rows total: 20976
-link status counts: {'ok': 13785, 'dead': 7191}
-kept (ok + unchecked): 13785   removed (dead): 7191
-kept per split: {'train': 9211, 'val': 2456, 'test': 2118}
-glosses left with 0 examples: 0
-glosses present in val: 1697 / 2000
-glosses present in test: 1649 / 2000
