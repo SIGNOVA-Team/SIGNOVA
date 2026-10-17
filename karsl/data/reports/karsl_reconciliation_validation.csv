@@ -1,0 +1,7 @@
+check,actual,expected,status
+original_label_discrepancies,33,33,PASS
+documented_discrepancy_identity,33,33,PASS
+original_sign_5_s01_count,50,50,PASS
+pose_sign_5_s01_count,83,83,PASS
+pose_sign_6_s01_count,17,17,PASS
+extra_pose_candidate_present,1,1,PASS

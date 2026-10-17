@@ -1,73 +1,47 @@
-# KArSL-502 Dataset Engineering
+# SIGNOVA — KArSL-502 Data Engineering
 
-## Project
-SIGNOVA - Arabic Sign Language Dataset Engineering
+This folder contains the KArSL metadata, QC and evaluation manifests, third-party Pose manifest, validation scripts, recorded audits, and a visual review register. Contact sheet images are stored separately on the project owner's Google Drive. It does **not** contain the original `.7z` videos, the bulk Kaggle `.pose` files, or the NPY keypoint arrays.
 
-## Raw Video Benchmark
-- 75,514 original metadata records
-- 75,095 benchmark samples
-- 500 classes
-- 3 signers
-- 3 signer-independent evaluation folds
+## At a glance
 
-## Keypoints Benchmark
-- 13,761 matched Kaggle samples
-- 112 available classes
-- 8,793 samples covering 62 common classes
-- Left hand: 63 features
-- Pose: 99 features
-- Right hand: 63 features
-- Total: 225 features per frame
-- Variable sequence lengths
-- No face keypoints
+| Data | Coverage | Qualification |
+| --- | ---: | --- |
+| Original video inventory | 75,514 videos; 502 classes; 3 signers; 30 archives | Manifest only; source videos are separate |
+| QC | 75,296 PASS, 150 EXCLUDE, 68 REVIEW | REVIEW cases await expert confirmation |
+| PASS-only benchmark | 75,095 videos; 500 classes; 3 signer-independent folds | Excludes classes 27 and 28 |
+| External Kaggle Pose | 75,515 entries; 502 classes; 3 signers | 502 *sampled* `.pose` files structurally checked |
+| Video-to-Pose mapping | 75,514 candidate pairs | **Not identity verified** |
+| Contact sheets | 502 generated externally | Images are not published in this repository; semantic labels remain unreviewed |
+| CSV streaming stress test | 5/5 PASS, 678,373 rows | Does not benchmark archive decompression or MediaPipe |
+| Saved-artifact reproducibility audit | 14/14 PASS | Does not reproduce extraction from raw videos |
 
-## Quality Control
-- 8,793 keypoint samples passed structural validation
-- 1,280 samples contain one or more all-zero groups
-- Zero-group interpretation remains pending
+## Entry points
 
-## Repository Structure
-- data/metadata: Dataset metadata and label mappings
-- data/reports: QC and validation reports
-- data/splits: Dataset split manifests
-- docs: Dataset card and handoff documentation
-- notebooks: Read-only verification notebooks
-- scripts: Dataset validation script
-- tests: Automated validation tests
+- [Handoff](docs/karsl_handoff.md): what the ML team can use and what is pending.
+- [Dataset card](docs/karsl_dataset_card.md): provenance, limits, and coverage.
+- [Video metadata](data/metadata/karsl_metadata.csv) and [signer-independent splits](data/splits/karsl_split_manifest.csv).
+- [Pose manifest](data/pose/karsl_pose_manifest.csv) and [candidate mapping](data/pose/karsl_video_pose_candidate_mapping.csv).
+- [Visual review register](data/reports/karsl_502_class_visual_review_register.csv).
+- `notebooks/01_KArSL_Inventory.ipynb`, `02_KArSL_QC_and_Splits.ipynb`, `03_KArSL_Keypoints_Audit.ipynb`: **read-only packaged artifact checks**.
+- `notebooks/original_pipeline/`: preserved historical Colab code, **not** guaranteed end-to-end reproducible without external files/dependencies.
 
-## Validation
-Run from the karsl directory:
+## Validate
 
-    pip install pandas numpy
-    python -m scripts.validate_dataset
-    python -m unittest discover -s tests -v
+From `karsl/` after installing Python, pandas and numpy:
 
-Or run from the repository root:
+```bash
+python -m scripts.validate_dataset
+python -m unittest discover -s tests -v
+```
 
-    python -m pytest karsl/tests/test_dataset.py -v
+In the verification notebooks, set `SIGNOVA_KARSL_ROOT` to this folder when running outside it.
 
+## Dataset sources
 
-## Data Access
-Raw video archives and NPY keypoints are not included.
-Raw videos originate from the official KArSL-502 dataset.
-Available keypoints originate from Kaggle:
-https://www.kaggle.com/datasets/yousefdotpy/blablabla
+- Original KArSL: https://hamzah-luqman.github.io/KArSL/
+- External Pose files: https://www.kaggle.com/datasets/tfmohamedyahia/kars502-pose-75
+- Separate NPY keypoint subset: see `data/metadata/dataset_sources.csv` for its recorded provenance; no verified public download URL is asserted here.
 
-Notebook paths can be configured with:
-- SIGNOVA_KARSL_ROOT
-- KARSL_ARCHIVE_ROOT
+## Release limitations
 
-The notebooks verify previously generated outputs.
-They do not recreate the entire dataset pipeline.
-
-## Limitations
-- KArSL is not verified as Egyptian Sign Language.
-- The raw benchmark and keypoint benchmark have different coverage.
-- Each keypoint evaluation fold trains on one signer.
-- Source usage rights remain unresolved.
-- Kaggle keypoint redistribution rights are unverified.
-- Expert label review and project approval remain pending.
-
-## Status
-Dataset integrity and structural verification completed.
-No model accuracy or production readiness is claimed.
+KArSL is Arabic Sign Language; **it is not established to be Egyptian Sign Language**. The Kaggle `.pose` dataset is an independent third-party representation. The video-to-Pose links are candidates inferred from naming and sequence ordering, not confirmed matching identities. Of 12 diagnostic pairs, 11 are unverified and one has an unresolved coordinate alignment mismatch. No accuracy or deployment readiness is claimed. Expert label review, source licensing, and image/derivative redistribution permission remain pending. The public GitHub release of contact sheets should wait for permission confirmation.

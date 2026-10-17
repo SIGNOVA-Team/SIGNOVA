@@ -1,0 +1,3 @@
+dataset_name,source_url,valid_url,http_status,access_status,direct_sample_access_verified,license_approved
+KArSL-502,https://hamzah-luqman.github.io/KArSL/,True,200,PAGE_REACHABLE,False,False
+KArSL-502 Pose (MediaPipe),https://www.kaggle.com/datasets/tfmohamedyahia/kars502-pose-75,True,200,PAGE_REACHABLE,False,False

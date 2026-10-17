@@ -1,0 +1,6 @@
+dataset,rows,chunks,chunk_size,columns,elapsed_seconds,rows_per_second,peak_python_alloc_mb,null_cells,status,expected_rows,row_count_match
+video_metadata,75514,8,10000,25,3.745,20163.95,15.77,147408,PASS,75514,True
+video_splits,225285,23,10000,12,2.894,77841.13,7.58,0,PASS,225285,True
+pose_manifest,75515,8,10000,17,0.947,79703.24,8.0,0,PASS,75515,True
+pose_splits,226545,23,10000,6,1.627,139260.05,4.18,0,PASS,226545,True
+video_pose_mapping,75514,8,10000,20,1.797,42013.37,13.0,0,PASS,75514,True
