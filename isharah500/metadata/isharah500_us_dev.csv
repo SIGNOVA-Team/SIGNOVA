@@ -1,0 +1,751 @@
+﻿sample_id,gloss,text,keypoints_path
+00_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/00_0401.npy
+00_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/00_0402.npy
+00_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/00_0403.npy
+00_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/00_0404.npy
+00_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/00_0405.npy
+00_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/00_0406.npy
+00_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/00_0407.npy
+00_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/00_0408.npy
+00_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/00_0409.npy
+00_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/00_0410.npy
+00_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/00_0411.npy
+00_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/00_0412.npy
+00_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/00_0413.npy
+00_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/00_0414.npy
+00_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/00_0415.npy
+00_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/00_0416.npy
+00_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/00_0417.npy
+00_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/00_0418.npy
+00_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/00_0419.npy
+00_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/00_0420.npy
+00_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/00_0421.npy
+00_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/00_0422.npy
+00_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/00_0423.npy
+00_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/00_0424.npy
+00_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/00_0425.npy
+00_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/00_0426.npy
+00_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/00_0427.npy
+00_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/00_0428.npy
+00_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/00_0429.npy
+00_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/00_0430.npy
+00_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/00_0431.npy
+00_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/00_0432.npy
+00_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/00_0433.npy
+00_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/00_0434.npy
+00_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/00_0435.npy
+00_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/00_0436.npy
+00_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/00_0437.npy
+00_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/00_0438.npy
+00_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/00_0439.npy
+00_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/00_0440.npy
+00_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/00_0441.npy
+00_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/00_0442.npy
+00_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/00_0443.npy
+00_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/00_0444.npy
+00_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/00_0445.npy
+00_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/00_0446.npy
+00_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/00_0447.npy
+00_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/00_0448.npy
+00_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/00_0449.npy
+00_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/00_0450.npy
+01_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/01_0401.npy
+01_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/01_0402.npy
+01_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/01_0403.npy
+01_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/01_0404.npy
+01_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/01_0405.npy
+01_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/01_0406.npy
+01_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/01_0407.npy
+01_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/01_0408.npy
+01_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/01_0409.npy
+01_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/01_0410.npy
+01_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/01_0411.npy
+01_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/01_0412.npy
+01_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/01_0413.npy
+01_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/01_0414.npy
+01_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/01_0415.npy
+01_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/01_0416.npy
+01_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/01_0417.npy
+01_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/01_0418.npy
+01_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/01_0419.npy
+01_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/01_0420.npy
+01_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/01_0421.npy
+01_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/01_0422.npy
+01_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/01_0423.npy
+01_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/01_0424.npy
+01_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/01_0425.npy
+01_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/01_0426.npy
+01_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/01_0427.npy
+01_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/01_0428.npy
+01_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/01_0429.npy
+01_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/01_0430.npy
+01_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/01_0431.npy
+01_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/01_0432.npy
+01_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/01_0433.npy
+01_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/01_0434.npy
+01_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/01_0435.npy
+01_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/01_0436.npy
+01_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/01_0437.npy
+01_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/01_0438.npy
+01_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/01_0439.npy
+01_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/01_0440.npy
+01_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/01_0441.npy
+01_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/01_0442.npy
+01_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/01_0443.npy
+01_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/01_0444.npy
+01_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/01_0445.npy
+01_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/01_0446.npy
+01_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/01_0447.npy
+01_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/01_0448.npy
+01_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/01_0449.npy
+01_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/01_0450.npy
+02_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0401.npy
+02_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0402.npy
+02_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0403.npy
+02_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0404.npy
+02_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0405.npy
+02_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0406.npy
+02_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0407.npy
+02_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/dev/02_0408.npy
+02_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0409.npy
+02_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0410.npy
+02_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0411.npy
+02_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0412.npy
+02_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0413.npy
+02_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0414.npy
+02_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0415.npy
+02_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0416.npy
+02_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/dev/02_0417.npy
+02_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0418.npy
+02_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0419.npy
+02_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0420.npy
+02_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0421.npy
+02_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0422.npy
+02_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0423.npy
+02_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0424.npy
+02_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0425.npy
+02_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0426.npy
+02_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0427.npy
+02_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0428.npy
+02_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0429.npy
+02_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0430.npy
+02_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0431.npy
+02_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0432.npy
+02_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0433.npy
+02_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0434.npy
+02_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0435.npy
+02_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0436.npy
+02_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0437.npy
+02_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0438.npy
+02_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0439.npy
+02_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0440.npy
+02_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0441.npy
+02_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0442.npy
+02_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/dev/02_0443.npy
+02_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0444.npy
+02_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0445.npy
+02_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0446.npy
+02_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0447.npy
+02_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0448.npy
+02_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0449.npy
+02_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0450.npy
+03_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/03_0401.npy
+03_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/03_0402.npy
+03_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/03_0403.npy
+03_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/03_0404.npy
+03_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/03_0405.npy
+03_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/03_0406.npy
+03_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/03_0407.npy
+03_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/03_0408.npy
+03_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/03_0409.npy
+03_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/03_0410.npy
+03_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/03_0411.npy
+03_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/03_0412.npy
+03_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/03_0413.npy
+03_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/03_0414.npy
+03_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/03_0415.npy
+03_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/03_0416.npy
+03_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/03_0417.npy
+03_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/03_0418.npy
+03_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/03_0419.npy
+03_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/03_0420.npy
+03_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/03_0421.npy
+03_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/03_0422.npy
+03_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/03_0423.npy
+03_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/03_0424.npy
+03_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/03_0425.npy
+03_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/03_0426.npy
+03_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/03_0427.npy
+03_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/03_0428.npy
+03_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/03_0429.npy
+03_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/03_0430.npy
+03_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/03_0431.npy
+03_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/03_0432.npy
+03_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/03_0433.npy
+03_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/03_0434.npy
+03_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/03_0435.npy
+03_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/03_0436.npy
+03_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/03_0437.npy
+03_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/03_0438.npy
+03_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/03_0439.npy
+03_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/03_0440.npy
+03_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/03_0441.npy
+03_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/03_0442.npy
+03_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/03_0443.npy
+03_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/03_0444.npy
+03_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/03_0445.npy
+03_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/03_0446.npy
+03_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/03_0447.npy
+03_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/03_0448.npy
+03_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/03_0449.npy
+03_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/03_0450.npy
+04_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/04_0401.npy
+04_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/04_0402.npy
+04_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/04_0403.npy
+04_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/04_0404.npy
+04_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/04_0405.npy
+04_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/04_0406.npy
+04_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/04_0407.npy
+04_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/04_0408.npy
+04_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/04_0409.npy
+04_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/04_0410.npy
+04_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/04_0411.npy
+04_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/04_0412.npy
+04_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/04_0413.npy
+04_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/04_0414.npy
+04_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/04_0415.npy
+04_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/04_0416.npy
+04_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/04_0417.npy
+04_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/04_0418.npy
+04_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/04_0419.npy
+04_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/04_0420.npy
+04_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/04_0421.npy
+04_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/04_0422.npy
+04_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/04_0423.npy
+04_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/04_0424.npy
+04_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/04_0425.npy
+04_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/04_0426.npy
+04_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/04_0427.npy
+04_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/04_0428.npy
+04_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/04_0429.npy
+04_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/04_0430.npy
+04_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/04_0431.npy
+04_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/04_0432.npy
+04_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/04_0433.npy
+04_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/04_0434.npy
+04_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/04_0435.npy
+04_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/04_0436.npy
+04_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/04_0437.npy
+04_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/04_0438.npy
+04_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/04_0439.npy
+04_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/04_0440.npy
+04_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/04_0441.npy
+04_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/04_0442.npy
+04_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/04_0443.npy
+04_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/04_0444.npy
+04_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/04_0445.npy
+04_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/04_0446.npy
+04_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/04_0447.npy
+04_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/04_0448.npy
+04_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/04_0449.npy
+04_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/04_0450.npy
+05_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/05_0401.npy
+05_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/05_0402.npy
+05_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/05_0403.npy
+05_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/05_0404.npy
+05_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/05_0405.npy
+05_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/05_0406.npy
+05_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/05_0407.npy
+05_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/05_0408.npy
+05_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/05_0409.npy
+05_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/05_0410.npy
+05_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/05_0411.npy
+05_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/05_0412.npy
+05_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/05_0413.npy
+05_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/05_0414.npy
+05_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/05_0415.npy
+05_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/05_0416.npy
+05_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/05_0417.npy
+05_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/05_0418.npy
+05_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/05_0419.npy
+05_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/05_0420.npy
+05_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/05_0421.npy
+05_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/05_0422.npy
+05_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/05_0423.npy
+05_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/05_0424.npy
+05_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/05_0425.npy
+05_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/05_0426.npy
+05_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/05_0427.npy
+05_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/05_0428.npy
+05_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/05_0429.npy
+05_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/05_0430.npy
+05_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/05_0431.npy
+05_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/05_0432.npy
+05_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/05_0433.npy
+05_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/05_0434.npy
+05_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/05_0435.npy
+05_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/05_0436.npy
+05_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/05_0437.npy
+05_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/05_0438.npy
+05_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/05_0439.npy
+05_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/05_0440.npy
+05_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/05_0441.npy
+05_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/05_0442.npy
+05_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/05_0443.npy
+05_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/05_0444.npy
+05_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/05_0445.npy
+05_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/05_0446.npy
+05_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/05_0447.npy
+05_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/05_0448.npy
+05_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/05_0449.npy
+05_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/05_0450.npy
+06_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/06_0401.npy
+06_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/06_0402.npy
+06_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/06_0403.npy
+06_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/06_0404.npy
+06_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/06_0405.npy
+06_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/06_0406.npy
+06_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/06_0407.npy
+06_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/06_0408.npy
+06_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/06_0409.npy
+06_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/06_0410.npy
+06_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/06_0411.npy
+06_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/06_0412.npy
+06_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/06_0413.npy
+06_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/06_0414.npy
+06_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/06_0415.npy
+06_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/06_0416.npy
+06_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/06_0417.npy
+06_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/06_0418.npy
+06_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/06_0419.npy
+06_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/06_0420.npy
+06_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/06_0421.npy
+06_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/06_0422.npy
+06_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/06_0423.npy
+06_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/06_0424.npy
+06_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/06_0425.npy
+06_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/06_0426.npy
+06_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/06_0427.npy
+06_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/06_0428.npy
+06_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/06_0429.npy
+06_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/06_0430.npy
+06_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/06_0431.npy
+06_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/06_0432.npy
+06_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/06_0433.npy
+06_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/06_0434.npy
+06_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/06_0435.npy
+06_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/06_0436.npy
+06_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/06_0437.npy
+06_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/06_0438.npy
+06_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/06_0439.npy
+06_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/06_0440.npy
+06_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/06_0441.npy
+06_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/06_0442.npy
+06_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/06_0443.npy
+06_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/06_0444.npy
+06_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/06_0445.npy
+06_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/06_0446.npy
+06_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/06_0447.npy
+06_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/06_0448.npy
+06_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/06_0449.npy
+06_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/06_0450.npy
+07_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/07_0401.npy
+07_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/07_0402.npy
+07_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/07_0403.npy
+07_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/07_0404.npy
+07_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/07_0405.npy
+07_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/07_0406.npy
+07_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/07_0407.npy
+07_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/07_0408.npy
+07_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/07_0409.npy
+07_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/07_0410.npy
+07_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/07_0411.npy
+07_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/07_0412.npy
+07_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/07_0413.npy
+07_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/07_0414.npy
+07_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/07_0415.npy
+07_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/07_0416.npy
+07_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/07_0417.npy
+07_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/07_0418.npy
+07_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/07_0419.npy
+07_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/07_0420.npy
+07_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/07_0421.npy
+07_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/07_0422.npy
+07_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/07_0423.npy
+07_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/07_0424.npy
+07_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/07_0425.npy
+07_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/07_0426.npy
+07_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/07_0427.npy
+07_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/07_0428.npy
+07_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/07_0429.npy
+07_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/07_0430.npy
+07_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/07_0431.npy
+07_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/07_0432.npy
+07_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/07_0433.npy
+07_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/07_0434.npy
+07_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/07_0435.npy
+07_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/07_0436.npy
+07_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/07_0437.npy
+07_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/07_0438.npy
+07_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/07_0439.npy
+07_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/07_0440.npy
+07_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/07_0441.npy
+07_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/07_0442.npy
+07_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/07_0443.npy
+07_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/07_0444.npy
+07_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/07_0445.npy
+07_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/07_0446.npy
+07_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/07_0447.npy
+07_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/07_0448.npy
+07_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/07_0449.npy
+07_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/07_0450.npy
+08_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/test/08_0401.npy
+08_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/test/08_0402.npy
+08_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/test/08_0403.npy
+08_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/test/08_0404.npy
+08_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/test/08_0405.npy
+08_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/test/08_0406.npy
+08_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/test/08_0407.npy
+08_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/test/08_0408.npy
+08_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/test/08_0409.npy
+08_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/test/08_0410.npy
+08_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/test/08_0411.npy
+08_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/test/08_0412.npy
+08_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/test/08_0413.npy
+08_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/test/08_0414.npy
+08_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/test/08_0415.npy
+08_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/test/08_0416.npy
+08_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/test/08_0417.npy
+08_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/test/08_0418.npy
+08_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/test/08_0419.npy
+08_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/test/08_0420.npy
+08_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/test/08_0421.npy
+08_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/test/08_0422.npy
+08_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/test/08_0423.npy
+08_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/test/08_0424.npy
+08_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/test/08_0425.npy
+08_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/test/08_0426.npy
+08_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/test/08_0427.npy
+08_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/test/08_0428.npy
+08_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/test/08_0429.npy
+08_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/test/08_0430.npy
+08_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/test/08_0431.npy
+08_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/test/08_0432.npy
+08_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/08_0433.npy
+08_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/test/08_0434.npy
+08_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/08_0435.npy
+08_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/test/08_0436.npy
+08_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/test/08_0437.npy
+08_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/test/08_0438.npy
+08_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/test/08_0439.npy
+08_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/test/08_0440.npy
+08_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/08_0441.npy
+08_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/test/08_0442.npy
+08_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/test/08_0443.npy
+08_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/08_0444.npy
+08_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/test/08_0445.npy
+08_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/test/08_0446.npy
+08_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/test/08_0447.npy
+08_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/08_0448.npy
+08_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/test/08_0449.npy
+08_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/test/08_0450.npy
+09_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/09_0401.npy
+09_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/09_0402.npy
+09_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/09_0403.npy
+09_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/09_0404.npy
+09_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/09_0405.npy
+09_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/09_0406.npy
+09_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/09_0407.npy
+09_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/09_0408.npy
+09_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/09_0409.npy
+09_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/09_0410.npy
+09_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/09_0411.npy
+09_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/09_0412.npy
+09_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/09_0413.npy
+09_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/09_0414.npy
+09_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/09_0415.npy
+09_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/09_0416.npy
+09_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/09_0417.npy
+09_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/09_0418.npy
+09_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/09_0419.npy
+09_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/09_0420.npy
+09_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/09_0421.npy
+09_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/09_0422.npy
+09_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/09_0423.npy
+09_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/09_0424.npy
+09_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/09_0425.npy
+09_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/09_0426.npy
+09_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/09_0427.npy
+09_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/09_0428.npy
+09_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/09_0429.npy
+09_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/09_0430.npy
+09_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/09_0431.npy
+09_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/09_0432.npy
+09_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/09_0433.npy
+09_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/09_0434.npy
+09_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/09_0435.npy
+09_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/09_0436.npy
+09_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/09_0437.npy
+09_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/09_0438.npy
+09_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/09_0439.npy
+09_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/09_0440.npy
+09_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/09_0441.npy
+09_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/09_0442.npy
+09_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/09_0443.npy
+09_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/09_0444.npy
+09_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/09_0445.npy
+09_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/09_0446.npy
+09_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/09_0447.npy
+09_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/09_0448.npy
+09_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/09_0449.npy
+09_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/09_0450.npy
+10_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/test/10_0401.npy
+10_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/test/10_0402.npy
+10_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/test/10_0403.npy
+10_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/test/10_0404.npy
+10_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/test/10_0405.npy
+10_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/test/10_0406.npy
+10_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/test/10_0407.npy
+10_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/test/10_0408.npy
+10_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/test/10_0409.npy
+10_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/test/10_0410.npy
+10_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/test/10_0411.npy
+10_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/test/10_0412.npy
+10_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/test/10_0413.npy
+10_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/test/10_0414.npy
+10_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/test/10_0415.npy
+10_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/test/10_0416.npy
+10_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/test/10_0417.npy
+10_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/test/10_0418.npy
+10_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/test/10_0419.npy
+10_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/test/10_0420.npy
+10_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/test/10_0421.npy
+10_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/test/10_0422.npy
+10_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/test/10_0423.npy
+10_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/test/10_0424.npy
+10_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/test/10_0425.npy
+10_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/test/10_0426.npy
+10_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/test/10_0427.npy
+10_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/test/10_0428.npy
+10_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/test/10_0429.npy
+10_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/test/10_0430.npy
+10_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/test/10_0431.npy
+10_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/test/10_0432.npy
+10_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/10_0433.npy
+10_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/test/10_0434.npy
+10_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/10_0435.npy
+10_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/test/10_0436.npy
+10_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/test/10_0437.npy
+10_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/test/10_0438.npy
+10_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/test/10_0439.npy
+10_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/test/10_0440.npy
+10_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/10_0441.npy
+10_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/test/10_0442.npy
+10_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/test/10_0443.npy
+10_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/10_0444.npy
+10_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/test/10_0445.npy
+10_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/test/10_0446.npy
+10_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/test/10_0447.npy
+10_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/10_0448.npy
+10_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/test/10_0449.npy
+10_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/test/10_0450.npy
+11_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/test/11_0401.npy
+11_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/test/11_0402.npy
+11_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/test/11_0403.npy
+11_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/test/11_0404.npy
+11_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/test/11_0405.npy
+11_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/test/11_0406.npy
+11_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/test/11_0407.npy
+11_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/test/11_0408.npy
+11_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/test/11_0409.npy
+11_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/test/11_0410.npy
+11_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/test/11_0411.npy
+11_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/test/11_0412.npy
+11_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/test/11_0413.npy
+11_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/test/11_0414.npy
+11_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/test/11_0415.npy
+11_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/test/11_0416.npy
+11_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/test/11_0417.npy
+11_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/test/11_0418.npy
+11_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/test/11_0419.npy
+11_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/test/11_0420.npy
+11_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/test/11_0421.npy
+11_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/test/11_0422.npy
+11_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/test/11_0423.npy
+11_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/test/11_0424.npy
+11_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/test/11_0425.npy
+11_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/test/11_0426.npy
+11_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/test/11_0427.npy
+11_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/test/11_0428.npy
+11_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/test/11_0429.npy
+11_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/test/11_0430.npy
+11_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/test/11_0431.npy
+11_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/test/11_0432.npy
+11_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/11_0433.npy
+11_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/test/11_0434.npy
+11_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/11_0435.npy
+11_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/test/11_0436.npy
+11_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/test/11_0437.npy
+11_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/test/11_0438.npy
+11_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/test/11_0439.npy
+11_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/test/11_0440.npy
+11_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/11_0441.npy
+11_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/test/11_0442.npy
+11_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/test/11_0443.npy
+11_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/11_0444.npy
+11_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/test/11_0445.npy
+11_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/test/11_0446.npy
+11_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/test/11_0447.npy
+11_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/11_0448.npy
+11_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/test/11_0449.npy
+11_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/test/11_0450.npy
+12_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/test/12_0401.npy
+12_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/test/12_0402.npy
+12_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/test/12_0403.npy
+12_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/test/12_0404.npy
+12_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/test/12_0405.npy
+12_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/test/12_0406.npy
+12_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/test/12_0407.npy
+12_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/test/12_0408.npy
+12_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/test/12_0409.npy
+12_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/test/12_0410.npy
+12_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/test/12_0411.npy
+12_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/test/12_0412.npy
+12_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/test/12_0413.npy
+12_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/test/12_0414.npy
+12_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/test/12_0415.npy
+12_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/test/12_0416.npy
+12_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/test/12_0417.npy
+12_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/test/12_0418.npy
+12_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/test/12_0419.npy
+12_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/test/12_0420.npy
+12_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/test/12_0421.npy
+12_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/test/12_0422.npy
+12_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/test/12_0423.npy
+12_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/test/12_0424.npy
+12_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/test/12_0425.npy
+12_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/test/12_0426.npy
+12_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/test/12_0427.npy
+12_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/test/12_0428.npy
+12_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/test/12_0429.npy
+12_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/test/12_0430.npy
+12_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/test/12_0431.npy
+12_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/test/12_0432.npy
+12_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/12_0433.npy
+12_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/test/12_0434.npy
+12_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/12_0435.npy
+12_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/test/12_0436.npy
+12_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/test/12_0437.npy
+12_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/test/12_0438.npy
+12_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/test/12_0439.npy
+12_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/test/12_0440.npy
+12_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/12_0441.npy
+12_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/test/12_0442.npy
+12_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/test/12_0443.npy
+12_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/test/12_0444.npy
+12_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/test/12_0445.npy
+12_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/test/12_0446.npy
+12_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/test/12_0447.npy
+12_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/12_0448.npy
+12_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/test/12_0449.npy
+12_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/test/12_0450.npy
+13_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/13_0401.npy
+13_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/13_0402.npy
+13_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/13_0403.npy
+13_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/13_0404.npy
+13_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/13_0405.npy
+13_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/13_0406.npy
+13_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/13_0407.npy
+13_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/13_0408.npy
+13_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/13_0409.npy
+13_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/13_0410.npy
+13_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/13_0411.npy
+13_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/13_0412.npy
+13_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/13_0413.npy
+13_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/13_0414.npy
+13_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/13_0415.npy
+13_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/13_0416.npy
+13_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/13_0417.npy
+13_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/13_0418.npy
+13_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/13_0419.npy
+13_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/13_0420.npy
+13_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/13_0421.npy
+13_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/13_0422.npy
+13_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/13_0423.npy
+13_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/13_0424.npy
+13_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/13_0425.npy
+13_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/13_0426.npy
+13_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/13_0427.npy
+13_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/13_0428.npy
+13_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/13_0429.npy
+13_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/13_0430.npy
+13_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/13_0431.npy
+13_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/13_0432.npy
+13_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/13_0433.npy
+13_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/13_0434.npy
+13_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/13_0435.npy
+13_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/13_0436.npy
+13_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/13_0437.npy
+13_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/13_0438.npy
+13_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/13_0439.npy
+13_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/13_0440.npy
+13_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/13_0441.npy
+13_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/13_0442.npy
+13_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/13_0443.npy
+13_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/13_0444.npy
+13_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/13_0445.npy
+13_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/13_0446.npy
+13_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/13_0447.npy
+13_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/13_0448.npy
+13_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/13_0449.npy
+13_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/13_0450.npy
+14_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/train/14_0401.npy
+14_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/train/14_0402.npy
+14_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/train/14_0403.npy
+14_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/train/14_0404.npy
+14_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/train/14_0405.npy
+14_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/train/14_0406.npy
+14_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/train/14_0407.npy
+14_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/train/14_0408.npy
+14_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/train/14_0409.npy
+14_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/train/14_0410.npy
+14_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/train/14_0411.npy
+14_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/train/14_0412.npy
+14_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/train/14_0413.npy
+14_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/train/14_0414.npy
+14_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/train/14_0415.npy
+14_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/train/14_0416.npy
+14_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/train/14_0417.npy
+14_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/train/14_0418.npy
+14_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/train/14_0419.npy
+14_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/train/14_0420.npy
+14_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/train/14_0421.npy
+14_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/train/14_0422.npy
+14_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/train/14_0423.npy
+14_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/train/14_0424.npy
+14_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/train/14_0425.npy
+14_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/train/14_0426.npy
+14_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/train/14_0427.npy
+14_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/train/14_0428.npy
+14_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/train/14_0429.npy
+14_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/train/14_0430.npy
+14_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/train/14_0431.npy
+14_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/train/14_0432.npy
+14_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/14_0433.npy
+14_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/train/14_0434.npy
+14_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/14_0435.npy
+14_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/train/14_0436.npy
+14_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/train/14_0437.npy
+14_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/train/14_0438.npy
+14_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/train/14_0439.npy
+14_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/train/14_0440.npy
+14_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/14_0441.npy
+14_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/train/14_0442.npy
+14_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/train/14_0443.npy
+14_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/train/14_0444.npy
+14_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/train/14_0445.npy
+14_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/train/14_0446.npy
+14_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/train/14_0447.npy
+14_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/14_0448.npy
+14_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/train/14_0449.npy
+14_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/train/14_0450.npy
