@@ -13,6 +13,7 @@ Usage:
     # optional: only keep rows whose video was actually downloaded
     python clean_metadata.py --json WLASL_v0.3.json --out_dir clean_meta --videos_dir videos
 """
+
 import argparse
 import json
 import os
@@ -23,7 +24,7 @@ SUBSET_SIZES = (100, 300, 1000, 2000)
 
 
 def load_flat(json_path):
-    with open(json_path, "r", encoding="utf-8") as f:
+    with open(json_path, encoding="utf-8") as f:
         data = json.load(f)
     rows = []
     # The JSON is ordered by gloss; keep that order, it is what defines the top-K subsets.
@@ -76,9 +77,13 @@ def clean(df, log):
     df = df[~dup].copy()
 
     # 7. Same url + segment but DIFFERENT gloss = ambiguous label -> flag only (report, don't drop)
-    amb = df.duplicated(subset=["url", "frame_start", "frame_end"], keep=False) & ~df.duplicated(subset=key, keep=False)
+    amb = df.duplicated(subset=["url", "frame_start", "frame_end"], keep=False) & ~df.duplicated(
+        subset=key, keep=False
+    )
     df["ambiguous_label"] = amb
-    log.append(f"Flagged {int(amb.sum())} rows sharing url+segment with a different gloss (column: ambiguous_label)")
+    log.append(
+        f"Flagged {int(amb.sum())} rows sharing url+segment with a different gloss (column: ambiguous_label)"
+    )
 
     # 8. Helpful flags
     df["is_youtube"] = df["url"].str.contains("youtube|youtu.be", regex=True)
@@ -90,7 +95,9 @@ def clean(df, log):
 
 
 def split_report(df, log):
-    log.append("Split sizes: " + ", ".join(f"{k}={v}" for k, v in df["split"].value_counts().items()))
+    log.append(
+        "Split sizes: " + ", ".join(f"{k}={v}" for k, v in df["split"].value_counts().items())
+    )
     tiny = df.groupby("gloss")["split"].nunique()
     missing = tiny[tiny < 3]
     log.append(f"Glosses missing at least one of train/val/test: {len(missing)}")
@@ -98,7 +105,9 @@ def split_report(df, log):
     leak = leak[leak > 1]
     log.append(f"Source URLs appearing in more than one split (possible leakage): {len(leak)}")
     signer_leak = df.groupby("signer_id")["split"].nunique()
-    log.append(f"Signers appearing in more than one split: {int((signer_leak > 1).sum())} of {len(signer_leak)}")
+    log.append(
+        f"Signers appearing in more than one split: {int((signer_leak > 1).sum())} of {len(signer_leak)}"
+    )
 
 
 def attach_availability(df, videos_dir, log):
@@ -113,9 +122,26 @@ def make_subsets(df, out_dir, log):
         sub = df[df["gloss_rank"] < k].copy()
         # re-index labels 0..K-1 within the subset
         sub["label"] = sub["gloss_rank"]
-        cols = ["video_id", "gloss", "label", "split", "signer_id", "source", "variation_id",
-                "x1", "y1", "x2", "y2", "frame_start", "frame_end", "fps", "url",
-                "is_youtube", "is_swf", "ambiguous_label"]
+        cols = [
+            "video_id",
+            "gloss",
+            "label",
+            "split",
+            "signer_id",
+            "source",
+            "variation_id",
+            "x1",
+            "y1",
+            "x2",
+            "y2",
+            "frame_start",
+            "frame_end",
+            "fps",
+            "url",
+            "is_youtube",
+            "is_swf",
+            "ambiguous_label",
+        ]
         sub[cols].to_csv(os.path.join(out_dir, f"wlasl{k}.csv"), index=False)
         log.append(f"WLASL{k}: {len(sub)} instances, {sub.gloss.nunique()} glosses -> wlasl{k}.csv")
 
@@ -124,7 +150,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", required=True)
     ap.add_argument("--out_dir", default="clean_meta")
-    ap.add_argument("--videos_dir", default=None, help="keep only rows whose <video_id>.mp4 exists here")
+    ap.add_argument(
+        "--videos_dir", default=None, help="keep only rows whose <video_id>.mp4 exists here"
+    )
     args = ap.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
@@ -138,7 +166,8 @@ def main():
 
     df.to_csv(os.path.join(args.out_dir, "wlasl_clean.csv"), index=False)
     df[["gloss_rank", "gloss"]].drop_duplicates().rename(columns={"gloss_rank": "label"}).to_csv(
-        os.path.join(args.out_dir, "label_map.csv"), index=False)
+        os.path.join(args.out_dir, "label_map.csv"), index=False
+    )
     make_subsets(df, args.out_dir, log)
     log.append(f"Final: {len(df)} instances, {df.gloss.nunique()} glosses")
 

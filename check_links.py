@@ -17,6 +17,7 @@ Outputs in out_dir:
 
 The script can be stopped and re-run: urls already in url_status.csv are not checked again.
 """
+
 import argparse
 import os
 import shutil
@@ -37,7 +38,7 @@ def is_youtube(url):
 def check_http(url, timeout):
     """Return (status, detail). status in ok / dead."""
     last = ""
-    for attempt in range(2):  # retry once so a network hiccup is not counted as a dead link
+    for _attempt in range(2):  # retry once so a network hiccup is not counted as a dead link
         try:
             r = requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
             if r.status_code in (403, 405, 501) or r.status_code >= 500:
@@ -60,8 +61,12 @@ def check_youtube(url, timeout):
     if shutil.which("yt-dlp") is None:
         return "unchecked", "yt-dlp not installed"
     try:
-        p = subprocess.run(["yt-dlp", "--simulate", "--quiet", "--no-warnings", url],
-                           capture_output=True, text=True, timeout=timeout * 4)
+        p = subprocess.run(
+            ["yt-dlp", "--simulate", "--quiet", "--no-warnings", url],
+            capture_output=True,
+            text=True,
+            timeout=timeout * 4,
+        )
     except subprocess.TimeoutExpired:
         return "unchecked", "timeout"
     if p.returncode == 0:
@@ -69,7 +74,17 @@ def check_youtube(url, timeout):
     err = (p.stderr or "").strip().splitlines()
     msg = err[-1][:120] if err else "error"
     low = msg.lower()
-    if any(s in low for s in ("unavailable", "private", "removed", "terminated", "not available", "does not exist")):
+    if any(
+        s in low
+        for s in (
+            "unavailable",
+            "private",
+            "removed",
+            "terminated",
+            "not available",
+            "does not exist",
+        )
+    ):
         return "dead", msg
     return "unchecked", msg  # e.g. rate limit / bot check: not proof the video is gone
 
@@ -88,7 +103,9 @@ def main():
     ap.add_argument("--csv", required=True)
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--workers", type=int, default=16, help="parallel checks for normal links")
-    ap.add_argument("--yt_workers", type=int, default=3, help="parallel checks for YouTube (keep low)")
+    ap.add_argument(
+        "--yt_workers", type=int, default=3, help="parallel checks for YouTube (keep low)"
+    )
     ap.add_argument("--timeout", type=int, default=15)
     a = ap.parse_args()
 
@@ -98,13 +115,19 @@ def main():
     name = os.path.splitext(os.path.basename(a.csv))[0].replace("_all", "")
 
     status_path = os.path.join(a.out_dir, "url_status.csv")
-    done = pd.read_csv(status_path) if os.path.exists(status_path) else pd.DataFrame(columns=["url", "status", "detail"])
+    done = (
+        pd.read_csv(status_path)
+        if os.path.exists(status_path)
+        else pd.DataFrame(columns=["url", "status", "detail"])
+    )
     # re-check "unchecked" ones on re-runs; keep final ok/dead answers
     done = done[done.status.isin(["ok", "dead"])]
     todo = [u for u in df[col].unique() if u not in set(done.url)]
     web = [(u, a.timeout) for u in todo if not is_youtube(u)]
     yt = [(u, a.timeout) for u in todo if is_youtube(u)]
-    print(f"{len(df[col].unique())} unique links, {len(todo)} to check ({len(web)} web, {len(yt)} youtube)")
+    print(
+        f"{len(df[col].unique())} unique links, {len(todo)} to check ({len(web)} web, {len(yt)} youtube)"
+    )
 
     results = []
     with ThreadPoolExecutor(a.workers) as ex:
@@ -118,23 +141,30 @@ def main():
             if i % 100 == 0:
                 print(f"  youtube {i}/{len(yt)}")
 
-    status = pd.concat([done, pd.DataFrame(results, columns=["url", "status", "detail"])], ignore_index=True)
+    status = pd.concat(
+        [done, pd.DataFrame(results, columns=["url", "status", "detail"])], ignore_index=True
+    )
     status.to_csv(status_path, index=False)
 
-    m = df.merge(status.rename(columns={"url": col, "status": "link_status", "detail": "link_detail"}),
-                 on=col, how="left")
+    m = df.merge(
+        status.rename(columns={"url": col, "status": "link_status", "detail": "link_detail"}),
+        on=col,
+        how="left",
+    )
     m["link_status"] = m["link_status"].fillna("unchecked")
-    keep = m[m.link_status != "dead"]   # ok + unchecked (not proven dead)
+    keep = m[m.link_status != "dead"]  # ok + unchecked (not proven dead)
     dead = m[m.link_status == "dead"]
     keep.to_csv(os.path.join(a.out_dir, f"{name}_ok.csv"), index=False)
     dead.to_csv(os.path.join(a.out_dir, f"{name}_dead.csv"), index=False)
     for s in ("train", "val", "test"):
         keep[keep.split == s].to_csv(os.path.join(a.out_dir, f"{name}_{s}_ok.csv"), index=False)
 
-    lines = [f"rows total: {len(m)}",
-             f"link status counts: {m.link_status.value_counts().to_dict()}",
-             f"kept (ok + unchecked): {len(keep)}   removed (dead): {len(dead)}",
-             f"kept per split: {keep.split.value_counts().to_dict()}"]
+    lines = [
+        f"rows total: {len(m)}",
+        f"link status counts: {m.link_status.value_counts().to_dict()}",
+        f"kept (ok + unchecked): {len(keep)}   removed (dead): {len(dead)}",
+        f"kept per split: {keep.split.value_counts().to_dict()}",
+    ]
     before = m.groupby("gloss").size()
     after = keep.groupby("gloss").size().reindex(before.index).fillna(0)
     lost_all = before[after == 0]

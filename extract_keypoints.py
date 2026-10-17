@@ -23,6 +23,7 @@ Outputs in out_dir:
   wlasl{100,300,1000,2000}_{train,val,test}_kp.csv   subsets by label (when the csv has 'label')
   preview/                          a few cropped first frames to eyeball that the bbox is right
 """
+
 import argparse
 import hashlib
 import os
@@ -64,8 +65,20 @@ def get_web(url, path):
 
 def get_youtube(url, path, height):
     fmt = f"best[height<={height}][ext=mp4]/best[height<={height}]/worst"
-    cmd = [sys.executable, "-m", "yt_dlp", "-f", fmt, "--no-playlist", "-q",
-           "--socket-timeout", "30", "-o", path, url]
+    cmd = [
+        sys.executable,
+        "-m",
+        "yt_dlp",
+        "-f",
+        fmt,
+        "--no-playlist",
+        "-q",
+        "--socket-timeout",
+        "30",
+        "-o",
+        path,
+        url,
+    ]
     p = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
     return None if p.returncode == 0 else "yt_dlp_failed"
 
@@ -75,9 +88,13 @@ def holistic():
     global _HOL
     if _HOL is None:
         import mediapipe as mp
+
         _HOL = mp.solutions.holistic.Holistic(
-            static_image_mode=False, model_complexity=1, smooth_landmarks=True,
-            refine_face_landmarks=False)
+            static_image_mode=False,
+            model_complexity=1,
+            smooth_landmarks=True,
+            refine_face_landmarks=False,
+        )
     else:
         _HOL.reset()  # forget tracking state from the previous clip
     return _HOL
@@ -86,16 +103,23 @@ def holistic():
 def frame_vec(res):
     pose = np.zeros((33, 4), np.float32)
     if res.pose_landmarks:
-        pose = np.array([[l.x, l.y, l.z, l.visibility]
-                         for l in res.pose_landmarks.landmark], np.float32)
+        pose = np.array(
+            [[lm.x, lm.y, lm.z, lm.visibility] for lm in res.pose_landmarks.landmark],
+            np.float32,
+        )
 
     def hand(h):
         if h:
-            return np.array([[l.x, l.y, l.z] for l in h.landmark], np.float32)
+            return np.array([[lm.x, lm.y, lm.z] for lm in h.landmark], np.float32)
         return np.zeros((21, 3), np.float32)
 
-    vec = np.concatenate([pose.ravel(), hand(res.left_hand_landmarks).ravel(),
-                          hand(res.right_hand_landmarks).ravel()])
+    vec = np.concatenate(
+        [
+            pose.ravel(),
+            hand(res.left_hand_landmarks).ravel(),
+            hand(res.right_hand_landmarks).ravel(),
+        ]
+    )
     has_hand = bool(res.left_hand_landmarks or res.right_hand_landmarks)
     return vec, has_hand
 
@@ -154,8 +178,8 @@ def do_url(url, rows, kp_dir, preview_dir, height, use_bbox, min_frames):
         try:
             prev = os.path.join(preview_dir, r["video_id"] + ".jpg") if r["preview"] else None
             arr, hand_frac, err = extract_clip(
-                path, r["start0"], r["end0"], r["bbox"] if use_bbox else None,
-                min_frames, prev)
+                path, r["start0"], r["end0"], r["bbox"] if use_bbox else None, min_frames, prev
+            )
             if err:
                 out.append((r["video_id"], f"failed:{err}", 0, 0.0))
                 continue
@@ -169,7 +193,9 @@ def do_url(url, rows, kp_dir, preview_dir, height, use_bbox, min_frames):
 
 # ----------------------------------------------------------------------- main
 def save_log(log, path):
-    pd.DataFrame(log.values(), columns=["video_id", "status", "n_frames", "hand_frac"]).to_csv(path, index=False)
+    pd.DataFrame(log.values(), columns=["video_id", "status", "n_frames", "hand_frac"]).to_csv(
+        path, index=False
+    )
 
 
 def run(groups, workers, args, kp_dir, preview_dir, log, log_path):
@@ -177,8 +203,19 @@ def run(groups, workers, args, kp_dir, preview_dir, log, log_path):
         return
     done = 0
     with ProcessPoolExecutor(workers) as ex:
-        futs = [ex.submit(do_url, u, rows, kp_dir, preview_dir, args.max_height,
-                          not args.no_bbox, args.min_frames) for u, rows in groups.items()]
+        futs = [
+            ex.submit(
+                do_url,
+                u,
+                rows,
+                kp_dir,
+                preview_dir,
+                args.max_height,
+                not args.no_bbox,
+                args.min_frames,
+            )
+            for u, rows in groups.items()
+        ]
         for f in as_completed(futs):
             for rec in f.result():
                 log[rec[0]] = rec
@@ -194,12 +231,18 @@ def main():
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--workers", type=int, default=4, help="parallel processes for normal links")
     ap.add_argument("--yt_workers", type=int, default=2, help="keep low, YouTube blocks heavy use")
-    ap.add_argument("--max_height", type=int, default=480,
-                    help="max YouTube video height (lower = less data, but check previews)")
+    ap.add_argument(
+        "--max_height",
+        type=int,
+        default=480,
+        help="max YouTube video height (lower = less data, but check previews)",
+    )
     ap.add_argument("--no_bbox", action="store_true", help="do not crop with the bbox columns")
     ap.add_argument("--min_frames", type=int, default=5)
     ap.add_argument("--retry_failed", action="store_true")
-    ap.add_argument("--limit", type=int, default=0, help="only process the first N links (for a quick test)")
+    ap.add_argument(
+        "--limit", type=int, default=0, help="only process the first N links (for a quick test)"
+    )
     args = ap.parse_args()
 
     df = pd.read_csv(args.csv, dtype={"video_id": str})
@@ -234,15 +277,19 @@ def main():
         fe = getattr(r, "frame_end", -1)
         fs = 1 if pd.isna(fs) else int(fs)
         fe = -1 if pd.isna(fe) else int(fe)
-        item = {"video_id": vid, "start0": max(0, fs - 1), "end0": fe,
-                "bbox": (r.x1, r.y1, r.x2, r.y2) if has_box else None,
-                "preview": n_prev < 20}
+        item = {
+            "video_id": vid,
+            "start0": max(0, fs - 1),
+            "end0": fe,
+            "bbox": (r.x1, r.y1, r.x2, r.y2) if has_box else None,
+            "preview": n_prev < 20,
+        }
         n_prev += 1
         groups.setdefault(str(getattr(r, url_col)), []).append(item)
 
     urls = list(groups)
     if args.limit:
-        urls = urls[:args.limit]
+        urls = urls[: args.limit]
         groups = {u: groups[u] for u in urls}
     web = {u: g for u, g in groups.items() if not is_youtube(u)}
     yt = {u: g for u, g in groups.items() if is_youtube(u)}
@@ -269,7 +316,9 @@ def main():
     print("failure reasons:")
     print(m[m.kp_status != "ok"]["kp_status"].value_counts().to_string())
     if len(good):
-        print(f"mean fraction of frames with a detected hand: {good.hand_frac.astype(float).mean():.2f}")
+        print(
+            f"mean fraction of frames with a detected hand: {good.hand_frac.astype(float).mean():.2f}"
+        )
 
     if "split" in m.columns:
         total = m.gloss.nunique()
@@ -283,10 +332,16 @@ def main():
                     continue
                 sub = good[good.label < k]
                 for s in ("train", "val", "test"):
-                    sub[sub.split == s].to_csv(os.path.join(args.out_dir, f"wlasl{k}_{s}_kp.csv"), index=False)
-                print(f"WLASL{k}: " + ", ".join(
-                    f"{s} {int((sub.split == s).sum())} rows / {sub[sub.split == s].gloss.nunique()} glosses"
-                    for s in ("train", "val", "test")))
+                    sub[sub.split == s].to_csv(
+                        os.path.join(args.out_dir, f"wlasl{k}_{s}_kp.csv"), index=False
+                    )
+                print(
+                    f"WLASL{k}: "
+                    + ", ".join(
+                        f"{s} {int((sub.split == s).sum())} rows / {sub[sub.split == s].gloss.nunique()} glosses"
+                        for s in ("train", "val", "test")
+                    )
+                )
 
 
 if __name__ == "__main__":
