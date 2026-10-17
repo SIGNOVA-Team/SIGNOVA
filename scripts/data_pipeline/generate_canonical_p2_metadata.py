@@ -7,6 +7,11 @@ Generates:
   - Canonical metadata CSVs
   - Split manifests (both standard and signer-independent)
   - ArabSign sentence mappings
+Outputs directly into organized per-dataset directories:
+  - data/how2sign/metadata/
+  - data/how2sign/splits/
+  - data/arabsign/metadata/
+  - data/arabsign/splits/
 """
 
 import csv
@@ -20,9 +25,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
-METADATA_DIR = os.path.join(DATA_DIR, "metadata")
-SPLITS_DIR = os.path.join(DATA_DIR, "splits")
-REPORTS_DIR = os.path.join(DATA_DIR, "reports")
+H2S_DIR = os.path.join(DATA_DIR, "how2sign")
+ARAB_DIR = os.path.join(DATA_DIR, "arabsign")
 
 CANONICAL_COLUMNS = [
     "sample_id",
@@ -49,18 +53,38 @@ CANONICAL_COLUMNS = [
 
 def process_how2sign(source_dir, output_meta_path, output_split_path):
     print("Processing How2Sign...")
-    splits = {
-        "train": os.path.join(source_dir, "scratch_how2sign_train.csv"),
-        "val": os.path.join(source_dir, "scratch_how2sign_val.csv"),
-        "test": os.path.join(source_dir, "scratch_how2sign_test.csv"),
+    # Check both organized raw dir and legacy scratch paths
+    candidate_paths = {
+        "train": [
+            os.path.join(source_dir, "how2sign_train.csv"),
+            os.path.join(source_dir, "scratch_how2sign_train.csv"),
+            os.path.join(ROOT_DIR, "..", "scratch_how2sign_train.csv"),
+        ],
+        "val": [
+            os.path.join(source_dir, "how2sign_val.csv"),
+            os.path.join(source_dir, "scratch_how2sign_val.csv"),
+            os.path.join(ROOT_DIR, "..", "scratch_how2sign_val.csv"),
+        ],
+        "test": [
+            os.path.join(source_dir, "how2sign_test.csv"),
+            os.path.join(source_dir, "scratch_how2sign_test.csv"),
+            os.path.join(ROOT_DIR, "..", "scratch_how2sign_test.csv"),
+        ],
     }
+
+    splits = {}
+    for split_name, paths in candidate_paths.items():
+        for p in paths:
+            if os.path.exists(p):
+                splits[split_name] = p
+                break
 
     canonical_rows = []
     split_rows = []
 
     for split_name, filepath in splits.items():
-        if not os.path.exists(filepath):
-            print(f"Warning: {filepath} not found. Skipping {split_name}.")
+        if not filepath or not os.path.exists(filepath):
+            print(f"Warning: file not found for split {split_name}.")
             continue
 
         with open(filepath, encoding="utf-8", errors="ignore") as f:
@@ -130,6 +154,7 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
                 )
 
     # Write canonical metadata
+    os.makedirs(os.path.dirname(output_meta_path), exist_ok=True)
     with open(output_meta_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CANONICAL_COLUMNS)
         writer.writeheader()
@@ -137,6 +162,7 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
     print(f"Wrote {len(canonical_rows)} How2Sign canonical rows to {output_meta_path}")
 
     # Write split manifest
+    os.makedirs(os.path.dirname(output_split_path), exist_ok=True)
     with open(output_split_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -156,19 +182,39 @@ def process_how2sign(source_dir, output_meta_path, output_split_path):
 
 
 def process_arabsign(
-    extracted_dir,
+    raw_dir,
     output_meta_path,
     output_split_dep_path,
     output_split_indep_path,
     output_sentences_path,
 ):
     print("Processing ArabSign...")
-    data_dir = os.path.join(extracted_dir, "ArabSign-EncoderDec", "EncoderDec", "data")
-    gt_path = os.path.join(data_dir, "groundTruth.txt")
+    # Find groundTruth.txt
+    gt_candidates = [
+        os.path.join(raw_dir, "groundTruth.txt"),
+        os.path.join(raw_dir, "author_splits", "groundTruth.txt"),
+        os.path.join(
+            raw_dir, "extracted", "ArabSign-EncoderDec", "EncoderDec", "data", "groundTruth.txt"
+        ),
+        os.path.join(
+            ROOT_DIR,
+            "..",
+            "scratch_arabsign_extracted",
+            "ArabSign-EncoderDec",
+            "EncoderDec",
+            "data",
+            "groundTruth.txt",
+        ),
+    ]
+    gt_path = None
+    for p in gt_candidates:
+        if os.path.exists(p):
+            gt_path = p
+            break
 
     # Load 50 ground truth sentences
     gt_sentences = {}
-    if os.path.exists(gt_path):
+    if gt_path and os.path.exists(gt_path):
         with open(gt_path, encoding="utf-8", errors="ignore") as f:
             for idx, line in enumerate(f, 1):
                 clean_line = line.strip()
@@ -230,10 +276,18 @@ def process_arabsign(
             "Education",
             "تعليم لغة الاشارة مع الامائيات",
         ),
-        26: ("I love learning sign language", "Education", "انا حب تعليم لغة الاشارة"),
+        26: (
+            "I love learning sign language",
+            "Education",
+            "انا حب تعليم لغة الاشارة",
+        ),
         27: ("I travel", "Daily Life", "انا سفر"),
         28: ("Where is Saudi Arabia?", "Geography", "اين السعودية"),
-        29: ("Tomorrow there might be an exam", "Education", "غدا احتمال في امتحان"),
+        29: (
+            "Tomorrow there might be an exam",
+            "Education",
+            "غدا احتمال في امتحان",
+        ),
         30: (
             "The body interacts with the word",
             "Sign Linguistics",
@@ -274,7 +328,11 @@ def process_arabsign(
         ),
         48: ("Continuance to you / carry on", "Social", "استمرار انتم"),
         49: ("Allah knows best", "Religion", "الله اعلم"),
-        50: ("Acquisition of sign language", "Education", "اكتساب لغة الاشارة"),
+        50: (
+            "Acquisition of sign language",
+            "Education",
+            "اكتساب لغة الاشارة",
+        ),
     }
 
     # Write arabsign_sentences_mapping.csv
@@ -294,6 +352,7 @@ def process_arabsign(
             }
         )
 
+    os.makedirs(os.path.dirname(output_sentences_path), exist_ok=True)
     with open(output_sentences_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -311,11 +370,29 @@ def process_arabsign(
         writer.writerows(sentence_rows)
     print(f"Wrote 50 ArabSign sentence mappings to {output_sentences_path}")
 
-    # Process all sample CSVs
-    all_files = sorted(
-        glob.glob(os.path.join(data_dir, "*_train.csv"))
-        + glob.glob(os.path.join(data_dir, "*_test.csv"))
-    )
+    # Find split files (01_train.csv, etc.)
+    split_search_dirs = [
+        os.path.join(raw_dir, "author_splits"),
+        raw_dir,
+        os.path.join(raw_dir, "extracted", "ArabSign-EncoderDec", "EncoderDec", "data"),
+        os.path.join(
+            ROOT_DIR,
+            "..",
+            "scratch_arabsign_extracted",
+            "ArabSign-EncoderDec",
+            "EncoderDec",
+            "data",
+        ),
+    ]
+    all_files = []
+    for sdir in split_search_dirs:
+        found = sorted(
+            glob.glob(os.path.join(sdir, "*_train.csv"))
+            + glob.glob(os.path.join(sdir, "*_test.csv"))
+        )
+        if found:
+            all_files = found
+            break
 
     unique_samples = {}
     signer_dep_splits = []
@@ -338,7 +415,7 @@ def process_arabsign(
                 arsl_gloss = row[5].strip()
                 arabic_text = row[6].strip()
 
-                # Extract signer from path: e.g. /home/eye/ArSL-Continuous/80/color/01/train/0001/01_0001_(10_03_21_20_37_17)_c
+                # Extract signer from path
                 signer_match = re.search(r"/color/(\d+)/", orig_path)
                 signer_id = signer_match.group(1) if signer_match else fold_id
 
@@ -358,9 +435,9 @@ def process_arabsign(
                         "session_id": f"signer_{signer_id}_sess",
                         "relative_video_path": f"videos/arabsign/color/{signer_id}/{sample_basename}.mp4",
                         "fps": 30.0,
-                        "duration_sec": round(float(max_len) / 30.0, 3)
-                        if max_len.isdigit()
-                        else 2.67,
+                        "duration_sec": (
+                            round(float(max_len) / 30.0, 3) if max_len.isdigit() else 2.67
+                        ),
                         "width": 1920,
                         "height": 1080,
                         "split": "all_pool",  # Specific split assigned in manifests
@@ -386,6 +463,7 @@ def process_arabsign(
     canonical_rows = list(unique_samples.values())
     canonical_rows.sort(key=lambda x: x["sample_id"])
 
+    os.makedirs(os.path.dirname(output_meta_path), exist_ok=True)
     with open(output_meta_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CANONICAL_COLUMNS)
         writer.writeheader()
@@ -393,6 +471,7 @@ def process_arabsign(
     print(f"Wrote {len(canonical_rows)} ArabSign canonical samples to {output_meta_path}")
 
     # Write signer-dependent split manifest
+    os.makedirs(os.path.dirname(output_split_dep_path), exist_ok=True)
     with open(output_split_dep_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -437,6 +516,7 @@ def process_arabsign(
             }
         )
 
+    os.makedirs(os.path.dirname(output_split_indep_path), exist_ok=True)
     with open(output_split_indep_path, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -457,21 +537,23 @@ def process_arabsign(
 
 
 def main():
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    workspace_root = os.path.abspath(os.path.join(root, ".."))
+    # How2Sign paths
+    h2s_raw = os.path.join(H2S_DIR, "raw")
+    h2s_meta = os.path.join(H2S_DIR, "metadata", "how2sign_canonical_metadata.csv")
+    h2s_split = os.path.join(H2S_DIR, "splits", "how2sign_split_manifest.csv")
+    process_how2sign(h2s_raw, h2s_meta, h2s_split)
 
-    # How2Sign
-    h2s_meta = os.path.join(METADATA_DIR, "how2sign_canonical_metadata.csv")
-    h2s_split = os.path.join(SPLITS_DIR, "how2sign_split_manifest.csv")
-    process_how2sign(workspace_root, h2s_meta, h2s_split)
-
-    # ArabSign
-    arab_extracted = os.path.join(workspace_root, "scratch_arabsign_extracted")
-    arab_meta = os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv")
-    arab_split_dep = os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_dependent.csv")
-    arab_split_indep = os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv")
-    arab_sentences = os.path.join(METADATA_DIR, "arabsign_sentences_mapping.csv")
-    process_arabsign(arab_extracted, arab_meta, arab_split_dep, arab_split_indep, arab_sentences)
+    # ArabSign paths
+    arab_raw = os.path.join(ARAB_DIR, "raw")
+    arab_meta = os.path.join(ARAB_DIR, "metadata", "arabsign_canonical_metadata.csv")
+    arab_split_dep = os.path.join(
+        ARAB_DIR, "splits", "arabsign_split_manifest_signer_dependent.csv"
+    )
+    arab_split_indep = os.path.join(
+        ARAB_DIR, "splits", "arabsign_split_manifest_signer_independent.csv"
+    )
+    arab_sentences = os.path.join(ARAB_DIR, "metadata", "arabsign_sentences_mapping.csv")
+    process_arabsign(arab_raw, arab_meta, arab_split_dep, arab_split_indep, arab_sentences)
 
     print("Canonical metadata processing completed successfully.")
 

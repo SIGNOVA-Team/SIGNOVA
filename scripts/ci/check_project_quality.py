@@ -157,7 +157,9 @@ def check_linguistic_guardrails() -> tuple[bool, list[str]]:
     errors = []
 
     # Check ArabSign Canonical Metadata
-    arab_meta = ROOT_DIR / "data" / "metadata" / "arabsign_canonical_metadata.csv"
+    arab_meta = ROOT_DIR / "data" / "arabsign" / "metadata" / "arabsign_canonical_metadata.csv"
+    if not arab_meta.exists():
+        arab_meta = ROOT_DIR / "data" / "metadata" / "arabsign_canonical_metadata.csv"
     if arab_meta.exists():
         with open(arab_meta, encoding="utf-8") as f:
             reader = csv.DictReader(f)

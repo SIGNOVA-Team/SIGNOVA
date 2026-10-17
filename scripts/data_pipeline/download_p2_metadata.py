@@ -1,11 +1,12 @@
 """
 SIGNOVA - P2 Metadata and Annotations Downloader
 Automates downloading of official annotations, metadata, and code archives for:
-  - P2: How2Sign (Continuous ASL)
-  - P2: ArabSign (Continuous ArSL)
+  - P2: How2Sign (Continuous ASL) -> data/how2sign/raw/
+  - P2: ArabSign (Continuous ArSL) -> data/arabsign/raw/
 """
 
 import os
+import shutil
 import sys
 import urllib.error
 import urllib.request
@@ -31,10 +32,9 @@ def download_file(url, target_path):
     print(f"Saved: {target_path} ({os.path.getsize(target_path)} bytes)")
 
 
-def setup_p2_data(target_dir):
-    os.makedirs(target_dir, exist_ok=True)
-    h2s_dir = os.path.join(target_dir, "how2sign_raw")
-    arab_dir = os.path.join(target_dir, "arabsign_raw")
+def setup_p2_data(data_root):
+    h2s_dir = os.path.join(data_root, "how2sign", "raw")
+    arab_dir = os.path.join(data_root, "arabsign", "raw")
     os.makedirs(h2s_dir, exist_ok=True)
     os.makedirs(arab_dir, exist_ok=True)
 
@@ -52,28 +52,38 @@ def setup_p2_data(target_dir):
 
     # 2. Download ArabSign Code & Splits Zip
     print("\n--- [2/2] Fetching ArabSign Code, Splits & GroundTruth Archive ---")
-    zip_dst = os.path.join(arab_dir, "ArabSign-EncoderDec.zip")
-    if not os.path.exists(zip_dst) or os.path.getsize(zip_dst) == 0:
+    gt_dst = os.path.join(arab_dir, "groundTruth.txt")
+    splits_dst = os.path.join(arab_dir, "author_splits")
+    if not os.path.exists(gt_dst) or not os.path.exists(splits_dst):
+        zip_dst = os.path.join(arab_dir, "temp_ArabSign.zip")
         try:
             download_file(ARABSIGN_CODE_ZIP, zip_dst)
+            print("Extracting ArabSign ground truth and author splits...")
+            with zipfile.ZipFile(zip_dst, "r") as z:
+                z.extractall(os.path.join(arab_dir, "_temp_ext"))
+
+            src_data = os.path.join(
+                arab_dir, "_temp_ext", "ArabSign-EncoderDec", "EncoderDec", "data"
+            )
+            if os.path.exists(src_data):
+                shutil.copy(os.path.join(src_data, "groundTruth.txt"), arab_dir)
+                os.makedirs(splits_dst, exist_ok=True)
+                for f in os.listdir(src_data):
+                    if f.endswith(".csv"):
+                        shutil.copy(os.path.join(src_data, f), splits_dst)
+            # Cleanup temporary extraction
+            shutil.rmtree(os.path.join(arab_dir, "_temp_ext"), ignore_errors=True)
+            if os.path.exists(zip_dst):
+                os.remove(zip_dst)
+            print("ArabSign raw files organized successfully.")
         except (urllib.error.URLError, TimeoutError, OSError) as e:
-            print(f"Failed to download ArabSign zip: {e}")
+            print(f"Failed to download/extract ArabSign: {e}")
     else:
-        print("Already exists: ArabSign-EncoderDec.zip")
+        print("ArabSign raw files already exist.")
 
-    # Extract ArabSign zip
-    extract_path = os.path.join(arab_dir, "extracted")
-    if os.path.exists(zip_dst) and not os.path.exists(extract_path):
-        print(f"Extracting {zip_dst} to {extract_path}...")
-        with zipfile.ZipFile(zip_dst, "r") as z:
-            z.extractall(extract_path)
-        print("Extracted successfully.")
-
-    print("\nAll P2 metadata assets downloaded and prepared.")
+    print("\nAll P2 metadata assets downloaded and organized.")
 
 
 if __name__ == "__main__":
-    base_dir = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw_p2_metadata")
-    )
-    setup_p2_data(base_dir)
+    data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
+    setup_p2_data(data_dir)

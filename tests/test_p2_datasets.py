@@ -7,6 +7,7 @@ Tests:
   - Split manifest partition integrity
   - Signer leakage prevention in the ArabSign signer-independent benchmark
   - Linguistic integrity (ArabSign ArSL != ESL)
+  - Organized directory structure compliance
 """
 
 import csv
@@ -16,8 +17,17 @@ import pytest
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(ROOT_DIR, "data")
-METADATA_DIR = os.path.join(DATA_DIR, "metadata")
-SPLITS_DIR = os.path.join(DATA_DIR, "splits")
+
+H2S_DIR = os.path.join(DATA_DIR, "how2sign")
+H2S_META_DIR = os.path.join(H2S_DIR, "metadata")
+H2S_SPLITS_DIR = os.path.join(H2S_DIR, "splits")
+H2S_RAW_DIR = os.path.join(H2S_DIR, "raw")
+
+ARAB_DIR = os.path.join(DATA_DIR, "arabsign")
+ARAB_META_DIR = os.path.join(ARAB_DIR, "metadata")
+ARAB_SPLITS_DIR = os.path.join(ARAB_DIR, "splits")
+ARAB_RAW_DIR = os.path.join(ARAB_DIR, "raw")
+
 REPORTS_DIR = os.path.join(DATA_DIR, "reports")
 
 REQUIRED_CANONICAL_COLUMNS = [
@@ -44,18 +54,30 @@ REQUIRED_CANONICAL_COLUMNS = [
 
 
 def test_core_files_exist():
-    """Verify that all core P2 deliverables exist."""
+    """Verify that all core P2 deliverables exist in their organized directories."""
     expected_files = [
+        # Reports
+        os.path.join(DATA_DIR, "README.md"),
+        os.path.join(REPORTS_DIR, "README.md"),
         os.path.join(REPORTS_DIR, "dataset_sources.csv"),
         os.path.join(REPORTS_DIR, "download_manifest.csv"),
         os.path.join(REPORTS_DIR, "qc_report_p2.md"),
         os.path.join(REPORTS_DIR, "qc_flags_p2.csv"),
-        os.path.join(METADATA_DIR, "how2sign_canonical_metadata.csv"),
-        os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv"),
-        os.path.join(METADATA_DIR, "arabsign_sentences_mapping.csv"),
-        os.path.join(SPLITS_DIR, "how2sign_split_manifest.csv"),
-        os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_dependent.csv"),
-        os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv"),
+        # How2Sign
+        os.path.join(H2S_DIR, "README.md"),
+        os.path.join(H2S_META_DIR, "how2sign_canonical_metadata.csv"),
+        os.path.join(H2S_SPLITS_DIR, "how2sign_split_manifest.csv"),
+        os.path.join(H2S_RAW_DIR, "how2sign_train.csv"),
+        os.path.join(H2S_RAW_DIR, "how2sign_val.csv"),
+        os.path.join(H2S_RAW_DIR, "how2sign_test.csv"),
+        # ArabSign
+        os.path.join(ARAB_DIR, "README.md"),
+        os.path.join(ARAB_META_DIR, "arabsign_canonical_metadata.csv"),
+        os.path.join(ARAB_META_DIR, "arabsign_sentences_mapping.csv"),
+        os.path.join(ARAB_SPLITS_DIR, "arabsign_split_manifest_signer_dependent.csv"),
+        os.path.join(ARAB_SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv"),
+        os.path.join(ARAB_RAW_DIR, "groundTruth.txt"),
+        # Docs
         os.path.join(ROOT_DIR, "docs", "dataset_card_how2sign.md"),
         os.path.join(ROOT_DIR, "docs", "dataset_card_arabsign.md"),
         os.path.join(ROOT_DIR, "docs", "decisions", "ADR_001_p2_datasets_evaluation.md"),
@@ -66,7 +88,7 @@ def test_core_files_exist():
 
 def test_how2sign_canonical_schema_and_counts():
     """Verify How2Sign schema, sample count, and non-null values."""
-    csv_path = os.path.join(METADATA_DIR, "how2sign_canonical_metadata.csv")
+    csv_path = os.path.join(H2S_META_DIR, "how2sign_canonical_metadata.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         headers = reader.fieldnames
@@ -91,7 +113,7 @@ def test_how2sign_canonical_schema_and_counts():
 
 def test_arabsign_canonical_schema_and_counts():
     """Verify ArabSign schema, sample count, and non-null values."""
-    csv_path = os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv")
+    csv_path = os.path.join(ARAB_META_DIR, "arabsign_canonical_metadata.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         headers = reader.fieldnames
@@ -110,7 +132,7 @@ def test_arabsign_canonical_schema_and_counts():
 
 def test_arabsign_linguistic_integrity():
     """Verify ArabSign is tagged strictly as ArSL and NEVER as ESL."""
-    csv_path = os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv")
+    csv_path = os.path.join(ARAB_META_DIR, "arabsign_canonical_metadata.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for r in reader:
@@ -125,7 +147,7 @@ def test_arabsign_linguistic_integrity():
 
 def test_arabsign_sentences_mapping():
     """Verify that all 50 ArabSign sentences are cleanly mapped."""
-    csv_path = os.path.join(METADATA_DIR, "arabsign_sentences_mapping.csv")
+    csv_path = os.path.join(ARAB_META_DIR, "arabsign_sentences_mapping.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
@@ -142,7 +164,7 @@ def test_arabsign_sentences_mapping():
 
 def test_arabsign_signer_independent_split_zero_leakage():
     """Verify that the Signer-Independent benchmark has ZERO signer leakage."""
-    csv_path = os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv")
+    csv_path = os.path.join(ARAB_SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
@@ -183,7 +205,7 @@ def test_arabsign_signer_independent_split_zero_leakage():
 
 def test_how2sign_split_counts():
     """Verify How2Sign split manifest partition counts."""
-    csv_path = os.path.join(SPLITS_DIR, "how2sign_split_manifest.csv")
+    csv_path = os.path.join(H2S_SPLITS_DIR, "how2sign_split_manifest.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)

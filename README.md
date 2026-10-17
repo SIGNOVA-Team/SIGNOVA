@@ -57,19 +57,35 @@ This repository includes the complete quality control, canonical schemas, split 
 SIGNOVA/
 ├── README.md                                # Project documentation & guide
 ├── data/
-│   ├── metadata/
-│   │   ├── how2sign_canonical_metadata.csv  # 35,263 canonical How2Sign records
-│   │   ├── arabsign_canonical_metadata.csv  # 9,335 canonical ArabSign records
-│   │   └── arabsign_sentences_mapping.csv   # 50 ArSL gloss & standard Arabic sentences
-│   ├── splits/
-│   │   ├── how2sign_split_manifest.csv      # Train/Val/Test official partition
-│   │   ├── arabsign_split_manifest_signer_dependent.csv    # 6-fold signer splits
-│   │   └── arabsign_split_manifest_signer_independent.csv  # Zero-leakage benchmark
-│   └── reports/
+│   ├── README.md                            # Complete data guide and governance rules
+│   ├── arabsign/                            # Continuous Arabic Sign Language (ArSL)
+│   │   ├── README.md                        # ArabSign guide, metrics, and splits
+│   │   ├── metadata/
+│   │   │   ├── arabsign_canonical_metadata.csv  # 9,335 canonical ArabSign records
+│   │   │   └── arabsign_sentences_mapping.csv   # 50 ArSL gloss & standard Arabic sentences
+│   │   ├── splits/
+│   │   │   ├── arabsign_split_manifest_signer_independent.csv  # Zero-leakage benchmark
+│   │   │   └── arabsign_split_manifest_signer_dependent.csv    # 6-fold signer splits
+│   │   └── raw/                             # Ground truth text & original author splits
+│   │       ├── groundTruth.txt
+│   │       └── author_splits/
+│   ├── how2sign/                            # Continuous American Sign Language (ASL)
+│   │   ├── README.md                        # How2Sign guide, metrics, and splits
+│   │   ├── metadata/
+│   │   │   └── how2sign_canonical_metadata.csv  # 35,263 canonical How2Sign records
+│   │   ├── splits/
+│   │   │   └── how2sign_split_manifest.csv      # Train/Val/Test official partition
+│   │   └── raw/                             # Official text & re-aligned annotations
+│   │       ├── how2sign_train.csv
+│   │       ├── how2sign_val.csv
+│   │       ├── how2sign_test.csv
+│   │       └── how2sign_realigned_*.csv
+│   └── reports/                             # Cross-dataset registers & QC
+│       ├── README.md                        # Data reports & sources guide
 │       ├── dataset_sources.csv              # Source register (URLs, licenses, approvals)
 │       ├── download_manifest.csv            # Modality sizes, direct links & access gates
-│       ├── qc_report_p2.md                  # Comprehensive P2 QC & linguistic audit
-│       └── qc_flags_p2.csv                  # Machine-readable QC flags table
+│       ├── qc_flags_p2.csv                  # Machine-readable QC flags table
+│       └── qc_report_p2.md                  # Comprehensive P2 QC & linguistic audit
 ├── docs/
 │   ├── dataset_card_how2sign.md             # Standard dataset card for How2Sign
 │   ├── dataset_card_arabsign.md             # Standard dataset card for ArabSign

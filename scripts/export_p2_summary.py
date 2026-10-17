@@ -13,8 +13,9 @@ from collections import Counter
 sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-METADATA_DIR = os.path.join(ROOT_DIR, "data", "metadata")
-SPLITS_DIR = os.path.join(ROOT_DIR, "data", "splits")
+DATA_DIR = os.path.join(ROOT_DIR, "data")
+H2S_DIR = os.path.join(DATA_DIR, "how2sign")
+ARAB_DIR = os.path.join(DATA_DIR, "arabsign")
 
 
 def print_table(title, headers, rows):
@@ -34,7 +35,7 @@ def print_table(title, headers, rows):
 
 
 def summarize_how2sign():
-    csv_path = os.path.join(METADATA_DIR, "how2sign_canonical_metadata.csv")
+    csv_path = os.path.join(H2S_DIR, "metadata", "how2sign_canonical_metadata.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
@@ -62,12 +63,12 @@ def summarize_how2sign():
 
 
 def summarize_arabsign():
-    csv_path = os.path.join(METADATA_DIR, "arabsign_canonical_metadata.csv")
+    csv_path = os.path.join(ARAB_DIR, "metadata", "arabsign_canonical_metadata.csv")
     with open(csv_path, encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
     signers = Counter(r["signer_id"] for r in reader)
-    indep_path = os.path.join(SPLITS_DIR, "arabsign_split_manifest_signer_independent.csv")
+    indep_path = os.path.join(ARAB_DIR, "splits", "arabsign_split_manifest_signer_independent.csv")
     with open(indep_path, encoding="utf-8") as f:
         indep_reader = list(csv.DictReader(f))
     indep_splits = Counter(r["split"] for r in indep_reader)
