@@ -1,11 +1,18 @@
 import argparse
 from pathlib import Path
+
 import pandas as pd
+
 
 def generate(source, output):
     columns = [
-        "sample_id", "class_label", "signer_id",
-        "qc_status", "qc_flags", "qc_reason", "usable"
+        "sample_id",
+        "class_label",
+        "signer_id",
+        "qc_status",
+        "qc_flags",
+        "qc_reason",
+        "usable",
     ]
 
     df = pd.read_csv(source, usecols=columns, low_memory=False)
@@ -24,9 +31,7 @@ def generate(source, output):
     df["qc_reason"] = df["qc_reason"].fillna("")
 
     flagged = df[
-        (df["qc_status"] != "PASS") |
-        (df["qc_flags"] != "") |
-        (df["qc_reason"] != "")
+        (df["qc_status"] != "PASS") | (df["qc_flags"] != "") | (df["qc_reason"] != "")
     ].copy()
 
     review = df[df["qc_status"] == "REVIEW"].copy()
@@ -36,7 +41,7 @@ def generate(source, output):
         .agg(
             samples=("sample_id", "count"),
             classes=("class_label", "nunique"),
-            signers=("signer_id", "nunique")
+            signers=("signer_id", "nunique"),
         )
         .reset_index()
     )
@@ -56,12 +61,14 @@ def generate(source, output):
     print("Summary matches total:", summary["samples"].sum() == len(df))
     print("Status: PASS")
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     generate(args.source, args.output)
+
 
 if __name__ == "__main__":
     main()

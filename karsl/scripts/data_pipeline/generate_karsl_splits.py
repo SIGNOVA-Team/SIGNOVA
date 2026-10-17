@@ -1,24 +1,39 @@
 import argparse
 from pathlib import Path
+
 import pandas as pd
 
 COLUMNS = [
-    "sample_id", "signer_id", "session_id", "sign_id",
-    "author_split", "qc_status", "loso_test_S01",
-    "loso_test_S02", "loso_test_S03",
-    "split_version", "fold", "split"
+    "sample_id",
+    "signer_id",
+    "session_id",
+    "sign_id",
+    "author_split",
+    "qc_status",
+    "loso_test_S01",
+    "loso_test_S02",
+    "loso_test_S03",
+    "split_version",
+    "fold",
+    "split",
 ]
 
 FOLDS = [
     ("fold_1", "S03", "S02", "S01"),
     ("fold_2", "S01", "S03", "S02"),
-    ("fold_3", "S02", "S01", "S03")
+    ("fold_3", "S02", "S01", "S03"),
 ]
+
 
 def generate(metadata):
     columns = [
-        "sample_id", "signer_id", "session_id",
-        "class_label", "author_split", "qc_status", "usable"
+        "sample_id",
+        "signer_id",
+        "session_id",
+        "class_label",
+        "author_split",
+        "qc_status",
+        "usable",
     ]
 
     df = pd.read_csv(metadata, usecols=columns, low_memory=False)
@@ -37,7 +52,7 @@ def generate(metadata):
 
     for signer in ["S01", "S02", "S03"]:
         df["loso_test_" + signer] = df["signer_id"].map(
-            lambda value: "test" if value == signer else "train"
+            lambda value, signer=signer: "test" if value == signer else "train"
         )
 
     results = []
@@ -45,15 +60,14 @@ def generate(metadata):
     for fold, train, validation, test in FOLDS:
         part = df.copy()
         part["fold"] = fold
-        part["split"] = part["signer_id"].map({
-            train: "train",
-            validation: "validation",
-            test: "test"
-        })
+        part["split"] = part["signer_id"].map(
+            {train: "train", validation: "validation", test: "test"}
+        )
         part["split_version"] = "v3_common_classes"
         results.append(part[COLUMNS])
 
     return pd.concat(results, ignore_index=True)
+
 
 def validate(generated, reference):
     if list(generated.columns) != list(reference.columns):
@@ -70,7 +84,7 @@ def validate(generated, reference):
         how="outer",
         suffixes=("_new", "_old"),
         indicator=True,
-        validate="one_to_one"
+        validate="one_to_one",
     )
 
     missing = int((merged["_merge"] != "both").sum())
@@ -92,20 +106,16 @@ def validate(generated, reference):
 
     return passed, missing, differences
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    generated = generate(
-        args.root / "data/metadata/karsl_metadata.csv"
-    )
+    generated = generate(args.root / "data/metadata/karsl_metadata.csv")
 
-    reference = pd.read_csv(
-        args.root / "data/splits/karsl_split_manifest.csv",
-        low_memory=False
-    )
+    reference = pd.read_csv(args.root / "data/splits/karsl_split_manifest.csv", low_memory=False)
 
     passed, missing, differences = validate(generated, reference)
 
@@ -127,12 +137,10 @@ def main():
         raise SystemExit(1)
 
     args.output.mkdir(parents=True, exist_ok=True)
-    generated.to_csv(
-        args.output / "generated_karsl_split_manifest.csv",
-        index=False
-    )
+    generated.to_csv(args.output / "generated_karsl_split_manifest.csv", index=False)
 
     print("Original manifest modified: NO")
+
 
 if __name__ == "__main__":
     main()

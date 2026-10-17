@@ -1,11 +1,17 @@
-import unittest
 import tempfile
+import unittest
 from pathlib import Path
+
 import pandas as pd
-from karsl.scripts.data_pipeline.generate_karsl_splits import generate, validate, COLUMNS
+
+from karsl.scripts.data_pipeline.generate_karsl_splits import (
+    COLUMNS,
+    generate,
+    validate,
+)
+
 
 class TestSplitPipeline(unittest.TestCase):
-
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
@@ -15,15 +21,17 @@ class TestSplitPipeline(unittest.TestCase):
         rows = []
         for sign_id in [1, 2]:
             for signer in ["S01", "S02", "S03"]:
-                rows.append({
-                    "sample_id": f"{sign_id}_{signer}",
-                    "signer_id": signer,
-                    "session_id": f"{signer}_SESSION",
-                    "class_label": sign_id,
-                    "author_split": "train",
-                    "qc_status": "PASS",
-                    "usable": True
-                })
+                rows.append(
+                    {
+                        "sample_id": f"{sign_id}_{signer}",
+                        "signer_id": signer,
+                        "session_id": f"{signer}_SESSION",
+                        "class_label": sign_id,
+                        "author_split": "train",
+                        "qc_status": "PASS",
+                        "usable": True,
+                    }
+                )
         pd.DataFrame(rows).to_csv(self.source, index=False)
 
     def test_generation_shape(self):
@@ -81,6 +89,7 @@ class TestSplitPipeline(unittest.TestCase):
         self.assertFalse(passed)
         self.assertEqual(missing, 0)
         self.assertGreater(differences["split"], 0)
+
 
 if __name__ == "__main__":
     unittest.main()
