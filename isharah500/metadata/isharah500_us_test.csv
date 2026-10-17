@@ -1,0 +1,751 @@
+﻿sample_id,gloss,text,keypoints_path
+00_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/00_0451.npy
+00_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/00_0452.npy
+00_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/00_0453.npy
+00_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/00_0454.npy
+00_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/00_0455.npy
+00_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/00_0456.npy
+00_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/00_0457.npy
+00_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/00_0458.npy
+00_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/00_0459.npy
+00_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/00_0460.npy
+00_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/00_0461.npy
+00_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/00_0462.npy
+00_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/00_0463.npy
+00_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/00_0464.npy
+00_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/00_0465.npy
+00_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/00_0466.npy
+00_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/00_0467.npy
+00_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/00_0468.npy
+00_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/00_0469.npy
+00_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/00_0470.npy
+00_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/00_0471.npy
+00_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/00_0472.npy
+00_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/00_0473.npy
+00_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/00_0474.npy
+00_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/00_0475.npy
+00_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/00_0476.npy
+00_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/00_0477.npy
+00_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/00_0478.npy
+00_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/00_0479.npy
+00_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/00_0480.npy
+00_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/00_0481.npy
+00_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/00_0482.npy
+00_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/00_0483.npy
+00_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/00_0484.npy
+00_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/00_0485.npy
+00_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/00_0486.npy
+00_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/00_0487.npy
+00_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/00_0488.npy
+00_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/00_0489.npy
+00_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/00_0490.npy
+00_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/00_0491.npy
+00_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/00_0492.npy
+00_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/00_0493.npy
+00_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/00_0494.npy
+00_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/00_0495.npy
+00_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/00_0496.npy
+00_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/00_0497.npy
+00_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/00_0498.npy
+00_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/00_0499.npy
+00_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/00_0500.npy
+01_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/01_0451.npy
+01_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/01_0452.npy
+01_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/01_0453.npy
+01_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/01_0454.npy
+01_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/01_0455.npy
+01_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/01_0456.npy
+01_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/01_0457.npy
+01_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/01_0458.npy
+01_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/01_0459.npy
+01_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/01_0460.npy
+01_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/01_0461.npy
+01_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/01_0462.npy
+01_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/01_0463.npy
+01_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/01_0464.npy
+01_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/01_0465.npy
+01_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/01_0466.npy
+01_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/01_0467.npy
+01_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/01_0468.npy
+01_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/01_0469.npy
+01_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/01_0470.npy
+01_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/01_0471.npy
+01_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/01_0472.npy
+01_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/01_0473.npy
+01_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/01_0474.npy
+01_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/01_0475.npy
+01_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/01_0476.npy
+01_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/01_0477.npy
+01_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/01_0478.npy
+01_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/01_0479.npy
+01_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/01_0480.npy
+01_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/01_0481.npy
+01_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/01_0482.npy
+01_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/01_0483.npy
+01_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/01_0484.npy
+01_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/01_0485.npy
+01_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/01_0486.npy
+01_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/01_0487.npy
+01_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/01_0488.npy
+01_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/01_0489.npy
+01_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/01_0490.npy
+01_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/01_0491.npy
+01_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/01_0492.npy
+01_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/01_0493.npy
+01_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/01_0494.npy
+01_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/01_0495.npy
+01_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/01_0496.npy
+01_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/01_0497.npy
+01_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/01_0498.npy
+01_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/01_0499.npy
+01_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/01_0500.npy
+02_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0451.npy
+02_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0452.npy
+02_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0453.npy
+02_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0454.npy
+02_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0455.npy
+02_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0456.npy
+02_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0457.npy
+02_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0458.npy
+02_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0459.npy
+02_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0460.npy
+02_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0461.npy
+02_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0462.npy
+02_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0463.npy
+02_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0464.npy
+02_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0465.npy
+02_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0466.npy
+02_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0467.npy
+02_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0468.npy
+02_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0469.npy
+02_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0470.npy
+02_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0471.npy
+02_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0472.npy
+02_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0473.npy
+02_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0474.npy
+02_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0475.npy
+02_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0476.npy
+02_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0477.npy
+02_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0478.npy
+02_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0479.npy
+02_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0480.npy
+02_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0481.npy
+02_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0482.npy
+02_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0483.npy
+02_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0484.npy
+02_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0485.npy
+02_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0486.npy
+02_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0487.npy
+02_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0488.npy
+02_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0489.npy
+02_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0490.npy
+02_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0491.npy
+02_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0492.npy
+02_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0493.npy
+02_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0494.npy
+02_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0495.npy
+02_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0496.npy
+02_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0497.npy
+02_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0498.npy
+02_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0499.npy
+02_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0500.npy
+03_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/03_0451.npy
+03_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/03_0452.npy
+03_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/03_0453.npy
+03_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/03_0454.npy
+03_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/03_0455.npy
+03_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/03_0456.npy
+03_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/03_0457.npy
+03_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/03_0458.npy
+03_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/03_0459.npy
+03_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/03_0460.npy
+03_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/03_0461.npy
+03_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/03_0462.npy
+03_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/03_0463.npy
+03_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/03_0464.npy
+03_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/03_0465.npy
+03_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/03_0466.npy
+03_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/03_0467.npy
+03_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/03_0468.npy
+03_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/03_0469.npy
+03_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/03_0470.npy
+03_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/03_0471.npy
+03_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/03_0472.npy
+03_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/03_0473.npy
+03_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/03_0474.npy
+03_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/03_0475.npy
+03_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/03_0476.npy
+03_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/03_0477.npy
+03_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/03_0478.npy
+03_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/03_0479.npy
+03_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/03_0480.npy
+03_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/03_0481.npy
+03_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/03_0482.npy
+03_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/03_0483.npy
+03_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/03_0484.npy
+03_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/03_0485.npy
+03_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/03_0486.npy
+03_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/03_0487.npy
+03_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/03_0488.npy
+03_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/03_0489.npy
+03_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/03_0490.npy
+03_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/03_0491.npy
+03_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/03_0492.npy
+03_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/03_0493.npy
+03_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/03_0494.npy
+03_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/03_0495.npy
+03_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/03_0496.npy
+03_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/03_0497.npy
+03_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/03_0498.npy
+03_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/03_0499.npy
+03_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/03_0500.npy
+04_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/04_0451.npy
+04_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/04_0452.npy
+04_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/04_0453.npy
+04_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/04_0454.npy
+04_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/04_0455.npy
+04_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/04_0456.npy
+04_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/04_0457.npy
+04_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/04_0458.npy
+04_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/04_0459.npy
+04_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/04_0460.npy
+04_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/04_0461.npy
+04_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/04_0462.npy
+04_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/04_0463.npy
+04_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/04_0464.npy
+04_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/04_0465.npy
+04_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/04_0466.npy
+04_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/04_0467.npy
+04_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/04_0468.npy
+04_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/04_0469.npy
+04_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/04_0470.npy
+04_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/04_0471.npy
+04_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/04_0472.npy
+04_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/04_0473.npy
+04_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/04_0474.npy
+04_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/04_0475.npy
+04_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/04_0476.npy
+04_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/04_0477.npy
+04_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/04_0478.npy
+04_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/04_0479.npy
+04_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/04_0480.npy
+04_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/04_0481.npy
+04_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/04_0482.npy
+04_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/04_0483.npy
+04_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/04_0484.npy
+04_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/04_0485.npy
+04_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/04_0486.npy
+04_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/04_0487.npy
+04_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/04_0488.npy
+04_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/04_0489.npy
+04_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/04_0490.npy
+04_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/04_0491.npy
+04_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/04_0492.npy
+04_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/04_0493.npy
+04_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/04_0494.npy
+04_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/04_0495.npy
+04_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/04_0496.npy
+04_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/04_0497.npy
+04_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/04_0498.npy
+04_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/04_0499.npy
+04_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/04_0500.npy
+05_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/05_0451.npy
+05_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/05_0452.npy
+05_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/05_0453.npy
+05_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/05_0454.npy
+05_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/05_0455.npy
+05_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/05_0456.npy
+05_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/05_0457.npy
+05_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/05_0458.npy
+05_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/05_0459.npy
+05_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/05_0460.npy
+05_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/05_0461.npy
+05_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/05_0462.npy
+05_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/05_0463.npy
+05_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/05_0464.npy
+05_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/05_0465.npy
+05_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/05_0466.npy
+05_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/05_0467.npy
+05_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/05_0468.npy
+05_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/05_0469.npy
+05_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/05_0470.npy
+05_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/05_0471.npy
+05_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/05_0472.npy
+05_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/05_0473.npy
+05_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/05_0474.npy
+05_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/05_0475.npy
+05_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/05_0476.npy
+05_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/05_0477.npy
+05_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/05_0478.npy
+05_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/05_0479.npy
+05_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/05_0480.npy
+05_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/05_0481.npy
+05_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/05_0482.npy
+05_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/05_0483.npy
+05_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/05_0484.npy
+05_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/05_0485.npy
+05_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/05_0486.npy
+05_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/05_0487.npy
+05_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/05_0488.npy
+05_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/05_0489.npy
+05_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/05_0490.npy
+05_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/05_0491.npy
+05_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/05_0492.npy
+05_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/05_0493.npy
+05_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/05_0494.npy
+05_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/05_0495.npy
+05_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/05_0496.npy
+05_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/05_0497.npy
+05_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/05_0498.npy
+05_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/05_0499.npy
+05_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/05_0500.npy
+06_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/06_0451.npy
+06_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/06_0452.npy
+06_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/06_0453.npy
+06_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/06_0454.npy
+06_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/06_0455.npy
+06_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/06_0456.npy
+06_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/06_0457.npy
+06_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/06_0458.npy
+06_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/06_0459.npy
+06_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/06_0460.npy
+06_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/06_0461.npy
+06_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/06_0462.npy
+06_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/06_0463.npy
+06_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/06_0464.npy
+06_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/06_0465.npy
+06_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/06_0466.npy
+06_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/06_0467.npy
+06_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/06_0468.npy
+06_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/06_0469.npy
+06_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/06_0470.npy
+06_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/06_0471.npy
+06_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/06_0472.npy
+06_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/06_0473.npy
+06_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/06_0474.npy
+06_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/06_0475.npy
+06_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/06_0476.npy
+06_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/06_0477.npy
+06_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/06_0478.npy
+06_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/06_0479.npy
+06_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/06_0480.npy
+06_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/06_0481.npy
+06_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/06_0482.npy
+06_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/06_0483.npy
+06_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/06_0484.npy
+06_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/06_0485.npy
+06_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/06_0486.npy
+06_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/06_0487.npy
+06_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/06_0488.npy
+06_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/06_0489.npy
+06_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/06_0490.npy
+06_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/06_0491.npy
+06_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/06_0492.npy
+06_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/06_0493.npy
+06_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/06_0494.npy
+06_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/06_0495.npy
+06_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/06_0496.npy
+06_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/06_0497.npy
+06_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/06_0498.npy
+06_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/06_0499.npy
+06_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/06_0500.npy
+07_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/07_0451.npy
+07_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/07_0452.npy
+07_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/07_0453.npy
+07_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/07_0454.npy
+07_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/07_0455.npy
+07_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/07_0456.npy
+07_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/07_0457.npy
+07_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/07_0458.npy
+07_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/07_0459.npy
+07_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/07_0460.npy
+07_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/07_0461.npy
+07_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/07_0462.npy
+07_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/07_0463.npy
+07_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/07_0464.npy
+07_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/07_0465.npy
+07_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/07_0466.npy
+07_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/07_0467.npy
+07_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/07_0468.npy
+07_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/07_0469.npy
+07_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/07_0470.npy
+07_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/07_0471.npy
+07_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/07_0472.npy
+07_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/07_0473.npy
+07_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/07_0474.npy
+07_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/07_0475.npy
+07_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/07_0476.npy
+07_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/07_0477.npy
+07_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/07_0478.npy
+07_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/07_0479.npy
+07_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/07_0480.npy
+07_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/07_0481.npy
+07_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/07_0482.npy
+07_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/07_0483.npy
+07_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/07_0484.npy
+07_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/07_0485.npy
+07_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/07_0486.npy
+07_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/07_0487.npy
+07_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/07_0488.npy
+07_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/07_0489.npy
+07_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/07_0490.npy
+07_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/07_0491.npy
+07_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/07_0492.npy
+07_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/07_0493.npy
+07_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/07_0494.npy
+07_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/07_0495.npy
+07_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/07_0496.npy
+07_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/07_0497.npy
+07_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/07_0498.npy
+07_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/07_0499.npy
+07_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/07_0500.npy
+08_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/test/08_0451.npy
+08_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/test/08_0452.npy
+08_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/test/08_0453.npy
+08_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/test/08_0454.npy
+08_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/test/08_0455.npy
+08_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/test/08_0456.npy
+08_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/test/08_0457.npy
+08_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/test/08_0458.npy
+08_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/test/08_0459.npy
+08_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/test/08_0460.npy
+08_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/test/08_0461.npy
+08_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/test/08_0462.npy
+08_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/test/08_0463.npy
+08_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/test/08_0464.npy
+08_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/test/08_0465.npy
+08_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/test/08_0466.npy
+08_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/test/08_0467.npy
+08_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/test/08_0468.npy
+08_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/test/08_0469.npy
+08_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/test/08_0470.npy
+08_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/test/08_0471.npy
+08_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/test/08_0472.npy
+08_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/test/08_0473.npy
+08_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/test/08_0474.npy
+08_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/test/08_0475.npy
+08_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/test/08_0476.npy
+08_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/test/08_0477.npy
+08_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/08_0478.npy
+08_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/08_0479.npy
+08_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/test/08_0480.npy
+08_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/test/08_0481.npy
+08_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/test/08_0482.npy
+08_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/test/08_0483.npy
+08_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/08_0484.npy
+08_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/test/08_0485.npy
+08_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/test/08_0486.npy
+08_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/test/08_0487.npy
+08_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/test/08_0488.npy
+08_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/test/08_0489.npy
+08_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/test/08_0490.npy
+08_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/test/08_0491.npy
+08_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/test/08_0492.npy
+08_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/test/08_0493.npy
+08_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/test/08_0494.npy
+08_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/test/08_0495.npy
+08_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/test/08_0496.npy
+08_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/test/08_0497.npy
+08_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/test/08_0498.npy
+08_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/test/08_0499.npy
+08_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/test/08_0500.npy
+09_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/09_0451.npy
+09_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/09_0452.npy
+09_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/09_0453.npy
+09_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/09_0454.npy
+09_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/09_0455.npy
+09_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/09_0456.npy
+09_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/09_0457.npy
+09_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/09_0458.npy
+09_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/09_0459.npy
+09_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/09_0460.npy
+09_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/09_0461.npy
+09_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/09_0462.npy
+09_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/09_0463.npy
+09_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/09_0464.npy
+09_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/09_0465.npy
+09_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/09_0466.npy
+09_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/09_0467.npy
+09_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/09_0468.npy
+09_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/09_0469.npy
+09_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/09_0470.npy
+09_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/09_0471.npy
+09_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/09_0472.npy
+09_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/09_0473.npy
+09_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/09_0474.npy
+09_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/09_0475.npy
+09_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/09_0476.npy
+09_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/09_0477.npy
+09_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/09_0478.npy
+09_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/09_0479.npy
+09_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/09_0480.npy
+09_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/09_0481.npy
+09_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/09_0482.npy
+09_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/09_0483.npy
+09_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/09_0484.npy
+09_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/09_0485.npy
+09_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/09_0486.npy
+09_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/09_0487.npy
+09_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/09_0488.npy
+09_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/09_0489.npy
+09_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/09_0490.npy
+09_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/09_0491.npy
+09_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/09_0492.npy
+09_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/09_0493.npy
+09_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/09_0494.npy
+09_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/09_0495.npy
+09_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/09_0496.npy
+09_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/09_0497.npy
+09_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/09_0498.npy
+09_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/09_0499.npy
+09_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/09_0500.npy
+10_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/test/10_0451.npy
+10_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/test/10_0452.npy
+10_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/test/10_0453.npy
+10_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/test/10_0454.npy
+10_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/test/10_0455.npy
+10_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/test/10_0456.npy
+10_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/test/10_0457.npy
+10_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/test/10_0458.npy
+10_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/test/10_0459.npy
+10_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/test/10_0460.npy
+10_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/test/10_0461.npy
+10_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/test/10_0462.npy
+10_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/test/10_0463.npy
+10_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/test/10_0464.npy
+10_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/test/10_0465.npy
+10_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/test/10_0466.npy
+10_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/test/10_0467.npy
+10_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/test/10_0468.npy
+10_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/test/10_0469.npy
+10_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/test/10_0470.npy
+10_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/test/10_0471.npy
+10_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/test/10_0472.npy
+10_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/test/10_0473.npy
+10_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/test/10_0474.npy
+10_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/test/10_0475.npy
+10_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/test/10_0476.npy
+10_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/test/10_0477.npy
+10_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/10_0478.npy
+10_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/10_0479.npy
+10_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/test/10_0480.npy
+10_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/test/10_0481.npy
+10_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/test/10_0482.npy
+10_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/test/10_0483.npy
+10_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/10_0484.npy
+10_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/test/10_0485.npy
+10_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/test/10_0486.npy
+10_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/test/10_0487.npy
+10_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/test/10_0488.npy
+10_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/test/10_0489.npy
+10_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/test/10_0490.npy
+10_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/test/10_0491.npy
+10_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/test/10_0492.npy
+10_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/test/10_0493.npy
+10_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/test/10_0494.npy
+10_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/test/10_0495.npy
+10_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/test/10_0496.npy
+10_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/test/10_0497.npy
+10_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/test/10_0498.npy
+10_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/test/10_0499.npy
+10_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/test/10_0500.npy
+11_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/test/11_0451.npy
+11_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/test/11_0452.npy
+11_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/test/11_0453.npy
+11_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/test/11_0454.npy
+11_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/test/11_0455.npy
+11_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/test/11_0456.npy
+11_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/test/11_0457.npy
+11_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/test/11_0458.npy
+11_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/test/11_0459.npy
+11_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/test/11_0460.npy
+11_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/test/11_0461.npy
+11_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/test/11_0462.npy
+11_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/test/11_0463.npy
+11_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/test/11_0464.npy
+11_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/test/11_0465.npy
+11_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/test/11_0466.npy
+11_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/test/11_0467.npy
+11_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/test/11_0468.npy
+11_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/test/11_0469.npy
+11_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/test/11_0470.npy
+11_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/test/11_0471.npy
+11_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/test/11_0472.npy
+11_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/test/11_0473.npy
+11_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/test/11_0474.npy
+11_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/test/11_0475.npy
+11_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/test/11_0476.npy
+11_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/test/11_0477.npy
+11_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/11_0478.npy
+11_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/11_0479.npy
+11_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/test/11_0480.npy
+11_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/test/11_0481.npy
+11_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/test/11_0482.npy
+11_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/test/11_0483.npy
+11_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/11_0484.npy
+11_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/test/11_0485.npy
+11_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/test/11_0486.npy
+11_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/test/11_0487.npy
+11_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/test/11_0488.npy
+11_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/test/11_0489.npy
+11_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/test/11_0490.npy
+11_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/test/11_0491.npy
+11_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/test/11_0492.npy
+11_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/test/11_0493.npy
+11_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/test/11_0494.npy
+11_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/test/11_0495.npy
+11_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/test/11_0496.npy
+11_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/test/11_0497.npy
+11_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/test/11_0498.npy
+11_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/test/11_0499.npy
+11_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/test/11_0500.npy
+12_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/test/12_0451.npy
+12_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/test/12_0452.npy
+12_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/test/12_0453.npy
+12_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/test/12_0454.npy
+12_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/test/12_0455.npy
+12_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/test/12_0456.npy
+12_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/test/12_0457.npy
+12_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/test/12_0458.npy
+12_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/test/12_0459.npy
+12_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/test/12_0460.npy
+12_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/test/12_0461.npy
+12_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/test/12_0462.npy
+12_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/test/12_0463.npy
+12_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/test/12_0464.npy
+12_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/test/12_0465.npy
+12_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/test/12_0466.npy
+12_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/test/12_0467.npy
+12_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/test/12_0468.npy
+12_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/test/12_0469.npy
+12_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/test/12_0470.npy
+12_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/test/12_0471.npy
+12_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/test/12_0472.npy
+12_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/test/12_0473.npy
+12_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/test/12_0474.npy
+12_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/test/12_0475.npy
+12_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/test/12_0476.npy
+12_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/test/12_0477.npy
+12_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/test/12_0478.npy
+12_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/test/12_0479.npy
+12_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/test/12_0480.npy
+12_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/test/12_0481.npy
+12_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/test/12_0482.npy
+12_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/test/12_0483.npy
+12_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/test/12_0484.npy
+12_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/test/12_0485.npy
+12_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/test/12_0486.npy
+12_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/test/12_0487.npy
+12_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/test/12_0488.npy
+12_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/test/12_0489.npy
+12_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/test/12_0490.npy
+12_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/test/12_0491.npy
+12_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/test/12_0492.npy
+12_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/test/12_0493.npy
+12_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/test/12_0494.npy
+12_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/test/12_0495.npy
+12_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/test/12_0496.npy
+12_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/test/12_0497.npy
+12_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/test/12_0498.npy
+12_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/test/12_0499.npy
+12_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/test/12_0500.npy
+13_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/13_0451.npy
+13_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/13_0452.npy
+13_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/13_0453.npy
+13_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/13_0454.npy
+13_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/13_0455.npy
+13_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/13_0456.npy
+13_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/13_0457.npy
+13_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/13_0458.npy
+13_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/13_0459.npy
+13_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/13_0460.npy
+13_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/13_0461.npy
+13_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/13_0462.npy
+13_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/13_0463.npy
+13_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/13_0464.npy
+13_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/13_0465.npy
+13_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/13_0466.npy
+13_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/13_0467.npy
+13_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/13_0468.npy
+13_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/13_0469.npy
+13_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/13_0470.npy
+13_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/13_0471.npy
+13_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/13_0472.npy
+13_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/13_0473.npy
+13_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/13_0474.npy
+13_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/13_0475.npy
+13_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/13_0476.npy
+13_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/13_0477.npy
+13_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/13_0478.npy
+13_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/13_0479.npy
+13_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/13_0480.npy
+13_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/13_0481.npy
+13_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/13_0482.npy
+13_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/13_0483.npy
+13_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/13_0484.npy
+13_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/13_0485.npy
+13_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/13_0486.npy
+13_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/13_0487.npy
+13_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/13_0488.npy
+13_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/13_0489.npy
+13_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/13_0490.npy
+13_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/13_0491.npy
+13_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/13_0492.npy
+13_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/13_0493.npy
+13_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/13_0494.npy
+13_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/13_0495.npy
+13_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/13_0496.npy
+13_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/13_0497.npy
+13_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/13_0498.npy
+13_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/13_0499.npy
+13_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/13_0500.npy
+14_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/train/14_0451.npy
+14_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/train/14_0452.npy
+14_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/train/14_0453.npy
+14_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/train/14_0454.npy
+14_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/train/14_0455.npy
+14_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/train/14_0456.npy
+14_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/train/14_0457.npy
+14_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/train/14_0458.npy
+14_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/train/14_0459.npy
+14_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/train/14_0460.npy
+14_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/train/14_0461.npy
+14_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/train/14_0462.npy
+14_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/train/14_0463.npy
+14_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/train/14_0464.npy
+14_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/train/14_0465.npy
+14_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/train/14_0466.npy
+14_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/train/14_0467.npy
+14_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/train/14_0468.npy
+14_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/train/14_0469.npy
+14_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/train/14_0470.npy
+14_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/train/14_0471.npy
+14_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/train/14_0472.npy
+14_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/train/14_0473.npy
+14_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/train/14_0474.npy
+14_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/train/14_0475.npy
+14_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/train/14_0476.npy
+14_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/train/14_0477.npy
+14_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/train/14_0478.npy
+14_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/train/14_0479.npy
+14_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/train/14_0480.npy
+14_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/train/14_0481.npy
+14_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/train/14_0482.npy
+14_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/train/14_0483.npy
+14_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/train/14_0484.npy
+14_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/train/14_0485.npy
+14_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/train/14_0486.npy
+14_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/train/14_0487.npy
+14_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/train/14_0488.npy
+14_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/train/14_0489.npy
+14_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/train/14_0490.npy
+14_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/train/14_0491.npy
+14_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/train/14_0492.npy
+14_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/train/14_0493.npy
+14_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/train/14_0494.npy
+14_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/train/14_0495.npy
+14_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/train/14_0496.npy
+14_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/train/14_0497.npy
+14_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/train/14_0498.npy
+14_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/train/14_0499.npy
+14_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/train/14_0500.npy

@@ -1,0 +1,501 @@
+﻿sample_id,gloss,text,keypoints_path
+02_0001,سوال هو,من هو,data/processed/isharah500/hand_keypoints_tracked/dev/02_0001.npy
+02_0002,هو معلم لغه اشاره,هو مدرس لغه اشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0002.npy
+02_0003,استفهام هو معلم هو,هل انت مدرس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0003.npy
+02_0004,هو معلم لا انا مدرسه,انت لست مدرس انا طالب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0004.npy
+02_0005,هو سوال,هو من,data/processed/isharah500/hand_keypoints_tracked/dev/02_0005.npy
+02_0006,هو صديق مدرسه,هو زميلي في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0006.npy
+02_0007,استفهام هو صديق مدرسه,هل هو زميلك في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0007.npy
+02_0008,انا اسره رقم ثلاث اشخاص,اسرتي تتكون من ثلاث اشخاص,data/processed/isharah500/hand_keypoints_tracked/dev/02_0008.npy
+02_0009,رقم عمر ابن بنت,كم عمر ابنتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0009.npy
+02_0010,عمر اربع سن عمر,عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0010.npy
+02_0011,عمر سن خمسون سن,عمره خمسين سنه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0011.npy
+02_0012,سوال بنت ابن,اين ابنته,data/processed/isharah500/hand_keypoints_tracked/dev/02_0012.npy
+02_0013,عمر ابن خمسون سن,عمر ابنه خمسين سنه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0013.npy
+02_0014,معرفه هو لغه اشاره,هو يعرف لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0014.npy
+02_0015,معرفه لغه اشاره,اعرف لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0015.npy
+02_0016,هو معرفه ام لغه اشاره,هل تعرف والدتك لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0016.npy
+02_0017,لا معرفه لغه اشاره,لا تعلم لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0017.npy
+02_0018,ممكن هو قدره كتابه اسم هو,ممكن تكتب اسمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0018.npy
+02_0019,انا كتابه,انا اكتب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0019.npy
+02_0020,استفهام تاريخ الان سوال,ما هو تاريخ اليوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0020.npy
+02_0021,الان واحد شهر عشر,اليوم هو واحد اكتوبر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0021.npy
+02_0022,انا ذهاب مدرسه سبب كره_قدم,انا اذهب الى المدرسه لالعب كره القدم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0022.npy
+02_0023,انا قلب قدره,انوي القيام به,data/processed/isharah500/hand_keypoints_tracked/dev/02_0023.npy
+02_0024,هو رغبه شرب سوال,ماذا تريد ان تشرب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0024.npy
+02_0025,انا رغبه شرب شاي,انا اريد ان اشرب الشاي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0025.npy
+02_0026,هو رغبه اكل سوال,ماذا تريد ان تاكل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0026.npy
+02_0027,انا رغبه اكل رز,اريد ان اكل رز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0027.npy
+02_0028,انا رغبه ذهاب مكتبه بعد صيف,اريد ان اذهب الى المكتبه بعد الظهر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0028.npy
+02_0029,هو رغبه بعد صيف سوال,ماذا تريد ان تفعل بعد الظهر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0029.npy
+02_0030,انا رغبه ذهاب لوحه بقاله,اريد ان اذهب الى السوبرماركت بعد الظهر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0030.npy
+02_0031,سبب رغبه شراء,ماذا تريد ان تشتري,data/processed/isharah500/hand_keypoints_tracked/dev/02_0031.npy
+02_0032,انا رغبه كوب شراء,اريد شراء كوب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0032.npy
+02_0033,انا رغبه معرفه لغه اشاره,اريد ان اتعلم لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0033.npy
+02_0034,انا رغبه ذهاب مدرسه سبب قراءه غدا,اريد ان اذهب الى المدرسه لقراءه الكتب غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0034.npy
+02_0035,رقم معلم مدرسه هو,كم عدد المدرسين في مدرستك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0035.npy
+02_0036,رقم اشخاص مدرسه هو مدرسه,كم عدد الاشخاص في مدرستك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0036.npy
+02_0037,سوال قط,اين القطه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0037.npy
+02_0038,قط صغير تحت طاوله,القط الصغير تحت الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0038.npy
+02_0039,اب هو منزل يوجد,والدك في المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0039.npy
+02_0040,لا منزل لا_يوجد,ليس في المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0040.npy
+02_0041,سوال اب,اين والدك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0041.npy
+02_0042,اب مستشفى يوجد,والدي في المستشفى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0042.npy
+02_0043,سوال عمل,اين يعمل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0043.npy
+02_0044,صديق انا مدرسه,صديقي في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0044.npy
+02_0045,انا ام منزل,امي في المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0045.npy
+02_0046,سوال كوب شرب,اين الكوب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0046.npy
+02_0047,سوال صديق هو,اين اصدقائك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0047.npy
+02_0048,قراءه سوال مكان مدرسه,القراءه في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0048.npy
+02_0049,طاوله هو سوال,ماذا يوجد على الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0049.npy
+02_0050,طاوله كتاب لاب_توب يوجد,هناك كتب و كمبيوترعلى الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0050.npy
+02_0051,هو اسم هو,ما اسمه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0051.npy
+02_0052,اسم هو ولد خلف,ما اسم ذلك الرجل في الخلف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0052.npy
+02_0053,استئذان انا كرسي الان,ممكن اجلس على الكرسي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0053.npy
+02_0054,استئذان دعوه كرسي,من فضلك اجلس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0054.npy
+02_0055,سوال كرسي يوجد سوال,ماذا يوجد على الكرسي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0055.npy
+02_0056,كرسي قط صغير فوق_كرسي,هناك قط صغير على الكرسي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0056.npy
+02_0057,يوجد مدرسه يوجد بيع,يوجد متجر في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0057.npy
+02_0058,رقم وقت الان,كم الوقت الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0058.npy
+02_0059,وقت سوال عشر,الساعه العاشره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0059.npy
+02_0060,وقت هو صيف اكل وقت سوال,متى تاكل في الظهر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0060.npy
+02_0061,تاريخ وقت اب انا منزل اخر تاريخ,متى سيعود ابي الى المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0061.npy
+02_0062,وقت خمس ليل,الوقت الخامسه مساء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0062.npy
+02_0063,هو تاريخ ذهاب سينما فيلم تاريخ,متى نذهب الى السينما,data/processed/isharah500/hand_keypoints_tracked/dev/02_0063.npy
+02_0064,هو الان مطر,يوجد مطر الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0064.npy
+02_0065,لا مطر الان لا,لا يوجد مطر الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0065.npy
+02_0066,لا برد الان,لا يوجد برد الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0066.npy
+02_0067,سوال صحه هو,كيف حالك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0067.npy
+02_0068,شكر د,شكرا دكتور,data/processed/isharah500/hand_keypoints_tracked/dev/02_0068.npy
+02_0069,هو مطر غدا,هل ستمطر غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0069.npy
+02_0070,لا غدا مطر لا,لن تمطر غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0070.npy
+02_0071,هو عمل سوال,ماذا تعمل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0071.npy
+02_0072,انا شعر قراءه,انا اقرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0072.npy
+02_0073,انا شراء تفاحه موزه انواع,انا اشتريت فواكه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0073.npy
+02_0074,انا سعيد مقابله,انا سعيد بلقائك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0074.npy
+02_0075,هو رغبه رياضه سوال قلب رغبه سوال,ما هي الرياضه التي تحبها,data/processed/isharah500/hand_keypoints_tracked/dev/02_0075.npy
+02_0076,انا حب كره_قدم كثير حب,احب لعب كره القدم كثيرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0076.npy
+02_0077,سوال هو شراء تفاحه,هل اشتريت التفاح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0077.npy
+02_0078,انا شراء تفاحه لا_يوجد,انا لم اشتري التفاح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0078.npy
+02_0079,هو لبس جيد حلو,لبسه جميل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0079.npy
+02_0080,جو برد قليل,الجو بارد قليلا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0080.npy
+02_0081,انا الان ماضي تعب,كنت متعب قليلا امس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0081.npy
+02_0082,هو مشاهده هاتف مشاهده,هل رايت هاتفي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0082.npy
+02_0083,هو صديق انا,هو صديقي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0083.npy
+02_0084,سوال عمر اخ هو,كم هو عمر اخيك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0084.npy
+02_0085,انا استيقاظ وقت خمس صباح كل_يوم,استيقظ في الخامسه كل صباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0085.npy
+02_0086,نهايه كتابه منزل نهايه,انتهيت من واجباتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0086.npy
+02_0087,انا خلط اكل خلط كل_يوم ليل,اطبخ كل ليله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0087.npy
+02_0088,انا خوف,انا خائف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0088.npy
+02_0089,سبب خوف,لماذا انت خائف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0089.npy
+02_0090,دعوه مع دعوه اكل ليل دعوه الان ليل,لنتناول العشاء معا الليله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0090.npy
+02_0091,سوال كرسي حمام,اين الحمام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0091.npy
+02_0092,انا رغبه شرب بقره,اريد ان اشرب الحليب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0092.npy
+02_0093,اعاده عوده مدرسه حافله,نعود الى المدرسه بالحافله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0093.npy
+02_0094,هو اكل صباح اكل هو,هل اكلت الفطور,data/processed/isharah500/hand_keypoints_tracked/dev/02_0094.npy
+02_0095,انا اب خلط اكل نارغرفه,ابي يعد العشاء في المطبخ,data/processed/isharah500/hand_keypoints_tracked/dev/02_0095.npy
+02_0096,مكتبه مدرسه جميل,مكتبه المدرسه جميله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0096.npy
+02_0097,لا حب اكل موز,لا احل اكل الموز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0097.npy
+02_0098,كتاب جواز تذكره طياره حقيبه_يد يوجد,جواز سفري و تذكره الطياره في الحقيبه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0098.npy
+02_0099,انا اب حادث,تعرض ابي لحادث,data/processed/isharah500/hand_keypoints_tracked/dev/02_0099.npy
+02_0100,انا اكل ليل وقت تسع,انا اكل العشاء الساعه التاسعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0100.npy
+02_0101,انا زوج عمل كثير,زوجي يعمل كثيرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0101.npy
+02_0102,زوج عمل سوال اكل لوحه,زوجي يعمل في المطعم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0102.npy
+02_0103,هو طفل رغبه لعب انواع كثير,يريد الطفل العاب متنوعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0103.npy
+02_0104,رغبه حذاء خوف,اريد حذاء جديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0104.npy
+02_0105,انا رغبه تلفاز حاسب خوف,اريد كمبيوتر جديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0105.npy
+02_0106,هو رغبه دراجه,اريد دراجه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0106.npy
+02_0107,زهره مطر رغبه,الزهور تحتاج المطر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0107.npy
+02_0108,استفهام هو جوع اكل هو,هل انت جائع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0108.npy
+02_0109,هو يوجد سلطه اتقان,هل لديك سلطه طازجه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0109.npy
+02_0110,استفهام هو تفاحه اتقان,هل لديك تفاح طازج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0110.npy
+02_0111,اخ جوع,اخي جائع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0111.npy
+02_0112,هو ام جوع,والدتك جائعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0112.npy
+02_0113,الان تفاحه موزه يوجد لوحه,يوجد اليوم تفاح و موز في السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0113.npy
+02_0114,هو مساعده,هل تساعدني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0114.npy
+02_0115,شرطه استفهام منزل ام سوال,يسالني الشرطي عن مكان والدتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0115.npy
+02_0116,تاريخ زوج هو ذهاب سينما,متى سيذهب زوجك للسينما,data/processed/isharah500/hand_keypoints_tracked/dev/02_0116.npy
+02_0117,معلم ذهاب مركز صم يوم الاربعاء,يذهب المعلم الى مركز الصم يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0117.npy
+02_0118,شخص صم ذهاب مركز صم,يذهب الاصم الى مركز الصم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0118.npy
+02_0119,انا بيتزا سوال لوحه اكل,انا اكل البيتزا في المطعم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0119.npy
+02_0120,هو رغبه حب اكل شوكولاته بسكوت حب هو,تحب ان تاكل البسكوت و الشوكولاته,data/processed/isharah500/hand_keypoints_tracked/dev/02_0120.npy
+02_0121,انا سياره ركوب ذهاب لوحه بقاله شوكولاته,انا اقود الى السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0121.npy
+02_0122,بنت دراجه,البنت تركب دراجه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0122.npy
+02_0123,انا صديق دراجه ماضي,ركب صديقي دراجه امس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0123.npy
+02_0124,شرطه دراجه_ناريه,يركب الشرطي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0124.npy
+02_0125,ولد صم هو سياره قدره,الرجل الاصم يقود سياره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0125.npy
+02_0126,مدرسه شخص سياره ذهاب وصل مركز سياره,ياتي الطالب الى المعهد بالسياره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0126.npy
+02_0127,استفهام الحذاء مشاهده سوال,هل رايت الحذاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0127.npy
+02_0128,هو قدره مشاهده نظاره,هل رايت النظارات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0128.npy
+02_0129,لاب_توب حاسب مشاهده لاب_توب,هل رايت الكمبيوتر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0129.npy
+02_0130,انا ذهاب سينما الان ليل,انا ذاهب الى السينما الليله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0130.npy
+02_0131,اخ ذهاب اكل لوحه,ذهب اخي الى المطعم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0131.npy
+02_0132,انا ذهاب لوحه شوكولاته بقاله انواع شراء,انا ذاهب الى السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0132.npy
+02_0133,زوج ذهاب لوحه بقاله,يذهب الزوج الى السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0133.npy
+02_0134,دعوه نداء اكل رغبه تعداد,اطلب من النادل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0134.npy
+02_0135,الان برد ليل برد,الجو بارد الليله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0135.npy
+02_0136,الان برد ماضي مركز صم,شعرت بالبرد في مركز الصم امس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0136.npy
+02_0137,انا شعور برد حافله داخل ليل الان,انا اشعر بالبرد في الحافله الليله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0137.npy
+02_0138,شراء شاي شرب رغبه هو,هل تريد شراء الشاي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0138.npy
+02_0139,انا شراء شوكولاته,انا اشتري الشوكولاته,data/processed/isharah500/hand_keypoints_tracked/dev/02_0139.npy
+02_0140,ولد شخص شراء ماء,الولد يشتري الماء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0140.npy
+02_0141,انا غدا حاسب شراء,سوف اشتري كمبيوتر غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0141.npy
+02_0142,الان خس ال خ س لوحه بقاله,اليوم نشتري الخس من السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0142.npy
+02_0143,انا الان خلط اكل,انا اطبخ الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0143.npy
+02_0144,الان خلط لا,لا اطبخ الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0144.npy
+02_0145,وقت سوال حافله دخول,متى تاتي الحافله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0145.npy
+02_0146,وقت رئيس ذهاب وقت سوال,متى ياتي الرئيس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0146.npy
+02_0147,رقم بسكوت مال تفاحه مال رقم,كم سعر البسكوت والتفاح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0147.npy
+02_0148,زوج هو معرفه لغه اشاره,زوجك يتعلم لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0148.npy
+02_0149,هو صديق هو معرفه لغه اشاره,صديقك يتعلم لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0149.npy
+02_0150,بنت هو قراءه,المراه تقرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0150.npy
+02_0151,ولد قراءه,الولد يقرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0151.npy
+02_0152,صديق كتاب قراءه,صديقي يقرا كتاب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0152.npy
+02_0153,ام قراءه كل_يوم السبت,الام تقرا كتاب يوم السبت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0153.npy
+02_0154,اخ حب كتاب خوف هو,يحب اخوك قراءه كتاب جديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0154.npy
+02_0155,انا حب شاي,نحن نحب الشاي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0155.npy
+02_0156,انا حب بقره اتقان,انا احب الحليب الطازج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0156.npy
+02_0157,طفل حب ثلج هو,الطفل يحب الثلج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0157.npy
+02_0158,انا حب شوكولاته بقره,انا احب الشوكولاته و الحليب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0158.npy
+02_0159,هو حب شوكولاته بسكوت,تحب الشوكولاته او البسكوت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0159.npy
+02_0160,سلطه اتقان ممتاز,السلطه الطازجه طعمها جيد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0160.npy
+02_0161,موزه تفاحه اتقان ممتاز جيد,طعم الموز والتفاح الطازج جيد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0161.npy
+02_0162,انا صديق كتابه,صديقي يكتب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0162.npy
+02_0163,ممكن صديق قدره كتابه,يمكن لصديقي ان يكتب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0163.npy
+02_0164,لعب هو ممتاز,اللعبه جميله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0164.npy
+02_0165,انا بحث تفاحه احمر,انا ابحث عن تفاح احمر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0165.npy
+02_0166,هو رغبه قهوه شاي رغبه سوال,هل تريد قهوه او شاي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0166.npy
+02_0167,هو بحث قهوه شاي,هل تريد شاي ام قهوه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0167.npy
+02_0168,انا بحث تفاحه احمر شوكولاته,انا ابحث عن تفاح احمر و شوكولاته,data/processed/isharah500/hand_keypoints_tracked/dev/02_0168.npy
+02_0169,رئيس اتصال,الرئيس على الهاتف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0169.npy
+02_0170,استفهام غدا صديق لقاء,هل ستلتقي بصديقك غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0170.npy
+02_0171,انا غدا صديق لقاء,سالتقي بصديقي غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0171.npy
+02_0172,هو شرب هو,هو يشرب ماء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0172.npy
+02_0173,انا شرب ماضي,شربت الماء امس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0173.npy
+02_0174,ولد شخص ماء هو,الولد يشرب الماء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0174.npy
+02_0175,نسيان دراجه,نسيت الدراجه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0175.npy
+02_0176,انا جميع جوع,نحن جائعون,data/processed/isharah500/hand_keypoints_tracked/dev/02_0176.npy
+02_0177,حافله خوف هو,الحافله جديده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0177.npy
+02_0178,سوال بيتزا,اين البيتزا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0178.npy
+02_0179,نظاره غالي,النظارات غاليه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0179.npy
+02_0180,حذاء رخيص,الحذاء رخيص,data/processed/isharah500/hand_keypoints_tracked/dev/02_0180.npy
+02_0181,حاسب لاب_توب غالي,الكمبيوتر غالي السعر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0181.npy
+02_0182,شوكولاته صحه,الشوكولاته صحيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0182.npy
+02_0183,اب مستشفى منزل سبب حادث,والدي في المستشفى لانه تعرض لحادث,data/processed/isharah500/hand_keypoints_tracked/dev/02_0183.npy
+02_0184,استئذان عصير تفاحه,من فضلك اعطني عصير تفاح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0184.npy
+02_0185,رغبه صوره قط صغير,ابني يريد تصوير القط الصغير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0185.npy
+02_0186,انا خوف ولاده قبل وقت,اخاف من الولاده قبل الاوان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0186.npy
+02_0187,انا ام ذهاب مستشفى سبب مرض,ذهبت والدتي الى المستشفى لانها مريضه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0187.npy
+02_0188,انا نوم تقلب,اجد صعوبه في النوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0188.npy
+02_0189,ابن زعل سبب كلب موت,ابني حزين لان الكلب مات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0189.npy
+02_0190,جد ماضي هو حزن سبب طير موت,جدي حزين لان الطائر مات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0190.npy
+02_0191,انا زعل سبب قط موت الان صباح,انا حزين لان قطتي ماتت هذا الصباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0191.npy
+02_0192,انا ذهاب مزرعه شراء بيض موزه انواع,اذهب الى المزرعه لشراء البيض و الموز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0192.npy
+02_0193,وجوب استيقاظ وقت سبع كل_يوم,يجب ان استيقظ الساعه السادسه كل يوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0193.npy
+02_0194,انا صديق صم قدره ترجمه اشاره,صديقي اصم لكن يمكنني ان اترجم له,data/processed/isharah500/hand_keypoints_tracked/dev/02_0194.npy
+02_0195,استئذان تذكره طياره عطاء,من فضلك اعطني تذكره الرحله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0195.npy
+02_0196,ترجمه ذهاب مركز الثلاثاء مستمر,المترجم يذهب الى المعهد كل يوم ثلاثاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0196.npy
+02_0197,انا حفيد رغبه سباحه بحر,احفادي يرغبون السباحه في البحر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0197.npy
+02_0198,انا معرفه اخبار ترجمه مشاهده معرفه,انا افهم الاخبار مع الترجمه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0198.npy
+02_0199,مشاهده شاشه قليل مشاهده اخبار,نادرا اشاهد الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0199.npy
+02_0200,انا غدا وقت اثنان عمل خلاص,ينتهي عملي غدا الساعه الثانيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0200.npy
+02_0201,هو هاتف اتصال شرطه,انت اتصلت بالشرطه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0201.npy
+02_0202,رغبه ساعه تخفيض طياره معاق,اريد خصم الرحله للمعاقين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0202.npy
+02_0203,انا اسم سياره اسم,اريد نقل ملكيه سيارتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0203.npy
+02_0204,استفهام صدر خوف مسوول سوال سياره اسم,من سيكون المالك الجديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0204.npy
+02_0205,هو وجوب شرب زياده,يجب ان تشرب الكثير من الماء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0205.npy
+02_0206,كتاب صباح صيف مكتبه لوحه صباح صيف,المكتب مفتوح في الصباح و الظهر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0206.npy
+02_0207,ولد سرق هاتف,سرق شخص ما هاتفي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0207.npy
+02_0208,انا ولد هو هاتف اخذ اختفاء,اخذ رجل الهاتف وهرب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0208.npy
+02_0209,انت سوال ذهاب جري,الى اين ركض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0209.npy
+02_0210,مستمر جري بحر,ركض الى الشاطئ,data/processed/isharah500/hand_keypoints_tracked/dev/02_0210.npy
+02_0211,سوال هو ماضي هو,اين كنت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0211.npy
+02_0212,هو ماضي كوفي انتظار,كنت في مقهى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0212.npy
+02_0213,هو انا بحث هاتف بحث جواب,سوف ابحث عن الهاتف و نبلغك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0213.npy
+02_0214,هو رغبه اسبوع اخر راحه سعيد,اتمنى لك عطله نهايه اسبوع سعيده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0214.npy
+02_0215,انا رغبه جواز سفر رغبه,اريد الحصول على جواز سفر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0215.npy
+02_0216,رغبه شكوى,اريد تقديم شكوى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0216.npy
+02_0217,انا رغبه طبيب د,انا بحاجه الى طبيب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0217.npy
+02_0218,د يوجد غدا يوجد,الطبيب موجود غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0218.npy
+02_0219,مشكله سوال,ما المشكله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0219.npy
+02_0220,انا لا صحه سيئ,صحتي غير جيده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0220.npy
+02_0221,انا استفراغ ثاني اسهال انا,انا اتقيا و اعاني من الاسهال,data/processed/isharah500/hand_keypoints_tracked/dev/02_0221.npy
+02_0222,تاريخ سوال اسهال تاريخ فتح,منذ متى تعاني من الاسهال,data/processed/isharah500/hand_keypoints_tracked/dev/02_0222.npy
+02_0223,ثلاث قبل,ثلاث ايام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0223.npy
+02_0224,هو حمى هو,هل لديك حمى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0224.npy
+02_0225,نعم انا دوخه,نعم انا اعاني من دوخه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0225.npy
+02_0226,انا ماضي ثلاث اكل سوال,ماذا اكلت قبل ثلاث ايام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0226.npy
+02_0227,انا رغبه وقت موعد صوره بطن رغبه,اريد موعدا لاجراء تصوير البطن بالموجات فوق الصوتيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0227.npy
+02_0228,هو تجنب بقره خضار انواع تجنب,تجنب منتجات الالبان و الخضار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0228.npy
+02_0229,انا قدره دجاج سمكه,يمكنني اكل الدجاج و السمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0229.npy
+02_0230,تمام اريد اكل رز مكرونه قدره,بالطبع يمكن ان تاكل الرز و المكرونه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0230.npy
+02_0231,انا عمل لا_يوجد تامين لا_يوجد,انا عاطل عن العمل و ليس لدي تامين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0231.npy
+02_0232,هو دفع مال سوال,اين دفع الرسوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0232.npy
+02_0233,بنك اي_شي,في احد البنوك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0233.npy
+02_0234,هو مقابله ملكيه مقابله محادثه,هل تحدثت الى المالك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0234.npy
+02_0235,اعاده عوده ثلاث عوده,تعال مره اخرى بعد ثلاث ايام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0235.npy
+02_0236,هو عوده مع هو,هل جئتم معا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0236.npy
+02_0237,ان_شاء_الله غدا دفع,ان شاء الله ادفع غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0237.npy
+02_0238,رغبه مستقبل سعيد,اتمنى لك مستقبل سعيد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0238.npy
+02_0239,مهم بطاقه هويه اخذ صوره,احتاج الى بطاقه الهويه و صوره ضوئيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0239.npy
+02_0240,ولد سرقه حقيبه_يد,سرق الرجل حقيبتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0240.npy
+02_0241,هو اختبار اخر شهاده,سيتم اختبارك و ستحصل على النتائج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0241.npy
+02_0242,هو رخصه رسمي واحد ثلاث,ستكون الرخصه جاهزه في غضون ثلاث اسابيع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0242.npy
+02_0243,بطاقه سوال اسابيع ثلاث,سيكون التصريح جاهز في غضون ثلاث اسابيع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0243.npy
+02_0244,جواز كتاب اتقان ممكن عشر_ايام,سيكون جواز السفر جاهز في غضون عشر ايام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0244.npy
+02_0245,وجوب دفع جواز سفر,يجب عليك دفع رسوم جواز السفر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0245.npy
+02_0246,شكر,شكرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0246.npy
+02_0247,شكر مساعده,شكرا لمساعدتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0247.npy
+02_0248,صباح خير,صباح الخير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0248.npy
+02_0249,صباح خير طاعه خدمه سوال,صباح الخير كيف يمكنني ان اخدمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0249.npy
+02_0250,صباح خير هو رغبه مساعده,صباح الخير هل تحتاج مساعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0250.npy
+02_0251,ولد صفه سوال,صف الرجل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0251.npy
+02_0252,ولد طويل نحيف شعر اصفر قصير,كان الرجل طويل ونحيل وشعره اشقر قصير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0252.npy
+02_0253,انا بطن الم,عندي الم في المعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0253.npy
+02_0254,انا جواز تاريخ انتهاء,جواز سفري منتهي الصلاحيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0254.npy
+02_0255,سبب ولد شخص لبس سوال,ماذا كان يرتدي الرجل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0255.npy
+02_0256,ولد لبس بنطال احمر حذاء ابيض,الرجل يرتدي بنطال احمر و حذاء ابيض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0256.npy
+02_0257,سوال جواز تاريخ انتهاء تاريخ سوال,ماهو تاريخ نهايه صلاحيه الجواز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0257.npy
+02_0258,سن خمس,خمس سنوات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0258.npy
+02_0259,سوال ضياع حقيبه_يد,كيف فقدت الحقيبه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0259.npy
+02_0260,ماضي مرض خطر,اصبت بمرض خطير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0260.npy
+02_0261,هاتف هويه ضياع سوال,كيف فقدت هاتفك و هويتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0261.npy
+02_0262,هو بطن ت س م م,لديك تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0262.npy
+02_0263,انا هويه ضياع,فقدت هويتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0263.npy
+02_0264,انا ممتاز اتقان,حالي ممتاز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0264.npy
+02_0265,وقت مسافه طياره خارج مسافه تاريخ سوال,ما هي الفتره التي ستقضيها بالسفر الى الخارج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0265.npy
+02_0266,تاريخ سرقه تاريخ سوال,متى حدثت السرقه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0266.npy
+02_0267,ماضي,منذ زمن,data/processed/isharah500/hand_keypoints_tracked/dev/02_0267.npy
+02_0268,تاريخ فتح مرض,متى بدا المرض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0268.npy
+02_0269,مرض ماضي صغير مرض,مرضت عندما كنت طفل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0269.npy
+02_0270,دعوه انا رغبه مساعده,مرحبا انا بحاجه الى مساعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0270.npy
+02_0271,انا دعوه طاعه مساعده,مرحبا كيف يمكنني المساعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0271.npy
+02_0272,دعوه اخبار حال جيد,مرحبا ما اخبارك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0272.npy
+02_0273,ليل خير,مساء الخير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0273.npy
+02_0274,مع_السلامه,مع السلامه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0274.npy
+02_0275,سوال ازعاج سوال,من يزعجك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0275.npy
+02_0276,هو دواء ماضي يوجد,هل تناولت اي ادويه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0276.npy
+02_0277,هو يوجد تحويل د,هل لديك تحويا من الطبيب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0277.npy
+02_0278,انا نعم د بطن,نعم من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0278.npy
+02_0279,هو يوجد تامين,هل لديك تامين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0279.npy
+02_0280,نعم تامين,نعم لدي تامين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0280.npy
+02_0281,هو رخصه سياره هو,هل لديك رخصه سياره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0281.npy
+02_0282,هو بطاقه صوره هويه هو,هل عندك بطاقه هويتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0282.npy
+02_0283,ثاني صوره سوال جواز_سفر,و صوره جواز السفر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0283.npy
+02_0284,ولاده طفل اتقان,ولد الطفل سليم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0284.npy
+02_0285,ولاده ماضي تسع,ولد الطفل قبل الاوان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0285.npy
+02_0286,وجوب طلب صوره هويه,يجب عليك احضار صوره من هويتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0286.npy
+02_0287,سوال هو هاتف مشاهده سوال,هل رايت الهاتف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0287.npy
+02_0288,طاوله على,على الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0288.npy
+02_0289,استفهام سوال سرقه هاتف هو,من الذي سرق الهاتف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0289.npy
+02_0290,هو كتابه تفاصيل حال,اكتب الحدث بالتفصيل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0290.npy
+02_0291,هو عضو مع السعوديه قصه,هل انت عضو في الفريق السعودي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0291.npy
+02_0292,نعم انا مع السعوديه قصه رمايه صم,نعم انا في الفريق السعودي للرمايه للصم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0292.npy
+02_0293,غدا شهاده تقديم,ساحضر الشهاده غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0293.npy
+02_0294,سوال عمر سن,كم عمرك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0294.npy
+02_0295,انا تعليم ولد اخر شهاده,انا ادرس وابني لديه شهاده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0295.npy
+02_0296,انا رغبه لا ممتاز,لا احتاج شيء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0296.npy
+02_0297,هو قلم يوجد,هل لديك قلم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0297.npy
+02_0298,هو كتابه تاريخ الان,اكتب تاريخ اليوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0298.npy
+02_0299,انا رغبه بطاقه سياره,اريد الحصول على رخصه قياده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0299.npy
+02_0300,استفهام دواء قدره هو,هل تناولت الدواء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0300.npy
+02_0301,انا نوم ليل,انام ليلا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0301.npy
+02_0302,انا حب لون ابيض كره لون اسود,احب اللون الابيض واكره اللون الاسود,data/processed/isharah500/hand_keypoints_tracked/dev/02_0302.npy
+02_0303,انا رغبه شراء سوق لوحه,اريد ان اشتري اغراض منزلي من السوبرماركت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0303.npy
+02_0304,انا اسم ا ح م د,اسمي احمد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0304.npy
+02_0305,انا عمل ترجمه لغه اشاره,انا اعمل مترجم لغه اشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0305.npy
+02_0306,انا قراءه كتاب,انا اقرا الكتاب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0306.npy
+02_0307,انا مع اسره مع مشاهده كره_قدم مباراه,انا واسرتي ذهبنا لمشاهده مباراه كره قدم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0307.npy
+02_0308,انا رغبه ذهاب مستشفى سبب ابن مرض,اريد الذهاب للمستشفى بسبب ابني مريض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0308.npy
+02_0309,انا اب بيع تصوير,ابي باع الكاميرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0309.npy
+02_0310,اب انا لون حب لون ازرق ام لون حب سوال وردي,ابي يحب اللون الازرق وامي تحب اللون الوردي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0310.npy
+02_0311,انا حب اب,احب ابي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0311.npy
+02_0312,انا حب بنت اخ,احب اختي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0312.npy
+02_0313,انا حب صلاه,احب صلاه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0313.npy
+02_0314,انا حب اكل,احب الطعام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0314.npy
+02_0315,انا حب صديق,احب زميلي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0315.npy
+02_0316,انا اخ بنت جميل,اختي جميله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0316.npy
+02_0317,انا اخ زواج الثلاثاء قادم,اخي سيتزوج يوم الثلاثاء القادم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0317.npy
+02_0318,حقيبه_ظهر حقيبه_يد خفيف,الحقيبه خفيفه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0318.npy
+02_0319,انا اخ سياره سرعه,اخي يقود السياره بسرعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0319.npy
+02_0320,انا مساعده ام منزل,اساعد امي في المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0320.npy
+02_0321,انا مساعده فقير,اساعد الفقراء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0321.npy
+02_0322,انا صديق مدرسه مع ثلاث بنت ولد خمس,اصدقائي في المدرسه ثلاث بنات و خمس اولاد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0322.npy
+02_0323,انا معرفه لغه اشاره,انا اتعلم لغه الاشاره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0323.npy
+02_0324,انا وضوء صلاه,انا اتوضا للصلاه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0324.npy
+02_0325,انا حب كره_قدم صيد سمكه,انا احب كره القدم وصيد السمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0325.npy
+02_0326,انا طاعه سوال معلم,انا احترم المعلم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0326.npy
+02_0327,انا زياره اقارب مستمر,انا ازور اقاربي دائما,data/processed/isharah500/hand_keypoints_tracked/dev/02_0327.npy
+02_0328,انا عمل معلم مدرسه,انا اعمل معلم مدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0328.npy
+02_0329,انا نار خلط صباح اكل,انا اجهز الفطور,data/processed/isharah500/hand_keypoints_tracked/dev/02_0329.npy
+02_0330,انا حفظ مدرسه قراءه,انا احفظ الدرس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0330.npy
+02_0331,انا مدرسه جامعه,انا ادرس في الجامعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0331.npy
+02_0332,انا معرفه قراءه مدرسه,انا اذاكر دروسي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0332.npy
+02_0333,انا ذهاب مدرسه,انا اذهب للمدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0333.npy
+02_0334,انا مشي منزل,انا اذهب للمنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0334.npy
+02_0335,انا فوضى ترتيب غرفه نوم,انا ارتب غرفتي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0335.npy
+02_0336,انا طاعه معلم بنت,انا استمع للمعلمه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0336.npy
+02_0337,انا ذهاب مع اب صلاه الجمعه,انا ذاهب مع والدي الي صلاه الجمعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0337.npy
+02_0338,انا زوج مع كل_يوم مشي,انا وزوجتي نمشي يوميا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0338.npy
+02_0339,اب نوم سرير,ابي ينام على السرير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0339.npy
+02_0340,الاسبوع_الماضي جد موت رحمه الله,الاسبوع الماضي جدي مات رحمه الله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0340.npy
+02_0341,الاسبوع_الماضي صديق جد موت,الاسبوع الماضي صديقي جده مات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0341.npy
+02_0342,الجمعه السبت اجازه,الجمعه و السبت عطله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0342.npy
+02_0343,شرطه قال ممنوع انتظار,الشرطي قال ممنوع الانتظار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0343.npy
+02_0344,صيف نهايه ذهاب برد,الصيف انتهى و جاء الشتاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0344.npy
+02_0345,غني مساعده فقير,الغني يساعد الفقير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0345.npy
+02_0346,ولد ذهاب مدرسه ابتسامه,الولد يخرج من المدرسه سعيد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0346.npy
+02_0347,ولد دخل مدرسه خوف,الولد يدخل المدرسه خائف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0347.npy
+02_0348,هو ابن بنت اول عمر سن سوال اسم سوال,ابنتك الاولى كم عمرها و ما اسمها,data/processed/isharah500/hand_keypoints_tracked/dev/02_0348.npy
+02_0349,رقم عمر ابن ولد,كم عمر ابنك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0349.npy
+02_0350,اب هو اسم سوال,ابوك ما اسمه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0350.npy
+02_0351,ام اب صم,ابي و امي من الصم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0351.npy
+02_0352,انا اخ موزه اكل صباح,اخي ياكل الموز صباحا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0352.npy
+02_0353,استيقاظ وقت ست صباح,استيقظ الساعه السادسه فجرا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0353.npy
+02_0354,اسف فهم كلام لا انا,اسف لا افهم ما تقول,data/processed/isharah500/hand_keypoints_tracked/dev/02_0354.npy
+02_0355,انا اسم م ر ا د,اسمي مراد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0355.npy
+02_0356,انا تنظيف_اسنان,اغسل اسناني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0356.npy
+02_0357,غسل_وجه,اغسل وجهي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0357.npy
+02_0358,غسل_يد,اغسل يدي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0358.npy
+02_0359,بحر لون ازرق,البحر ازرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0359.npy
+02_0360,عضل رياضه فائده صحه,البروتين مفيد للجسم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0360.npy
+02_0361,منزل جدار لون ابيض,الجدار ابيض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0361.npy
+02_0362,مدرسه سهل,الدرس سهل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0362.npy
+02_0363,مدرسه مشاهده فائده,الدرس مفيد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0363.npy
+02_0364,ولد شخص صعود جبل,الرجل يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0364.npy
+02_0365,السبت ماضي انا تعب,السبت الماضي كنت متعب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0365.npy
+02_0366,السلام_عليكم,السلام عليكم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0366.npy
+02_0367,ولد بناء منزل جميل,الشاب يبني بيت جميل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0367.npy
+02_0368,شباب شخص رغبه سباحه,الشاب يحب السباحه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0368.npy
+02_0369,صلاه حلو,الصلاه جميله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0369.npy
+02_0370,د مساعده انسان,الطبيب يساعد الناس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0370.npy
+02_0371,اكل فائده مستشفى,الطعام صحي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0371.npy
+02_0372,قلم لون ازرق,القلم ازرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0372.npy
+02_0373,لون قلم انا خاص,القلم هذا لي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0373.npy
+02_0374,مدرسه جميل,الكتاب رائع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0374.npy
+02_0375,ترجمه سريع ذكي,المترجم سريع وذكي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0375.npy
+02_0376,نوم فندق ممتاز سعيد,النوم بالفندق مريح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0376.npy
+02_0377,ولد هو كتابه,الولد يكتب الدرس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0377.npy
+02_0378,ولد شخص لعب,الولد يلعب,data/processed/isharah500/hand_keypoints_tracked/dev/02_0378.npy
+02_0379,مع_السلامه,الى اللقاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0379.npy
+02_0380,ام نداء انا اخ,امي تنادي اخي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0380.npy
+02_0381,انا فهم لغه اشاره قليل,انا افهم لغه الاشاره قليلا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0381.npy
+02_0382,انا كره طفل بكاء,انا اكره بكاء الطفل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0382.npy
+02_0383,انا سعيد سبب مشاهده,انا سعيد برويتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0383.npy
+02_0384,انا عمر اثنان_ثلاثون سن,انا عمري ٣٢ سنه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0384.npy
+02_0385,هو حب قهوه كوفي,انت تحب القهوه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0385.npy
+02_0386,هو شخص ذكي,انت شخص ذكي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0386.npy
+02_0387,هو سوال منزل موقع سوال,ما هو عنوان منزلك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0387.npy
+02_0388,انا جد ماضي شراء مزرعه,جدي اشترى مزرعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0388.npy
+02_0389,جد ماضي حب شاي اب انا حب قهوه,جدي يحب الشاي و ابي يحب القهوه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0389.npy
+02_0390,مدرسه قصه يوجد طاوله هو,كتاب القصه على الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0390.npy
+02_0391,استفهام سوال ابن جيد,كيف حال ابنك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0391.npy
+02_0392,استفهام سوال شخص هو اسره جيد,كيف حال اسرتك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0392.npy
+02_0393,انا زوج لا_يوجد,انا لست متزوج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0393.npy
+02_0394,مع ذهاب,نذهب معا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0394.npy
+02_0395,استفهام هو اسم سوال,ما هو اسمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0395.npy
+02_0396,هو عمل سوال,ماذا تعمل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0396.npy
+02_0397,انا صم,انا اصم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0397.npy
+02_0398,استفهام هو صم,هل انت اصم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0398.npy
+02_0399,استفهام هو زوج,هل انت متزوج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0399.npy
+02_0400,كل_يوم صباح مشي وقت اثنان,يوميا في الصباح امشي لمده ساعتين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0400.npy
+02_0401,انا رغبه اكل مكرونه,اريد ان اكل المكرونه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0401.npy
+02_0402,انا رغبه شراء بيض رز,اريد شراء البيض و الرز,data/processed/isharah500/hand_keypoints_tracked/dev/02_0402.npy
+02_0403,انا رغبه ذهاب بحر,اريد ان اذهب الى البحر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0403.npy
+02_0404,هو بنت شخص حذاء اسود فستان لون وردي,البنت ترتدي حذاء اسود و فستان وردي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0404.npy
+02_0405,صيف ذهاب صيد سمكه,في الصيف اذهب لصيد السمك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0405.npy
+02_0406,انا اخ حب لون احمر,اخي يحب اللون الاحمر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0406.npy
+02_0407,سرير خفيف سعيد,السرير مريح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0407.npy
+02_0408,كلب خلف منزل,الكلب خلف الحائط,data/processed/isharah500/hand_keypoints_tracked/dev/02_0408.npy
+02_0409,انا سن الم سن,عندي الم في اسناني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0409.npy
+02_0410,انا حفيد مع ذهاب قهوه كوفي,انا و احفادي ذهبنا الى المقهى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0410.npy
+02_0411,انا اسف,انا اسف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0411.npy
+02_0412,فندق داخل برد,الفندق بارد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0412.npy
+02_0413,انا ابن ت س م م بطن,ابني يعاني من تسمم غذائي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0413.npy
+02_0414,انا حب لا ال ب ق و ل ي ا ت,لا احب البقوليات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0414.npy
+02_0415,انا معرفه سبب اختبار,انا اذاكر للاختبار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0415.npy
+02_0416,انا وضوء قبل نوم,انا اتوضا قبل النوم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0416.npy
+02_0417,ام نار خلط غرفه خلط,امي تطبخ الفطور في المطبخ,data/processed/isharah500/hand_keypoints_tracked/dev/02_0417.npy
+02_0418,طفل لعب بحر قريب,الطفل يلعب على الشاطى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0418.npy
+02_0419,انا حب برد,احب البرد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0419.npy
+02_0420,انا حب تفاحه موزه انواع صيف,احب اكل الفاكهه في الصيف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0420.npy
+02_0421,انا لقاء اقارب مباراه,التقي باقاربي في المباراه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0421.npy
+02_0422,سوال موقع بيع,اين المتجر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0422.npy
+02_0423,انا ابن بنت بطن,ابنتي تعاني من الم في المعده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0423.npy
+02_0424,انا اخ رغبه لا ال خ س,اختي لا تحب الخس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0424.npy
+02_0425,دجاج طير في ب ر و ت ي ن,الدجاج فيه بروتين,data/processed/isharah500/hand_keypoints_tracked/dev/02_0425.npy
+02_0426,انا اخ مع ارنب قصه رمايه,اخي في فريق الرمايه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0426.npy
+02_0427,انتظار اخ بنت جامعه,انتظر اختي في الجامعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0427.npy
+02_0428,شخص خدمه نحيف ركض سرعه,النادل نحيل وسريع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0428.npy
+02_0429,طفل بكاء صراخ ازعاج,بكاء الطفل مزعج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0429.npy
+02_0430,اخ بنت جديله لون اصفر,شعر اختي طويل ولونه اشقر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0430.npy
+02_0431,ذاكره نسيان تذكره طياره,لقد نسيت تذكره الطياره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0431.npy
+02_0432,لا طاوله كرسي لا,لا تجلس على الطاوله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0432.npy
+02_0433,رغبه وقت اتقان د هضمي,اريد موعد مع طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0433.npy
+02_0434,ولد هو اختفاء شرطه,هرب الرجل من الشرطه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0434.npy
+02_0435,انا غسل_وجه صباح,اغسل وجهي في الصباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0435.npy
+02_0436,انا شراء انا اخ شراء دراجه_ناريه,اشترى اخي دراجه ناريه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0436.npy
+02_0437,انا منزل مدرسه اخر نهايه,انتهيت من واجباتي المدرسيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0437.npy
+02_0438,حقيبه_يد حقيبه_ظهر حقيبه_يد خفيف لا,الحقيبه ليست خفيفه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0438.npy
+02_0439,كلب جبل صعود,الكلب يصعد الجبل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0439.npy
+02_0440,ولد كتابه جدار كتابه,الولد يكتب على الجدار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0440.npy
+02_0441,انا الثلاثاء شراء تصوير,ساشتري كاميرا يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0441.npy
+02_0442,ممنوع كرسي لا_2,ممنوع الجلوس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0442.npy
+02_0443,سوال مال سوال صوره اسود بطن,كم سعر تصوير الموجات فوق الصوتيه للبطن,data/processed/isharah500/hand_keypoints_tracked/dev/02_0443.npy
+02_0444,استفهام لوحه الثلاثاء مفتوح هو,هل المحل مفتوح يوم الثلاثاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0444.npy
+02_0445,هو ثلج قليل هنا,الثلج نادر هنا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0445.npy
+02_0446,هو تاريخ وقت ولاده,متى موعد الولاده,data/processed/isharah500/hand_keypoints_tracked/dev/02_0446.npy
+02_0447,انا حضور تاريخ وقت محدد تاخير,حضرت للموعد متاخر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0447.npy
+02_0448,انا رغبه شكوى سبب ازعاج,اريد تقديم شكوى بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0448.npy
+02_0449,انا اخ رغبه طياره تخفيض,ابي يريد بدل اعاقه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0449.npy
+02_0450,انا رغبه كلمه منزل نقل,اريد نقل ملكيه المنزل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0450.npy
+02_0451,هو ملكيه منزل خوف انا,هو مالك المنزل الجديد,data/processed/isharah500/hand_keypoints_tracked/dev/02_0451.npy
+02_0452,انا جد رغبه حب سوال اخبار تلفاز,جدي يحب مشاهده الاخبار التلفزيونيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0452.npy
+02_0453,انا اخ بناء سوال جبل,اخي يبني بيت فوق الجبل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0453.npy
+02_0454,رياضه فائده صحه,الرياضه مفيده للصحه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0454.npy
+02_0455,انا مشاهده هويه نظر سوال الاربعاء,لقد وجدت هويتي يوم الاربعاء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0455.npy
+02_0456,استفهام بطاقه يوجد,هل لديك رخصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0456.npy
+02_0457,ممنوع اكل بقره جبن انواع,ممنوع ان اكل منتجات الالبان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0457.npy
+02_0458,انا جد جيد غني,جدي جيد وغني,data/processed/isharah500/hand_keypoints_tracked/dev/02_0458.npy
+02_0459,تقديم فقير اكل,اعطي الفقير اكل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0459.npy
+02_0460,استفهام حب بقره او عصير,هل تحب الحليب ام العصير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0460.npy
+02_0461,انا غرفه لون وردي,غرفتي لونها وردي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0461.npy
+02_0462,موقع منزل سوال,ما هو عنوانك,data/processed/isharah500/hand_keypoints_tracked/dev/02_0462.npy
+02_0463,انا ضياع كتاب قصه,فقدت كتاب القصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0463.npy
+02_0464,اتصال زوج,اتصلت بزوجي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0464.npy
+02_0465,هو طير دخل سرير تحت,الطائر تحت السرير,data/processed/isharah500/hand_keypoints_tracked/dev/02_0465.npy
+02_0466,انا طاعه جد,انا احترم جدي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0466.npy
+02_0467,الان تاريخ اثنان عشر,اليوم هو الثاني من اكتوبر,data/processed/isharah500/hand_keypoints_tracked/dev/02_0467.npy
+02_0468,انا غدا منزل ترتيب تنظيف,انا ارتب المنزل يوميا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0468.npy
+02_0469,استئذان غدا عوده,من قضلك تعال غدا,data/processed/isharah500/hand_keypoints_tracked/dev/02_0469.npy
+02_0470,انا رغبه دوره_مياه,اريد ان اذهب الى الحمام,data/processed/isharah500/hand_keypoints_tracked/dev/02_0470.npy
+02_0471,زوج هو شراء كل_يوم الجمعه منزل اعطاء,زوجي يشتري اغراض المنزل يوم الجمعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0471.npy
+02_0472,رغبه لا انتظار,اكره الانتظار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0472.npy
+02_0473,مال دفع بطاقه سياره مال رخيص,رسوم رخصه القياده رخيصه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0473.npy
+02_0474,انا رغبه صوره_شخصيه اربع,انا اريد اربع صور ضوئيه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0474.npy
+02_0475,انا اخ عمل بدون,اخي عاطل عن العمل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0475.npy
+02_0476,عمر ام انا اثنان_ثلاثون سن,عمر امي اثنان و ثلاثون سنه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0476.npy
+02_0477,هو استفهام هو ولد شخص صفه سرقه سوال,صف الرجل الذي سرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0477.npy
+02_0478,هو ولد ولاده اتقان صباح,ولد الطفل سليم في الصباح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0478.npy
+02_0479,مشاهده صعب تقلب سبب ازعاج صراخ,اجد صعوبه في النوم بسبب الازعاج,data/processed/isharah500/hand_keypoints_tracked/dev/02_0479.npy
+02_0480,انا اخ بنت زواج تاريخ السبت قادم,اختي ستتزوج يوم السبت القادم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0480.npy
+02_0481,انا مشاهده معرفه مدرسه,انا استمع للدرس,data/processed/isharah500/hand_keypoints_tracked/dev/02_0481.npy
+02_0482,انا حفظ مدرسه داخل مدرسه,انا احفظ الدرس في المدرسه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0482.npy
+02_0483,انا ام عمل داخل منزل داخل,امي تعمل في البيت,data/processed/isharah500/hand_keypoints_tracked/dev/02_0483.npy
+02_0484,انا رغبه تحويل د بطن,اريد تحويل من طبيب الجهاز الهضمي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0484.npy
+02_0485,تاريخ سوال د عوده تاريخ سوال,متى سيعود الطبيب الى المستشفى,data/processed/isharah500/hand_keypoints_tracked/dev/02_0485.npy
+02_0486,انا ابن بنت عمر اربع_سنوات,ابنتي عمرها اربع سنوات,data/processed/isharah500/hand_keypoints_tracked/dev/02_0486.npy
+02_0487,انا سياره حافله,انا اقود الحافله,data/processed/isharah500/hand_keypoints_tracked/dev/02_0487.npy
+02_0488,انا زياره هو جد اسبوع مستمر,ازور جدي كل اسبوع,data/processed/isharah500/hand_keypoints_tracked/dev/02_0488.npy
+02_0489,انا سعيد سبب صيف اغلاق,انا سعيد بعطله الصيف,data/processed/isharah500/hand_keypoints_tracked/dev/02_0489.npy
+02_0490,انا لبس بنطال لون ازرق,انا البس بنطلون جينز ازرق,data/processed/isharah500/hand_keypoints_tracked/dev/02_0490.npy
+02_0491,انا استفراغ دوخه حمى الان,انا اتقيا واعاني من دوخه وحمى الان,data/processed/isharah500/hand_keypoints_tracked/dev/02_0491.npy
+02_0492,انا ذهاب فيلم سينما وقت اثنان ليل,انا اذهب الى السينما الساعه الثانيه مساء,data/processed/isharah500/hand_keypoints_tracked/dev/02_0492.npy
+02_0493,انا اخ عضو مع السعوديه قصه كره_قدم,اخي عضو في الفريق السعودي لكره القدم,data/processed/isharah500/hand_keypoints_tracked/dev/02_0493.npy
+02_0494,بيع جد بيع مزرعه,باع جدي المزرعه,data/processed/isharah500/hand_keypoints_tracked/dev/02_0494.npy
+02_0495,معلم بنت نداء اخ بنت,المعلمه تنادي اختي,data/processed/isharah500/hand_keypoints_tracked/dev/02_0495.npy
+02_0496,دراجه_ناريه هو خطر,الدراجه الناريه خطيره,data/processed/isharah500/hand_keypoints_tracked/dev/02_0496.npy
+02_0497,سوال اخر شهاده سوال,ما هي نتائج الاختبار,data/processed/isharah500/hand_keypoints_tracked/dev/02_0497.npy
+02_0498,انا غسل_يد قبل اكل,اغسل يدي قبل الاكل,data/processed/isharah500/hand_keypoints_tracked/dev/02_0498.npy
+02_0499,بنت هو لبس لون ابيض,المراه ترتدي لبس ابيض,data/processed/isharah500/hand_keypoints_tracked/dev/02_0499.npy
+02_0500,استفهام نسخ بطاقه هو,هل لديك نسخه من التصريح,data/processed/isharah500/hand_keypoints_tracked/dev/02_0500.npy
