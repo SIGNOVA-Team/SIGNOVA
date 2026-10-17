@@ -1,0 +1,13 @@
+pose_file,sign_id,signer_id,expected_frames,actual_frames,landmarks,status
+pose_dir/sign_0001_s1_sess1_001.pose,1,1,15,15,543,PASS
+pose_dir/sign_0001_s2_sess2_001.pose,1,2,13,13,543,PASS
+pose_dir/sign_0001_s3_sess3_001.pose,1,3,24,24,543,PASS
+pose_dir/sign_0100_s1_sess1_001.pose,100,1,34,34,543,PASS
+pose_dir/sign_0100_s2_sess2_001.pose,100,2,43,43,543,PASS
+pose_dir/sign_0100_s3_sess3_001.pose,100,3,49,49,543,PASS
+pose_dir/sign_0300_s1_sess1_001.pose,300,1,30,30,543,PASS
+pose_dir/sign_0300_s2_sess2_001.pose,300,2,40,40,543,PASS
+pose_dir/sign_0300_s3_sess3_001.pose,300,3,41,41,543,PASS
+pose_dir/sign_0502_s1_sess1_001.pose,502,1,55,55,543,PASS
+pose_dir/sign_0502_s2_sess2_001.pose,502,2,49,49,543,PASS
+pose_dir/sign_0502_s3_sess3_001.pose,502,3,64,64,543,PASS

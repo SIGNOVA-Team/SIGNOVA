@@ -33,12 +33,13 @@ The source license is unresolved.
 Project-lead approval and usage-rights verification are pending.
 
 ## Benchmark Files
-- karsl/data/splits/karsl_split_manifest.csv
-- karsl/data/splits/karsl_split_distribution.csv
-- karsl/data/splits/karsl_class_gaps.csv
-- karsl/data/splits/karsl_excluded_classes.csv
-- karsl/data/metadata/karsl_class_mapping.csv
-- karsl/data/reports/karsl_dataset_tests.csv
+split_manifest_3way.csv
+split_distribution.csv
+split_class_gaps.csv
+split_excluded_classes.csv
+split_manifest_pass_only.csv
+class_mapping_v3.csv
+dataset_tests_v3.csv
 
 ## Status
 Technical data and split checks: PASS

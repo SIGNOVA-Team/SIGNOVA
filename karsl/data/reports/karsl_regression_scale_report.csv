@@ -1,0 +1,17 @@
+check,status,actual,expected
+original_metadata_rows,PASS,75514,75514
+original_sample_ids_unique,PASS,75514,75514
+video_reference_rows,PASS,75514,75514
+video_reference_ids_match,PASS,75514,75514
+video_references_unique,PASS,75514,75514
+original_split_rows,PASS,225285,225285
+original_split_classes,PASS,500,500
+original_split_keys_unique,PASS,0,0
+original_three_folds,PASS,3,3
+pose_metadata_rows,PASS,75515,75515
+pose_paths_unique,PASS,75515,75515
+pose_classes,PASS,502,502
+pose_fold_rows,PASS,226545,226545
+pose_fold_keys_unique,PASS,0,0
+original_signer_independence,PASS,True,True
+pose_signer_independence,PASS,True,True
