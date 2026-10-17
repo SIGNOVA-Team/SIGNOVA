@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-17T02:56:58.730773+00:00",
+  "scope": "Reproduction of recorded dataset counts and readiness checks",
+  "checks": {
+    "metadata_row_count": true,
+    "video_splits_row_count": true,
+    "pose_manifest_row_count": true,
+    "pose_splits_row_count": true,
+    "mapping_row_count": true,
+    "visual_review_row_count": true,
+    "identity_review_row_count": true,
+    "qc_pass_count": true,
+    "qc_exclude_count": true,
+    "qc_review_count": true,
+    "all_502_contact_sheets_present": true,
+    "all_visualizations_ready": true,
+    "identity_mismatch_recorded": true,
+    "stress_test_pass_recorded": true
+  },
+  "qc_counts": {
+    "PASS": 75296,
+    "EXCLUDE": 150,
+    "REVIEW": 68
+  },
+  "elapsed_seconds": 4.948,
+  "limitations": [
+    "Does not regenerate metadata from original video archives",
+    "Does not rerun original QC or MediaPipe extraction",
+    "Does not regenerate signer splits from source algorithms",
+    "Does not validate semantic sign labels",
+    "Does not establish identity of Kaggle Pose files and original videos"
+  ],
+  "passed": 14,
+  "total": 14,
+  "overall_pass": true
+}

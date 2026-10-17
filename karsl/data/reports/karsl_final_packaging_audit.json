@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-17T02:45:20.349676+00:00",
+  "checks": {
+    "required_files_present": true,
+    "visual_register_has_502_rows": true,
+    "contact_sheets_complete": true,
+    "visualizations_marked_ready": true,
+    "identity_sample_has_12_pairs": true,
+    "identity_issue_recorded": true
+  },
+  "contact_sheets_found": 502,
+  "missing_contact_sheets": [],
+  "unexpected_contact_sheets": [],
+  "identity_status_counts": {
+    "NOT_VERIFIED": 11,
+    "COORDINATE_MISMATCH_UNRESOLVED": 1
+  },
+  "approval_status": "PENDING_EXTERNAL_CONFIRMATION"
+}

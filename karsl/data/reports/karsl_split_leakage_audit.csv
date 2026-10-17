@@ -1,0 +1,4 @@
+fold,rows,missing_metadata,non_pass_metadata,qc_status_disagreements,duplicate_hash_occurrences,cross_split_hash_groups
+fold_1,75095,0,0,0,0,0
+fold_2,75095,0,0,0,0,0
+fold_3,75095,0,0,0,0,0

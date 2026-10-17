@@ -1,0 +1,8 @@
+check,value,status
+pose_metadata_rows,75515,PASS
+unique_pose_paths,75515,PASS
+unique_classes,502,PASS
+source_split_missing,0,PASS
+source_label_discrepancies,33,REVIEW
+extra_pose_candidate,1,REVIEW
+video_pose_identity_verified,0,PENDING
