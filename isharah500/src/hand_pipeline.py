@@ -6,7 +6,6 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 import numpy as np
-
 from hand_extraction import extract_sample_hand_keypoints
 from hand_tracking import track_hand_slots
 from keypoint_validation import is_valid_keypoint_file
@@ -31,9 +30,7 @@ def process_sample(sample_directory, model_path, raw_dir, tracked_dir):
     raw_path = raw_dir / f"{sample_id}.npy"
     tracked_path = tracked_dir / f"{sample_id}.npy"
 
-    expected_frames = sum(
-        1 for _ in sample_directory.glob("*.jpg")
-    )
+    expected_frames = sum(1 for _ in sample_directory.glob("*.jpg"))
 
     raw_valid = is_valid_keypoint_file(
         raw_path,

@@ -13,6 +13,7 @@ REMAINING_SIGNERS = {
     "test": ("08", "10", "11", "12"),
 }
 
+
 def find_samples_directory(signer_id):
     signer_directory = VIDEOS_DIRECTORY / signer_id
     for directory in (signer_directory, signer_directory / signer_id):
@@ -21,9 +22,8 @@ def find_samples_directory(signer_id):
             for child in directory.iterdir()
         ):
             return directory
-    raise FileNotFoundError(
-        f"Sample directories not found for signer {signer_id}"
-    )
+    raise FileNotFoundError(f"Sample directories not found for signer {signer_id}")
+
 
 def process_signer(signer_id, split_name):
     input_directory = find_samples_directory(signer_id)
@@ -45,6 +45,7 @@ def process_signer(signer_id, split_name):
     print(f"\nProcessing signer {signer_id} ({split_name})", flush=True)
     subprocess.run(command, cwd=PROJECT_DIRECTORY, check=True)
 
+
 def main():
     for split_name, signer_ids in REMAINING_SIGNERS.items():
         for signer_id in signer_ids:
@@ -52,6 +53,6 @@ def main():
 
     print("\nAll remaining signers processed successfully.")
 
+
 if __name__ == "__main__":
     main()
-        

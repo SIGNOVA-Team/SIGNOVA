@@ -1,11 +1,11 @@
 """Extract hand keypoints from multiple samples in parallel."""
+
 import argparse
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 import numpy as np
-
 from hand_extraction import extract_sample_hand_keypoints
 
 
@@ -61,8 +61,7 @@ def process_directory(
     sample_directories = sorted(
         directory
         for directory in input_directory.iterdir()
-        if directory.is_dir()
-        and any(directory.glob("*.jpg"))
+        if directory.is_dir() and any(directory.glob("*.jpg"))
     )
 
     if limit is not None:

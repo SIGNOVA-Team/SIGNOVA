@@ -4,13 +4,11 @@ import sys
 from pathlib import Path
 
 import numpy as np
-import pytest
-
 
 SOURCE_DIRECTORY = Path(__file__).resolve().parents[1] / "src"
 sys.path.insert(0, str(SOURCE_DIRECTORY))
 
-from keypoint_validation import is_valid_keypoint_file
+from keypoint_validation import is_valid_keypoint_file  # noqa: E402
 
 
 def test_valid_keypoint_file(tmp_path):

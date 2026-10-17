@@ -6,12 +6,11 @@ from unittest.mock import patch
 
 import numpy as np
 
-
 SOURCE_DIRECTORY = Path(__file__).resolve().parents[1] / "src"
 sys.path.insert(0, str(SOURCE_DIRECTORY))
 
-from hand_pipeline import process_sample
-from keypoint_validation import is_valid_keypoint_file
+from hand_pipeline import process_sample  # noqa: E402
+from keypoint_validation import is_valid_keypoint_file  # noqa: E402
 
 
 def make_keypoints(frame_count=3):
@@ -37,9 +36,7 @@ def prepare_directories(tmp_path):
 
 def test_recovers_corrupted_tracked_file(tmp_path):
     """Rebuild tracked output without rerunning extraction."""
-    sample_directory, raw_directory, tracked_directory = (
-        prepare_directories(tmp_path)
-    )
+    sample_directory, raw_directory, tracked_directory = prepare_directories(tmp_path)
 
     keypoints = make_keypoints()
     np.save(raw_directory / "02_0001.npy", keypoints)
@@ -47,9 +44,7 @@ def test_recovers_corrupted_tracked_file(tmp_path):
     tracked_path = tracked_directory / "02_0001.npy"
     tracked_path.write_bytes(b"corrupted")
 
-    with patch(
-        "hand_pipeline.extract_sample_hand_keypoints"
-    ) as extraction_mock:
+    with patch("hand_pipeline.extract_sample_hand_keypoints") as extraction_mock:
         sample_id, status = process_sample(
             sample_directory,
             tmp_path / "model.task",
@@ -65,9 +60,7 @@ def test_recovers_corrupted_tracked_file(tmp_path):
 
 def test_recovers_corrupted_raw_file(tmp_path):
     """Rerun extraction when raw keypoints are corrupted."""
-    sample_directory, raw_directory, tracked_directory = (
-        prepare_directories(tmp_path)
-    )
+    sample_directory, raw_directory, tracked_directory = prepare_directories(tmp_path)
 
     raw_path = raw_directory / "02_0001.npy"
     raw_path.write_bytes(b"corrupted")

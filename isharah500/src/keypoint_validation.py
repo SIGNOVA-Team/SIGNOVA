@@ -4,7 +4,6 @@ from pathlib import Path
 
 import numpy as np
 
-
 HAND_COUNT = 2
 HAND_FEATURE_COUNT = 63
 
@@ -37,6 +36,4 @@ def is_valid_keypoint_file(file_path, expected_frames=None):
         if keypoints.shape[0] != expected_frames:
             return False
 
-    return bool(
-        np.all(np.isfinite(keypoints) | np.isnan(keypoints))
-    )
+    return bool(np.all(np.isfinite(keypoints) | np.isnan(keypoints)))

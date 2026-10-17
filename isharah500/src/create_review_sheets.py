@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from PIL import Image, ImageDraw, ImageOps
 
 PROJECT_DIRECTORY = Path(__file__).resolve().parent.parent
@@ -22,6 +23,7 @@ COLUMNS = 4
 THUMBNAIL_SIZE = (200, 200)
 LABEL_HEIGHT = 28
 
+
 def find_sample_directory(sample_id):
     signer_id = sample_id.split("_")[0]
     signer_directory = VIDEOS_DIRECTORY / signer_id
@@ -34,9 +36,8 @@ def find_sample_directory(sample_id):
         if directory.is_dir():
             return directory
 
-    raise FileNotFoundError(
-        f"Sample directory not found: {sample_id}"
-    )
+    raise FileNotFoundError(f"Sample directory not found: {sample_id}")
+
 
 def select_frames(sample_directory):
     frames = sorted(
@@ -45,23 +46,21 @@ def select_frames(sample_directory):
         if path.suffix.lower() in {".jpg", ".jpeg", ".png"}
     )
     if not frames:
-        raise ValueError(
-            f"No image frames found in {sample_directory}"
-        )
+        raise ValueError(f"No image frames found in {sample_directory}")
     frame_count = min(FRAMES_PER_SAMPLE, len(frames))
-    indices = [
-        round(index * (len(frames) - 1) / (frame_count - 1))
-        for index in range(frame_count)
-    ] if frame_count > 1 else [0]
+    indices = (
+        [round(index * (len(frames) - 1) / (frame_count - 1)) for index in range(frame_count)]
+        if frame_count > 1
+        else [0]
+    )
 
     return [(index, frames[index]) for index in indices]
+
 
 def create_contact_sheet(sample_id):
     sample_directory = find_sample_directory(sample_id)
     selected_frames = select_frames(sample_directory)
-    rows = (
-        len(selected_frames) + COLUMNS - 1
-    ) // COLUMNS
+    rows = (len(selected_frames) + COLUMNS - 1) // COLUMNS
 
     cell_width, cell_height = THUMBNAIL_SIZE
     sheet = Image.new(
@@ -74,9 +73,7 @@ def create_contact_sheet(sample_id):
     )
     draw = ImageDraw.Draw(sheet)
 
-    for position, (frame_index, frame_path) in enumerate(
-        selected_frames
-    ):
+    for position, (frame_index, frame_path) in enumerate(selected_frames):
         column = position % COLUMNS
         row = position // COLUMNS
 
@@ -102,6 +99,7 @@ def create_contact_sheet(sample_id):
 
     print(f"Created: {output_path.name}")
 
+
 def main():
     OUTPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
 
@@ -109,6 +107,7 @@ def main():
         create_contact_sheet(sample_id)
 
     print("\nAll review sheets created successfully.")
+
 
 if __name__ == "__main__":
     main()
