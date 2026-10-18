@@ -1,0 +1,6 @@
+# Ignore model weights and binary checkpoints in artifacts subdirectories
+*.pth
+*.pt
+*.bin
+!*/
+!.gitkeep

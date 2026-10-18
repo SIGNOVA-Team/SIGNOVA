@@ -229,3 +229,5 @@ data/raw_p2_metadata/
 *.tar.gz
 *.zip
 *.npy
+*.pth
+*.pt

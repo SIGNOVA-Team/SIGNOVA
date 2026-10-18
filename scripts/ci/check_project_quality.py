@@ -54,7 +54,16 @@ def check_secrets_and_credentials() -> tuple[bool, list[str]]:
         dirs[:] = [
             d
             for d in dirs
-            if d not in {".git", "__pycache__", ".pytest_cache", ".venv", "venv", "node_modules"}
+            if d
+            not in {
+                ".git",
+                "__pycache__",
+                ".pytest_cache",
+                ".venv",
+                "venv",
+                "node_modules",
+                "artifacts",
+            }
         ]
 
         for f in files:
@@ -97,7 +106,9 @@ def check_git_hygiene_and_binaries() -> tuple[bool, list[str]]:
 
     for root, dirs, files in os.walk(ROOT_DIR):
         dirs[:] = [
-            d for d in dirs if d not in {".git", "__pycache__", ".pytest_cache", ".venv", "venv"}
+            d
+            for d in dirs
+            if d not in {".git", "__pycache__", ".pytest_cache", ".venv", "venv", "artifacts"}
         ]
 
         for f in files:

@@ -1,0 +1,50 @@
+# SIGNOVA ML Configuration for Continuous Sign Language Recognition (CSLR)
+# Multi-dialect / Multi-language support: ArabSign (ArSL) & How2Sign (ASL)
+
+project_name: "SIGNOVA_CSLR"
+version: "1.0.0"
+seed: 42
+
+data:
+  arabsign:
+    name: "ArabSign"
+    language: "ArSL"
+    canonical_metadata_path: "data/arabsign/metadata/arabsign_canonical_metadata.csv"
+    sentences_mapping_path: "data/arabsign/metadata/arabsign_sentences_mapping.csv"
+    split_manifest_path: "data/arabsign/splits/arabsign_split_manifest_signer_independent.csv"
+    raw_video_dir: "videos/arabsign/color"
+    target_modality: "keypoints" # "keypoints" or "video"
+    feature_dim: 126            # (2 hands * 21 landmarks * 3 coords)
+    fps: 30.0
+    num_sentences: 50
+    vocab_type: "gloss"
+
+  how2sign:
+    name: "How2Sign"
+    language: "ASL"
+    canonical_metadata_path: "data/how2sign/metadata/how2sign_canonical_metadata.csv"
+    split_manifest_path: "data/how2sign/splits/how2sign_split_manifest.csv"
+    raw_video_dir: "videos/how2sign"
+    target_modality: "keypoints"
+    feature_dim: 126
+    fps: 25.0
+    vocab_type: "text_translation"
+
+model:
+  architecture: "BiLSTM_CTC"
+  input_dim: 126
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.2
+  bidirectional: true
+
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  max_epochs: 10
+  gradient_clip_norm: 5.0
+  nan_strategy: "interpolate" # "interpolate" or "zeros"
+  checkpoint_dir: "ml/sign_language/artifacts"
+  save_best_only: true
+  metric_for_best: "val_loss" # or "val_token_acc"
