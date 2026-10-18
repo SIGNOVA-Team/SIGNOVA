@@ -63,20 +63,21 @@ python ml/sign_language/src/train.py --dataset how2sign --epochs 5 --batch-size 
 Teammates working on the Computer Vision pipeline or Backend API can consume the model with two lines of code:
 
 ```python
-import numpy as np
-from ml.sign_language.src.inference import load_model, predict
+from ml.sign_language.src.inference import load_model, predict, predict_video
 
 # 1. Initialize predictor (automatically selects CUDA if available)
 predictor = load_model(
     checkpoint_path="ml/sign_language/artifacts/arabsign/best_model.pth",
-    vocab_path="ml/sign_language/artifacts/arabsign/vocab.json"
+    vocab_path="ml/sign_language/artifacts/arabsign/vocab.json",
 )
 
-# 2. Predict on hand keypoints (T, 126) or a saved .npy file
-features = np.random.randn(60, 126).astype(np.float32)
-response = predict(features, predictor=predictor)
-
+# 2. End-to-End Direct Video Prediction (.mp4, .avi, .mov, etc.)
+# Extracts MediaPipe dual-hand keypoints and performs continuous sign recognition:
+response = predict_video("path/to/video.mp4", predictor=predictor)
 print(response)
+
+# 3. Or predict on pre-extracted keypoints array (T, 126) or .npy file:
+# response = predict("path/to/keypoints.npy", predictor=predictor)
 ```
 
 ### Response JSON Contract

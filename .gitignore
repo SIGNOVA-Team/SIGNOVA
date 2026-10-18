@@ -231,3 +231,4 @@ data/raw_p2_metadata/
 *.npy
 *.pth
 *.pt
+*.task

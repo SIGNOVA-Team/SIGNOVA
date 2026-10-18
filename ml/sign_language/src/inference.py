@@ -115,10 +115,20 @@ class SignLanguagePredictor:
                 }
             if p.suffix.lower() == ".npy":
                 raw_features = np.load(p)
+            elif p.suffix.lower() in {".mp4", ".avi", ".mov", ".mkv", ".webm"}:
+                from ml.sign_language.src.video_extractor import extract_keypoints_from_video
+
+                raw_features = extract_keypoints_from_video(p)
+                if len(raw_features) == 0:
+                    return {
+                        "success": False,
+                        "error": "No hand gestures or keypoints could be extracted from video.",
+                        "language": self.language,
+                    }
             else:
                 return {
                     "success": False,
-                    "error": f"Unsupported input format: {p.suffix}. Currently supporting .npy keypoint streams.",
+                    "error": f"Unsupported input format: {p.suffix}. Supported formats: .mp4, .avi, .mov, .npy.",
                     "language": self.language,
                 }
         else:
@@ -181,3 +191,11 @@ def predict(
     if target_predictor is None:
         raise RuntimeError("Model has not been initialized. Call load_model() first.")
     return target_predictor.predict(input_data)
+
+
+def predict_video(
+    video_path: str | Path,
+    predictor: SignLanguagePredictor | None = None,
+) -> dict[str, Any]:
+    """Direct end-to-end video prediction (Video -> MediaPipe -> Continuous Sign Recognition)."""
+    return predict(video_path, predictor=predictor)

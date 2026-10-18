@@ -2,5 +2,6 @@
 *.pth
 *.pt
 *.bin
+*.task
 !*/
 !.gitkeep
