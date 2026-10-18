@@ -57,7 +57,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["scripts", "karsl", "wlasl"]
+known-first-party = ["scripts", "karsl", "wlasl", "isharah500"]
 
 [tool.ruff.format]
 quote-style = "double"
@@ -65,7 +65,8 @@ indent-style = "space"
 
 [tool.pytest.ini_options]
 minversion = "8.0"
-testpaths = ["tests", "karsl/tests"]
+testpaths = ["tests", "karsl/tests", "isharah500/tests"]
+pythonpath = [".", "karsl", "isharah500", "isharah500/src"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]

@@ -18,12 +18,13 @@ SIGNOVA is designed as an assistive communication prototype connecting sign lang
 - **In Scope:** Reproducible isolated-sign baselines, validated data pipelines, calibrated uncertainty handling, and continuous sign language research benchmarks.
 - **Out of Scope (v0.1):** Claiming interpreter-level reliability, full continuous translation without validated continuous models, and relabeling Gulf/Saudi sign language as Egyptian Sign Language.
 
-### Dataset Priority Tiers:
-- **P0 — Egyptian Sign Language (ESL):** Primary isolated-sign source (Mendeley Data v3).
-- **P1 — WLASL:** Secondary ASL isolated-sign baseline (Official GitHub).
-- **P2 — How2Sign:** Future continuous ASL research reference (~80h multimodal).
-- **P2 — ArabSign:** Continuous Arabic Sign Language (ArSL) research reference (9,335 samples, 50 sentences).
-- **Benchmark — KArSL-502:** Arabic Sign Language (ArSL) 500-class isolated-sign benchmark & keypoints dataset ([KArSL documentation](karsl/README.md)).
+### Dataset Architecture & Priority Tiers:
+- **Core Continuous (Active) — Isharah-500:** Primary Arabic Sign Language (ArSL) continuous sentence dataset (7,500 samples, 15 signers, MediaPipe tracked hand keypoints, SI & US splits) — *Actively supersedes deprecated provisional P0 Mendeley dataset*.
+- **Core Isolated Benchmark — KArSL-502:** Primary Arabic Sign Language (ArSL) 500-class isolated-sign benchmark (75,095 PASS samples across 500 classes, 3-fold signer-independent splits, [KArSL documentation](karsl/README.md)).
+- **Core Isolated Baseline — WLASL2000:** Primary ASL isolated-sign baseline (13,785 verified accessible videos, 2,000 glosses, 34.3% broken URLs purged, [WLASL documentation](wlasl/README.md)).
+- **Continuous ASL Reference — How2Sign:** Multimodal continuous instructional ASL benchmark (35,263 continuous sentences, ~80 hours, [How2Sign documentation](docs/dataset_card_how2sign.md)).
+- **Continuous ArSL Reference — ArabSign:** Continuous sentence reference (9,335 samples, 50 sentences, zero-leakage signer-independent split, [ArabSign documentation](docs/dataset_card_arabsign.md)).
+- **Legacy Provisional P0 — Mendeley ESL (Deprecated):** Deprecated due to limited sample volume (540 isolated clips, 54 classes) and insufficient scale for deep learning; replaced by large-scale continuous and isolated Arabic datasets (Isharah-500 & KArSL-502).
 
 ---
 
@@ -91,6 +92,14 @@ SIGNOVA/
 │   ├── dataset_card_arabsign.md             # Standard dataset card for ArabSign
 │   └── decisions/
 │       └── ADR_001_p2_datasets_evaluation.md# Architecture Decision Record for P2
+├── isharah500/                               # Isharah-500 Core Continuous Arabic Sign Language Module
+│   ├── README.md                            # Isharah-500 overview, extraction, and benchmarks
+│   ├── DATA_HANDOFF.md                      # Comprehensive handoff documentation for ML team
+│   ├── metadata/                            # Signer-Independent (SI) & Unseen-Sentence (US) splits
+│   ├── reports/                             # Detection quality and review required reports
+│   ├── src/                                 # Extraction, tracking, and ML Dataset loader (isharah_dataset.py)
+│   ├── notebooks/                           # Exploration & visualization notebooks
+│   └── tests/                               # Automated unit tests for tracking, validation & ML loader
 ├── karsl/                                   # KArSL-502 dataset engineering & benchmarks
 │   ├── README.md                            # KArSL overview, QC, and keypoints benchmark
 │   ├── data/                                # Metadata, splits, and QC reports
@@ -120,7 +129,7 @@ SIGNOVA/
 
 ---
 
-## 4. Quickstart, Quality Checks & Verification
+## 4. Quickstart, Quality Checks & ML Training
 
 ### Prerequisites
 - Python 3.12+
@@ -128,10 +137,10 @@ SIGNOVA/
 pip install -r requirements-dev.txt
 ```
 
-### 1. Automated Test Suite
-Run the unified test suite across all verified datasets (P2 and KArSL):
+### 1. Unified Automated Test Suite
+Run the unified test suite across all verified datasets (ArabSign, How2Sign, KArSL, and Isharah-500):
 ```bash
-python -m pytest -v
+pytest
 ```
 
 ### 2. Project Quality & Domain Guardrails Check
@@ -140,7 +149,23 @@ Run the comprehensive quality gate (checks secrets, forbidden binary files, note
 python scripts/ci/check_project_quality.py
 ```
 
-### 3. Code Quality, Formatting & Security Audit
+### 3. ML Ready: Loading Isharah-500 in PyTorch
+Use the built-in `IsharahDataset` loader which automatically resolves paths, handles missing hand detections (NaN interpolation / zero-filling), and filters out low-quality samples:
+```python
+from isharah500.src.isharah_dataset import IsharahDataset, GlossVocabulary, collate_isharah_batch
+from torch.utils.data import DataLoader
+
+# Initialize vocabulary and dataset
+dataset = IsharahDataset(
+    metadata_csv="isharah500/metadata/isharah500_si_train.csv",
+    exclude_flagged=True,          # Filter out the 1,014 degraded samples
+    nan_strategy="interpolate",    # Interpolate missing hand keypoints over time
+)
+
+loader = DataLoader(dataset, batch_size=16, shuffle=True, collate_fn=collate_isharah_batch)
+```
+
+### 4. Code Quality, Formatting & Security Audit
 Run Ruff linting, formatting check, and Bandit security scans:
 ```bash
 # Code style and import sorting

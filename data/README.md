@@ -1,46 +1,70 @@
-# SIGNOVA Data Directory Structure
+# SIGNOVA Data Directory Structure & Governance
 
-هذا المجلد يحتوي على جميع البيانات المجهزة والمحققة لمشروع **SIGNOVA**، منظمة بشكل معياري ومنفصل لكل داتا سيت لمنع التداخل وتسهيل العمل والتدريب.
+هذا المجلد والمجلدات الملحقة في المشروع تحتوي على جميع البيانات المجهزة والمحققة لمشروع **SIGNOVA**، منظمة بشكل معياري ومنفصل لكل داتا سيت لمنع التداخل وتسهيل العمل والتدريب.
+
+---
+
+## 🗂️ نظرة عامة على بيانات المشروع وتحديثات P0 (Dataset Architecture & P0 Update)
+
+تم تحديث استراتيجية البيانات واستبدال داتا سيت P0 المبدئية (Mendeley ESL - 540 فيديو فقط) بالداتاسيتس الكبيرة الجاهزة هندسياً:
+1. **`isharah500/` (الداتا الأساسية للغة الإشارة المستمرة - Core Continuous ArSL):** 7,500 عينة جمل متصلة، 15 شخصاً، ونقاط ميديا بايب للأيدي مع تقارير جودة وتقسيمات SI/US — **بديلة P0 للنماذج المتصلة**.
+2. **`karsl/` (الداتا القياسية للإشارات المنفصلة - Primary Isolated Benchmark):** 75,095 عينة معتمدة موزعة على 500 فئة بنظام 3-fold للمقارنة المعيارية.
+3. **`wlasl/` (الأساس للغة الإشارة الأمريكية المنفصلة - Secondary ASL Baseline):** 13,785 عينة صالحة عبر 2000 فئة بعد استبعاد الروابط التالفة.
+4. **`data/arabsign/` & `data/how2sign/`:** المراجع البحثية للجمل المستمرة والترجمة.
 
 ---
 
 ## 📁 هيكل المجلدات المنظم (Organized Directory Tree)
 
 ```text
-data/
+SIGNOVA/
 │
-├── arabsign/                                    # 🇸🇦 داتا سيت ArabSign (لغة الإشارة العربية المستمرة)
-│   ├── README.md                                # دليل مفصل لداتا ArabSign والتقسيمات
-│   ├── metadata/
-│   │   ├── arabsign_canonical_metadata.csv      # الميتاداتا الموحدة لجميع العينات (9,335 عينة)
-│   │   └── arabsign_sentences_mapping.csv       # الـ 50 جملة مع الربط بين الإشارة والنص العربي
-│   ├── splits/
-│   │   ├── arabsign_split_manifest_signer_independent.csv  # التقسيم المعتمد (بدون أي تسريب إشارات)
-│   │   └── arabsign_split_manifest_signer_dependent.csv    # تقسيم الـ 6-fold الخاص بالمؤلف
-│   └── raw/                                     # البيانات الخام المستخرجة
-│       ├── groundTruth.txt                      # نصوص الجمل الأصلية الـ 50
-│       └── author_splits/                       # تقسيمات المؤلف الأصلية (01 إلى 06 train/test)
+├── isharah500/                                  # 🇸🇦 داتا سيت Isharah-500 المستمرة (بديلة P0)
+│   ├── metadata/                                # تقسيمات SI (مستقلة عن الأشخاص) و US (جمل غير مسبوقة)
+│   ├── reports/                                 # تقارير الجودة والعينات المحتاجة مراجعة
+│   └── src/                                     # كود الاستخراج والـ Dataset Loader للـ ML
 │
-├── how2sign/                                    # 🇺🇸 داتا سيت How2Sign (لغة الإشارة الأمريكية المستمرة)
-│   ├── README.md                                # دليل مفصل لداتا How2Sign
-│   ├── metadata/
-│   │   └── how2sign_canonical_metadata.csv      # الميتاداتا الموحدة لـ 35,263 جملة
-│   ├── splits/
-│   │   └── how2sign_split_manifest.csv          # التقسيم الرسمي (Train / Val / Test)
-│   └── raw/                                     # النصوص والترجمات الخام المنزلة رسمياً
-│       ├── how2sign_train.csv
-│       ├── how2sign_val.csv
-│       ├── how2sign_test.csv
-│       ├── how2sign_realigned_train.csv
-│       ├── how2sign_realigned_val.csv
-│       └── how2sign_realigned_test.csv
+├── karsl/                                       # 🇸🇦 داتا سيت KArSL-502 للإشارات المنفصلة
+│   ├── data/splits/                             # تقسيم الـ 500 فئة المعتمدة (75,095 عينة)
+│   └── data/metadata/                           # ميتاداتا وفحوصات الجودة الشاملة
 │
-└── reports/                                     # 📊 التقارير المشتركة، السجلات، وضمان الجودة
-    ├── README.md                                # دليل التقارير والمصادر
-    ├── dataset_sources.csv                      # سجل المصادر الرسمية والتراخيص (P0, P1, P2)
-    ├── download_manifest.csv                    # روابط وأحجام وأذونات جميع الوسائط والوسائط المتعددة
-    ├── qc_flags_p2.csv                          # جدول ملاحظات فحص الجودة (Quality Flags)
-    └── qc_report_p2.md                          # التقرير الفني واللغوي المفصل
+├── wlasl/                                       # 🇺🇸 داتا سيت WLASL-2000 (ASL معجمي)
+│   ├── data/splits/                             # الـ 13,785 عينة الصالحة والمفحوصة
+│   └── scripts/                                 # أدوات فحص الروابط واستخراج النقاط
+│
+└── data/
+    ├── arabsign/                                # 🇸🇦 داتا سيت ArabSign (لغة الإشارة العربية المستمرة)
+    │   ├── README.md                            # دليل مفصل لداتا ArabSign والتقسيمات
+    │   ├── metadata/
+    │   │   ├── arabsign_canonical_metadata.csv  # الميتاداتا الموحدة لجميع العينات (9,335 عينة)
+    │   │   └── arabsign_sentences_mapping.csv   # الـ 50 جملة مع الربط بين الإشارة والنص العربي
+    │   ├── splits/
+    │   │   ├── arabsign_split_manifest_signer_independent.csv  # التقسيم المعتمد (بدون أي تسريب إشارات)
+    │   │   └── arabsign_split_manifest_signer_dependent.csv    # تقسيم الـ 6-fold الخاص بالمؤلف
+    │   └── raw/                                 # البيانات الخام المستخرجة
+    │       ├── groundTruth.txt                  # نصوص الجمل الأصلية الـ 50
+    │       └── author_splits/                   # تقسيمات المؤلف الأصلية (01 إلى 06 train/test)
+    │
+    ├── how2sign/                                # 🇺🇸 داتا سيت How2Sign (لغة الإشارة الأمريكية المستمرة)
+    │   ├── README.md                            # دليل مفصل لداتا How2Sign
+    │   ├── metadata/
+    │   │   └── how2sign_canonical_metadata.csv  # الميتاداتا الموحدة لـ 35,263 جملة
+    │   ├── splits/
+    │   │   └── how2sign_split_manifest.csv      # التقسيم الرسمي (Train / Val / Test)
+    │   └── raw/                                 # النصوص والترجمات الخام المنزلة رسمياً
+    │       ├── how2sign_train.csv
+    │       ├── how2sign_val.csv
+    │       ├── how2sign_test.csv
+    │       ├── how2sign_realigned_train.csv
+    │       ├── how2sign_realigned_val.csv
+    │       └── how2sign_realigned_test.csv
+    │
+    └── reports/                                 # 📊 التقارير المشتركة، السجلات، وضمان الجودة
+        ├── README.md                            # دليل التقارير والمصادر
+        ├── dataset_sources.csv                  # سجل المصادر الرسمية والتراخيص (تحديث استبدال P0)
+        ├── download_manifest.csv                # روابط وأحجام وأذونات جميع الوسائط والوسائط المتعددة
+        ├── qc_flags_p2.csv                      # جدول ملاحظات فحص الجودة (Quality Flags)
+        └── qc_report_p2.md                      # التقرير الفني واللغوي المفصل
 ```
 
 ---
@@ -48,14 +72,13 @@ data/
 ## 📌 القواعد والمعايير الأساسية (Key Guidelines)
 
 1. **فصل لغة الإشارة العربية عن المصرية:**
-   - داتا **ArabSign** تم جمعها في جامعة الملك فهد للبترول والمعادن (KFUPM) بالسعودية وتعبر عن لغة الإشارة العربية (ArSL).
-   - **قاعدة صارمة:** لا يجوز إطلاق اسم "لغة الإشارة المصرية (ESL)" عليها أو دمجها في نماذج ESL دون مراجعة لغوية متخصصة.
-2. **منع تسريب الإشارات (No Signer Leakage):**
-   - في ArabSign، تم اعتماد `arabsign_split_manifest_signer_independent.csv`:
-     - **Train:** Signers 01, 02, 03, 04 (6,323 عينة)
-     - **Val:** Signer 05 (1,500 عينة)
-     - **Test:** Signer 06 (1,512 عينة)
-     - نسبة تداخل الإشارات بين المجموعات: **0% (صفر تسريب)**.
-3. **الوسائط الضخمة (Large Media & Videos):**
+   - داتا **Isharah-500** و **ArabSign** و **KArSL** تم تسجيلها في الخليج العربي وتعبر عن لغة الإشارة العربية (ArSL).
+   - **قاعدة صارمة:** لا يجوز إطلاق اسم "لغة الإشارة المصرية (ESL)" عليها أو دمجها في نماذج ESL دون مراجعة لغوية متخصصة (راجع ADR-001).
+2. **استبدال P0 بالداتا المتصلة الجديدة:**
+   - تم استبعاد داتا Mendeley القديمة نظراً لحجمها المحدود للغاية وعدم كفايتها لبناء نماذج Deep Learning معتمدة، وأصبحت داتا **Isharah-500** هي محور التدريب الأساسي المستمر.
+3. **منع تسريب الإشارات (No Signer Leakage):**
+   - في جميع الداتاسيتس، يتم تفضيل تقسيمات **Signer-Independent (SI)** لضمان تعميم النماذج على مستخدمين لم يسبق للموديل رؤيتهم أثناء التدريب.
+4. **الوسائط الضخمة (Large Media & Videos):**
    - ملفات الفيديو الكبيرة (`*.mp4`, `*.zip`, `*.tar.gz`) لا تُرفع على Git ومدرجة في `.gitignore`.
    - ملفات الميتاداتا والنصوص (`*.csv`, `*.txt`) محفوظة وتكفي لجميع تجارب النماذج المعتمدة على الميزات أو الـ Landmarks.
+

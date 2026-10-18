@@ -5,6 +5,9 @@ from pathlib import Path
 from unittest.mock import patch
 
 import numpy as np
+import pytest
+
+pytest.importorskip("mediapipe")
 
 SOURCE_DIRECTORY = Path(__file__).resolve().parents[1] / "src"
 sys.path.insert(0, str(SOURCE_DIRECTORY))
