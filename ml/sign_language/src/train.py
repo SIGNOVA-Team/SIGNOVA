@@ -33,7 +33,7 @@ if torch.cuda.is_available():
 
 from ml.sign_language.src.data_loader import create_dataloader  # noqa: E402
 from ml.sign_language.src.dataset import SignLanguageDataset  # noqa: E402
-from ml.sign_language.src.evaluate import calculate_batch_metrics, ctc_greedy_decode  # noqa: E402
+from ml.sign_language.src.evaluate import evaluate_epoch  # noqa: E402
 from ml.sign_language.src.model import build_model  # noqa: E402
 from ml.sign_language.src.preprocessing import SignVocabulary  # noqa: E402
 
@@ -75,51 +75,6 @@ def train_one_epoch(
         valid_batches += 1
 
     return total_loss / max(valid_batches, 1)
-
-
-@torch.no_grad()
-def evaluate_epoch(
-    model: nn.Module,
-    dataloader: Any,
-    criterion: nn.CTCLoss,
-    device: torch.device,
-    vocabulary: SignVocabulary,
-) -> dict[str, Any]:
-    model.eval()
-    total_loss = 0.0
-    valid_batches = 0
-
-    all_hypotheses = []
-    all_references = []
-
-    blank_id = vocabulary.token2id[SignVocabulary.BLANK_TOKEN]
-
-    for batch in dataloader:
-        keypoints = batch["keypoints"].to(device)
-        lengths = batch["lengths"].to(device)
-        token_ids = batch["token_ids"].to(device)
-        token_lengths = batch["token_lengths"].to(device)
-
-        log_probs = model(keypoints, lengths)
-        input_lengths = lengths.clamp(min=1)
-        target_lengths = token_lengths.clamp(min=1)
-
-        loss = criterion(log_probs, token_ids, input_lengths, target_lengths)
-        if not (torch.isnan(loss) or torch.isinf(loss)):
-            total_loss += loss.item()
-            valid_batches += 1
-
-        decoded_ids = ctc_greedy_decode(log_probs, blank_id=blank_id)
-        for i, pred_ids in enumerate(decoded_ids):
-            pred_text = vocabulary.decode(pred_ids)
-            ref_text = batch["texts"][i]
-            all_hypotheses.append(pred_text)
-            all_references.append(ref_text)
-
-    metrics = calculate_batch_metrics(all_hypotheses, all_references)
-    metrics["val_loss"] = total_loss / max(valid_batches, 1)
-    metrics["sample_predictions"] = list(zip(all_references[:3], all_hypotheses[:3], strict=False))
-    return metrics
 
 
 def run_training(
