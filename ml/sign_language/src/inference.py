@@ -149,7 +149,8 @@ class SignLanguagePredictor:
 
             latency_ms = (time.perf_counter() - start_time) * 1000.0
 
-            return {
+            # Direct NLP Bridge Integration
+            response: dict[str, Any] = {
                 "success": True,
                 "language": self.language,
                 "text": text,
@@ -159,6 +160,22 @@ class SignLanguagePredictor:
                 "latency_ms": round(latency_ms, 2),
                 "sequence_length": int(length.item()),
             }
+
+            if self.language in {"ArSL", "ar", "arabic"}:
+                from ml.sign_language.src.nlp_interface import get_translator
+
+                translation_info = get_translator().translate_arabic_glosses(tokens)
+                response["nlp_translation"] = translation_info
+                response["spoken_arabic"] = translation_info.get("spoken_arabic", text)
+                response["english_translation"] = translation_info.get("english_translation", "")
+            else:
+                response["nlp_translation"] = {
+                    "spoken_english": text,
+                    "match_type": "transcription",
+                }
+                response["spoken_english"] = text
+
+            return response
         except Exception as e:
             return {
                 "success": False,
