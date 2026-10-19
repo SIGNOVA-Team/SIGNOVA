@@ -167,35 +167,75 @@ class SignLanguagePredictor:
             }
 
 
-# Top-level functional interface for backend developers
-_DEFAULT_PREDICTOR: SignLanguagePredictor | None = None
+# Top-level functional registry for backend developers
+_PREDICTORS: dict[str, SignLanguagePredictor] = {}
 
 
 def load_model(
-    checkpoint_path: str | Path,
-    vocab_path: str | Path,
+    checkpoint_path: str | Path | None = None,
+    vocab_path: str | Path | None = None,
+    language: str = "ar",
     device: str | None = None,
 ) -> SignLanguagePredictor:
-    """Initialize and return a persistent predictor instance."""
-    global _DEFAULT_PREDICTOR
-    _DEFAULT_PREDICTOR = SignLanguagePredictor(checkpoint_path, vocab_path, device=device)
-    return _DEFAULT_PREDICTOR
+    """
+    Initialize and return a persistent predictor instance for Arabic or English Sign Language.
+
+    Args:
+        checkpoint_path: Path to .pth checkpoint. Defaults to artifacts/{dataset}/best_model.pth.
+        vocab_path: Path to vocab.json. Defaults to artifacts/{dataset}/vocab.json.
+        language: 'ar' (default, ArabSign ArSL) or 'en' (How2Sign ASL).
+        device: 'cuda', 'cpu', or None (auto-detect).
+    """
+    global _PREDICTORS
+
+    lang_key = language.lower()
+    dataset_name = "arabsign" if lang_key in {"ar", "arsl", "arabic"} else "how2sign"
+    root_dir = Path(__file__).resolve().parents[3]
+
+    if checkpoint_path is None:
+        checkpoint_path = root_dir / f"ml/sign_language/artifacts/{dataset_name}/best_model.pth"
+    else:
+        checkpoint_path = Path(checkpoint_path)
+
+    if vocab_path is None:
+        vocab_path = checkpoint_path.parent / "vocab.json"
+        if not vocab_path.exists():
+            vocab_path = root_dir / f"ml/sign_language/artifacts/{dataset_name}/vocab.json"
+    else:
+        vocab_path = Path(vocab_path)
+
+    predictor = SignLanguagePredictor(checkpoint_path, vocab_path, device=device)
+    _PREDICTORS[lang_key] = predictor
+    _PREDICTORS[dataset_name] = predictor
+    return predictor
 
 
 def predict(
     input_data: np.ndarray | str | Path,
+    language: str = "ar",
     predictor: SignLanguagePredictor | None = None,
 ) -> dict[str, Any]:
-    """Execute prediction using the specified or globally loaded model."""
-    target_predictor = predictor or _DEFAULT_PREDICTOR
+    """
+    Execute prediction on a video path (.mp4, .avi) or keypoint array.
+
+    Args:
+        input_data: Video file path (.mp4, .avi, .mov), .npy file path, or NumPy keypoint array.
+        language: 'ar' for Arabic Sign Language or 'en' for American Sign Language.
+        predictor: Optional pre-loaded predictor instance.
+    """
+    lang_key = language.lower()
+    target_predictor = predictor or _PREDICTORS.get(lang_key)
+
     if target_predictor is None:
-        raise RuntimeError("Model has not been initialized. Call load_model() first.")
+        target_predictor = load_model(language=language)
+
     return target_predictor.predict(input_data)
 
 
 def predict_video(
     video_path: str | Path,
+    language: str = "ar",
     predictor: SignLanguagePredictor | None = None,
 ) -> dict[str, Any]:
     """Direct end-to-end video prediction (Video -> MediaPipe -> Continuous Sign Recognition)."""
-    return predict(video_path, predictor=predictor)
+    return predict(video_path, language=language, predictor=predictor)
