@@ -11,6 +11,20 @@ The current validated SI checkpoint is:
 checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt
 ```
 
+The checkpoint is distributed through the approved external artifact store:
+
+<https://drive.google.com/file/d/1DykSTujZvhdhS0R93mNTrs7CDper66Wn/view?usp=sharing>
+
+Download it to:
+
+```text
+isharah500/checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt
+```
+
+Verify the downloaded file has SHA-256
+`f18aabc81912c1853d2c15ebaa522cfbd0f1c5f986d1469afd849ef218aa9593`.
+No retraining is required to use this frozen checkpoint.
+
 Its corrected SI dev evaluation is GER `0.7135` and Exact Match `0.07` over
 500 samples. The checkpoint was selected using SI dev only. A separate,
 one-time held-out SI test evaluation was performed after the checkpoint was

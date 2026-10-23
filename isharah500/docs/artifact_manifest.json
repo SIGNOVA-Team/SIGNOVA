@@ -2,6 +2,7 @@
   "artifact_id": "isharah500-si-hand-centric-epoch15-best",
   "purpose": "Selected SI hand-centric BiGRU + CTC checkpoint for backend handoff",
   "local_path": "isharah500/checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt",
+  "artifact_url": "https://drive.google.com/file/d/1DykSTujZvhdhS0R93mNTrs7CDper66Wn/view?usp=sharing",
   "size_bytes": 7416965,
   "sha256": "f18aabc81912c1853d2c15ebaa522cfbd0f1c5f986d1469afd849ef218aa9593",
   "checksum_procedure": {
@@ -9,7 +10,9 @@
     "wsl": "sha256sum isharah500/checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt"
   },
   "git_policy": "The repository-wide *.pt rule ignores this checkpoint. Do not rely on Git distribution or commit it without explicit Git LFS approval.",
-  "delivery_method": "Copy the checkpoint through the approved external artifact store or secure file transfer, record the resulting artifact URI, and verify the SHA-256 checksum before use.",
+  "download_path": "isharah500/checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt",
+  "retraining_required": false,
+  "delivery_method": "Download the checkpoint from artifact_url to download_path and verify the SHA-256 checksum before use. No retraining is required.",
   "selection_scope": "Checkpoint selected using SI train/dev only; final held-out SI test evaluation was completed after freezing and was not used for model selection.",
   "companion_files": [
     "isharah500/checkpoints/si_hand_centric_resume_15ep/isharah500_si_training_history.json",
