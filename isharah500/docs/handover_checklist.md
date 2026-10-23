@@ -50,20 +50,18 @@ confirmation, or blocked by a missing release decision.
 
 ## Git and artifact review
 
-The current .gitignore excludes raw data, processed keypoints, local MediaPipe
-model assets, caches, and temporary files. It does not ignore checkpoint files.
-This is appropriate while the validated checkpoint is an intentional handover
-artifact, but the team should decide whether future experimental checkpoints
-belong in external artifact storage.
+The repository-wide `.gitignore` ignores `*.pt` checkpoint files. The selected
+checkpoint is therefore delivered through the approved external Google Drive
+artifact URL recorded in [docs/artifact_manifest.json](artifact_manifest.json),
+not through Git. Download it to the documented local path and verify its
+SHA-256 before running the explicit CPU handover smoke test.
 
-If the team adopts external checkpoint storage, add a narrowly scoped ignore
-rule for experimental outputs only, for example:
+The selected checkpoint URL is:
 
-    checkpoints/experiments/
+<https://drive.google.com/file/d/1DykSTujZvhdhS0R93mNTrs7CDper66Wn/view?usp=sharing>
 
-Do not add a broad rule that hides the validated checkpoint without first
-moving it to the approved artifact store. No ignore-file change is required for
-the current handover.
+Historical and experimental checkpoints should remain in external artifact
+storage unless a separate Git LFS decision is approved.
 
 ## Final blockers
 

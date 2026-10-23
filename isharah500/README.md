@@ -257,7 +257,12 @@ Load the predictor once during application initialization and reuse it:
 
 ```python
 import numpy as np
+import sys
+from pathlib import Path
 
+# Run this example from the repository root. The module is intentionally
+# isolated under isharah500/src and is not imported from a global package.
+sys.path.insert(0, str((Path.cwd() / "isharah500" / "src").resolve()))
 from isharah_inference import load_predictor
 
 predictor = load_predictor("path/to/isharah500_si_best.pt", device_name="cuda")
@@ -265,6 +270,10 @@ keypoints = np.load("incoming_sequence.npy", allow_pickle=False)
 prediction = predictor.predict(keypoints)
 response = prediction.to_dict()
 ```
+
+The source-path setup above makes this example executable from a fresh
+repository checkout. Backend applications should keep the equivalent source
+path or package this module under their application namespace.
 
 The output contains `gloss_tokens`, `gloss_text`, `input_length`,
 `valid_hand_coverage`, `device`, and the restored preprocessing configuration.
@@ -275,6 +284,15 @@ Real SI dev smoke command using the activated environment:
 
 ```powershell
 python .\isharah500\src\isharah_inference.py --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt" --keypoints "<DATA_ROOT>\data\processed\isharah500\hand_keypoints_tracked\dev\02_0001.npy" --device cuda
+```
+
+For explicit handover verification, use the CPU smoke command below. It fails
+if the checkpoint, SI Dev metadata, or real SI Dev keypoint sample is missing;
+the ordinary optional pytest integration test remains separate and may skip
+when external artifacts are unavailable.
+
+```powershell
+python .\isharah500\src\handover_cpu_smoke.py --project-root "." --data-root "E:\DEPI Project\SIGNOVA_ESL" --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt"
 ```
 
 ## Tests and checks

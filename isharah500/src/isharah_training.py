@@ -618,7 +618,7 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
         model = None
         vocabulary = None
 
-    train_set, dev_set, test_set, built_vocabulary = build_si_datasets(
+    train_set, dev_set, built_vocabulary = build_si_train_dev_datasets(
         config.project_root,
         data_root,
         preprocessing_config,
@@ -630,7 +630,6 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
     ctc_reports = {
         "train": validate_ctc_lengths(train_set),
         "dev": validate_ctc_lengths(dev_set),
-        "test": validate_ctc_lengths(test_set),
     }
     report_path = _write_json(
         Path(config.project_root) / config.output_dir / "isharah500_si_ctc_validation.json",
@@ -644,11 +643,6 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
     dev_set = select_ctc_subset(
         dev_set,
         ctc_reports["dev"],
-        allow_rejected=config.reject_invalid_ctc_samples,
-    )
-    test_set = select_ctc_subset(
-        test_set,
-        ctc_reports["test"],
         allow_rejected=config.reject_invalid_ctc_samples,
     )
     train_loader = make_loader(
@@ -883,7 +877,7 @@ def run_smoke_training(config: TrainingConfig) -> dict[str, Any]:
         feature_representation=config.feature_representation,
         global_coordinate_scale=config.global_coordinate_scale,
     )
-    train_set, dev_set, _, vocabulary = build_si_datasets(
+    train_set, dev_set, vocabulary = build_si_train_dev_datasets(
         config.project_root,
         data_root,
         preprocessing_config,

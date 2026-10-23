@@ -17,6 +17,7 @@ from isharah_dataset import PreprocessingConfig, build_training_vocabulary  # no
 from isharah_training import (  # noqa: E402
     TrainingConfig,
     build_si_datasets,
+    build_si_train_dev_datasets,
     capture_random_states,
     ctc_minimum_input_length,
     load_checkpoint,
@@ -64,6 +65,19 @@ def test_real_data_ingestion_rejects_missing_files(tmp_path):
     assert train_set[0]["keypoints"].shape == (4, 2, 63)
     with pytest.raises(FileNotFoundError):
         _ = dev_set[0]
+
+
+def test_train_dev_setup_does_not_require_si_test_metadata(tmp_path):
+    """Ordinary train/dev setup must not open or inspect the SI test split."""
+    project_root, data_root = write_metadata_and_keypoints(tmp_path)
+    test_metadata = project_root / "isharah500" / "metadata" / "isharah500_si_test.csv"
+    test_metadata.unlink()
+
+    train_set, dev_set, vocabulary = build_si_train_dev_datasets(project_root, data_root)
+
+    assert len(train_set) == 1
+    assert len(dev_set) == 1
+    assert "alpha" in vocabulary.token2id
 
 
 def test_archive_locator_does_not_extract(tmp_path):
