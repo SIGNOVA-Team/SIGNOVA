@@ -1,0 +1,9 @@
+# Isharah-500 checkpoint inference dependencies.
+# Python compatibility: project metadata requires Python >=3.12. The verified
+# Windows reference environment uses Python 3.13.15.
+numpy==2.5.4
+
+# Install the verified CUDA-enabled PyTorch build separately from
+# requirements-torch-cu126.txt. Do not assume the default PyPI index provides
+# the required CUDA wheel.
+-r requirements-torch-cu126.txt

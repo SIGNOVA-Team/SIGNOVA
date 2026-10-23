@@ -1,0 +1,2 @@
+# Isharah-500 training and evaluation dependencies.
+-r requirements-runtime.txt

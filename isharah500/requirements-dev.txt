@@ -1,0 +1,9 @@
+# Isharah-500 development and test dependencies.
+-r requirements-training.txt
+pytest==9.1.1
+
+# Verified notebook execution and visualization dependencies.
+jupyter==1.1.1
+matplotlib==3.11.2
+nbconvert==7.17.2
+ipykernel==7.4.0

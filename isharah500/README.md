@@ -1,133 +1,294 @@
-# SIGNOVA — Hand Keypoint Processing
+# SIGNOVA Isharah-500 ML module
 
-## Overview
+This directory contains the Isharah-500 continuous sign language recognition
+baseline and its real-data hand-keypoint pipeline. The recognition baseline is
+a hand-centric BiGRU with a CTC objective evaluated first on the signer
+independent (SI) protocol.
 
-A reusable data-processing pipeline for extracting hand landmarks
-from sign-language video frames using MediaPipe Tasks Vision.
-
-The pipeline supports parallel processing, experimental temporal
-hand tracking, output validation, and resumable execution.
-
-## Project Structure
-
-- `src/hand_extraction.py` — MediaPipe hand-landmark extraction.
-- `src/hand_tracking.py` — Experimental hand-slot tracking.
-- `src/hand_pipeline.py` — Parallel extraction and tracking.
-- `src/parallel_extraction.py` — Parallel extraction only.
-- `src/batch_tracking.py` — Batch tracking only.
-- `src/keypoint_validation.py` — NumPy output validation.
-- `tests/` — Automated unit tests.
-- `notebooks/` — Data exploration and experiments.
-- `models/hand_landmarker.task` — MediaPipe model.
-- `metadata/` — SI and US dataset split metadata.
-- `reports/` — Keypoint validation and detection quality reports.
-- `DATA_HANDOFF.md` — Dataset handoff documentation for the ML team.
-
-
-## Requirements
-
-- Python 3.13 (tested with 3.13.15)
-- NumPy
-- MediaPipe Tasks Vision
-- pytest (for testing)
-
-### MediaPipe Model
-
-The MediaPipe Hand Landmarker model is not included in this repository.
-
-Download the Hand Landmarker model from the official MediaPipe documentation and save it as:
-
-`models/hand_landmarker.task`
-
-## Input Format
-
-Each sample is a directory containing ordered JPG frames:
+The current validated SI checkpoint is:
 
 ```text
-videos/
-    02_0001/
-        frame0000.jpg
-        frame0001.jpg
-        ...
-    02_0002/
-        ...
+checkpoints/si_hand_centric_resume_15ep/isharah500_si_best.pt
 ```
 
-## Run the Pipeline
+Its corrected SI dev evaluation is GER `0.7135` and Exact Match `0.07` over
+500 samples. The checkpoint was selected using SI dev only. A separate,
+one-time held-out SI test evaluation was performed after the checkpoint was
+frozen; its results are reported below and were not used for model selection.
 
+## Scope and status
 
-The following command demonstrates processing a single signer directory (signer `02`).
+Completed:
 
-Run from the project root:
+- Real tracked hand keypoints with shape `(T, 2, 63)`.
+- Strict dataset loading with no synthetic fallback for ML training/evaluation.
+- SI and US metadata contracts.
+- Training vocabulary built from the selected protocol's training split.
+- Hand-centric normalization, serializable preprocessing, and mask handling.
+- BiGRU + CTC model, greedy decoding, checkpoint resume, and SI training CLI.
+- Canonical edit metrics and SI error analysis.
+- Reusable Python inference interface and backend integration guide.
+- Frozen checkpoint held-out SI test evaluation with a test-specific report.
 
-```bash
-python src/hand_pipeline.py \
-  --input "data/raw/isharah500/videos/02/02" \
-  --model "models/hand_landmarker.task" \
-  --raw-output "data/processed/isharah500/hand_keypoints/dev" \
-  --tracked-output "data/processed/isharah500/hand_keypoints_tracked/dev" \
-  --workers 4
+The model is an experimental hand-only baseline. It is not a production
+recognizer. Its final held-out SI test results are reported for handover and
+were not used for model selection.
+
+## Environment and dependencies
+
+Use the existing Windows virtual environment. No dependency installation is
+prescribed by this handoff.
+
+Core packages used by the ML module are:
+
+- Python 3.13.15 (verified Windows reference environment)
+- PyTorch 2.8.0+cu126 with CUDA runtime 12.6 (verified reference build)
+- NumPy 2.5.4
+- pytest 9.1.1
+
+The extraction utilities additionally use MediaPipe 1.1.1 and Pillow 12.3.0.
+The verified GPU is an NVIDIA Quadro P2000. Backend integration only needs the
+inference dependencies and the trained checkpoint.
+
+Scoped manifests are provided in `requirements-runtime.txt`,
+`requirements-training.txt`, `requirements-extraction.txt`, and
+`requirements-dev.txt`, and `requirements-torch-cu126.txt`. The CUDA-enabled
+PyTorch package must be obtained from the approved cu126 package index or wheel
+source; PyPI alone must not be assumed to reproduce it. See
+[`docs/dependency_and_artifact_handoff.md`](docs/dependency_and_artifact_handoff.md)
+for the verification command and checkpoint delivery procedure.
+
+From the project root on Windows:
+
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" --version
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" -c "import numpy, torch; print(numpy.__version__, torch.__version__)"
 ```
 
-The input directory must directly contain sample directories.
+## Repository layout
 
-## Output
+| Path | Purpose |
+|---|---|
+| `src/isharah_dataset.py` | Metadata loading, strict keypoint validation, preprocessing, vocabulary, and CTC collator |
+| `src/isharah_ctc.py` | BiGRU + CTC model, loss, and decoders |
+| `src/isharah_training.py` | SI dataset construction, training, validation, checkpointing, resume, and preflight |
+| `src/isharah_metrics.py` | Canonical edit-distance metrics and grouped evaluation |
+| `src/isharah_inference.py` | Reusable checkpoint-backed prediction interface |
+| `tests/` | Unit and contract tests |
+| `metadata/` | SI and US CSV metadata |
+| `checkpoints/` | Small model checkpoints and training histories |
+| `reports/` | Existing validation, quality, and error-analysis reports |
+| `notebooks/data_inspection.ipynb` | Configurable SI metadata, keypoint, mask, and preprocessing inspection |
+| `notebooks/training.ipynb` | BiGRU + CTC architecture, recorded configurations, and non-executing command templates |
+| `notebooks/experiments.ipynb` | Saved training-history comparison and charts |
+| `notebooks/evaluation.ipynb` | Corrected SI dev metrics, error-pattern charts, and optional inference demonstration |
+| `docs/backend_integration.md` | Python backend integration contract |
+| `docs/handover_checklist.md` | Release handover verification |
 
-Each sample produces two NumPy arrays:
+## Notebook usage
 
-- Raw keypoints: `(frames, 2, 63)`
-- Tracked keypoints: `(frames, 2, 63)`
+The four ML handover notebooks are intentionally portable and do not execute
+training automatically. Set `ISHARAH_PROJECT_ROOT` and, for real keypoint
+inspection or inference, `ISHARAH_DATA_ROOT` in the notebook kernel environment.
 
-Arrays use `float32`. Missing detections are represented by `NaN`.
+Open them from the project root:
 
-## Resume and Recovery
-
-The pipeline validates saved arrays before skipping them.
-
-- Valid raw and tracked outputs: skip.
-- Invalid or missing tracked output: rebuild from valid raw output.
-- Invalid or missing raw output: rerun extraction and tracking.
-
-Outputs are saved using temporary files and atomic replacement.
-
-## Tests
-
-```bash
-python -m pytest tests -v
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" -m jupyter notebook .\isharah500\notebooks
 ```
 
-Current test suite: 12 tests passed.
+`data_inspection.ipynb` and the optional inference cell in
+`evaluation.ipynb` use SI train/dev artifacts only. `training.ipynb` displays
+configuration and Windows command templates without invoking training.
+`experiments.ipynb` reads the saved histories and corrected SI dev report; it
+does not recreate metrics from test data.
 
-## Benchmark
+## Dataset paths and split rules
 
-Five sample videos on the development machine:
+The original data root is external to this project. A typical Windows layout
+is:
 
-| Workers | Time |
-| --- | ---: |
-| 1 | 38.91 seconds |
-| 2 | 23.93 seconds |
-| 4 | 13.54 seconds |
+```text
+E:\DEPI Project\SIGNOVA_ESL\
+  data\processed\isharah500\hand_keypoints_tracked\
+```
 
-Four workers achieved approximately 2.87x speedup in this test.
-Performance may differ on larger workloads.
+The project directory is typically:
 
-## Dataset Scope
+```text
+E:\DEPI Project\SIGNOVA_ESL-isharah500\
+```
 
-Isharah-500 is a Saudi Sign Language dataset for
-sentence-level continuous sign-language recognition.
+Metadata CSV paths are resolved relative to the configured data/project roots;
+do not hardcode these paths in application code.
 
-The processed signer `02` belongs to the signer-independent
-development split, not the training split.
+| Protocol | Train | Dev | Test |
+|---|---:|---:|---:|
+| SI | 5,000 | 500 | 2,000 |
+| US | 6,000 | 750 | 750 |
 
-Do not treat this dataset as Egyptian Sign Language or
-mix it directly with isolated-sign datasets.
+SI is signer independent. US is unseen sentence. Keep protocols and split
+roles separate. The current validated model uses SI train/dev only.
 
-## Known Limitations
+## Keypoint and preprocessing contract
 
-- Hand-slot tracking is experimental and can still swap identities.
-- MediaPipe handedness may depend on image mirroring.
-- Validation checks array structure, not semantic correctness.
-- Timestamps assume 30 FPS; original recording FPS is unverified.
-- All 7,500 samples from 15 signers have been processed and structurally validated. Detection-quality limitations remain, and manual review has been performed on selected samples only.
-- The pipeline does not train a recognition model.
-- Dataset usage must comply with its license and team approval.
+Each input sample is a real `numpy.float32` array with shape `(T, 2, 63)`.
+The 63 features are 21 hand landmarks times XYZ coordinates for each of two
+hand slots. Missing detections are represented by NaNs in source arrays.
+
+The validated hand-centric checkpoint uses:
+
+```text
+nan_strategy=interpolate
+flatten_hands=false
+missing_file_policy=error
+coordinate_normalization=hand_centric
+normalization_epsilon=1e-6
+```
+
+Interpolation fills missing values along time. The original valid-hand mask is
+preserved and supplied to the model. Hand-centric normalization subtracts each
+hand's wrist and scales by the sequence median wrist-to-middle-finger-MCP
+distance, with safe handling for missing or degenerate references.
+
+Training and inference restore the serialized checkpoint configuration. Missing
+real keypoint files are errors; synthetic or placeholder samples are not valid
+for training or evaluation.
+
+## Training and checkpoint resume
+
+Training is configured through `src/isharah_training.py`. Phase 3A smoke mode
+uses a few real samples. Phase 3B provides full training and a standalone CTC
+preflight. Full training has not been rerun as part of this handoff.
+
+A resume must use a compatible checkpoint and preserve its optimizer, seed,
+preprocessing, vocabulary, and model settings. The existing epoch 10 to 15
+resume used a separate output directory:
+
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" .\isharah500\src\isharah_training.py --help
+```
+
+Use the CLI help on the target Windows environment for the exact available
+argument names before launching a new experiment. Do not overwrite existing
+checkpoint directories.
+
+## Evaluation and corrected metrics
+
+The canonical SI dev report is
+[reports/si_error_analysis_epoch15_corrected.md](reports/si_error_analysis_epoch15_corrected.md).
+
+It evaluates all 500 SI dev samples and reports token-level Levenshtein
+alignment:
+
+- GER: `0.7135`
+- Exact Match: `0.07` (35/500)
+- Substitutions: `840`
+- Deletions: `618`
+- Insertions: `36`
+- Reference glosses: `2,094`
+
+GER is `(substitutions + deletions + insertions) / reference glosses`.
+Exact Match is the number of complete sequence matches divided by sample count.
+
+The training history for epoch 15 recorded Exact Match `0.28`. That historical
+value came from the pre-refactor metric aggregation and is incorrect. The
+corrected independent analysis and canonical metrics implementation report
+`0.07`; the historical `0.28` must not be used for comparison or release
+claims.
+
+### One-time held-out SI test evaluation
+
+The dedicated read-only evaluator uses only the frozen checkpoint, the
+training-derived SI vocabulary, the checkpoint preprocessing configuration,
+and greedy CTC decoding. It refuses placeholder files, missing keypoints,
+OOV/CTC-invalid samples, existing report paths, checkpoint writes, and
+training. It does not perform model selection.
+
+The recorded one-time evaluation command was:
+
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" .\isharah500\src\evaluate_si_test.py --project-root "." --data-root "E:\DEPI Project\SIGNOVA_ESL" --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt" --json-report ".\isharah500\reports\si_test_evaluation_epoch15.json" --device cuda --batch-size 8
+```
+
+The report is test-specific and contains GER, Exact Match, substitutions,
+deletions, insertions, and evaluated sample count. The command must not be
+used to tune or replace the selected checkpoint.
+
+The completed report records:
+
+- 2,000 samples and 8,376 reference gloss tokens.
+- 3,326 substitutions, 3,041 deletions, and 94 insertions.
+- 6,461 total edit errors and GER `0.771370582617001`.
+- 82 exact matches and Exact Match `0.041`.
+- 2,000 CTC-valid samples and 0 CTC-rejected samples.
+
+The final SI test GER is higher than the corrected SI dev GER `0.7135`, and
+Exact Match is lower than the corrected dev value `0.07`. The model continues
+to show short predictions and deletion-heavy errors. These metrics do not
+support a production readiness claim.
+
+## Inference
+
+Load the predictor once during application initialization and reuse it:
+
+```python
+import numpy as np
+
+from isharah_inference import load_predictor
+
+predictor = load_predictor("path/to/isharah500_si_best.pt", device_name="cuda")
+keypoints = np.load("incoming_sequence.npy", allow_pickle=False)
+prediction = predictor.predict(keypoints)
+response = prediction.to_dict()
+```
+
+The output contains `gloss_tokens`, `gloss_text`, `input_length`,
+`valid_hand_coverage`, `device`, and the restored preprocessing configuration.
+See [docs/backend_integration.md](docs/backend_integration.md) for the full
+contract and error behavior.
+
+Real SI dev smoke command:
+
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" .\isharah500\src\isharah_inference.py --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt" --keypoints "E:\DEPI Project\SIGNOVA_ESL\data\processed\isharah500\hand_keypoints_tracked\dev\02_0001.npy" --device cuda
+```
+
+## Tests and checks
+
+Run the full existing suite on Windows:
+
+```powershell
+& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" -m pytest .\isharah500\tests -q
+```
+
+The latest handoff status is 79 passed and 1 optional real-data test skipped in 5.77s.
+The optional test requires explicit external checkpoint and data-root
+environment variables as described in the inference test module.
+
+## Known limitations and error patterns
+
+- The model uses hand landmarks only and omits facial, body, and other
+  non-manual signals.
+- SI dev predictions remain shorter than targets on average: 3.024 versus
+  4.188 glosses.
+- Deletions are the dominant aligned error type: 618 deletions and a 0.2951
+  deletion rate.
+- Errors increase for longer target sequences; the corrected report shows zero
+  exact matches for target lengths 5 and above in the analyzed groups.
+- Frequent aligned confusions include `انا` to `هو`, `هو` to `الان`, and
+  `رغبه` to `هو`.
+- Hand detection coverage is variable, and missing detections can affect the
+  representation even after interpolation.
+- Greedy decoding remains the current baseline; the small prefix-beam
+  comparison did not improve the evaluated sample.
+- Final SI test performance is measured in
+  `reports/si_test_evaluation_epoch15.json`; it is not a model-selection
+  metric. US performance remains unevaluated.
+
+## Handover blockers
+
+Final handover still requires an owner to confirm the target deployment
+environment, dependency lock/pinning policy, artifact storage policy, and a
+separately authorized evaluation plan for held-out test data. These are release
+process items; no production readiness claim is made by this module.
