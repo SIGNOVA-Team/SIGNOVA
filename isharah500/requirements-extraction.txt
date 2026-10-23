@@ -1,0 +1,4 @@
+# Optional dependencies for hand landmark extraction and review utilities.
+numpy==2.5.4
+mediapipe==1.1.1
+Pillow==12.3.0

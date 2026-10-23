@@ -1,0 +1,6 @@
+# Verified Windows GPU reference environment:
+# PyTorch 2.8.0+cu126 with CUDA runtime 12.6 on an NVIDIA Quadro P2000.
+# Install using the approved PyTorch cu126 package index or wheel source.
+# The index URL is intentionally not embedded until the team's package source
+# policy is confirmed.
+torch==2.8.0
