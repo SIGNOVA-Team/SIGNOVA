@@ -67,6 +67,24 @@ The final held-out SI test GER is higher than the corrected dev GER and Exact
 Match is lower, indicating a measurable generalization gap. The test result is
 reported for handover and does not justify a production readiness claim.
 
+## Research-only experiments after the frozen baseline
+
+These experiments were not used to replace the selected checkpoint. They are
+documented for provenance and must not be treated as production model results.
+
+| Experiment | Calibration/training split | Evaluation split | Result | Decision |
+|---|---|---|---|---|
+| Target-length-weighted CTC v2 | SI Train | SI Dev | GER `0.747373`, Exact Match `0.024` at epoch 15 | Rejected; worse than frozen baseline |
+| Blank-offset calibration `-2.0` | SI Train calibration subset (100) | SI Dev (500) | GER `0.723496`, Exact Match `0.052`, substitutions `964`, deletions `441`, insertions `110`, mean prediction length `3.526` | Rejected; fewer deletions but higher total errors |
+| Global Position Features v1 | Not trained | Not evaluated | Feature schema and commands only; no validated metrics | Untrained research experiment |
+
+The weighted CTC result is detailed in
+`reports/experiment_target_length_weighted_ctc_15ep_v2_analysis.md` and the
+blank-offset result is recorded in
+`reports/blank_offset_calibration_si_dev.json`. The Global Position Features
+definition is in `reports/experiment_global_position_v1.md`. None of these
+experiments changes the frozen 63-feature checkpoint or its inference contract.
+
 ## Final held-out SI test evaluation
 
 The epoch 15 checkpoint was frozen before this one-time evaluation. The saved

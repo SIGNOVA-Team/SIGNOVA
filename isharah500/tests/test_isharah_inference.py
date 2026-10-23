@@ -1,6 +1,7 @@
 """Tests for the checkpoint-backed Isharah prediction interface."""
 
 import json
+import csv
 import os
 import sys
 from pathlib import Path
@@ -152,7 +153,7 @@ def test_load_predictor_loads_checkpoint_once(monkeypatch):
 
 
 def test_real_si_dev_prediction_smoke():
-    """Run one prediction when explicit trusted checkpoint and data roots are supplied."""
+    """Load the frozen checkpoint on CPU and predict one real SI dev sample."""
     project_root_value = os.environ.get("ISHARAH_PROJECT_ROOT")
     data_root_value = os.environ.get("ISHARAH_DATA_ROOT")
     if not project_root_value or not data_root_value:
@@ -161,12 +162,49 @@ def test_real_si_dev_prediction_smoke():
     data_root = Path(data_root_value)
     checkpoint = project_root / "isharah500" / "checkpoints" / "si_hand_centric_resume_15ep" / "isharah500_si_best.pt"
     if not checkpoint.is_file():
-        pytest.skip("trusted SI checkpoint is not available")
-    keypoints = data_root / "processed" / "isharah500" / "hand_keypoints_tracked" / "dev" / "02_0001.npy"
-    if not keypoints.is_file():
-        pytest.skip("external SI data root is not available")
-    prediction = load_predictor(checkpoint, device_name="cpu").predict(
-        np.load(keypoints, allow_pickle=False)
+        pytest.skip(f"trusted SI checkpoint is not available: {checkpoint}")
+
+    metadata = project_root / "isharah500" / "metadata" / "isharah500_si_dev.csv"
+    if not metadata.is_file():
+        pytest.skip(f"SI dev metadata is not available: {metadata}")
+    with metadata.open(encoding="utf-8-sig", newline="") as file:
+        row = next(csv.DictReader(file), None)
+    if row is None or not row.get("keypoints_path"):
+        pytest.skip("SI dev metadata does not contain a keypoint row")
+
+    relative_path = Path(row["keypoints_path"])
+    candidates = [data_root / relative_path]
+    if relative_path.parts[:2] == ("data", "processed"):
+        candidates.append(data_root / Path(*relative_path.parts[2:]))
+    keypoints = next((candidate for candidate in candidates if candidate.is_file()), None)
+    if keypoints is None:
+        pytest.skip(
+            "real SI dev keypoint file is not available; checked: "
+            + ", ".join(str(candidate) for candidate in candidates)
+        )
+
+    raw_keypoints = np.load(keypoints, allow_pickle=False)
+    predictor = load_predictor(checkpoint, device_name="cpu")
+    first = predictor.predict(raw_keypoints)
+    second = predictor.predict(raw_keypoints)
+    first_output = first.to_dict()
+    second_output = second.to_dict()
+
+    assert first == second
+    assert first_output == second_output
+    assert set(first_output) == {
+        "gloss_tokens",
+        "gloss_text",
+        "input_length",
+        "valid_hand_coverage",
+        "device",
+        "preprocessing_config",
+    }
+    assert first_output["device"] == "cpu"
+    assert first_output["input_length"] == raw_keypoints.shape[0]
+    assert predictor.model.config.features_per_hand == 63
+    assert predictor.preprocessing_config.output_features_per_hand == 63
+    assert first_output["preprocessing_config"] == (
+        predictor.preprocessing_config.to_dict()
     )
-    assert prediction.input_length > 0
-    assert isinstance(prediction.gloss_text, str)
+    json.dumps(first_output, ensure_ascii=False)

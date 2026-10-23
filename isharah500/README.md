@@ -39,6 +39,11 @@ were not used for model selection.
 Use the existing Windows virtual environment. No dependency installation is
 prescribed by this handoff.
 
+Windows paths shown below are verified local examples, not mandatory paths.
+On another machine, activate the compatible environment and use `python`, or
+replace the example paths with that machine's project, data, and artifact
+locations.
+
 Core packages used by the ML module are:
 
 - Python 3.13.15 (verified Windows reference environment)
@@ -58,12 +63,16 @@ source; PyPI alone must not be assumed to reproduce it. See
 [`docs/dependency_and_artifact_handoff.md`](docs/dependency_and_artifact_handoff.md)
 for the verification command and checkpoint delivery procedure.
 
-From the project root on Windows:
+From the project root on Windows, after activating the environment:
 
 ```powershell
-& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" --version
-& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" -c "import numpy, torch; print(numpy.__version__, torch.__version__)"
+python --version
+python -c "import numpy, torch; print(numpy.__version__, torch.__version__)"
 ```
+
+The verified interpreter path
+`E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe` may be used when
+the existing Windows environment is not activated.
 
 ## Repository layout
 
@@ -248,10 +257,10 @@ The output contains `gloss_tokens`, `gloss_text`, `input_length`,
 See [docs/backend_integration.md](docs/backend_integration.md) for the full
 contract and error behavior.
 
-Real SI dev smoke command:
+Real SI dev smoke command using the activated environment:
 
 ```powershell
-& "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" .\isharah500\src\isharah_inference.py --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt" --keypoints "E:\DEPI Project\SIGNOVA_ESL\data\processed\isharah500\hand_keypoints_tracked\dev\02_0001.npy" --device cuda
+python .\isharah500\src\isharah_inference.py --checkpoint ".\isharah500\checkpoints\si_hand_centric_resume_15ep\isharah500_si_best.pt" --keypoints "<DATA_ROOT>\data\processed\isharah500\hand_keypoints_tracked\dev\02_0001.npy" --device cuda
 ```
 
 ## Tests and checks
@@ -262,9 +271,8 @@ Run the full existing suite on Windows:
 & "E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe" -m pytest .\isharah500\tests -q
 ```
 
-The latest handoff status is 79 passed and 1 optional real-data test skipped in 5.77s.
-The optional test requires explicit external checkpoint and data-root
-environment variables as described in the inference test module.
+The latest verified Windows suite result is 80 passed, 0 skipped, and 0 failed
+in 5.22s, including the real SI Dev checkpoint integration test on CPU.
 
 ## Known limitations and error patterns
 

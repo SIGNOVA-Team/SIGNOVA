@@ -36,8 +36,9 @@ confirmation, or blocked by a missing release decision.
 
 | Check | Status | Evidence / action |
 |---|---|---|
-| Automated suite | Verified | Latest verified Windows result: 79 passed, 1 optional real-data test skipped in 5.77s |
-| Inference smoke test on real SI dev input | Verified | CUDA smoke test passed |
+| Automated suite | PASS | Latest verified Windows result: 80 passed, 0 skipped, 0 failed in 5.22s |
+| Real-checkpoint CPU inference test | PASS | tests/test_isharah_inference.py::test_real_si_dev_prediction_smoke passed on the frozen checkpoint using a real SI Dev keypoint file |
+| Inference smoke test on real SI dev input | Verified | CUDA smoke test and real CPU checkpoint integration test passed |
 | Training-data CTC preflight | Verified | Standalone SI preflight was added and used before pilot training |
 | Syntax validation in WSL | Verified | Python compilation checks pass for changed Python files |
 | CUDA runtime on target backend host | Pending | Run the backend environment smoke test |
