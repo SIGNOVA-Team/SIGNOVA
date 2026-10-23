@@ -11,8 +11,9 @@ import argparse
 import json
 import sys
 from collections import Counter
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 import torch
 
@@ -23,8 +24,8 @@ if str(SOURCE_DIRECTORY) not in sys.path:
 from isharah_ctc import greedy_ctc_decode  # noqa: E402
 from isharah_dataset import GlossVocabulary, IsharahDataset  # noqa: E402
 from isharah_metrics import (  # noqa: E402
-    alignment_counts,
     align_token_sequences,
+    alignment_counts,
     calculate_token_metrics,
 )
 from isharah_training import (  # noqa: E402
@@ -32,7 +33,6 @@ from isharah_training import (  # noqa: E402
     load_checkpoint,
     make_loader,
 )
-
 
 DEFAULT_OFFSETS = (-3.0, -2.0, -1.5, -1.0, -0.5, 0.0)
 
@@ -78,12 +78,8 @@ def _token_sequences(
     references: list[list[str]] = []
     hypotheses: list[list[str]] = []
     offset = 0
-    for prediction, target_length in zip(
-        predictions, target_lengths.tolist(), strict=True
-    ):
-        target = vocabulary.decode(
-            target_ids[offset : offset + target_length].tolist()
-        )
+    for prediction, target_length in zip(predictions, target_lengths.tolist(), strict=True):
+        target = vocabulary.decode(target_ids[offset : offset + target_length].tolist())
         offset += target_length
         references.append(target.split() if target else [])
         hypotheses.append(prediction.split() if prediction else [])
@@ -147,9 +143,7 @@ def evaluate_logits(
     blank_frames = 0
     total_frames = 0
     prediction_lengths: list[int] = []
-    for row, length, hypothesis in zip(
-        best_ids, input_lengths.tolist(), hypotheses, strict=True
-    ):
+    for row, length, hypothesis in zip(best_ids, input_lengths.tolist(), hypotheses, strict=True):
         path = row[:length]
         blank_frames += int((path == blank_id).sum().item())
         total_frames += length
@@ -161,8 +155,7 @@ def evaluate_logits(
             "count": len(prediction_lengths),
             "mean": sum(prediction_lengths) / max(len(prediction_lengths), 1),
             "distribution": {
-                str(length): count
-                for length, count in sorted(Counter(prediction_lengths).items())
+                str(length): count for length, count in sorted(Counter(prediction_lengths).items())
             },
         },
         "long_target_deletions": _long_target_summary(references, hypotheses),
@@ -230,8 +223,7 @@ def evaluate_dataset(
             "count": len(prediction_lengths),
             "mean": sum(prediction_lengths) / max(len(prediction_lengths), 1),
             "distribution": {
-                str(length): count
-                for length, count in sorted(Counter(prediction_lengths).items())
+                str(length): count for length, count in sorted(Counter(prediction_lengths).items())
             },
         },
         "long_target_deletions": _long_target_summary(references, hypotheses),
@@ -289,16 +281,16 @@ def run_calibration(
     if calibration_samples <= 0 or batch_size <= 0:
         raise ValueError("calibration_samples and batch_size must be positive")
     device = torch.device(
-        "cuda" if device_name == "auto" and torch.cuda.is_available() else device_name
+        "cuda"
+        if device_name == "auto" and torch.cuda.is_available()
+        else device_name
         if device_name != "auto"
         else "cpu"
     )
     if device.type == "cuda" and not torch.cuda.is_available():
         raise RuntimeError("CUDA was requested but is unavailable")
 
-    model, vocabulary, preprocessing_config, _ = load_checkpoint(
-        checkpoint_path, device=device
-    )
+    model, vocabulary, preprocessing_config, _ = load_checkpoint(checkpoint_path, device=device)
     if preprocessing_config.missing_file_policy != "error":
         raise ValueError("Calibration requires strict real-data loading")
     train_set, dev_set, dev_vocabulary = build_si_train_dev_datasets(
@@ -379,9 +371,7 @@ def main() -> None:
         device_name=arguments.device,
     )
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    output.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 

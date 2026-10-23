@@ -139,7 +139,7 @@ class IsharahPredictor:
         checkpoint_path: str | Path,
         *,
         device_name: str = "auto",
-    ) -> "IsharahPredictor":
+    ) -> IsharahPredictor:
         device = _select_device(device_name)
         model, vocabulary, preprocessing_config, _ = load_checkpoint(
             checkpoint_path,

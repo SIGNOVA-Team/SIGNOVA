@@ -196,11 +196,7 @@ def test_isharah_dataset_loading(tmp_path):
 
 def test_real_si_metadata_bom_header_is_normalized():
     """Load the repository SI schema whose header contains a UTF-8 BOM."""
-    metadata_file = (
-        Path(__file__).resolve().parents[1]
-        / "metadata"
-        / "isharah500_si_train.csv"
-    )
+    metadata_file = Path(__file__).resolve().parents[1] / "metadata" / "isharah500_si_train.csv"
     dataset = IsharahDataset(
         metadata_file,
         root_dir=metadata_file.parents[1],
@@ -302,9 +298,7 @@ def test_ctc_collator_returns_concatenated_targets(tmp_path):
 
     meta_file = tmp_path / "metadata.csv"
     meta_file.write_text(
-        "sample_id,gloss,text,keypoints_path\n"
-        "s1,معلم,مدرس,s1.npy\n"
-        "s2,انا طالب,انا طالب,s2.npy\n",
+        "sample_id,gloss,text,keypoints_path\ns1,معلم,مدرس,s1.npy\ns2,انا طالب,انا طالب,s2.npy\n",
         encoding="utf-8",
     )
     np.save(tmp_path / "s1.npy", np.zeros((3, 2, 63), dtype=np.float32))

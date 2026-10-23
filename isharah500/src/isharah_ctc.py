@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
 import math
-from typing import Any, Iterable
+from collections.abc import Iterable
+from dataclasses import asdict, dataclass
+from typing import Any
 
 import torch
+from isharah_dataset import GlossVocabulary
 from torch import Tensor, nn
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-
-from isharah_dataset import GlossVocabulary
 
 
 @dataclass(frozen=True)
@@ -44,7 +44,7 @@ class BiGRUCTCConfig:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, values: dict[str, Any]) -> "BiGRUCTCConfig":
+    def from_dict(cls, values: dict[str, Any]) -> BiGRUCTCConfig:
         """Reconstruct a model configuration from a dictionary."""
         return cls(**values)
 
@@ -208,9 +208,7 @@ def ctc_loss_from_logits(
     the raw relative weight before mean normalization.
     """
     if target_length_weighting not in {"none", "linear", "sqrt"}:
-        raise ValueError(
-            "target_length_weighting must be one of: none, linear, sqrt"
-        )
+        raise ValueError("target_length_weighting must be one of: none, linear, sqrt")
     if target_length_weight_cap <= 0:
         raise ValueError("target_length_weight_cap must be positive")
     if logits.ndim != 3:
@@ -242,9 +240,7 @@ def ctc_loss_from_logits(
         return nn.functional.ctc_loss(log_probs, reduction="mean", **ctc_arguments)
 
     if torch.any(target_lengths <= 0):
-        raise ValueError(
-            "Weighted target-length CTC requires positive target lengths"
-        )
+        raise ValueError("Weighted target-length CTC requires positive target lengths")
     power = 1.0 if target_length_weighting == "linear" else 0.5
     lengths = target_lengths.to(dtype=log_probs.dtype)
     relative_lengths = lengths / lengths.mean()
@@ -339,15 +335,18 @@ def ctc_prefix_beam_search(
 
     decoded: list[list[int]] = []
     for batch_index, length in enumerate(input_lengths.detach().cpu().tolist()):
-        beams: dict[tuple[int, ...], tuple[float, float]] = {
-            (): (0.0, neg_inf)
-        }
+        beams: dict[tuple[int, ...], tuple[float, float]] = {(): (0.0, neg_inf)}
         for frame in range(int(length)):
             frame_log_probs = log_probs[batch_index, frame]
             next_beams: dict[tuple[int, ...], list[float]] = {}
 
-            def add(prefix: tuple[int, ...], blank_score: float, nonblank_score: float) -> None:
-                scores = next_beams.setdefault(prefix, [neg_inf, neg_inf])
+            def add(
+                prefix: tuple[int, ...],
+                blank_score: float,
+                nonblank_score: float,
+                target_beams: dict[tuple[int, ...], list[float]] = next_beams,
+            ) -> None:
+                scores = target_beams.setdefault(prefix, [neg_inf, neg_inf])
                 scores[0] = logadd(scores[0], blank_score)
                 scores[1] = logadd(scores[1], nonblank_score)
 

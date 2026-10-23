@@ -37,15 +37,13 @@ def test_metrics_are_batch_size_invariant_with_partial_batch():
     }
     for start in range(0, len(references), 2):
         batch = calculate_token_metrics(
-            references[start:start + 2],
-            hypotheses[start:start + 2],
+            references[start : start + 2],
+            hypotheses[start : start + 2],
         )
         for key in accumulated:
             accumulated[key] += batch[key]
 
-    assert accumulated == {
-        key: full[key] for key in accumulated
-    }
+    assert accumulated == {key: full[key] for key in accumulated}
     assert full["gloss_error_rate"] == full["edit_errors"] / full["reference_tokens"]
     assert full["exact_match"] == full["exact_matches"] / full["sample_count"]
 

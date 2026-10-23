@@ -19,7 +19,6 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-
 from isharah_features import (
     FEATURE_REPRESENTATION_GLOBAL_POSITION_V1,
     FEATURE_REPRESENTATION_RAW_63,
@@ -64,15 +63,12 @@ class PreprocessingConfig:
         if self.nan_strategy not in {"interpolate", "zeros", "none"}:
             raise ValueError(f"Unsupported nan_strategy: {self.nan_strategy}")
         if self.missing_file_policy not in {"error", "placeholder"}:
-            raise ValueError(
-                f"Unsupported missing_file_policy: {self.missing_file_policy}"
-            )
+            raise ValueError(f"Unsupported missing_file_policy: {self.missing_file_policy}")
         if self.expected_num_hands <= 0 or self.expected_features_per_hand <= 0:
             raise ValueError("Expected keypoint dimensions must be positive")
         if self.coordinate_normalization not in {"none", "hand_centric"}:
             raise ValueError(
-                "Unsupported coordinate_normalization: "
-                f"{self.coordinate_normalization}"
+                f"Unsupported coordinate_normalization: {self.coordinate_normalization}"
             )
         if self.normalization_epsilon <= 0:
             raise ValueError("normalization_epsilon must be positive")
@@ -80,13 +76,8 @@ class PreprocessingConfig:
             FEATURE_REPRESENTATION_RAW_63,
             FEATURE_REPRESENTATION_GLOBAL_POSITION_V1,
         }:
-            raise ValueError(
-                "Unsupported feature_representation: "
-                f"{self.feature_representation}"
-            )
-        if self.global_coordinate_scale <= 0 or not np.isfinite(
-            self.global_coordinate_scale
-        ):
+            raise ValueError(f"Unsupported feature_representation: {self.feature_representation}")
+        if self.global_coordinate_scale <= 0 or not np.isfinite(self.global_coordinate_scale):
             raise ValueError("global_coordinate_scale must be finite and positive")
 
     @property
@@ -99,7 +90,7 @@ class PreprocessingConfig:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, values: dict[str, Any]) -> "PreprocessingConfig":
+    def from_dict(cls, values: dict[str, Any]) -> PreprocessingConfig:
         """Reconstruct a preprocessing contract from serialized settings."""
         return cls(**values)
 
@@ -127,14 +118,10 @@ def validate_keypoints(
     if keypoints.shape[0] <= 0:
         raise ValueError("Keypoint sequences must contain at least one frame")
     if expected_frames is not None and keypoints.shape[0] != expected_frames:
-        raise ValueError(
-            f"Expected {expected_frames} frames, got {keypoints.shape[0]}"
-        )
+        raise ValueError(f"Expected {expected_frames} frames, got {keypoints.shape[0]}")
     if keypoints.dtype != np.float32:
         raise ValueError(f"Expected dtype float32, got {keypoints.dtype}")
-    if config.reject_infinite_values and not np.all(
-        np.isfinite(keypoints) | np.isnan(keypoints)
-    ):
+    if config.reject_infinite_values and not np.all(np.isfinite(keypoints) | np.isnan(keypoints)):
         raise ValueError("Keypoints contain infinite or otherwise invalid values")
 
 
@@ -142,7 +129,7 @@ def build_training_vocabulary(
     metadata_csv: str | Path,
     *,
     add_ctc_blank: bool = True,
-) -> "GlossVocabulary":
+) -> GlossVocabulary:
     """Build a vocabulary from one selected protocol's training CSV only."""
     metadata_csv = Path(metadata_csv)
     with metadata_csv.open(encoding="utf-8-sig", newline="") as file:
@@ -290,11 +277,7 @@ class GlossVocabulary:
 
     def oov_tokens(self, gloss_str: str) -> list[str]:
         """Return gloss tokens absent from this vocabulary."""
-        return [
-            token
-            for token in gloss_str.strip().split()
-            if token not in self.token2id
-        ]
+        return [token for token in gloss_str.strip().split() if token not in self.token2id]
 
     def encode(
         self,
@@ -390,9 +373,7 @@ class IsharahDataset(Dataset):
                     **config.to_dict(),
                     "nan_strategy": nan_strategy or config.nan_strategy,
                     "flatten_hands": (
-                        flatten_hands
-                        if flatten_hands is not None
-                        else config.flatten_hands
+                        flatten_hands if flatten_hands is not None else config.flatten_hands
                     ),
                     "missing_file_policy": (
                         missing_file_policy
@@ -594,10 +575,7 @@ def collate_isharah_ctc_batch(batch: list[dict[str, Any]]) -> dict[str, Any]:
 
     padded = collate_isharah_batch(batch)
     target_lengths = padded["token_lengths"]
-    targets = [
-        item["token_ids"][: item["token_length"]]
-        for item in batch
-    ]
+    targets = [item["token_ids"][: item["token_length"]] for item in batch]
     target_ids = torch.cat(targets, dim=0) if targets else torch.empty(0, dtype=torch.long)
 
     padded["target_ids"] = target_ids

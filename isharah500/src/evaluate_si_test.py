@@ -78,9 +78,7 @@ def _evaluate_test_dataset(
             )
             predictions = greedy_ctc_decode(logits, input_lengths, vocabulary)
             target_offset = 0
-            for row_index, target_length in enumerate(
-                batch["target_lengths"].tolist()
-            ):
+            for row_index, target_length in enumerate(batch["target_lengths"].tolist()):
                 target_ids = batch["target_ids"][
                     target_offset : target_offset + target_length
                 ].tolist()
@@ -92,8 +90,7 @@ def _evaluate_test_dataset(
 
     if len(references) != len(test_set):
         raise RuntimeError(
-            f"Evaluation processed {len(references)} samples but expected "
-            f"{len(test_set)}"
+            f"Evaluation processed {len(references)} samples but expected {len(test_set)}"
         )
     return calculate_token_metrics(references, hypotheses)
 
@@ -168,10 +165,7 @@ def evaluate_si_test(
         expected_samples=expected_samples,
     )
     if not availability["available"]:
-        raise FileNotFoundError(
-            "SI test availability check failed: "
-            f"{availability}"
-        )
+        raise FileNotFoundError(f"SI test availability check failed: {availability}")
     ctc_validation = validate_ctc_lengths(test_set)
     if ctc_validation["rejected_samples"]:
         raise ValueError(
@@ -213,10 +207,7 @@ def main() -> None:
     parser.add_argument(
         "--json-report",
         type=Path,
-        default=project_root
-        / "isharah500"
-        / "reports"
-        / "si_test_evaluation_epoch15.json",
+        default=project_root / "isharah500" / "reports" / "si_test_evaluation_epoch15.json",
     )
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--device", default="auto")
@@ -239,9 +230,7 @@ def main() -> None:
         )
         return
     if arguments.json_report.exists():
-        raise FileExistsError(
-            "Refusing to overwrite an existing SI test report; choose a new path"
-        )
+        raise FileExistsError("Refusing to overwrite an existing SI test report; choose a new path")
     report = evaluate_si_test(
         arguments.project_root,
         arguments.data_root,

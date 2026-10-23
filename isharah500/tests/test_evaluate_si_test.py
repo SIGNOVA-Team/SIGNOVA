@@ -50,8 +50,7 @@ def test_report_schema_is_test_only_and_canonical():
         "exact_match",
     }
     assert report["metrics"]["edit_errors"] == sum(
-        report["metrics"][key]
-        for key in ("substitutions", "deletions", "insertions")
+        report["metrics"][key] for key in ("substitutions", "deletions", "insertions")
     )
     json.dumps(report, ensure_ascii=False)
 

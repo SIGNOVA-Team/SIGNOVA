@@ -10,15 +10,15 @@ torch = pytest.importorskip("torch")
 SOURCE_DIRECTORY = Path(__file__).resolve().parents[1] / "src"
 sys.path.insert(0, str(SOURCE_DIRECTORY))
 
-from isharah_dataset import GlossVocabulary  # noqa: E402
 from isharah_ctc import (  # noqa: E402
     BiGRUCTC,
     BiGRUCTCConfig,
     collapse_ctc_path,
-    ctc_prefix_beam_search,
     ctc_loss_from_logits,
+    ctc_prefix_beam_search,
     greedy_ctc_decode,
 )
+from isharah_dataset import GlossVocabulary  # noqa: E402
 
 
 def make_model(vocabulary_size):
@@ -139,9 +139,7 @@ def test_weighted_ctc_uses_capped_normalized_variable_length_weights():
         reduction="none",
         zero_infinity=True,
     )
-    raw_weights = (target_lengths.float() / target_lengths.float().mean()).clamp(
-        max=cap
-    )
+    raw_weights = (target_lengths.float() / target_lengths.float().mean()).clamp(max=cap)
     weights = raw_weights / raw_weights.mean()
     normalized_per_sample = per_sample / target_lengths.float()
     expected = (normalized_per_sample * weights).mean()

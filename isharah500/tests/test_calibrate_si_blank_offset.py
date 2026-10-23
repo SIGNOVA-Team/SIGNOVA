@@ -10,9 +10,9 @@ torch = pytest.importorskip("torch")
 SOURCE_DIRECTORY = Path(__file__).resolve().parents[1] / "src"
 sys.path.insert(0, str(SOURCE_DIRECTORY))
 
+from calibrate_si_blank_offset import apply_blank_logit_offset  # noqa: E402
 from isharah_ctc import greedy_ctc_decode  # noqa: E402
 from isharah_dataset import GlossVocabulary  # noqa: E402
-from calibrate_si_blank_offset import apply_blank_logit_offset  # noqa: E402
 
 
 def _vocabulary() -> GlossVocabulary:
@@ -41,9 +41,7 @@ def test_zero_offset_preserves_existing_greedy_decoder_behavior():
     logits[0, 1, alpha] = 5.0
     logits[0, 3, alpha] = 5.0
 
-    baseline = greedy_ctc_decode(
-        logits, torch.tensor([5]), vocabulary, blank_id=blank_id
-    )
+    baseline = greedy_ctc_decode(logits, torch.tensor([5]), vocabulary, blank_id=blank_id)
     calibrated = greedy_ctc_decode(
         apply_blank_logit_offset(logits, blank_id, 0.0),
         torch.tensor([5]),
@@ -63,9 +61,7 @@ def test_negative_blank_offset_can_reveal_repeated_tokens_after_blank():
     logits[0, 1, alpha] = 2.1
     logits[0, 3, alpha] = 2.1
 
-    baseline = greedy_ctc_decode(
-        logits, torch.tensor([5]), vocabulary, blank_id=blank_id
-    )
+    baseline = greedy_ctc_decode(logits, torch.tensor([5]), vocabulary, blank_id=blank_id)
     calibrated = greedy_ctc_decode(
         apply_blank_logit_offset(logits, blank_id, -1.0),
         torch.tensor([5]),

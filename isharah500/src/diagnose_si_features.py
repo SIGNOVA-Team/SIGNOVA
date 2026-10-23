@@ -140,7 +140,9 @@ def _logit_stats(
     device: torch.device,
 ) -> dict[str, Any]:
     subset = Subset(dataset, range(min(count, len(dataset))))
-    loader = make_loader(subset, batch_size=max(1, min(count, len(dataset))), num_workers=0, shuffle=False)
+    loader = make_loader(
+        subset, batch_size=max(1, min(count, len(dataset))), num_workers=0, shuffle=False
+    )
     blank_id = vocabulary.token2id[vocabulary.BLANK_TOKEN]
     blank_probabilities: list[torch.Tensor] = []
     strongest_nonblank_probabilities: list[torch.Tensor] = []
@@ -164,18 +166,24 @@ def _logit_stats(
                 nonblank_logits = row_logits[:, nonblank_ids]
                 nonblank_probabilities = row_probabilities[:, nonblank_ids]
                 blank_probabilities.append(row_probabilities[:, blank_id].cpu())
-                strongest_nonblank_probabilities.append(nonblank_probabilities.max(dim=-1).values.cpu())
+                strongest_nonblank_probabilities.append(
+                    nonblank_probabilities.max(dim=-1).values.cpu()
+                )
                 margins.append((row_logits[:, blank_id] - nonblank_logits.max(dim=-1).values).cpu())
                 logits_values.append(row_logits.cpu())
                 argmax_blank += int((row_logits.argmax(dim=-1) == blank_id).sum())
                 valid_frames += int(length)
 
     all_blank = torch.cat(blank_probabilities) if blank_probabilities else torch.empty(0)
-    all_nonblank = torch.cat(strongest_nonblank_probabilities) if strongest_nonblank_probabilities else torch.empty(0)
+    all_nonblank = (
+        torch.cat(strongest_nonblank_probabilities)
+        if strongest_nonblank_probabilities
+        else torch.empty(0)
+    )
     all_margins = torch.cat(margins) if margins else torch.empty(0)
     all_logits = torch.cat(logits_values) if logits_values else torch.empty(0)
     bias = model.classifier.bias.detach().cpu()
-    nonblank_bias = torch.cat((bias[:blank_id], bias[blank_id + 1:]))
+    nonblank_bias = torch.cat((bias[:blank_id], bias[blank_id + 1 :]))
 
     def mean(value: torch.Tensor) -> float | None:
         return float(value.mean()) if value.numel() else None

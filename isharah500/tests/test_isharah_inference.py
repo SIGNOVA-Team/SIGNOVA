@@ -1,7 +1,7 @@
 """Tests for the checkpoint-backed Isharah prediction interface."""
 
-import json
 import csv
+import json
 import os
 import sys
 from pathlib import Path
@@ -18,7 +18,6 @@ import isharah_inference  # noqa: E402
 from isharah_ctc import BiGRUCTC  # noqa: E402
 from isharah_dataset import GlossVocabulary, PreprocessingConfig  # noqa: E402
 from isharah_inference import (  # noqa: E402
-    IsharahPredictor,
     load_predictor,
     preprocess_keypoints,
 )
@@ -160,7 +159,13 @@ def test_real_si_dev_prediction_smoke():
         pytest.skip("set ISHARAH_PROJECT_ROOT and ISHARAH_DATA_ROOT for the real-data smoke test")
     project_root = Path(project_root_value)
     data_root = Path(data_root_value)
-    checkpoint = project_root / "isharah500" / "checkpoints" / "si_hand_centric_resume_15ep" / "isharah500_si_best.pt"
+    checkpoint = (
+        project_root
+        / "isharah500"
+        / "checkpoints"
+        / "si_hand_centric_resume_15ep"
+        / "isharah500_si_best.pt"
+    )
     if not checkpoint.is_file():
         pytest.skip(f"trusted SI checkpoint is not available: {checkpoint}")
 
@@ -204,7 +209,5 @@ def test_real_si_dev_prediction_smoke():
     assert first_output["input_length"] == raw_keypoints.shape[0]
     assert predictor.model.config.features_per_hand == 63
     assert predictor.preprocessing_config.output_features_per_hand == 63
-    assert first_output["preprocessing_config"] == (
-        predictor.preprocessing_config.to_dict()
-    )
+    assert first_output["preprocessing_config"] == (predictor.preprocessing_config.to_dict())
     json.dumps(first_output, ensure_ascii=False)

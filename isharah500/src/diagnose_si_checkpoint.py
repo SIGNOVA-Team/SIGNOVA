@@ -33,9 +33,7 @@ def _summary(values: list[int]) -> dict[str, Any]:
         "min": min(values),
         "max": max(values),
         "mean": sum(values) / len(values),
-        "distribution": {
-            str(length): count for length, count in sorted(counts.items())
-        },
+        "distribution": {str(length): count for length, count in sorted(counts.items())},
     }
 
 
@@ -128,9 +126,12 @@ def diagnose_checkpoint(
                 raw_path = best_ids[row_index, :input_length].tolist()
                 collapsed_path = collapse_ctc_path(raw_path, blank_id)
                 target_length = int(batch_target_lengths[row_index].item())
-                target_path = target_ids[
-                    target_offset:target_offset + target_length
-                ].detach().cpu().tolist()
+                target_path = (
+                    target_ids[target_offset : target_offset + target_length]
+                    .detach()
+                    .cpu()
+                    .tolist()
+                )
                 target_offset += target_length
                 references.append(vocabulary.decode(target_path).split())
                 hypotheses.append(predictions[row_index].split())
@@ -155,9 +156,8 @@ def diagnose_checkpoint(
                             "input_length": int(input_length),
                             "target_length": target_length,
                             "predicted_length": predicted_length,
-                            "blank_fraction": sum(
-                                token_id == blank_id for token_id in raw_path
-                            ) / max(len(raw_path), 1),
+                            "blank_fraction": sum(token_id == blank_id for token_id in raw_path)
+                            / max(len(raw_path), 1),
                         }
                     )
 
@@ -199,11 +199,7 @@ def main() -> None:
     parser.add_argument(
         "--checkpoint",
         type=Path,
-        default=project_root
-        / "isharah500"
-        / "checkpoints"
-        / "si_pilot"
-        / "isharah500_si_best.pt",
+        default=project_root / "isharah500" / "checkpoints" / "si_pilot" / "isharah500_si_best.pt",
     )
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--device", default="auto")

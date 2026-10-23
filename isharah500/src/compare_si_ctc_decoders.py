@@ -50,8 +50,7 @@ def _select_dev_subset(dataset: Any, max_samples: int | None) -> Any:
 def _report_progress(processed: int, total: int, started_at: float) -> None:
     elapsed = time.monotonic() - started_at
     print(
-        f"CTC decoder progress: processed={processed}/{total} "
-        f"elapsed={elapsed:.1f}s",
+        f"CTC decoder progress: processed={processed}/{total} elapsed={elapsed:.1f}s",
         file=sys.stderr,
         flush=True,
     )
@@ -127,7 +126,9 @@ def compare_decoders(
             }
             target_offset = 0
             for row_index, target_length in enumerate(batch["target_lengths"].tolist()):
-                target_ids = batch["target_ids"][target_offset:target_offset + target_length].tolist()
+                target_ids = batch["target_ids"][
+                    target_offset : target_offset + target_length
+                ].tolist()
                 target_offset += target_length
                 target_text = vocabulary.decode(target_ids)
                 target_tokens = target_text.split()

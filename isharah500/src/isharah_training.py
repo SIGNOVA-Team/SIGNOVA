@@ -14,9 +14,6 @@ from typing import Any
 
 import numpy as np
 import torch
-from torch.nn.utils import clip_grad_norm_
-from torch.utils.data import DataLoader, Subset
-
 from isharah_ctc import BiGRUCTC, BiGRUCTCConfig, greedy_ctc_decode
 from isharah_dataset import (
     GlossVocabulary,
@@ -30,6 +27,8 @@ from isharah_features import (
     FEATURE_REPRESENTATION_RAW_63,
 )
 from isharah_metrics import calculate_token_metrics
+from torch.nn.utils import clip_grad_norm_
+from torch.utils.data import DataLoader, Subset
 
 
 @dataclass(frozen=True)
@@ -73,19 +72,14 @@ class TrainingConfig:
         if self.checkpoint_every <= 0:
             raise ValueError("checkpoint_every must be positive")
         if self.ctc_target_length_weighting not in {"none", "linear", "sqrt"}:
-            raise ValueError(
-                "ctc_target_length_weighting must be one of: none, linear, sqrt"
-            )
+            raise ValueError("ctc_target_length_weighting must be one of: none, linear, sqrt")
         if self.ctc_target_length_weight_cap <= 0:
             raise ValueError("ctc_target_length_weight_cap must be positive")
         if self.feature_representation not in {
             FEATURE_REPRESENTATION_RAW_63,
             FEATURE_REPRESENTATION_GLOBAL_POSITION_V1,
         }:
-            raise ValueError(
-                "Unsupported feature_representation: "
-                f"{self.feature_representation}"
-            )
+            raise ValueError(f"Unsupported feature_representation: {self.feature_representation}")
         if self.global_coordinate_scale <= 0:
             raise ValueError("global_coordinate_scale must be positive")
 
@@ -172,9 +166,7 @@ def set_reproducible_seed(seed: int) -> None:
 
 def capture_random_states() -> dict[str, Any]:
     """Capture process RNG state for reproducible checkpoint continuation."""
-    numpy_algorithm, numpy_keys, numpy_position, has_gauss, cached_gaussian = (
-        np.random.get_state()
-    )
+    numpy_algorithm, numpy_keys, numpy_position, has_gauss, cached_gaussian = np.random.get_state()
     states: dict[str, Any] = {
         "python": random.getstate(),
         "numpy": {
@@ -213,6 +205,7 @@ def restore_random_states(states: dict[str, Any]) -> None:
                 float(numpy_state["cached_gaussian"]),
             )
         )
+
     def as_cpu_byte_tensor(value: Any, name: str) -> torch.Tensor:
         if torch.is_tensor(value):
             if value.dtype != torch.uint8:
@@ -327,8 +320,7 @@ def validate_real_dataset(dataset: IsharahDataset) -> None:
 def ctc_minimum_input_length(target_ids: list[int]) -> int:
     """Return the shortest CTC input length for a target sequence."""
     repeated_adjacent_tokens = sum(
-        left == right
-        for left, right in zip(target_ids, target_ids[1:])
+        left == right for left, right in zip(target_ids, target_ids[1:], strict=False)
     )
     return len(target_ids) + repeated_adjacent_tokens
 
@@ -354,8 +346,7 @@ def validate_ctc_lengths(dataset: IsharahDataset) -> dict[str, Any]:
             minimum_input_length = ctc_minimum_input_length(target_ids)
             if target_length != len(target_ids):
                 raise ValueError(
-                    f"target_length={target_length} disagrees with "
-                    f"target_ids={len(target_ids)}"
+                    f"target_length={target_length} disagrees with target_ids={len(target_ids)}"
                 )
             if target_length == 0:
                 raise ValueError("empty CTC target")
@@ -444,9 +435,7 @@ def select_ctc_subset(
     """Select valid samples, requiring explicit permission to reject any."""
     rejected = validation_report["rejected_samples"]
     if rejected and not allow_rejected:
-        examples = ", ".join(
-            f"{item['sample_id']}: {item['reason']}" for item in rejected[:3]
-        )
+        examples = ", ".join(f"{item['sample_id']}: {item['reason']}" for item in rejected[:3])
         raise ValueError(
             f"CTC validation rejected {len(rejected)} samples. "
             f"Use reject_invalid_ctc_samples=True only after review. Examples: {examples}"
@@ -644,9 +633,7 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
         "test": validate_ctc_lengths(test_set),
     }
     report_path = _write_json(
-        Path(config.project_root)
-        / config.output_dir
-        / "isharah500_si_ctc_validation.json",
+        Path(config.project_root) / config.output_dir / "isharah500_si_ctc_validation.json",
         ctc_reports,
     )
     train_set = select_ctc_subset(
@@ -697,8 +684,7 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
         start_epoch = int(resume_payload["epoch"])
         if config.epochs <= start_epoch:
             raise ValueError(
-                f"Target epochs ({config.epochs}) must exceed checkpoint epoch "
-                f"({start_epoch})"
+                f"Target epochs ({config.epochs}) must exceed checkpoint epoch ({start_epoch})"
             )
         best_validation_loss = float(
             resume_payload.get(
@@ -706,13 +692,9 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
                 resume_payload.get("validation_metrics", {}).get("ctc_loss", float("inf")),
             )
         )
-        epochs_without_improvement = int(
-            resume_payload.get("epochs_without_improvement", 0)
-        )
+        epochs_without_improvement = int(resume_payload.get("epochs_without_improvement", 0))
         if "random_states" not in resume_payload:
-            raise ValueError(
-                "Checkpoint has no random_states; refusing a non-reproducible resume"
-            )
+            raise ValueError("Checkpoint has no random_states; refusing a non-reproducible resume")
         restore_random_states(resume_payload["random_states"])
     output_dir = Path(config.project_root) / config.output_dir
     for epoch in range(start_epoch, config.epochs):
@@ -736,9 +718,7 @@ def train_si(config: TrainingConfig) -> dict[str, Any]:
         )
         epoch_number = epoch + 1
         validation_loss = validation_metrics["ctc_loss"]
-        improved = validation_loss < (
-            best_validation_loss - config.early_stopping_min_delta
-        )
+        improved = validation_loss < (best_validation_loss - config.early_stopping_min_delta)
         best_checkpoint = None
         if improved:
             best_validation_loss = validation_loss
@@ -876,20 +856,16 @@ def load_checkpoint(
         add_ctc_blank=payload["vocabulary"]["add_ctc_blank"],
     )
     vocabulary.token2id = {
-        str(token): int(index)
-        for token, index in payload["vocabulary"]["token2id"].items()
+        str(token): int(index) for token, index in payload["vocabulary"]["token2id"].items()
     }
     vocabulary.id2token = {
-        int(index): str(token)
-        for index, token in payload["vocabulary"]["id2token"].items()
+        int(index): str(token) for index, token in payload["vocabulary"]["id2token"].items()
     }
     model = BiGRUCTC(len(vocabulary), config=model_config)
     model.load_state_dict(payload["model_state_dict"])
     model.to(device)
     model.eval()
-    preprocessing_config = PreprocessingConfig.from_dict(
-        payload["preprocessing_config"]
-    )
+    preprocessing_config = PreprocessingConfig.from_dict(payload["preprocessing_config"])
     return model, vocabulary, preprocessing_config, payload
 
 

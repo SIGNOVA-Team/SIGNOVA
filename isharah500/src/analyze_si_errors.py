@@ -6,8 +6,9 @@ import argparse
 import json
 import sys
 from collections import Counter
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 import torch
 
@@ -17,8 +18,8 @@ if str(SOURCE_DIRECTORY) not in sys.path:
 
 from isharah_ctc import greedy_ctc_decode  # noqa: E402
 from isharah_metrics import (  # noqa: E402
-    alignment_counts,
     align_token_sequences,
+    alignment_counts,
     calculate_token_metrics,
 )
 from isharah_training import (  # noqa: E402
@@ -74,9 +75,7 @@ def _summary(records: Sequence[dict[str, Any]]) -> dict[str, Any]:
     prediction_lengths = Counter(record["prediction_length"] for record in records)
     return {
         **metrics,
-        "mean_prediction_length": sum(
-            record["prediction_length"] for record in records
-        )
+        "mean_prediction_length": sum(record["prediction_length"] for record in records)
         / max(len(records), 1),
         "mean_target_length": sum(record["target_length"] for record in records)
         / max(len(records), 1),
@@ -102,8 +101,7 @@ def aggregate_records(records: Sequence[dict[str, Any]]) -> dict[str, Any]:
     return {
         "aggregate": _summary(records),
         "by_target_length": {
-            str(length): _summary(target_groups[length])
-            for length in sorted(target_groups)
+            str(length): _summary(target_groups[length]) for length in sorted(target_groups)
         },
         "by_valid_hand_coverage": {
             bucket: _summary(coverage_groups[bucket])
@@ -172,9 +170,7 @@ def _markdown_summary(report: dict[str, Any]) -> str:
         )
     lines.extend(["", "## Most frequent aligned substitutions", ""])
     for item in report["analysis"]["most_frequent_confusions"][:20]:
-        lines.append(
-            f"- `{item['reference']}` → `{item['hypothesis']}`: {item['count']}"
-        )
+        lines.append(f"- `{item['reference']}` → `{item['hypothesis']}`: {item['count']}")
     if not report["analysis"]["most_frequent_confusions"]:
         lines.append("- None")
     lines.append("")
@@ -236,15 +232,13 @@ def analyze_si_errors(
             target_offset = 0
             for row_index, target_length in enumerate(batch["target_lengths"].tolist()):
                 target_ids = batch["target_ids"][
-                    target_offset:target_offset + target_length
+                    target_offset : target_offset + target_length
                 ].tolist()
                 target_offset += target_length
                 target_tokens = vocabulary.decode(target_ids).split()
                 prediction_tokens = predictions[row_index].split()
                 frame_count = int(batch["input_lengths"][row_index].item())
-                coverage = float(
-                    batch["masks"][row_index, :frame_count].float().mean().item()
-                )
+                coverage = float(batch["masks"][row_index, :frame_count].float().mean().item())
                 records.append(
                     _sample_record(
                         batch["sample_ids"][row_index],
@@ -268,11 +262,7 @@ def analyze_si_errors(
         "preprocessing_config": preprocessing_config.to_dict(),
         "analysis": aggregate_records(records),
         "samples": [
-            {
-                key: value
-                for key, value in record.items()
-                if key != "alignment"
-            }
+            {key: value for key, value in record.items() if key != "alignment"}
             for record in records
         ],
     }

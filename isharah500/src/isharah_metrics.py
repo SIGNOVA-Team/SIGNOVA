@@ -25,8 +25,7 @@ def align_token_sequences(
     for row in range(1, rows):
         for column in range(1, columns):
             distances[row][column] = min(
-                distances[row - 1][column - 1]
-                + int(reference[row - 1] != hypothesis[column - 1]),
+                distances[row - 1][column - 1] + int(reference[row - 1] != hypothesis[column - 1]),
                 distances[row - 1][column] + 1,
                 distances[row][column - 1] + 1,
             )
@@ -39,15 +38,12 @@ def align_token_sequences(
             row > 0
             and column > 0
             and distances[row][column]
-            == distances[row - 1][column - 1]
-            + int(reference[row - 1] != hypothesis[column - 1])
+            == distances[row - 1][column - 1] + int(reference[row - 1] != hypothesis[column - 1])
         ):
             alignment.append(
                 {
                     "operation": (
-                        "match"
-                        if reference[row - 1] == hypothesis[column - 1]
-                        else "substitution"
+                        "match" if reference[row - 1] == hypothesis[column - 1] else "substitution"
                     ),
                     "reference": reference[row - 1],
                     "hypothesis": hypothesis[column - 1],

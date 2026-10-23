@@ -88,6 +88,4 @@ def test_grouped_metrics_and_confusions_are_deterministic():
     assert report["aggregate"]["deletion_rate"] == 1 / 3
     assert list(report["by_target_length"]) == ["1", "2"]
     assert list(report["by_valid_hand_coverage"]) == ["25-49%", "100%"]
-    assert report["most_frequent_confusions"] == [
-        {"reference": "a", "hypothesis": "x", "count": 1}
-    ]
+    assert report["most_frequent_confusions"] == [{"reference": "a", "hypothesis": "x", "count": 1}]

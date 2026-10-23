@@ -1,7 +1,7 @@
 """Focused tests for Phase 3A training infrastructure."""
 
-import sys
 import random
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -22,11 +22,11 @@ from isharah_training import (  # noqa: E402
     load_checkpoint,
     locate_ml_archive,
     resolve_data_root,
-    save_checkpoint,
-    set_reproducible_seed,
     restore_random_states,
-    select_ctc_subset,
     run_si_preflight,
+    save_checkpoint,
+    select_ctc_subset,
+    set_reproducible_seed,
     validate_ctc_lengths,
 )
 
@@ -79,10 +79,7 @@ def test_checkpoint_round_trip(tmp_path):
     set_reproducible_seed(3)
     project_root, _ = write_metadata_and_keypoints(tmp_path)
     vocabulary = build_training_vocabulary(
-        project_root
-        / "isharah500"
-        / "metadata"
-        / "isharah500_si_train.csv"
+        project_root / "isharah500" / "metadata" / "isharah500_si_train.csv"
     )
     model = BiGRUCTC(len(vocabulary))
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
@@ -198,9 +195,7 @@ def test_ctc_length_validation_accounts_for_repeated_targets(tmp_path):
     )
 
     _, _, _, vocabulary = build_si_datasets(project_root, data_root)
-    assert ctc_minimum_input_length(
-        vocabulary.encode("alpha alpha")
-    ) == 3
+    assert ctc_minimum_input_length(vocabulary.encode("alpha alpha")) == 3
     train_set, _, _, _ = build_si_datasets(project_root, data_root)
     report = validate_ctc_lengths(train_set)
 
