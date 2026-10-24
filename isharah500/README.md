@@ -84,9 +84,7 @@ python --version
 python -c "import numpy, torch; print(numpy.__version__, torch.__version__)"
 ```
 
-The verified interpreter path
-`E:\DEPI Project\SIGNOVA_ESL\.venv\Scripts\python.exe` may be used when
-the existing Windows environment is not activated.
+The project runs under standard Python 3.12+ virtual environments with PyTorch CUDA runtime.
 
 ## Repository layout
 
