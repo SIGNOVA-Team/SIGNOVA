@@ -4,10 +4,14 @@ Integration test for end-to-end Video Inference (Video -> MediaPipe -> Model).
 
 from pathlib import Path
 
-import cv2
 import numpy as np
+import pytest
 
-from ml.sign_language.src.inference import load_model, predict_video
+torch = pytest.importorskip("torch")
+cv2 = pytest.importorskip("cv2")
+mediapipe = pytest.importorskip("mediapipe")
+
+from ml.sign_language.src.inference import load_model, predict_video  # noqa: E402
 
 
 def test_video_inference_pipeline(tmp_path):

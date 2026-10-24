@@ -3,11 +3,13 @@ Unit tests for the backend-ready inference API in SIGNOVA.
 """
 
 import numpy as np
-import torch
+import pytest
 
-from ml.sign_language.src.inference import SignLanguagePredictor, load_model, predict
-from ml.sign_language.src.model import ContinuousSignBiLSTM
-from ml.sign_language.src.preprocessing import SignVocabulary
+torch = pytest.importorskip("torch")
+
+from ml.sign_language.src.inference import SignLanguagePredictor, load_model, predict  # noqa: E402
+from ml.sign_language.src.model import ContinuousSignBiLSTM  # noqa: E402
+from ml.sign_language.src.preprocessing import SignVocabulary  # noqa: E402
 
 
 def test_predictor_and_api(tmp_path):

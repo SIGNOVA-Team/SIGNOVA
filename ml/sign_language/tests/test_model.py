@@ -2,9 +2,11 @@
 Unit tests for model architecture and forward pass in SIGNOVA.
 """
 
-import torch
+import pytest
 
-from ml.sign_language.src.model import ContinuousSignBiLSTM, build_model
+torch = pytest.importorskip("torch")
+
+from ml.sign_language.src.model import ContinuousSignBiLSTM, build_model  # noqa: E402
 
 
 def test_model_forward():

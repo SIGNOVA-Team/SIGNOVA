@@ -4,9 +4,13 @@ Unit tests for Dataset and DataLoader modules in SIGNOVA.
 
 from pathlib import Path
 
-from ml.sign_language.src.data_loader import create_dataloader
-from ml.sign_language.src.dataset import SignLanguageDataset
-from ml.sign_language.src.preprocessing import SignVocabulary
+import pytest
+
+torch = pytest.importorskip("torch")
+
+from ml.sign_language.src.data_loader import create_dataloader  # noqa: E402
+from ml.sign_language.src.dataset import SignLanguageDataset  # noqa: E402
+from ml.sign_language.src.preprocessing import SignVocabulary  # noqa: E402
 
 
 def test_sign_language_dataset_arabsign():

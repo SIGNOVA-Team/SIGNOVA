@@ -3,9 +3,11 @@ Unit tests for DataLoader, dynamic sequence padding, and batch collation.
 """
 
 import numpy as np
-import torch
+import pytest
 
-from ml.sign_language.src.data_loader import (
+torch = pytest.importorskip("torch")
+
+from ml.sign_language.src.data_loader import (  # noqa: E402
     collate_sign_batch,
     create_dataloader,
     pad_keypoint_sequences,
