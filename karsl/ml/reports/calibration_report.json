@@ -1,0 +1,158 @@
+{
+  "status": "CALIBRATION_AND_ERROR_ANALYSIS_COMPLETED",
+  "model": "SignCNN502",
+  "best_epoch": 12,
+  "validation_metrics": {
+    "accuracy": 0.3870673952641166,
+    "macro_f1": 0.35179408229334247,
+    "top5_accuracy": 0.6324146669834482
+  },
+  "temperature": 2.4141954373370376,
+  "temperature_fit": {
+    "nll_before": 4.640572950375071,
+    "nll_after": 3.0129205677030786,
+    "temperature_bounds": [
+      0.05,
+      50.0
+    ],
+    "boundary_solution": false,
+    "objective": "Mean negative log likelihood on temperature_fit only."
+  },
+  "policy_status": "NO_THRESHOLD_MET_SELECTION_TARGET",
+  "acceptance_enabled": false,
+  "candidate_threshold": null,
+  "active_threshold": null,
+  "threshold_selection": null,
+  "candidate_policy_audit": {
+    "samples": 6644,
+    "threshold": null,
+    "accepted": 0,
+    "coverage": 0.0,
+    "accepted_correct": 0,
+    "accepted_accuracy": null,
+    "accepted_error_rate": null,
+    "wilson_95_lower": null
+  },
+  "partitions": {
+    "temperature_fit": {
+      "before": {
+        "samples": 12557,
+        "accuracy": 0.3844071036075496,
+        "nll": 4.640572950375071,
+        "ece_15_equal_width": 0.3543272754395222,
+        "multiclass_brier_sum": 0.9317681279372766
+      },
+      "after": {
+        "samples": 12557,
+        "accuracy": 0.3844071036075496,
+        "nll": 3.0129205677030786,
+        "ece_15_equal_width": 0.041628514968920956,
+        "multiclass_brier_sum": 0.7861710908021672
+      },
+      "active_policy": {
+        "samples": 12557,
+        "threshold": null,
+        "accepted": 0,
+        "coverage": 0.0,
+        "accepted_correct": 0,
+        "accepted_accuracy": null,
+        "accepted_error_rate": null,
+        "wilson_95_lower": null
+      }
+    },
+    "threshold_select": {
+      "before": {
+        "samples": 6053,
+        "accuracy": 0.3829506030067735,
+        "nll": 4.652569873707128,
+        "ece_15_equal_width": 0.35170418901638856,
+        "multiclass_brier_sum": 0.9320861250395435
+      },
+      "after": {
+        "samples": 6053,
+        "accuracy": 0.3829506030067735,
+        "nll": 3.0258838500799374,
+        "ece_15_equal_width": 0.04383026289872124,
+        "multiclass_brier_sum": 0.7891992235584827
+      },
+      "active_policy": {
+        "samples": 6053,
+        "threshold": null,
+        "accepted": 0,
+        "coverage": 0.0,
+        "accepted_correct": 0,
+        "accepted_accuracy": null,
+        "accepted_error_rate": null,
+        "wilson_95_lower": null
+      }
+    },
+    "policy_audit": {
+      "before": {
+        "samples": 6644,
+        "accuracy": 0.3958458759783263,
+        "nll": 4.564862318753819,
+        "ece_15_equal_width": 0.34740104655603943,
+        "multiclass_brier_sum": 0.9142453361687541
+      },
+      "after": {
+        "samples": 6644,
+        "accuracy": 0.3958458759783263,
+        "nll": 2.9730650921131527,
+        "ece_15_equal_width": 0.046078501441396316,
+        "multiclass_brier_sum": 0.7761431664570789
+      },
+      "active_policy": {
+        "samples": 6644,
+        "threshold": null,
+        "accepted": 0,
+        "coverage": 0.0,
+        "accepted_correct": 0,
+        "accepted_accuracy": null,
+        "accepted_error_rate": null,
+        "wilson_95_lower": null
+      }
+    },
+    "all_validation": {
+      "before": {
+        "samples": 25254,
+        "accuracy": 0.3870673952641166,
+        "nll": 4.623529944927907,
+        "ece_15_equal_width": 0.35187636046284176,
+        "multiclass_brier_sum": 0.9272343276660306
+      },
+      "after": {
+        "samples": 25254,
+        "accuracy": 0.3870673952641166,
+        "nll": 3.0055422105480796,
+        "ece_15_equal_width": 0.0428674094096675,
+        "multiclass_brier_sum": 0.7842586713131838
+      },
+      "active_policy": {
+        "samples": 25254,
+        "threshold": null,
+        "accepted": 0,
+        "coverage": 0.0,
+        "accepted_correct": 0,
+        "accepted_accuracy": null,
+        "accepted_error_rate": null,
+        "wilson_95_lower": null
+      }
+    }
+  },
+  "validation_sample_order_sha256": "6d5ab37b26042ff85ba306c49aefaa3134e8b0525ffb6fe9e352e77d061b7f8c",
+  "validation_logits_sha256": "0631f55b0659ea0e4081d8b2c8200af9fb1961db09fef56bc8e52eb596ab2fbe",
+  "protocol_sha256": "e01ee496145dd40efe3a3e1baa8237125cf692c48bc3a6bb038f1a20d5ece5b2",
+  "checkpoint_unchanged": true,
+  "test_evaluated": false,
+  "oov_detection_validated": false,
+  "validation_reuse": "All partitions previously contributed to model/epoch selection. This is post-selection validation analysis, not an independent test.",
+  "known_test_issue": "50 exact duplicate pairs have conflicting labels 27/28; 450 test samples were used in historical experiments.",
+  "completed_utc": "2026-10-24T21:25:42.280402+00:00",
+  "runtime": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "device": "cuda"
+  }
+}

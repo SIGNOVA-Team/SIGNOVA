@@ -1,0 +1,182 @@
+{
+  "status": "TEST_EVALUATION_AND_BENCHMARK_COMPLETED",
+  "model": "SignCNN502",
+  "best_epoch": 12,
+  "primary": {
+    "samples": 24536,
+    "evaluated_true_classes": 500,
+    "model_output_classes": 502,
+    "accuracy": 0.5251874796217803,
+    "macro_f1": 0.48520812104660715,
+    "top5_accuracy": 0.7429083795239648,
+    "predictions_into_excluded_classes": 0,
+    "calibration_before": {
+      "samples": 24536,
+      "accuracy": 0.5251874796217803,
+      "nll": 3.3417613768218533,
+      "ece_15_equal_width": 0.26555581443380405,
+      "multiclass_brier_sum": 0.7210130728624528
+    },
+    "calibration_after": {
+      "samples": 24536,
+      "accuracy": 0.5251874796217803,
+      "nll": 2.3322907500608947,
+      "ece_15_equal_width": 0.11182240049809672,
+      "multiclass_brier_sum": 0.6475564526990801
+    },
+    "active_policy": {
+      "samples": 24536,
+      "threshold": null,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_correct": 0,
+      "accepted_accuracy": null,
+      "accepted_error_rate": null,
+      "wilson_95_lower": null
+    }
+  },
+  "secondary_with_historical_exposure": {
+    "samples": 24956,
+    "evaluated_true_classes": 500,
+    "model_output_classes": 502,
+    "accuracy": 0.5205161083506973,
+    "macro_f1": 0.4854269336921075,
+    "top5_accuracy": 0.74102420259657,
+    "predictions_into_excluded_classes": 1,
+    "calibration_before": {
+      "samples": 24956,
+      "accuracy": 0.5205161083506973,
+      "nll": 3.369462218747457,
+      "ece_15_equal_width": 0.2691682025454624,
+      "multiclass_brier_sum": 0.7281031458166692
+    },
+    "calibration_after": {
+      "samples": 24956,
+      "accuracy": 0.5205161083506973,
+      "nll": 2.345736256952262,
+      "ece_15_equal_width": 0.10824288744948556,
+      "multiclass_brier_sum": 0.6516646107387322
+    },
+    "active_policy": {
+      "samples": 24956,
+      "threshold": null,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_correct": 0,
+      "accepted_accuracy": null,
+      "accepted_error_rate": null,
+      "wilson_95_lower": null
+    }
+  },
+  "counts": {
+    "test_source_samples": 25112,
+    "qc_counts": {
+      "PASS": 25106,
+      "REVIEW": 6
+    },
+    "excluded_class_samples": 150,
+    "historically_evaluated_samples": 450,
+    "historical_exclusions_after_qc_and_class_rules": 420,
+    "primary_samples": 24536,
+    "secondary_samples": 24956,
+    "primary_classes": 500,
+    "primary_minimum_class_support": 2,
+    "primary_classes_with_support_below_10": 1
+  },
+  "benchmark": {
+    "checkpoint_bytes": 2322721,
+    "checkpoint_mib": 2.2151193618774414,
+    "parameters": 576886,
+    "measurements": [
+      {
+        "device": "cuda",
+        "batch_size": 1,
+        "warmup": 20,
+        "repeats": 100,
+        "mean_batch_ms": 1.0247686399986833,
+        "p50_batch_ms": 1.0083115000156795,
+        "p95_batch_ms": 1.1081367500111128,
+        "p99_batch_ms": 1.1461705200446206,
+        "mean_ms_per_sample": 1.0247686399986833,
+        "samples_per_second": 975.830017594298
+      },
+      {
+        "device": "cuda",
+        "batch_size": 32,
+        "warmup": 20,
+        "repeats": 100,
+        "mean_batch_ms": 1.2611097699999618,
+        "p50_batch_ms": 1.2353234999977758,
+        "p95_batch_ms": 1.3525509000061218,
+        "p99_batch_ms": 1.5032471999643355,
+        "mean_ms_per_sample": 0.03940968031249881,
+        "samples_per_second": 25374.47632334255
+      },
+      {
+        "device": "cpu",
+        "batch_size": 1,
+        "warmup": 20,
+        "repeats": 100,
+        "mean_batch_ms": 0.8137950499980207,
+        "p50_batch_ms": 0.8084950000011304,
+        "p95_batch_ms": 0.9536992000022336,
+        "p99_batch_ms": 1.031783620013016,
+        "mean_ms_per_sample": 0.8137950499980207,
+        "samples_per_second": 1228.8106200725013
+      },
+      {
+        "device": "cpu",
+        "batch_size": 32,
+        "warmup": 20,
+        "repeats": 100,
+        "mean_batch_ms": 9.265546510001172,
+        "p50_batch_ms": 8.33045500002072,
+        "p95_batch_ms": 14.963634100024592,
+        "p99_batch_ms": 18.3055365000081,
+        "mean_ms_per_sample": 0.28954832843753664,
+        "samples_per_second": 3453.6548886198348
+      }
+    ],
+    "method": {
+      "warmup": 20,
+      "repeats": 100,
+      "batch_sizes": [
+        1,
+        32
+      ],
+      "torch_cpu_threads": 2,
+      "inputs": "Fixed synthetic normalized features; all visibility channels equal one.",
+      "timed_scope": "Preconstructed CPU tensor -> device transfer -> model -> temperature softmax -> top-5 -> CPU NumPy arrays.",
+      "excluded": "Model loading, input validation, JSON construction, pose/video preprocessing, network, backend, and UI."
+    }
+  },
+  "checkpoint_sha256": "f9f0c552b25aa4fa3a776b8bebb154718abeb1978c9717d94c269d5d36de2254",
+  "calibration_config_sha256": "448fcd35f55e26eede15fd78b7f09ed3d21d40a2f13fe9e0e1cff0ec9fdda5e4",
+  "protocol_sha256": "b635090d1429c9d9d26fda916e0ce12bdbb16c19fd4c6bc5cfb3af2bf072eb71",
+  "test_logits_sha256": "7f6951231753a45e3d5eb168bd3595cb9a886a7a1b35a553e92e6afe9a035fcf",
+  "test_evaluated": true,
+  "model_unchanged": true,
+  "calibration_unchanged": true,
+  "production_ready": false,
+  "oov_detection_validated": false,
+  "limitations": [
+    "The underlying test pool has historical exposure. Removing 450 previously evaluated paths does not erase all prior study-design influence.",
+    "Only one held-out signer is represented; samples within the signer/session are correlated.",
+    "Some primary classes have only two examples after exclusions; per-class estimates are unstable.",
+    "Validation was reused for model selection and calibration analysis.",
+    "Source label semantics, pose/video provenance, and release rights remain unapproved.",
+    "Unknown/OOV detection has not been validated."
+  ],
+  "completed_utc": "2026-10-25T14:40:32.030001+00:00",
+  "runtime": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "cpu_threads": 2,
+    "cuda_build": "13.0",
+    "cudnn": 92700,
+    "gpu": "Tesla T4"
+  }
+}

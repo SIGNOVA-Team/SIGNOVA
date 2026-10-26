@@ -1,0 +1,42 @@
+{
+  "epochs_run": 18,
+  "best_epoch": 12,
+  "validation_metrics": {
+    "accuracy": 0.3870673952641166,
+    "macro_f1": 0.35179408229334247,
+    "top5_accuracy": 0.6324146669834482
+  },
+  "training_seconds": 62.38458583799985,
+  "early_stopped": true,
+  "comparison": [
+    {
+      "model": "GRU",
+      "experiment": "gru_502_pass_v1",
+      "classes": 502,
+      "validation_samples": 25254,
+      "best_epoch": 17,
+      "accuracy": 0.3775639502653045,
+      "macro_f1": 0.342525449074227,
+      "top5_accuracy": 0.599192207175101
+    },
+    {
+      "model": "CNN",
+      "experiment": "cnn_502_pass_v1",
+      "classes": 502,
+      "validation_samples": 25254,
+      "best_epoch": 12,
+      "accuracy": 0.3870673952641166,
+      "macro_f1": 0.35179408229334247,
+      "top5_accuracy": 0.6324146669834482
+    }
+  ],
+  "preferred_by_validation_macro_f1": "CNN",
+  "tie_policy": "Keep GRU when CNN macro F1 improvement is at most 1e-6.",
+  "checkpoint_sha256": "f9f0c552b25aa4fa3a776b8bebb154718abeb1978c9717d94c269d5d36de2254",
+  "reference_gru_unchanged": true,
+  "cnn_checkpoint_reload": "PASS",
+  "test_evaluated": false,
+  "calibration_performed": false,
+  "completed_utc": "2026-10-24T21:06:00.214799+00:00",
+  "status": "COMPARISON_COMPLETED"
+}

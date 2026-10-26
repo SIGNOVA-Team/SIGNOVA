@@ -1,0 +1,142 @@
+{
+  "README.md": {
+    "sha256": "b295c6ca6fc6cc74e21f6d070350bdadbf9cffd4742a27a5d3bbec3ee4f3fb40",
+    "size": 7488
+  },
+  "ml_expansion/scripts/signova_calibrate_cnn_502.py": {
+    "sha256": "a83f47c0de8d3d0192cbc18dacbfc7f5cee5fc95bbe3b0ae26e1b42d0a5fbbad",
+    "size": 26175
+  },
+  "ml_expansion/scripts/signova_compare_cnn_502.py": {
+    "sha256": "f6e0f60a817de984fc356b7bbd7edcaff72ffbc63e046fe09175564cc6633b5e",
+    "size": 21545
+  },
+  "ml_expansion/scripts/signova_evaluate_test_502.py": {
+    "sha256": "cf5b1010f217735bb7451be8161fc41db4b7cbfa3607e03a0bed23bf42b059e4",
+    "size": 33011
+  },
+  "ml_expansion/scripts/signova_predict_502.py": {
+    "sha256": "06e4f036c547760f67744ee5d64f5b4fc023543cac8a910edb8ae9ff17fd14bb",
+    "size": 10283
+  },
+  "ml_expansion/scripts/signova_prepare_features.py": {
+    "sha256": "20476ba4f881443f2f8c4224a533b4bff79b5bec0ee310e89f87b688785b03fb",
+    "size": 19417
+  },
+  "notebooks/08_KArSL_502_GRU_Training.ipynb": {
+    "sha256": "56e534579fd8353d503a019654371392ebc7102845c4a8cf63eca5aea83d87e5",
+    "size": 40562
+  },
+  "reports/KArSL_502_CNN_Full_Replay_Verification.md": {
+    "sha256": "85d04ffe7cb353fb1bf16322db81adb1d26a1df69fe2a3bce700ce14b5140998",
+    "size": 1721
+  },
+  "reports/KArSL_502_Continuation_Audit.md": {
+    "sha256": "d7231200ad9d2df40da05628e267fd99b8d76422aeafe1f351ac50b2af4fa44d",
+    "size": 6038
+  },
+  "reports/KArSL_502_Frozen_Evaluation_Replay_Verification.md": {
+    "sha256": "11a0e08d09cd7507ac60df02824d65cbf341806decbd39b2300c063371c8bf13",
+    "size": 2655
+  },
+  "reports/KArSL_502_Full_Delivery_Audit.md": {
+    "sha256": "b20b3de771982c83db572c0fc3604332dbc09d8b9ba5343574140ac47985c581",
+    "size": 14662
+  },
+  "reports/KArSL_502_GRU_Full_Replay_Verification.md": {
+    "sha256": "077f9a70cdc94e750aeb01e8c044cb9459c78a08691263bccb2ed8ac75b50563",
+    "size": 2064
+  },
+  "reports/README_KArSL_502.md": {
+    "sha256": "8ecd682613975d215695ec9e1222fb3c8aeec4fb1378b7ced939c4356b04be62",
+    "size": 10329
+  },
+  "reports/backend_contract_502.md": {
+    "sha256": "cdc3eb0cf9590caf1f8d762039cc6246be9dc46644ce584add190b14eb1f101a",
+    "size": 4743
+  },
+  "reports/calibration_report.json": {
+    "sha256": "00cdffca2f3a1bae8b01864094a25b5b78875dc6173d06a14a4009870f086afb",
+    "size": 4887
+  },
+  "reports/cnn_training_result.json": {
+    "sha256": "bce2f0aa55cf6b0d22cd041dcfdf20da0c10c9944fdb8a9dd6ce4b31098d849e",
+    "size": 1252
+  },
+  "reports/detailed_metrics/test_primary_confusion_matrix.csv": {
+    "sha256": "9616495491d6a55fc66417b375d62300d2487100392664df55fb95d1b35cea07",
+    "size": 511578
+  },
+  "reports/detailed_metrics/test_primary_per_class.csv": {
+    "sha256": "635e265dba906f320fa9a0652e06ed7c220aabff65b9324ea4310d5ffdf0c46b",
+    "size": 28336
+  },
+  "reports/detailed_metrics/test_protocol.json": {
+    "sha256": "b635090d1429c9d9d26fda916e0ce12bdbb16c19fd4c6bc5cfb3af2bf072eb71",
+    "size": 8114
+  },
+  "reports/detailed_metrics/validation_confusion_matrix.csv": {
+    "sha256": "c3946e8a8e559cf6cd90da295403037004922ed04909b13bd8acadf5815191f3",
+    "size": 511670
+  },
+  "reports/detailed_metrics/validation_per_class.csv": {
+    "sha256": "d5428e8c4c4adb7f5cc126e3c20ee9312f7719273ab3244a8e29d578eb32312d",
+    "size": 20801
+  },
+  "reports/evaluation_report_502.md": {
+    "sha256": "32263e98bb817778d8daa062fd38e4ca1a6ba16be3ddd11bdc84c63049c95b17",
+    "size": 6117
+  },
+  "reports/handoff_gap_review_502.md": {
+    "sha256": "f9bca6a5265844bdf7bae1d80e54431c17a19606b78ed845dba2e089e48b916a",
+    "size": 5906
+  },
+  "reports/handoff_status_2026-10-26.md": {
+    "sha256": "6bbcd28a5f080573b38bfe4418d4d4a13fe237678410bc9882b9991561a44622",
+    "size": 2459
+  },
+  "reports/karsl_pre_release_audit.md": {
+    "sha256": "c7a2800d28110887fde9ec7f4ac668ecf39feb1f10c83efa6d7b74fe1a751a64",
+    "size": 5475
+  },
+  "reports/model_card_502.md": {
+    "sha256": "48c705ad03cf872a4660538179c3810502045f81c4ea1a8d7e47548a07564941",
+    "size": 3677
+  },
+  "reports/next_handoff_502.md": {
+    "sha256": "ce63d1b6eadf0aee9ad808b84453ca116a72708ce185ef4265a31f26dd168c91",
+    "size": 3745
+  },
+  "reports/test_report.json": {
+    "sha256": "db41234a9ef74e4ba485d5bfe5b091666a4e59684aebeef68320755f5b792f55",
+    "size": 6128
+  },
+  "requirements_502.txt": {
+    "sha256": "31bba605ee4d2886b3d4d53a2f178ac843f690ae494b5c513bf115e3e5fef0a8",
+    "size": 99
+  },
+  "runbooks/KArSL_502_Colab_CNN_Replay_Cell.py": {
+    "sha256": "f2bf75893223832875749b7650367dc1288d511970b14902976a66673c1d7d42",
+    "size": 3635
+  },
+  "runbooks/KArSL_502_Colab_Frozen_Evaluation_Replay_Cell.py": {
+    "sha256": "82926c365820ffb680b917ff3f548e4b606cffc91c32eefbbaa33491f169e66c",
+    "size": 5123
+  },
+  "runbooks/KArSL_502_Colab_GRU_Replay_Cell.py": {
+    "sha256": "7b22a2b8f0a74ca9a11fab11887f08c44f29d8fce05d9f41c433188fc17387c2",
+    "size": 2375
+  },
+  "src/preprocessing.py": {
+    "sha256": "4ba3f84a0157fd217a6fbafbcbcf933a3e94ddb3e03fe35d0950d20689203c1c",
+    "size": 2755
+  },
+  "tests/test_release_502.py": {
+    "sha256": "a867625fdb97e0413c029992119b8895ccff4473c80d9dbf28a085a19e809636",
+    "size": 5020
+  },
+  "training/train_gru_502.py": {
+    "sha256": "9a6c93932444ebe008475b635f76a2d63cecf67cb833bfaefba2cc7be85bac9b",
+    "size": 8802
+  }
+}

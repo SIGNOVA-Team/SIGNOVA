@@ -1,0 +1,28 @@
+name: KArSL 502 ML smoke tests
+
+on:
+  push:
+    paths:
+      - "karsl/ml/**"
+      - ".github/workflows/karsl-ml.yml"
+  pull_request:
+    paths:
+      - "karsl/ml/**"
+      - ".github/workflows/karsl-ml.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -r karsl/ml/requirements_502.txt
+      - run: python -m unittest discover -s karsl/ml/tests -v
