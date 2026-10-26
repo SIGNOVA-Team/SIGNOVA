@@ -11,7 +11,7 @@ The frozen selected CNN ranks 502 classes but currently accepts none as a confir
 | `features` | One finite `(32,150)` array plus `preprocessing_version="pose_v1_32x50_xy_visibility_shoulder_conf05"`, produced by the exact frozen source. |
 | Original RGB frames, experimental | Separate `karsl_cv_adapter.py`: RGB `uint8` frames of one isolated sign, maximum 300; MediaPipe Holistic 0.10.21 with heavy pose model/tracking; the adapter then runs the frozen preprocessor and calls the same predictor. This route requires a separate CV environment and is not validated for arbitrary webcams. |
 
-An MP4, 553-point modern landmark stream, or the existing repository's `(T,126)` hand stream cannot be passed directly to the trained model. Backend should instantiate the private-artifact-backed predictor once. Never allow an untrusted client to choose arbitrary server file paths.
+An MP4, 553-point modern landmark stream, or the existing repository's `(T,126)` hand stream cannot be passed directly to the trained model. Backend should instantiate `KArSL502Predictor()` once from the repository checkout; it loads the committed CNN, calibration and labels. Never allow an untrusted client to choose arbitrary server file paths.
 
 ```python
 from karsl.ml.integration.research_preview import predict_for_preview

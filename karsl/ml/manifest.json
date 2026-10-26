@@ -1,7 +1,31 @@
 {
   "README.md": {
-    "sha256": "e8500c207d95a7ea55bfe0f2691cca3d39639157dad29c865197b3e5ed233ec4",
-    "size": 9252
+    "sha256": "715e6b5a131fecc0cad69c7b38f596aa58c1dc828697f93c1e1c5fda96389bff",
+    "size": 9477
+  },
+  "artifacts/cnn/best_cnn_502_pass_v1.pt": {
+    "sha256": "f9f0c552b25aa4fa3a776b8bebb154718abeb1978c9717d94c269d5d36de2254",
+    "size": 2322721
+  },
+  "artifacts/cnn/calibration_config.json": {
+    "sha256": "448fcd35f55e26eede15fd78b7f09ed3d21d40a2f13fe9e0e1cff0ec9fdda5e4",
+    "size": 5665
+  },
+  "artifacts/gru/best_gru_502_pass_v1.pt": {
+    "sha256": "ba1797040c21de7b5f05039d72bac82e7fdce8e7860df02e445281af6ae577da",
+    "size": 3086248
+  },
+  "artifacts/gru/history.csv": {
+    "sha256": "1e956d7bf3c1b23e175615fa5262cb02d98e2b844bf4c24fe909fecc96abc9df",
+    "size": 1893
+  },
+  "artifacts/labels_mapping.json": {
+    "sha256": "3aa790f9d40c209c36a0a853a292ff7b60d351ea5e8d90dcd6d0e2652907eb7a",
+    "size": 52113
+  },
+  "integration/README.md": {
+    "sha256": "8e4a396f2499096685aaa102f5a4cfaa0c6526a45d700c16c9a15109500b3e6c",
+    "size": 3002
   },
   "integration/karsl_cv_adapter.py": {
     "sha256": "2e587a3a9c9e9a3d5fe12a07885196a81c36380e869b935b439d3e651ce086ab",
@@ -24,8 +48,8 @@
     "size": 33011
   },
   "ml_expansion/scripts/signova_predict_502.py": {
-    "sha256": "06e4f036c547760f67744ee5d64f5b4fc023543cac8a910edb8ae9ff17fd14bb",
-    "size": 10283
+    "sha256": "b1aa5eb62307c860e6c42a3c73658487da42c1adad47975625117716bc31e301",
+    "size": 10617
   },
   "ml_expansion/scripts/signova_prepare_features.py": {
     "sha256": "20476ba4f881443f2f8c4224a533b4bff79b5bec0ee310e89f87b688785b03fb",
@@ -44,16 +68,16 @@
     "size": 1721
   },
   "reports/KArSL_502_Continuation_Audit.md": {
-    "sha256": "d7231200ad9d2df40da05628e267fd99b8d76422aeafe1f351ac50b2af4fa44d",
-    "size": 6038
+    "sha256": "4bbdad706e6ebe41d98746c23c93af6dbfadc093fd23c9f9de0b7fe69f514389",
+    "size": 6277
   },
   "reports/KArSL_502_Frozen_Evaluation_Replay_Verification.md": {
     "sha256": "11a0e08d09cd7507ac60df02824d65cbf341806decbd39b2300c063371c8bf13",
     "size": 2655
   },
   "reports/KArSL_502_Full_Delivery_Audit.md": {
-    "sha256": "ccea8e90c961488d1d4c01118a1d0ea9b480627774e64e373b7abab1f535f2fd",
-    "size": 14994
+    "sha256": "5a9024b04581df508aba4e7e55aea3d9c0342b610949381c8eb2e140e2cbc837",
+    "size": 15233
   },
   "reports/KArSL_502_GRU_Full_Replay_Verification.md": {
     "sha256": "077f9a70cdc94e750aeb01e8c044cb9459c78a08691263bccb2ed8ac75b50563",
@@ -64,8 +88,8 @@
     "size": 10443
   },
   "reports/README_KArSL_502.md": {
-    "sha256": "ef6faf6bee566bc61734c4a20440a4296230e4dc21e41a5e34eb4515f99ca421",
-    "size": 10539
+    "sha256": "1575a1767e77d50e4fb0c52eb74cfd30e988966ec8b634421e34992ab16c0f96",
+    "size": 10778
   },
   "reports/backend_contract_502.md": {
     "sha256": "bff5254768dcf186364e4d15bc5d717fee42a51b2c923a50a1dcaf07a97e8750",
@@ -80,16 +104,16 @@
     "size": 4887
   },
   "reports/checkpoints_manifest.md": {
-    "sha256": "285d1135daaaf7d60021abe65de5758c02ba10d132d877e329d8e44d6b00b1d8",
-    "size": 2014
+    "sha256": "d7ab0acd3c1431c0204540bdcb2400cae542ea812da4ff9b642e6ca9dd50608b",
+    "size": 1812
   },
   "reports/cnn_training_result.json": {
     "sha256": "bce2f0aa55cf6b0d22cd041dcfdf20da0c10c9944fdb8a9dd6ce4b31098d849e",
     "size": 1252
   },
   "reports/cv_nlp_development_contract.md": {
-    "sha256": "411ced03f73c1f45df8f1482c1b01daee3d49380acec4b1f6e3b055836acf746",
-    "size": 3474
+    "sha256": "7aa17a1ab91c4f3f845263dccc53a268f43ed585b3402af19e486fad6f402569",
+    "size": 3539
   },
   "reports/detailed_metrics/test_primary_confusion_matrix.csv": {
     "sha256": "9d55bfc00b3953be4d1ff40b8c4d11548f527bb8b88a7979f51832165fa998c7",
@@ -116,20 +140,20 @@
     "size": 1667
   },
   "reports/evaluation_report_502.md": {
-    "sha256": "d6780bd4d58df4559872a2becab559864bc329f371084d223be363c91803c7e3",
-    "size": 6345
+    "sha256": "b947c73ce38eb49c1bfb06d5c92d1a740b3acedb540c58f69e619b7a8b08e93c",
+    "size": 6322
   },
   "reports/experiment_log_502.csv": {
     "sha256": "07a122e8407a88d87d55af13c515d3320493410c9e6872064a708b7e42c9dbe6",
     "size": 2172
   },
   "reports/handoff_gap_review_502.md": {
-    "sha256": "92128fd81e66edb5a50a5bc344eb2743d3a79437c3e1094aec28d8deadda3a5c",
-    "size": 6202
+    "sha256": "ae6cfaacca2afc0fd4b1c72c8eb7d1d430b178c87b287a6af888cf43a05107a6",
+    "size": 6441
   },
   "reports/handoff_status_2026-10-26.md": {
-    "sha256": "21b1f6a13ee9c5b2950d7849edc99ab02f33cc797292582171e0c493ced3fa0d",
-    "size": 3261
+    "sha256": "07e7ef1f1cdc8c4303319a3d5e49383f3b0fc174d0e017381a81cdc664b2cbaa",
+    "size": 3108
   },
   "reports/karsl_cv_development_consistency_20.json": {
     "sha256": "b480f146c5152187449eefbab50d015fef596c20c78b588d1a7d9bcd2fc8a022",
@@ -148,20 +172,20 @@
     "size": 7275
   },
   "reports/karsl_pre_release_audit.md": {
-    "sha256": "9b08b2ad354b41980714de22088fbe2e203ca7190d2b87cb5f1b3e76c8c95043",
-    "size": 5771
+    "sha256": "8e2d4e3d26404eac185e79a18a39b2a195821cbc38494ed9c27bbf4135b9a83f",
+    "size": 6010
   },
   "reports/karsl_video_pose_pilot_12pairs.json": {
     "sha256": "e412a9cf372c2fdb0c3a0906d7edcee1c0c1f17d0aa29a68105e377658fce576",
     "size": 93983
   },
   "reports/model_card_502.md": {
-    "sha256": "824ba1d442ba4a6de5438e2dd72712a58e6107b6e870c1cc9f7b13994a6c7334",
-    "size": 4109
+    "sha256": "689ef1713dde33e8c681023665e2cb62ff02e6bce7fc0638b5fbd55ec4398db8",
+    "size": 4226
   },
   "reports/next_handoff_502.md": {
-    "sha256": "6a9ad3bfd4c8258a95fd2e1dcbb599b35644ad54e499fcb9287f3b6a98bd769a",
-    "size": 4082
+    "sha256": "3331793b5787c421ddd92ac778387914d50fefa210b5001f286349a71c21b750",
+    "size": 4111
   },
   "reports/next_phase_recommendations.md": {
     "sha256": "8e432b191db2ac58b218089184faf1c0e54a72a494bcb29f234841153b0684b9",
@@ -204,8 +228,8 @@
     "size": 1254
   },
   "tests/test_release_502.py": {
-    "sha256": "a867625fdb97e0413c029992119b8895ccff4473c80d9dbf28a085a19e809636",
-    "size": 5020
+    "sha256": "c16fbcff685f4074326075c29de1762e6bb83339086c2786342b62e506453a3f",
+    "size": 5762
   },
   "training/train_baselines_502.py": {
     "sha256": "29d59c1e0def5ed541f52d58179434e8b0cfa1efd7b0b5c5da028706fcead3d6",

@@ -1,5 +1,7 @@
 # KArSL 502 continuation audit
 
+> Historical audit snapshot. The owner subsequently authorized and added the CNN/GRU checkpoints, calibration and labels to this branch. For the current checkout and integration commands, see `../README.md` and `checkpoints_manifest.md`.
+
 Review date: 2026-10-26. Evidence inspected: uploaded `07_KArSL_Colab_Verification (3).ipynb`, `08_KArSL_502_GRU_Training (1).ipynb`, and `files (1).zip`, plus the frozen five scripts and existing 502/CV handoff packages. This is a technical evidence review, not a new full training run.
 
 ## Verified from the uploaded notebook outputs

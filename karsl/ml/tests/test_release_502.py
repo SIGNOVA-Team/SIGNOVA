@@ -36,6 +36,23 @@ class ReleaseTests(unittest.TestCase):
         )
         self.assertEqual(self.frozen.CLASSES, list(range(1, 503)))
 
+    def test_published_artifacts_are_exact_and_loadable(self):
+        artifacts = ROOT / "artifacts"
+        expected = {
+            "cnn/best_cnn_502_pass_v1.pt": self.predict.MODEL_SHA256,
+            "cnn/calibration_config.json": self.predict.CALIBRATION_SHA256,
+            "labels_mapping.json": self.predict.LABELS_SHA256,
+            "gru/best_gru_502_pass_v1.pt": "ba1797040c21de7b5f05039d72bac82e7fdce8e7860df02e445281af6ae577da",
+        }
+        for filename, digest in expected.items():
+            with self.subTest(filename=filename):
+                self.assertEqual(self.trainer.sha256(artifacts / filename), digest)
+        gru = torch.load(
+            artifacts / "gru/best_gru_502_pass_v1.pt", map_location="cpu", weights_only=True
+        )
+        self.assertEqual(gru["model_name"], "SignGRU502")
+        self.assertEqual(gru["input_shape"], [32, 150])
+
     def test_metric_class_order_and_values(self):
         class Model(torch.nn.Module):
             def forward(self, x):
@@ -92,12 +109,9 @@ class ReleaseTests(unittest.TestCase):
             self.assertFalse((output / "test_report.json").exists())
             self.assertEqual(json.loads((output / "result.json").read_text())["status"], "COMPLETE")
 
-    @unittest.skipUnless(
-        (ROOT / "ml_expansion/experiments/cnn_502_pass_v1/best_cnn_502_pass_v1.pt").is_file(),
-        "Private checkpoint absent",
-    )
     def test_prediction_validation_and_label_order(self):
-        predictor = self.predict.KArSL502Predictor(ROOT / "ml_expansion", PROJECT_ROOT)
+        predictor = self.predict.KArSL502Predictor()
+        self.assertEqual(predictor.repo_root, PROJECT_ROOT)
         features = predictor.preprocessing.preprocess_pose(self.predict.synthetic_pose())
         result = predictor.predict_features(features, self.predict.PREPROCESSING_VERSION, 3)
         self.assertEqual(result["status"], "uncertain")

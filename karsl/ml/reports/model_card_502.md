@@ -1,6 +1,6 @@
 # Model card: SIGNOVA KArSL SignCNN502 v1
 
-**Research handoff update (2026-10-26):** The owner confirmed permitted internal team use and reviewed disputed labels for this branch. A separate code-only CV adapter and provisional Backend/NLP candidate contract now exist; neither changes the frozen checkpoint, 0% accepted coverage or production limits below. The exact research contracts and diagnostics are in `cv_nlp_development_contract.md` and `KArSL_CV_Pilot_Report.md`.
+**Research handoff update (2026-10-26):** The owner authorized inclusion of the trained CNN/GRU checkpoints, calibration and source label mapping in the existing public `karsl` branch for team integration. The experimental CV adapter and provisional Backend/NLP candidate contract are also included. This publication does not change the frozen checkpoint, 0% accepted coverage or production limits below. The exact research contracts and diagnostics are in `cv_nlp_development_contract.md` and `KArSL_CV_Pilot_Report.md`.
 
 **Version:** `karsl_cnn_502_pass_v1`  
 **Type:** Closed-set 1D temporal CNN over 32 frames × 50 landmarks × `(x, y, valid)`  
@@ -15,7 +15,7 @@ The pinned source has 75,515 entries. Frozen signer-disjoint groups are 25,032 P
 
 Post-selection validation calibration reduced policy-audit ECE from 0.347401 to 0.046079, but no acceptance threshold satisfied the recorded criterion. The deployed research policy returns uncertain for all inputs: **coverage 0% and accepted accuracy undefined**. On the primary test subset, ECE fell from 0.265556 to 0.111822. Calibration does not improve top-1 accuracy. Unknown/OOV behavior has not been validated.
 
-Key limitations include uncertain label semantics, conflicting raw duplicates for source classes 27 and 28, historical exposure of 450 test paths in older experiments, one test signer, very low test support for some classes after exclusion, and reuse of validation for epoch/model selection before calibration analysis. The upstream dataset listing's declared CC BY-SA 4.0 license is not a completed provenance or model-redistribution review. Source Pose/video correspondence remains unverified. Do not publish private data, logits, or weights until rights and release review is complete.
+Key limitations include uncertain label semantics, conflicting raw duplicates for source classes 27 and 28, historical exposure of 450 test paths in older experiments, one test signer, very low test support for some classes after exclusion, and reuse of validation for epoch/model selection before calibration analysis. The upstream dataset listing's declared CC BY-SA 4.0 license is not an independent provenance audit. Source Pose/video correspondence remains unverified. The model artifacts were published on the project owner's authorization; raw Pose, original videos and full feature shards are not included.
 
 An October 2026 source audit compared the private 502-class mapping with the official KArSL-502 label spreadsheet: all 502 sign IDs and original Arabic/English text fields matched. The repository's separate 500-class reviewed mapping contains 48 proposed English changes, including six explicitly uncertain glosses, without expert validation. Neither check verifies the sign movements in the third-party Pose dataset.
 

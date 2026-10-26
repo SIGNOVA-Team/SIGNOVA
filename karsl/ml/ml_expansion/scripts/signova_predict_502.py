@@ -40,17 +40,22 @@ def load_python(path, module_name, expected_sha256):
 
 class KArSL502Predictor:
     def __init__(self, base=None, repo_root=None, device='cpu'):
-        root = Path('/content/drive/MyDrive/SIGNOVA/KArSL')
-        self.base = Path(base) if base is not None else root / 'ml_expansion'
-        self.repo_root = Path(repo_root) if repo_root is not None else self.base.parent / 'ml_delivery_english'
+        checkout = Path(__file__).resolve().parents[4]
+        self.repo_root = Path(repo_root) if repo_root is not None else checkout
+        self.base = Path(base) if base is not None else self.repo_root / 'karsl/ml/ml_expansion'
         self.device = torch.device(device)
         if self.device.type == 'cuda':
             require(torch.cuda.is_available(), 'CUDA is not available.')
         scripts = self.base / 'scripts'
         preprocess_path = self.repo_root / 'karsl/ml/src/preprocessing.py'
-        model_path = self.base / 'experiments/cnn_502_pass_v1/best_cnn_502_pass_v1.pt'
-        calibration_path = self.base / 'experiments/cnn_502_pass_v1/calibration_v1/calibration_config.json'
-        labels_path = self.base / 'source_metadata/labels_mapping.json'
+        release = self.repo_root / 'karsl/ml/artifacts'
+        model_path = release / 'cnn/best_cnn_502_pass_v1.pt'
+        calibration_path = release / 'cnn/calibration_config.json'
+        labels_path = release / 'labels_mapping.json'
+        if not model_path.is_file() and not calibration_path.is_file() and not labels_path.is_file():
+            model_path = self.base / 'experiments/cnn_502_pass_v1/best_cnn_502_pass_v1.pt'
+            calibration_path = self.base / 'experiments/cnn_502_pass_v1/calibration_v1/calibration_config.json'
+            labels_path = self.base / 'source_metadata/labels_mapping.json'
         require(sha256(model_path) == MODEL_SHA256, 'Selected CNN checkpoint changed.')
         require(sha256(calibration_path) == CALIBRATION_SHA256, 'Frozen calibration config changed.')
         require(sha256(labels_path) == LABELS_SHA256, 'Source labels changed.')

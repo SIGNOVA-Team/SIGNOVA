@@ -1,6 +1,6 @@
 # SIGNOVA — KArSL-502 Data Engineering
 
-This folder contains the KArSL metadata, QC and evaluation manifests, third-party Pose manifest, validation scripts, recorded audits, and a visual review register. Contact sheet images are stored separately on the project owner's Google Drive. It does **not** contain the original `.7z` videos, the bulk Kaggle `.pose` files, or the NPY keypoint arrays.
+This folder contains the KArSL metadata, QC and evaluation manifests, third-party Pose manifest, validation scripts, recorded audits, a visual review register, and the [trained KArSL-502 ML handoff](ml/README.md). The ML folder includes the final CNN checkpoint, GRU comparison checkpoint, calibration, label mapping, inference/CV interfaces, tests and reports. Contact sheet images are stored separately on the project owner's Google Drive. The original `.7z` videos, bulk Kaggle `.pose` files and NPY keypoint arrays are not included.
 
 ## At a glance
 
@@ -18,6 +18,7 @@ This folder contains the KArSL metadata, QC and evaluation manifests, third-part
 ## Entry points
 
 - [Handoff](docs/karsl_handoff.md): what the ML team can use and what is pending.
+- [ML handoff](ml/README.md): load the selected checkpoint, run inference, and integrate the CV/Backend/NLP research interfaces.
 - [Dataset card](docs/karsl_dataset_card.md): provenance, limits, and coverage.
 - [Video metadata](data/metadata/karsl_metadata.csv) and [signer-independent splits](data/splits/karsl_split_manifest.csv).
 - [Pose manifest](data/pose/karsl_pose_manifest.csv) and [candidate mapping](data/pose/karsl_video_pose_candidate_mapping.csv).

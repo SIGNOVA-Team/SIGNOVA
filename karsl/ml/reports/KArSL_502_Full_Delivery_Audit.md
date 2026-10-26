@@ -1,5 +1,7 @@
 # SIGNOVA KArSL-502 full delivery audit
 
+> Historical audit snapshot. The owner subsequently authorized and added the CNN/GRU checkpoints, calibration and labels to this branch. For the current checkout and integration commands, see `../README.md` and `checkpoints_manifest.md`.
+
 **Historical 2026-10-25 audit.** The current branch additionally contains a full CPU dependency lock, historical baseline validation replay, standalone baseline trainer, CV research adapter and development contract. See `../README.md` for current status. This update does not certify camera accuracy or a confirmed-sign threshold.
 
 **Date:** 2026-10-25  

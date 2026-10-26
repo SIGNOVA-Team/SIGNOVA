@@ -33,7 +33,7 @@ The test protocol was recorded before generating the new 502-output CNN test pre
 | Accepted-prediction coverage | 0.00% |
 | Accepted-prediction accuracy | Undefined: no accepted predictions |
 
-A secondary 24,956-sample diagnostic includes historical test paths and is recorded separately, not used for model selection or tuning. The primary subset still comes from a source pool with historical exposure. Some evaluated classes have only two primary test samples. These figures are **not** a clean full-502-class benchmark or an end-to-end translation score. The public branch includes class-ID per-class results, the 502-column confusion matrix and frozen protocol in `detailed_metrics/`; authorized readers may join IDs 1–502 to the separately controlled source label JSON. The original reliability bins and high-confidence mistakes remain in the private experiment directory `ml_expansion/experiments/cnn_502_pass_v1/test_evaluation_v1/`.
+A secondary 24,956-sample diagnostic includes historical test paths and is recorded separately, not used for model selection or tuning. The primary subset still comes from a source pool with historical exposure. Some evaluated classes have only two primary test samples. These figures are **not** a clean full-502-class benchmark or an end-to-end translation score. The branch includes class-ID per-class results, the 502-column confusion matrix and frozen protocol in `detailed_metrics/`; class IDs 1–502 can be joined to `../artifacts/labels_mapping.json`. The original reliability bins and high-confidence mistakes remain in the separate experiment directory `ml_expansion/experiments/cnn_502_pass_v1/test_evaluation_v1/`.
 
 ## Real Pose smoke verification
 
