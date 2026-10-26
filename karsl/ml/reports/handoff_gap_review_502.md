@@ -1,5 +1,7 @@
 # SIGNOVA KArSL 502 handoff review
 
+**Historical review snapshot.** See `../README.md`, `baseline_replay_502.md`, `environment_502.md`, and `cv_nlp_development_contract.md` for the updated branch. Earlier statements that baseline replay, a dependency lock, the 07 notebook or CV adapter are absent no longer describe this package.
+
 **Reviewed:** 2026-10-25. **Scope:** the team delivery message, `SIGNOVA.pdf` Dataset & ML Execution Plan v1.1, the KArSL 502 package and observed Colab results, and the repository's existing CV/inference interface. This review covers Radwa's KArSL research track; it does not claim to audit other teammates' work. No GitHub branch has been submitted for this package.
 
 ## Team message

@@ -1,5 +1,7 @@
 # SIGNOVA KArSL-502 full delivery audit
 
+**Historical 2026-10-25 audit.** The current branch additionally contains a full CPU dependency lock, historical baseline validation replay, standalone baseline trainer, CV research adapter and development contract. See `../README.md` for current status. This update does not certify camera accuracy or a confirmed-sign threshold.
+
 **Date:** 2026-10-25  
 **Scope:** Radwa's KArSL isolated-sign research track, the teammate's branch handoff request, and the Dataset Engineering & ML Execution Plan v1.1. The Egyptian Sign Language and WLASL tracks are outside this audit. KArSL is Arabic Sign Language; it is not an Egyptian Sign Language model.
 

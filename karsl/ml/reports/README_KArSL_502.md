@@ -1,5 +1,7 @@
 # SIGNOVA KArSL 502-class research baseline
 
+**Historical archive runbook.** The current repository layout and commands are in `../README.md`; the pinned CPU environment, baselines and CV research contract have been added since this archive description.
+
 This package implements a closed-set, isolated-sign classifier for a third-party KArSL Pose collection. It is a research reference for the SIGNOVA team. It does not establish Egyptian Sign Language recognition, continuous translation, unknown-sign detection, or production reliability.
 
 ## Status and directory layout

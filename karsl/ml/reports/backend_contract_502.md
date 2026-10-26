@@ -1,5 +1,7 @@
 # KArSL 502 research inference contract v1
 
+**Development option:** `../integration/research_preview.py` exposes the frozen predictor's top-ranked class under `candidate` with `confirmed=false`; the separate RGB adapter and research CV/NLP contract are in `../integration/karsl_cv_adapter.py` and `cv_nlp_development_contract.md`. The frozen response documented below is unchanged.
+
 **Status:** Frozen and tested as the ML-side Python contract for the KArSL research track. This document does not claim that a CV adapter or shared HTTP route has been implemented. This is an isolated-sign KArSL Pose research model. It does not accept a webcam frame, an MP4, a `(T, 126)` dual-hand tensor, or a continuous signing sequence.
 
 ## Supported Python inputs

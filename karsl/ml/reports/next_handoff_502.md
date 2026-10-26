@@ -1,5 +1,7 @@
 # KArSL 502: immediate CV, NLP, and Backend handoff
 
+**Research preview update:** `../integration/research_preview.py` and `../integration/karsl_cv_adapter.py` provide a provisional class/gloss and experimental RGB-frame path. See `cv_nlp_development_contract.md` and `KArSL_CV_Pilot_Report.md`. These do not change the frozen all-uncertain acceptance policy or establish camera accuracy.
+
 ## Current state
 
 The selected isolated-sign KArSL CNN loads from a private checkpoint. The real source `.pose` inference smoke test passed. It applies the same verified `(32,150)` preprocessing used in training. The active policy returns `uncertain` for every sample because no validation-selected acceptance threshold met the recorded target. The 52.5187% primary test accuracy covers 24,536 samples from 500 evaluated true classes, while the model outputs 502 scores. This is not an Egyptian Sign Language system or a deployable interpreter.

@@ -1,5 +1,7 @@
 # KArSL 502 pre-release audit
 
+**Historical source review.** The owner subsequently confirmed permitted team use and reviewed disputed labels for this research handoff, as recorded in `handoff_status_2026-10-26.md`. Pose/video identity for the full collection and public model release terms are not independently established.
+
 **Date:** 2026-10-25. **Scope:** this KArSL research branch only. A passing inference smoke test is not a completed video-to-model integration or a release authorization.
 
 ## Source and labels verified here

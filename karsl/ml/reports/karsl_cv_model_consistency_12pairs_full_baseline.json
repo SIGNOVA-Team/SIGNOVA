@@ -1,0 +1,341 @@
+{
+  "scope": "Twelve preselected original-video and third-party Pose candidate pairs; model unchanged; diagnostic only",
+  "model_version": "karsl_cnn_502_pass_v1",
+  "preprocessing_version": "pose_v1_32x50_xy_visibility_shoulder_conf05",
+  "pairs_count": 12,
+  "top1_agreements": 6,
+  "mean_top5_overlap_count": 3.0,
+  "mean_jensen_shannon_divergence_nats": 0.146235,
+  "all_uncertain": true,
+  "pairs": [
+    {
+      "pose_file": "sign_0001_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 1,
+      "frames": 15,
+      "pose_top5": [
+        2,
+        56,
+        1,
+        48,
+        33
+      ],
+      "video_top5": [
+        2,
+        48,
+        56,
+        1,
+        33
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 5,
+      "pose_confidence": 0.353222,
+      "video_confidence": 0.382286,
+      "jensen_shannon_divergence_nats": 0.032949,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0001_s1_sess1_002.pose",
+      "signer": "S01",
+      "true_source_class_id": 1,
+      "frames": 26,
+      "pose_top5": [
+        2,
+        1,
+        56,
+        48,
+        33
+      ],
+      "video_top5": [
+        2,
+        48,
+        56,
+        1,
+        33
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 5,
+      "pose_confidence": 0.429269,
+      "video_confidence": 0.449034,
+      "jensen_shannon_divergence_nats": 0.027142,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0001_s2_sess2_001.pose",
+      "signer": "S02",
+      "true_source_class_id": 1,
+      "frames": 13,
+      "pose_top5": [
+        181,
+        2,
+        347,
+        80,
+        133
+      ],
+      "video_top5": [
+        181,
+        45,
+        327,
+        69,
+        437
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 1,
+      "pose_confidence": 0.563784,
+      "video_confidence": 0.416923,
+      "jensen_shannon_divergence_nats": 0.196871,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0001_s3_sess3_001.pose",
+      "signer": "S03",
+      "true_source_class_id": 1,
+      "frames": 24,
+      "pose_top5": [
+        1,
+        56,
+        2,
+        48,
+        45
+      ],
+      "video_top5": [
+        65,
+        51,
+        33,
+        56,
+        69
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 1,
+      "pose_confidence": 0.770859,
+      "video_confidence": 0.158575,
+      "jensen_shannon_divergence_nats": 0.432052,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0002_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 2,
+      "frames": 18,
+      "pose_top5": [
+        2,
+        3,
+        48,
+        132,
+        482
+      ],
+      "video_top5": [
+        2,
+        3,
+        48,
+        482,
+        132
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 5,
+      "pose_confidence": 0.295719,
+      "video_confidence": 0.29073,
+      "jensen_shannon_divergence_nats": 0.002784,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0003_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 3,
+      "frames": 24,
+      "pose_top5": [
+        3,
+        132,
+        48,
+        21,
+        2
+      ],
+      "video_top5": [
+        132,
+        48,
+        3,
+        2,
+        385
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 4,
+      "pose_confidence": 0.184276,
+      "video_confidence": 0.133922,
+      "jensen_shannon_divergence_nats": 0.032708,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0003_s3_sess3_001.pose",
+      "signer": "S03",
+      "true_source_class_id": 3,
+      "frames": 24,
+      "pose_top5": [
+        3,
+        4,
+        47,
+        21,
+        2
+      ],
+      "video_top5": [
+        34,
+        3,
+        4,
+        21,
+        35
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 3,
+      "pose_confidence": 0.800901,
+      "video_confidence": 0.277195,
+      "jensen_shannon_divergence_nats": 0.230616,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0010_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 10,
+      "frames": 20,
+      "pose_top5": [
+        6,
+        10,
+        7,
+        78,
+        251
+      ],
+      "video_top5": [
+        6,
+        10,
+        132,
+        78,
+        19
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 3,
+      "pose_confidence": 0.584531,
+      "video_confidence": 0.349389,
+      "jensen_shannon_divergence_nats": 0.046053,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0010_s2_sess2_001.pose",
+      "signer": "S02",
+      "true_source_class_id": 10,
+      "frames": 11,
+      "pose_top5": [
+        6,
+        154,
+        23,
+        445,
+        403
+      ],
+      "video_top5": [
+        6,
+        154,
+        5,
+        445,
+        23
+      ],
+      "top1_same": true,
+      "top5_overlap_count": 4,
+      "pose_confidence": 0.799548,
+      "video_confidence": 0.751778,
+      "jensen_shannon_divergence_nats": 0.015238,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0050_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 50,
+      "frames": 29,
+      "pose_top5": [
+        9,
+        8,
+        146,
+        26,
+        2
+      ],
+      "video_top5": [
+        341,
+        8,
+        476,
+        428,
+        254
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 1,
+      "pose_confidence": 0.347872,
+      "video_confidence": 0.235043,
+      "jensen_shannon_divergence_nats": 0.352721,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0050_s2_sess2_001.pose",
+      "signer": "S02",
+      "true_source_class_id": 50,
+      "frames": 16,
+      "pose_top5": [
+        38,
+        50,
+        9,
+        41,
+        49
+      ],
+      "video_top5": [
+        49,
+        434,
+        50,
+        48,
+        42
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 2,
+      "pose_confidence": 0.27891,
+      "video_confidence": 0.11336,
+      "jensen_shannon_divergence_nats": 0.207908,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    },
+    {
+      "pose_file": "sign_0070_s1_sess1_001.pose",
+      "signer": "S01",
+      "true_source_class_id": 70,
+      "frames": 14,
+      "pose_top5": [
+        54,
+        70,
+        44,
+        116,
+        69
+      ],
+      "video_top5": [
+        365,
+        303,
+        422,
+        70,
+        44
+      ],
+      "top1_same": false,
+      "top5_overlap_count": 2,
+      "pose_confidence": 0.180489,
+      "video_confidence": 0.183219,
+      "jensen_shannon_divergence_nats": 0.177775,
+      "pose_status": "uncertain",
+      "video_status": "uncertain"
+    }
+  ],
+  "cv_extraction": {
+    "mediapipe_version": "0.10.21",
+    "model_complexity": 1,
+    "static_image_mode": true
+  }
+}

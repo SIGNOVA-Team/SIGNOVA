@@ -1,20 +1,23 @@
 # KArSL-502 ML research branch candidate
 
-This directory contains the isolated-sign KArSL-502 research baseline. It is a separate Arabic Sign Language reference, not an Egyptian Sign Language recognizer or continuous translator. The current frozen CNN returns `uncertain` for every prediction. Keep advisory `top_k` candidates separate from confirmed translation text.
+This directory contains the isolated-sign KArSL-502 research baseline. It is a separate Arabic Sign Language reference, not an Egyptian Sign Language recognizer or continuous translator. The current frozen CNN returns `uncertain` for every prediction. `integration/research_preview.py` exposes the top-ranked class as a provisional `research_candidate` with `confirmed=false` for Backend/NLP development. `integration/karsl_cv_adapter.py` provides a separate experimental RGB-frame path. See `reports/cv_nlp_development_contract.md`.
 
 ## Layout
 
-`src/preprocessing.py` is the exact source used to create the 32 × 150 features. `ml_expansion/scripts/` contains the frozen feature preparation, CNN training/comparison, calibration, evaluation and prediction scripts. `training/train_gru_502.py` provides a standalone GRU training entry point using the same validated train/validation shard loader and architecture as the original notebook. `notebooks/` and `reports/` preserve experiment history and limitations. `reports/detailed_metrics/` contains the source test protocol, 502-row per-class validation/test results and class-ID confusion matrices. The code-only variant removes source label text from those CSVs; the private variant retains it. `tests/` includes smoke and input/metric checks. The private variant also contains two checkpoints, calibration and source labels. Neither variant contains raw Pose files or full feature shards.
+`src/preprocessing.py` is the exact source used to create the 32 × 150 features. `ml_expansion/scripts/` contains the frozen feature preparation, CNN training/comparison, calibration, evaluation and prediction scripts. `training/train_gru_502.py` and `training/train_baselines_502.py` are standalone training/replay entry points; the latter verified the historical centroid and linear checkpoint metrics on all frozen train/validation PASS samples. `notebooks/07_KArSL_Colab_Verification.ipynb` preserves the source audit and `notebooks/08_KArSL_502_GRU_Training.ipynb` the model experiments. The 07 notebook retains earlier failed cells followed by successful retries, not a clean top-to-bottom run. `reports/detailed_metrics/` contains the source test protocol, 502-row per-class validation/test results and class-ID confusion matrices. The public branch excludes weights, original source label JSON, source video/Pose and full feature shards. Controlled artifacts and hashes are in `reports/checkpoints_manifest.md`.
 
 The new GRU script has now been run on all frozen PASS train/validation shards in Colab. Its 23 history rows and all 20 model-state tensors exactly match the original saved GRU; the new checkpoint has a different file SHA-256 because it includes an extra experiment configuration field. A clean replay of the CNN training/comparison script yielded a byte-identical selected CNN checkpoint and matching 18-row history. Replaying the original validation calibration and terminal test protocols produced a byte-identical calibration configuration, test protocol, primary per-class CSV and confusion matrix, with identical primary and secondary metrics. See the three replay verification reports in `reports/`. Neither training script loads the test split. GRU output directories must be new to avoid overwriting the historical model. A replay of an already observed test is a reproducibility check, not a new independent test.
 
 ## Installation and smoke tests
 
-Use a separate Python environment for ML. The recorded Colab inference used Python 3.13; this package's loader and tests were also checked with Python 3.12, PyTorch 2.11.0, NumPy 2.2.6, and `pose-format==0.15.0`. The dependency file contains compatible ranges rather than a full lock. The experimental CV pilot uses a different NumPy 1.26.4/MediaPipe 0.10.21 environment and is not part of this package.
+Use a separate Python environment for ML. `requirements_502_cpu_py312.lock.txt` fully pins and hashes the CPU/Linux Python 3.12 dependencies and was installed in a clean environment with the smoke suite passing. The earlier Tesla T4 CUDA run has recorded direct versions but not a complete transitive GPU lock. The experimental CV adapter uses separate NumPy 1.26.4/MediaPipe 0.10.21 dependencies. See `reports/environment_502.md`.
 
 ```bash
-python -m pip install -r karsl/ml/requirements_502.txt
-python -m unittest discover -s karsl/ml/tests -v
+python -m pip install uv==0.13.4
+uv venv .venv-karsl --python 3.12
+uv pip sync karsl/ml/requirements_502_cpu_py312.lock.txt \
+  --python .venv-karsl/bin/python --torch-backend cpu --require-hashes
+.venv-karsl/bin/python -m unittest discover -s karsl/ml/tests -v
 ```
 
 Run those commands from the repository root. The code-only package skips checkpoint-dependent assertions. A real source-compatible `.pose` path is optional for the inherited test; a skipped test must not be counted as a pass. Tests do not certify accuracy, sign semantics, OOV detection, or full retraining.
@@ -46,6 +49,18 @@ python karsl/ml/training/train_gru_502.py \
   --device cuda
 ```
 
+The two simple references have a standalone full-shard command; the historical linear checkpoint is available only through controlled storage:
+
+```bash
+python karsl/ml/training/train_baselines_502.py \
+  --features-root "$PRIVATE_SOURCE/features_502_v1" \
+  --cache "$PRIVATE_SOURCE/train_cache" \
+  --output "$PRIVATE_SOURCE/new_baseline_experiment" \
+  --device cpu --epochs 30
+```
+
+To verify the *older* baseline metrics using its original checkpoint, use the separate `--verify-historical-checkpoint "$PRIVATE_BASELINE"` option with a new output path. `reports/baseline_replay_502.md` gives both commands, full validation results and the distinction between the historical checkpoint replay and the new linear training run.
+
 The frozen CNN training/comparison script requires the original reference GRU checkpoint hash and a CUDA machine:
 
 ```bash
@@ -76,6 +91,8 @@ result = predictor.predict_pose_file('/trusted/path/to/sample.pose', top_k=3)
 ```
 
 `predict_pose_bytes(bytes)` decodes a source-compatible `.pose` internally. `predict_features(features, preprocessing_version)` accepts exactly one finite `(32, 150)` sample with version `pose_v1_32x50_xy_visibility_shoulder_conf05`; it is not a webcam, MP4 or `(T,126)` input. The result includes status, uncertain flag, nullable top-level class/labels, confidence, advisory `top_k`, and model/calibration versions. The frozen acceptance rule leaves the top-level label null. `reports/backend_contract_502.md` contains the full schema and the separate downstream interface constraints.
+
+For a clearly marked development preview, use `predict_for_preview(predictor, pose_bytes=trusted_pose_bytes, top_k=3)` from `integration/research_preview.py`. This returns a nested `candidate` class/gloss for Backend and NLP with `confirmed=false`; it does not change the frozen predictor. The experimental video adapter reads isolated RGB frames and applies the **same** frozen preprocessor, but is not a production camera claim. See `reports/cv_nlp_development_contract.md` and `reports/KArSL_CV_Pilot_Report.md`.
 
 ## Recorded results and release boundary
 

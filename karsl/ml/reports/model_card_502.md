@@ -1,5 +1,7 @@
 # Model card: SIGNOVA KArSL SignCNN502 v1
 
+**Research handoff update (2026-10-26):** The owner confirmed permitted internal team use and reviewed disputed labels for this branch. A separate code-only CV adapter and provisional Backend/NLP candidate contract now exist; neither changes the frozen checkpoint, 0% accepted coverage or production limits below. The exact research contracts and diagnostics are in `cv_nlp_development_contract.md` and `KArSL_CV_Pilot_Report.md`.
+
 **Version:** `karsl_cnn_502_pass_v1`  
 **Type:** Closed-set 1D temporal CNN over 32 frames × 50 landmarks × `(x, y, valid)`  
 **Parameters:** 576,886  

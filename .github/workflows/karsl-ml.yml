@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: "pip"
-      - run: python -m pip install --upgrade pip
-      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -r karsl/ml/requirements_502.txt
-      - run: python -m unittest discover -s karsl/ml/tests -v
+      - run: python -m pip install uv==0.13.4
+      - run: uv venv .venv --python 3.12
+      - run: uv pip sync karsl/ml/requirements_502_cpu_py312.lock.txt --python .venv/bin/python --torch-backend cpu --require-hashes
+      - run: .venv/bin/python -m unittest discover -s karsl/ml/tests -v

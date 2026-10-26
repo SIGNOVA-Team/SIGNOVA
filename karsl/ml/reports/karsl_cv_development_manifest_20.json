@@ -1,0 +1,226 @@
+{
+  "protocol": "Predeclared 2026-10-25 before feature extraction: class IDs 5,6,15,20,27,28,35,40,45,60; first lexicographic Pose candidate in each PASS signer S03 training and S02 validation group, original test subfolder 0001-0070 archive; no S01 test use; existing frozen CNN and heavy/tracking CV adapter unchanged",
+  "candidate_mapping_sha256": "400732a9287d553bc4803428bfc3d985a83f926902377b205eb58e2fce7742fb",
+  "pairs": [
+    {
+      "sample_id_video": "KARSL_025144",
+      "class_label": "5",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0005/01_02_0005_(15_11_16_16_45_53)_c.mp4",
+      "frames": "14",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0005_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050460",
+      "class_label": "5",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0005/01_03_0005_(06_12_16_17_24_46)_c.mp4",
+      "frames": "27",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0005_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025152",
+      "class_label": "6",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0006/01_02_0006_(15_11_16_16_46_57)_c.mp4",
+      "frames": "13",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0006_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050468",
+      "class_label": "6",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0006/01_03_0006_(06_12_16_17_25_50)_c.mp4",
+      "frames": "26",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0006_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025224",
+      "class_label": "15",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0015/01_02_0015_(15_11_16_17_20_02)_c.mp4",
+      "frames": "19",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0015_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050540",
+      "class_label": "15",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0015/01_03_0015_(06_12_16_17_39_06)_c.mp4",
+      "frames": "40",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0015_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025264",
+      "class_label": "20",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0020/01_02_0020_(15_11_16_17_27_12)_c.mp4",
+      "frames": "17",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0020_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050580",
+      "class_label": "20",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0020/01_03_0020_(08_12_16_16_07_35)_c.mp4",
+      "frames": "37",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0020_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025320",
+      "class_label": "27",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0027/01_02_0027_(15_11_16_17_34_34)_c.mp4",
+      "frames": "16",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0027_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050636",
+      "class_label": "27",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0027/01_03_0027_(06_12_16_18_11_38)_c.mp4",
+      "frames": "39",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0027_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025328",
+      "class_label": "28",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0028/01_02_0028_(15_11_16_17_35_47)_c.mp4",
+      "frames": "16",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0028_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050644",
+      "class_label": "28",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0028/01_03_0028_(06_12_16_18_13_51)_c.mp4",
+      "frames": "40",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0028_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025384",
+      "class_label": "35",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0035/02_02_0035_(15_11_16_17_46_01)_c.mp4",
+      "frames": "14",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0035_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050700",
+      "class_label": "35",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0035/02_03_0035_(05_12_16_15_39_24)_c.mp4",
+      "frames": "21",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0035_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025424",
+      "class_label": "40",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0040/02_02_0040_(15_11_16_17_51_38)_c.mp4",
+      "frames": "14",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0040_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050740",
+      "class_label": "40",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0040/02_03_0040_(05_12_16_15_48_24)_c.mp4",
+      "frames": "24",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0040_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025464",
+      "class_label": "45",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0045/02_02_0045_(15_11_16_17_58_28)_c.mp4",
+      "frames": "14",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0045_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050780",
+      "class_label": "45",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0045/02_03_0045_(05_12_16_15_54_03)_c.mp4",
+      "frames": "26",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0045_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_025584",
+      "class_label": "60",
+      "signer_id_video": "S02",
+      "archive_relpath": "02/test/0001-0070.7z",
+      "video_path_in_archive": "0060/02_02_0060_(15_11_16_18_15_18)_c.mp4",
+      "frames": "18",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0060_s2_sess2_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    },
+    {
+      "sample_id_video": "KARSL_050900",
+      "class_label": "60",
+      "signer_id_video": "S03",
+      "archive_relpath": "03/test/0001-0070.7z",
+      "video_path_in_archive": "0060/02_03_0060_(05_12_16_16_16_47)_c.mp4",
+      "frames": "29",
+      "qc_status": "PASS",
+      "pose_file": "pose_dir/sign_0060_s3_sess3_001.pose",
+      "mapping_status": "CANDIDATE_UNVERIFIED"
+    }
+  ]
+}
