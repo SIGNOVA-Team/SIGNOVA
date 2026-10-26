@@ -71,8 +71,8 @@ indent-style = "space"
 
 [tool.pytest.ini_options]
 minversion = "8.0"
-testpaths = ["tests", "karsl/tests", "isharah500/tests", "ml/sign_language/tests"]
-pythonpath = [".", "karsl", "isharah500", "isharah500/src", "ml", "ml/sign_language"]
+testpaths = ["tests", "karsl/tests", "karsl/ml/tests", "isharah500/tests", "ml/sign_language/tests"]
+pythonpath = [".", "karsl", "karsl/ml", "isharah500", "isharah500/src", "ml", "ml/sign_language"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]

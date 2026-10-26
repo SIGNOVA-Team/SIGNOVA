@@ -21,7 +21,8 @@ EXPECTED_LINEAR = (0.2782133523402233, 0.2675255841641251, 0.47806288112774215)
 
 def load_frozen_source(path):
     path = Path(path)
-    if hashlib.sha256(path.read_bytes()).hexdigest() != SOURCE_SHA256:
+    data = path.read_bytes().replace(b"\r\n", b"\n")
+    if hashlib.sha256(data).hexdigest() != SOURCE_SHA256:
         raise ValueError("Frozen loader changed.")
     spec = importlib.util.spec_from_file_location("frozen_baseline_loader", path)
     module = importlib.util.module_from_spec(spec)

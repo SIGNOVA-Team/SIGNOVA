@@ -23,11 +23,11 @@ def require(condition, message):
 
 
 def sha256(path):
-    digest = hashlib.sha256()
-    with Path(path).open('rb') as stream:
-        for block in iter(lambda: stream.read(4 * 1024 * 1024), b''):
-            digest.update(block)
-    return digest.hexdigest()
+    p = Path(path)
+    data = p.read_bytes()
+    if p.suffix in {'.py', '.json', '.txt', '.csv', '.md'}:
+        data = data.replace(b'\r\n', b'\n')
+    return hashlib.sha256(data).hexdigest()
 
 
 def load_python(path, module_name, expected_sha256):
