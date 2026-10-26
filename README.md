@@ -1,185 +1,200 @@
 # SIGNOVA — Sign Language & Multimodal Assistive Communication
 
 [![CI/CD Pipeline](https://github.com/SIGNOVA-Team/SIGNOVA/actions/workflows/ci.yml/badge.svg)](https://github.com/SIGNOVA-Team/SIGNOVA/actions/workflows/ci.yml)
-[![CI - Test Suite](https://img.shields.io/badge/tests-116%20passed-brightgreen.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-126%20passed-brightgreen.svg)](tests/)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 [![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Security: Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 [![License: CC-BY-NC-4.0](https://img.shields.io/badge/License-CC--BY--NC--4.0-lightgrey.svg)](LICENSE)
 
-> **SIGNOVA** is an end-to-end assistive communication platform connecting sign language, speech, and text for Arabic and English users.
-> **Mission Principle:** *Egypt-First*. Egyptian Sign Language (ESL) and Arabic are the primary focus, with American Sign Language (ASL) and English providing secondary multimodal benchmarks.
+> **SIGNOVA** bridges Arabic & American Sign Language and spoken language through Computer Vision, Deep Learning, and NLP — making assistive communication accessible for Arabic-speaking deaf and hard-of-hearing communities.
 
 ---
 
-## 1. Project Overview & Multi-Track Architecture
+## What is SIGNOVA?
 
-SIGNOVA combines state-of-the-art Computer Vision (CV), Deep Learning (BiLSTM/BiGRU + CTC), and Natural Language Processing (NLP) into a decoupled, reproducible architecture:
+SIGNOVA is an end-to-end research platform for sign language recognition and translation. It takes a live video stream or a recorded video clip, extracts hand and body landmarks, runs a trained deep learning model to decode sign language, and outputs natural spoken Arabic (or English) text.
 
 ```
-[ Video / Camera Stream ]
-           │
-           ▼
-[ Computer Vision Layer ] ────────► MediaPipe / OpenPose Hand Landmark Extraction
-           │                        (126-D normalized keypoints: T × 126)
-           ▼
-[ Machine Learning Core ] ────────► Continuous Sign Recognition (BiLSTM/BiGRU + CTC)
-           │                        • ArabSign (Continuous ArSL)
-           │                        • Isharah-500 (Signer-Independent ArSL)
-           │                        • How2Sign (Continuous ASL)
-           ▼
-[ NLP Bridge Interface ]  ────────► Gloss-to-Text Translation (ArSL Gloss ➔ Spoken MSA)
-           │                        • Exact & Levenshtein Fuzzy Lookup
-           │                        • Generative Seq2Seq / LLM Conditioning
-           ▼
-[ Web & Assistive Output ] ───────► Text Display, Text-to-Speech (TTS), Real-time Feedback
+📷 Camera / Video
+       │
+       ▼
+🖐️  Computer Vision   →  MediaPipe hand & body landmark extraction
+       │                  (126-D keypoints per frame)
+       ▼
+🧠  ML Recognition    →  BiLSTM / BiGRU + CTC decoder
+       │                  (ArabSign · Isharah-500 · How2Sign · KArSL-502)
+       ▼
+📝  NLP Translation   →  Gloss → Spoken Modern Standard Arabic + English
+       │                  (fuzzy match · Seq2Seq prompting)
+       ▼
+🔊  Output            →  Text display · Text-to-Speech · REST API
 ```
 
 ---
 
-## 2. The 4 Machine Learning & Dataset Tracks
+## The 4 ML Tracks at a Glance
 
-| Track | Dataset | Language | Task Type | Architecture | Scope & Benchmark |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Track 1** | **ArabSign** | Arabic Sign Language (ArSL) | Continuous Sign Recognition + Dual-Tier NLP | BiLSTM + CTC (2-layer, 256 hidden) | **9,335 samples**, 50 sentences, 98 unique glosses. Zero-leakage signer-independent split (Train: S01–04, Val: S05, Test: S06). Dual-tier mapping to Modern Standard Arabic. |
-| **Track 2** | **Isharah-500** | Arabic Sign Language (ArSL) | Continuous Signer-Independent (SI) | BiGRU + CTC (Hand-centric normalization) | **7,500 samples**, 15 signers. Hand-tracked keypoints `(T, 2, 63)`. SI Dev & Test benchmark with blank calibration and error analysis. |
-| **Track 3** | **How2Sign** | American Sign Language (ASL) | Continuous Multimodal Benchmark | BiLSTM + CTC (2-layer, 256 hidden) | **35,263 continuous sentences (56 hours)**, 11 signers. Official Train/Val/Test partitions. Multimodal reference (RGB, Depth, Skeletons). |
-| **Track 4** | **KArSL-502** | Arabic Sign Language (ArSL) | Isolated Sign Recognition | Deep Feature Classifier / 3D CNN | **75,095 verified samples** across 500 isolated classes. 3-fold signer-independent evaluation protocol. |
+| Track | Dataset | Sign Language | Task | Model | Size |
+|:------|:--------|:-------------|:-----|:------|:-----|
+| **1** | [ArabSign](https://hamzah-luqman.github.io/ArabSign/) | Arabic (ArSL) | Continuous recognition + NLP | BiLSTM + CTC | 9,335 samples · 50 sentences |
+| **2** | [Isharah-500](isharah500/) | Arabic (ArSL) | Continuous, signer-independent | BiGRU + CTC | 7,500 samples · 15 signers |
+| **3** | [How2Sign](https://how2sign.github.io/) | American (ASL) | Continuous multimodal benchmark | BiLSTM + CTC | 35,263 sentences · 56 hours |
+| **4** | [KArSL-502](karsl/) | Arabic (ArSL) | Isolated word recognition | 1D CNN + BiGRU | 75,095 samples · 502 classes |
 
 > [!WARNING]
-> **LINGUISTIC SEPARATION RULE (ADR-001):**
-> ArabSign and Isharah-500 represent Pan-Arab/Saudi Sign Language and must never be relabeled as Egyptian Sign Language (ESL). Each dataset maintains independent vocabulary, tokenizer, loss computation, and evaluation metrics. Refer to [ADR-001](docs/decisions/ADR_001_p2_datasets_evaluation.md).
+> **ADR-001 — Linguistic Separation Rule:** ArabSign, Isharah-500, and KArSL-502 represent Arabic Sign Language and must **never** be relabeled or confused with Egyptian Sign Language (ESL). Each track has its own vocabulary, tokenizer, loss function, and evaluation. See [`docs/decisions/ADR_001_p2_datasets_evaluation.md`](docs/decisions/ADR_001_p2_datasets_evaluation.md).
 
 ---
 
-## 3. Computer Vision & NLP Integration Contracts
-
-To facilitate seamless collaboration across sub-teams, SIGNOVA provides production-ready integration interfaces:
-
-### Computer Vision (CV) Integration
-- **Module:** [`ml/sign_language/src/cv_interface.py`](ml/sign_language/src/cv_interface.py)
-- **Features:**
-  - `StreamingKeypointBuffer`: Sliding temporal window buffer (`window_size=60`, `stride=15`) with motion energy thresholding (skips idle/resting hands).
-  - `RealtimeCVStreamProcessor`: Directly ingests OpenCV camera frames (`cv2.VideoCapture(0)`) $\rightarrow$ extracts landmarks $\rightarrow$ triggers ML inference.
-  - `extract_keypoints_from_video()`: Batch extraction from `.mp4`, `.avi`, `.mov`.
-- **Full Guide:** [`docs/CV_INTEGRATION_GUIDE.md`](docs/CV_INTEGRATION_GUIDE.md)
-
-### Natural Language Processing (NLP) Integration
-- **Module:** [`ml/sign_language/src/nlp_interface.py`](ml/sign_language/src/nlp_interface.py)
-- **Features:**
-  - `GlossToTextTranslator`: Translates ArSL continuous gloss sequences (e.g. `['السلام', 'عليكم', 'رحمة', 'الله', 'بركة']`) into grammatical Modern Standard Arabic (`السلام عليكم ورحمة الله وبركاته`) and English.
-  - Fuzzy Levenshtein matching for OCR/CTC error resilience.
-  - Generative prompt generation for Seq2Seq / LLM models (mT5, CAMeL-Tools, LLaMA).
-  - Metadata: [`data/arabsign/metadata/arabsign_sentences_mapping.csv`](data/arabsign/metadata/arabsign_sentences_mapping.csv).
-- **Full Guide:** [`docs/NLP_INTEGRATION_GUIDE.md`](docs/NLP_INTEGRATION_GUIDE.md)
-
----
-
-## 4. Repository Structure
+## Repository Structure
 
 ```
 SIGNOVA/
-├── README.md                                # Root documentation & architecture
-├── pyproject.toml                           # Modern project config (Ruff, Pytest, Bandit)
-├── requirements.txt                         # Runtime dependencies
-├── requirements-dev.txt                     # CI, linting & test dependencies
-├── data/
-│   ├── arabsign/                            # ArabSign metadata, canonical CSVs & splits
-│   │   ├── metadata/
-│   │   │   ├── arabsign_canonical_metadata.csv  # 9,335 canonical ArabSign records
-│   │   │   └── arabsign_sentences_mapping.csv   # 50 ArSL gloss & standard Arabic mappings
-│   │   └── splits/                              # Signer-independent & signer-dependent manifests
-│   ├── how2sign/                            # How2Sign metadata, canonical CSVs & splits
-│   └── reports/                             # Dataset sources, download manifests & QC reports
-├── docs/
-│   ├── CV_INTEGRATION_GUIDE.md              # Complete integration guide for Computer Vision team
-│   ├── NLP_INTEGRATION_GUIDE.md             # Complete integration guide for NLP team
-│   ├── dataset_card_arabsign.md             # Dataset card for ArabSign
-│   ├── dataset_card_how2sign.md             # Dataset card for How2Sign
-│   └── decisions/
-│       └── ADR_001_p2_datasets_evaluation.md# Linguistic guardrails & architecture decisions
-├── ml/sign_language/                        # Continuous ArabSign & How2Sign ML Core
-│   ├── README.md                            # ML module guide & architecture
-│   ├── artifacts/                           # Saved checkpoints & vocabularies
-│   │   ├── arabsign/best_model.pth          # Trained ArabSign PyTorch weights
-│   │   └── how2sign/best_model.pth          # Trained How2Sign PyTorch weights
-│   ├── configs/config.yaml                  # Hyperparameters & model configurations
-│   ├── manifests/                           # Zero-download remote manifests
-│   ├── notebooks/                           # Jupyter notebooks (data inspection, training, eval)
+│
+├── 📄 README.md                        ← You are here
+├── 📄 pyproject.toml                   ← Ruff · Pytest · Bandit config
+├── 📄 requirements.txt                 ← Core runtime deps (pandas, numpy)
+├── 📄 requirements-dev.txt             ← Dev/CI deps (pytest, ruff, bandit)
+│
+├── 📁 ml/sign_language/                ← Track 1 & 3: ArabSign + How2Sign
 │   ├── src/
-│   │   ├── cv_interface.py                  # Real-time sliding window buffer & camera streamer
-│   │   ├── nlp_interface.py                 # Gloss-to-Text translation & prompt generator
-│   │   ├── inference.py                     # Unified predictor (predict, predict_video)
-│   │   ├── model.py                         # ContinuousSignBiLSTM architecture
-│   │   ├── train.py                         # CTC training and validation loops
-│   │   ├── evaluate.py                      # WER, CER, Token Accuracy & greedy decoders
-│   │   ├── dataset.py                       # SignLanguageDataset PyTorch loader
-│   │   └── video_extractor.py               # MediaPipe landmark extractor
-│   └── tests/                               # ML unit & integration tests (18 tests)
-├── isharah500/                              # Isharah-500 Signer-Independent ML Module
-│   ├── README.md                            # Isharah-500 baseline documentation
-│   ├── docs/                                # Backend integration contract & artifact manifest
-│   ├── metadata/                            # SI and US CSV manifests
-│   ├── notebooks/                           # Inspection, training, experiments & eval notebooks
-│   ├── reports/                             # Error analysis, blank calibration & test evaluations
-│   ├── src/                                 # BiGRU+CTC, feature normalization, training & inference
-│   └── tests/                               # Isharah-500 test suite
-├── karsl/                                   # KArSL-502 500-class isolated sign benchmark
-├── wlasl/                                   # WLASL-2000 ASL isolated sign baseline
-├── scripts/
-│   └── ci/
-│       └── check_project_quality.py         # Automated project quality gate (5/5 checks)
-└── tests/
-    └── test_p2_datasets.py                  # Cross-dataset integrity & schema tests
+│   │   ├── model.py                    ← ContinuousSignBiLSTM architecture
+│   │   ├── train.py                    ← CTC training loop
+│   │   ├── inference.py                ← predict() + predict_video() API
+│   │   ├── cv_interface.py             ← Live webcam streaming buffer
+│   │   ├── nlp_interface.py            ← Gloss → Arabic/English translator
+│   │   ├── dataset.py                  ← PyTorch dataset loader
+│   │   ├── preprocessing.py            ← Keypoint normalization & vocab
+│   │   ├── evaluate.py                 ← WER · CER · Token Accuracy
+│   │   └── video_extractor.py          ← MediaPipe landmark extractor
+│   ├── artifacts/
+│   │   ├── arabsign/best_model.pth     ← Trained ArabSign weights
+│   │   └── how2sign/best_model.pth     ← Trained How2Sign weights
+│   ├── configs/config.yaml             ← Hyperparameters
+│   ├── notebooks/                      ← Training & inspection notebooks
+│   ├── tests/                          ← 18 unit & integration tests
+│   └── README.md
+│
+├── 📁 isharah500/                      ← Track 2: Signer-Independent ArSL
+│   ├── src/                            ← BiGRU+CTC · hand-centric features
+│   ├── notebooks/                      ← Training · eval · error analysis
+│   ├── reports/                        ← SI benchmark · blank calibration
+│   ├── tests/                          ← 70+ unit tests
+│   └── README.md
+│
+├── 📁 karsl/                           ← Track 4: 502-class isolated ArSL
+│   ├── ml/
+│   │   ├── src/preprocessing.py        ← 32×150 pose+hand features
+│   │   ├── artifacts/
+│   │   │   ├── cnn/best_cnn_502_pass_v1.pt   ← Trained CNN weights
+│   │   │   └── gru/best_gru_502_pass_v1.pt   ← Trained GRU weights
+│   │   ├── integration/
+│   │   │   ├── karsl_cv_adapter.py     ← CV → feature extraction bridge
+│   │   │   └── research_preview.py     ← Backend integration stub
+│   │   ├── training/                   ← Reproducible training scripts
+│   │   ├── tests/                      ← 10 unit & release tests
+│   │   └── README.md
+│   ├── data/                           ← KArSL metadata, splits, QC
+│   ├── scripts/                        ← Dataset validation pipeline
+│   ├── tests/                          ← Dataset integrity tests
+│   └── README.md
+│
+├── 📁 wlasl/                           ← WLASL-2000 ASL baseline (reference)
+│   ├── data/                           ← Splits & metadata
+│   ├── docs/
+│   └── README.md
+│
+├── 📁 data/                            ← Canonical dataset metadata & CSVs
+│   ├── arabsign/
+│   │   ├── metadata/
+│   │   │   ├── arabsign_canonical_metadata.csv   ← 9,335 records
+│   │   │   └── arabsign_sentences_mapping.csv    ← 50 gloss→Arabic mappings
+│   │   └── splits/                     ← Signer-independent train/val/test
+│   ├── how2sign/
+│   │   ├── metadata/                   ← 35,263 sentence records
+│   │   └── splits/
+│   └── reports/                        ← Download manifests · QC reports
+│
+├── 📁 docs/                            ← Integration guides & decisions
+│   ├── CV_INTEGRATION_GUIDE.md         ← For the Computer Vision sub-team
+│   ├── NLP_INTEGRATION_GUIDE.md        ← For the NLP sub-team
+│   ├── dataset_card_arabsign.md        ← ArabSign dataset card
+│   ├── dataset_card_how2sign.md        ← How2Sign dataset card
+│   ├── ML_CLOUD_LINKS_AND_STREAMING.md ← Cloud training guide (Colab/Kaggle)
+│   └── decisions/
+│       └── ADR_001_p2_datasets_evaluation.md   ← Linguistic guardrails
+│
+├── 📁 notebooks/                       ← Root-level cloud training notebooks
+│   ├── cloud_ml_signova_colab.ipynb    ← ArabSign+How2Sign Colab notebook
+│   ├── cloud_ml_starter.ipynb          ← Quick-start cloud notebook
+│   └── train_isharah500_colab.ipynb    ← Isharah-500 Colab notebook
+│
+├── 📁 scripts/                         ← Automation & CI scripts
+│   ├── ci/
+│   │   └── check_project_quality.py   ← 5-gate quality checker
+│   ├── data_pipeline/                  ← Metadata generation scripts
+│   └── export_p2_summary.py           ← Dataset stats exporter
+│
+├── 📁 tests/                           ← Root-level cross-dataset tests
+│   └── test_p2_datasets.py            ← Schema & integrity (7 tests)
+│
+└── 📁 .github/workflows/
+    ├── ci.yml                          ← Main CI: lint · security · tests
+    └── karsl-ml.yml                    ← KArSL smoke tests (isolated env)
 ```
 
 ---
 
-## 5. Quickstart & Command Center
+## Quick Start
 
-### Installation
+### 1. Clone & Install
+
 ```bash
 git clone https://github.com/SIGNOVA-Team/SIGNOVA.git
 cd SIGNOVA
 
-# Create and activate virtual environment
 python -m venv .venv
-.venv\Scripts\activate   # Windows
-# source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate        # Windows
+# source .venv/bin/activate   # Linux / macOS
 
-# Install dependencies
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
+pip install torch --index-url https://download.pytorch.org/whl/cpu   # CPU-only
 ```
 
-### 1. Run All Tests Across All Modules (116+ Tests)
+### 2. Run All 126 Tests
+
 ```bash
 pytest
 ```
-*Executes all unit tests simultaneously across root tests, ArabSign/How2Sign, Isharah-500, and KARSL.*
 
-### 2. Run Project Quality Gate
+Runs all unit and integration tests across all 4 tracks in one command.
+
+### 3. Run Quality Gate (5/5 Checks)
+
 ```bash
 python scripts/ci/check_project_quality.py
 ```
-*Validates secrets scan, git hygiene, binary avoidance, notebook health, and ADR-001 linguistic separation.*
 
-### 3. Run Live Video Prediction (ArabSign ArSL ➔ Spoken Arabic)
+Validates: secrets scan · git hygiene · notebook health · ADR-001 linguistic rules · core deliverables.
+
+### 4. Sign Language Video Inference (ArabSign → Arabic Text)
+
 ```python
 from ml.sign_language.src.inference import predict_video
 
-# Run end-to-end video inference
 result = predict_video("path/to/sign_video.mp4", language="ar")
 
-print("Recognized Sign Glosses:", result["text"])
-print("Spoken Standard Arabic :", result["spoken_arabic"])
-print("English Translation    :", result["english_translation"])
-print("Confidence Score       :", result["confidence"])
-print("Inference Latency      :", result["latency_ms"], "ms")
+print("Glosses :", result["text"])
+print("Arabic  :", result["spoken_arabic"])
+print("English :", result["english_translation"])
+print("Confidence:", result["confidence"])
 ```
 
-### 4. Run Real-Time Webcam Streaming (Computer Vision Loop)
+### 5. Live Webcam Streaming
+
 ```python
 import cv2
 from ml.sign_language.src.cv_interface import RealtimeCVStreamProcessor
@@ -191,12 +206,10 @@ while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         break
-
     prediction = processor.process_frame(frame)
     if prediction:
-        print(f"Recognized: {prediction['spoken_arabic']} ({prediction['confidence']:.2f})")
-
-    cv2.imshow("SIGNOVA Live Sign Translation", frame)
+        print(f"[SIGNOVA] {prediction['spoken_arabic']}  ({prediction['confidence']:.2f})")
+    cv2.imshow("SIGNOVA Live", frame)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
@@ -204,16 +217,50 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-### 5. Run Code Quality & Formatting Checks
-```bash
-python -m ruff check .
-python -m ruff format --check .
+### 6. KArSL-502 Isolated Sign Prediction
+
+```python
+from karsl.ml.scripts.signova_predict_502 import KArSL502Predictor
+import numpy as np
+
+predictor = KArSL502Predictor()
+# features: numpy array of shape (32, 150) — 32 frames × 150 pose+hand features
+features = np.zeros((32, 150), dtype=np.float32)
+result = predictor.predict(features)
+print(result["top_k"])   # top-3 Arabic sign labels with scores
 ```
 
 ---
 
-## 6. References & Citations
-- **How2Sign:** Amanda Duarte et al., *"How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language"*, CVPR 2021.
-- **ArabSign:** Hamzah Luqman, *"ArabSign: A Multi-modality Dataset and Benchmark for Continuous Arabic Sign Language Recognition"*, IEEE FG 2023.
-- **Isharah-500:** SIGNOVA Continuous Sign Language Benchmark, 2026.
-- **KArSL:** Sidig et al., *"KArSL: Arabic Sign Language Dataset"*, 2021.
+## Integration Guides for Sub-Teams
+
+| Team | Guide | What it covers |
+|:-----|:------|:---------------|
+| **Computer Vision** | [`docs/CV_INTEGRATION_GUIDE.md`](docs/CV_INTEGRATION_GUIDE.md) | `RealtimeCVStreamProcessor` · `StreamingKeypointBuffer` · `extract_keypoints_from_video()` |
+| **NLP** | [`docs/NLP_INTEGRATION_GUIDE.md`](docs/NLP_INTEGRATION_GUIDE.md) | `GlossToTextTranslator` · fuzzy matching · LLM prompt generation |
+| **Cloud Training** | [`docs/ML_CLOUD_LINKS_AND_STREAMING.md`](docs/ML_CLOUD_LINKS_AND_STREAMING.md) | Google Colab / Kaggle setup · remote streaming strategy |
+| **Backend** | [`karsl/ml/integration/research_preview.py`](karsl/ml/integration/research_preview.py) | KArSL research candidate contract for backend integration |
+
+---
+
+## CI/CD Pipeline
+
+Every push to any branch runs the full automated pipeline:
+
+| Job | Tool | What it checks |
+|:----|:-----|:---------------|
+| 🎨 Lint & Formatting | Ruff | PEP8 · imports · style |
+| 🛡️ Security Audit | Bandit | Vulnerability scan |
+| 🔍 Domain Guardrails | Custom | ADR-001 · secrets · notebook JSON |
+| 🧪 Tests & Datasets | Pytest | 126 tests across all 4 tracks |
+| 🏁 CI Pipeline Gate | Aggregate | All 4 must pass |
+
+---
+
+## References
+
+- **ArabSign** — Hamzah Luqman, *"ArabSign: A Multi-modality Dataset and Benchmark for Continuous Arabic Sign Language Recognition"*, IEEE FG 2023. [[Website]](https://hamzah-luqman.github.io/ArabSign/)
+- **How2Sign** — Amanda Duarte et al., *"How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language"*, CVPR 2021. [[Website]](https://how2sign.github.io/)
+- **Isharah-500** — SIGNOVA Continuous Sign Language Benchmark, 2026.
+- **KArSL** — Sidig et al., *"KArSL: Arabic Sign Language Dataset"*, ACM TALLIP 2021.
+- **WLASL** — Li et al., *"Word-level Deep Sign Language Recognition from Video"*, WACV 2020.

@@ -12,7 +12,7 @@ from karsl.ml.training.train_baselines_502 import load_frozen_source, run_baseli
 class BaselineTests(unittest.TestCase):
     def test_full_502_class_smoke_and_checkpoint_reload(self):
         root = Path(__file__).resolve().parents[1]
-        frozen = load_frozen_source(root / "ml_expansion/scripts/signova_compare_cnn_502.py")
+        frozen = load_frozen_source(root / "scripts/signova_compare_cnn_502.py")
         frozen.seed_all(42)
         x = np.zeros((502, 32, 150), dtype=np.float32)
         x[:, :, 2::3] = 1
@@ -37,7 +37,7 @@ class BaselineTests(unittest.TestCase):
 
     def test_invalid_label_rejected_before_output(self):
         root = Path(__file__).resolve().parents[1]
-        frozen = load_frozen_source(root / "ml_expansion/scripts/signova_compare_cnn_502.py")
+        frozen = load_frozen_source(root / "scripts/signova_compare_cnn_502.py")
         x = np.zeros((1, 32, 150), dtype=np.float32)
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "bad"

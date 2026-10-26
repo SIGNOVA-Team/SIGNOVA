@@ -35,23 +35,23 @@
     "sha256": "63010fd220b06654c2248b0355fe791ac20d981b61137d13a97c6eb5e58c265c",
     "size": 1811
   },
-  "ml_expansion/scripts/signova_calibrate_cnn_502.py": {
+  "scripts/signova_calibrate_cnn_502.py": {
     "sha256": "a83f47c0de8d3d0192cbc18dacbfc7f5cee5fc95bbe3b0ae26e1b42d0a5fbbad",
     "size": 26175
   },
-  "ml_expansion/scripts/signova_compare_cnn_502.py": {
+  "scripts/signova_compare_cnn_502.py": {
     "sha256": "f6e0f60a817de984fc356b7bbd7edcaff72ffbc63e046fe09175564cc6633b5e",
     "size": 21545
   },
-  "ml_expansion/scripts/signova_evaluate_test_502.py": {
+  "scripts/signova_evaluate_test_502.py": {
     "sha256": "cf5b1010f217735bb7451be8161fc41db4b7cbfa3607e03a0bed23bf42b059e4",
     "size": 33011
   },
-  "ml_expansion/scripts/signova_predict_502.py": {
+  "scripts/signova_predict_502.py": {
     "sha256": "b1aa5eb62307c860e6c42a3c73658487da42c1adad47975625117716bc31e301",
     "size": 10617
   },
-  "ml_expansion/scripts/signova_prepare_features.py": {
+  "scripts/signova_prepare_features.py": {
     "sha256": "20476ba4f881443f2f8c4224a533b4bff79b5bec0ee310e89f87b688785b03fb",
     "size": 19417
   },
@@ -203,15 +203,15 @@
     "sha256": "7f8bbb8f15262f3900beec1d8d7249edbd1b37c2228a9df1458869609e1ec46f",
     "size": 41270
   },
-  "runbooks/KArSL_502_Colab_CNN_Replay_Cell.py": {
+  "notebooks/colab/KArSL_502_Colab_CNN_Replay_Cell.py": {
     "sha256": "f2bf75893223832875749b7650367dc1288d511970b14902976a66673c1d7d42",
     "size": 3635
   },
-  "runbooks/KArSL_502_Colab_Frozen_Evaluation_Replay_Cell.py": {
+  "notebooks/colab/KArSL_502_Colab_Frozen_Evaluation_Replay_Cell.py": {
     "sha256": "82926c365820ffb680b917ff3f548e4b606cffc91c32eefbbaa33491f169e66c",
     "size": 5123
   },
-  "runbooks/KArSL_502_Colab_GRU_Replay_Cell.py": {
+  "notebooks/colab/KArSL_502_Colab_GRU_Replay_Cell.py": {
     "sha256": "7b22a2b8f0a74ca9a11fab11887f08c44f29d8fce05d9f41c433188fc17387c2",
     "size": 2375
   },

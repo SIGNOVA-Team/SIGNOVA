@@ -7,7 +7,7 @@ Clone the existing `karsl` branch and install the ML environment from `../README
 From the repository root, instantiate the model once and pass one trusted `.pose` binary per isolated sign:
 
 ```python
-from karsl.ml.ml_expansion.scripts.signova_predict_502 import KArSL502Predictor
+from karsl.ml.scripts.signova_predict_502 import KArSL502Predictor
 
 predictor = KArSL502Predictor()
 result = predictor.predict_pose_bytes(pose_bytes, top_k=3)

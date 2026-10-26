@@ -40,9 +40,9 @@ def load_python(path, module_name, expected_sha256):
 
 class KArSL502Predictor:
     def __init__(self, base=None, repo_root=None, device='cpu'):
-        checkout = Path(__file__).resolve().parents[4]
+        checkout = Path(__file__).resolve().parents[3]
         self.repo_root = Path(repo_root) if repo_root is not None else checkout
-        self.base = Path(base) if base is not None else self.repo_root / 'karsl/ml/ml_expansion'
+        self.base = Path(base) if base is not None else self.repo_root / 'karsl/ml'
         self.device = torch.device(device)
         if self.device.type == 'cuda':
             require(torch.cuda.is_available(), 'CUDA is not available.')

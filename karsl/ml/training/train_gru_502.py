@@ -166,7 +166,7 @@ def main():
     parser.add_argument('--cache', required=True, type=Path)
     parser.add_argument('--frozen-model-source', type=Path,
                         default=Path(__file__).resolve().parents[1] /
-                        'ml_expansion/scripts/signova_compare_cnn_502.py')
+                        'scripts/signova_compare_cnn_502.py')
     parser.add_argument('--device', choices=('cpu', 'cuda'), default='cuda')
     args = parser.parse_args()
     if args.device == 'cuda':

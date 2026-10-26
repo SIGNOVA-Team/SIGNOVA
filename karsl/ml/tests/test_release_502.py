@@ -9,7 +9,7 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = ROOT.parents[1]
-SCRIPTS = ROOT / "ml_expansion/scripts"
+SCRIPTS = ROOT / "scripts"
 
 
 def load_module(path, name):

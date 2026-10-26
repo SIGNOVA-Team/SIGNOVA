@@ -4,7 +4,7 @@ This directory contains the isolated-sign KArSL-502 research baseline. It is a s
 
 ## Layout
 
-`src/preprocessing.py` is the exact source used to create the 32 × 150 features. `ml_expansion/scripts/` contains the frozen feature preparation, CNN training/comparison, calibration, evaluation and prediction scripts. `training/train_gru_502.py` and `training/train_baselines_502.py` are standalone training/replay entry points; the latter verified the historical centroid and linear checkpoint metrics on all frozen train/validation PASS samples. `artifacts/` contains the selected CNN, GRU comparison checkpoint, calibration config, and 502-class label mapping needed to load the final predictor directly from this checkout. `notebooks/07_KArSL_Colab_Verification.ipynb` preserves the source audit and `notebooks/08_KArSL_502_GRU_Training.ipynb` the model experiments. The 07 notebook retains earlier failed cells followed by successful retries, not a clean top-to-bottom run. `reports/detailed_metrics/` contains the source test protocol, 502-row per-class validation/test results and class-ID confusion matrices. Source video/Pose and full feature shards are not needed for inference and are not bundled in this checkout. Artifact hashes are in `reports/checkpoints_manifest.md`.
+`src/preprocessing.py` is the exact source used to create the 32 × 150 features. `scripts/` contains the frozen feature preparation, CNN training/comparison, calibration, evaluation and prediction scripts. `training/train_gru_502.py` and `training/train_baselines_502.py` are standalone training/replay entry points; the latter verified the historical centroid and linear checkpoint metrics on all frozen train/validation PASS samples. `artifacts/` contains the selected CNN, GRU comparison checkpoint, calibration config, and 502-class label mapping needed to load the final predictor directly from this checkout. `notebooks/07_KArSL_Colab_Verification.ipynb` preserves the source audit and `notebooks/08_KArSL_502_GRU_Training.ipynb` the model experiments. The 07 notebook retains earlier failed cells followed by successful retries, not a clean top-to-bottom run. `reports/detailed_metrics/` contains the source test protocol, 502-row per-class validation/test results and class-ID confusion matrices. Source video/Pose and full feature shards are not needed for inference and are not bundled in this checkout. Artifact hashes are in `reports/checkpoints_manifest.md`.
 
 The new GRU script has now been run on all frozen PASS train/validation shards in Colab. Its 23 history rows and all 20 model-state tensors exactly match the original saved GRU; the new checkpoint has a different file SHA-256 because it includes an extra experiment configuration field. A clean replay of the CNN training/comparison script yielded a byte-identical selected CNN checkpoint and matching 18-row history. Replaying the original validation calibration and terminal test protocols produced a byte-identical calibration configuration, test protocol, primary per-class CSV and confusion matrix, with identical primary and secondary metrics. See the three replay verification reports in `reports/`. Neither training script loads the test split. GRU output directories must be new to avoid overwriting the historical model. A replay of an already observed test is a reproducibility check, not a new independent test.
 
@@ -29,7 +29,7 @@ For retraining, obtain the pinned Pose source and frozen metadata, signer folds,
 The feature-preparation script takes explicit paths:
 
 ```bash
-python karsl/ml/ml_expansion/scripts/signova_prepare_features.py \
+python karsl/ml/scripts/signova_prepare_features.py \
   --repo-root "$PWD" \
   --metadata "$PRIVATE_SOURCE/metadata.json" \
   --folds "$PRIVATE_SOURCE/karsl_pose_signer_folds.csv" \
@@ -64,7 +64,7 @@ To verify the *older* baseline metrics using its original checkpoint, use the se
 The frozen CNN training/comparison script requires the original reference GRU checkpoint hash and a CUDA machine:
 
 ```bash
-python karsl/ml/ml_expansion/scripts/signova_compare_cnn_502.py \
+python karsl/ml/scripts/signova_compare_cnn_502.py \
   --base "$PRIVATE_SOURCE/ml_expansion" \
   --cache "$PRIVATE_SOURCE/train_cache"
 ```
@@ -80,7 +80,7 @@ from pathlib import Path
 import sys
 
 project = Path.cwd()
-sys.path.insert(0, str(project / 'karsl/ml/ml_expansion/scripts'))
+sys.path.insert(0, str(project / 'karsl/ml/scripts'))
 from signova_predict_502 import KArSL502Predictor
 
 predictor = KArSL502Predictor()

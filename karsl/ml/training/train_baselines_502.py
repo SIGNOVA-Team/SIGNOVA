@@ -264,7 +264,7 @@ def main():
         raise ValueError("CUDA unavailable; use --device cpu.")
     torch.set_num_threads(2)
     frozen = load_frozen_source(
-        Path(__file__).resolve().parents[1] / "ml_expansion/scripts/signova_compare_cnn_502.py"
+        Path(__file__).resolve().parents[1] / "scripts/signova_compare_cnn_502.py"
     )
     frozen.seed_all(42)
     report = json.loads((args.features_root / "preprocessing_report.json").read_text())

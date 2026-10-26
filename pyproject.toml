@@ -42,8 +42,8 @@ exclude = [
     "*.md",
 ]
 extend-exclude = [
-    "karsl/ml/ml_expansion/scripts",
-    "karsl/ml/runbooks",
+    "karsl/ml/scripts",
+    "karsl/ml/notebooks/colab",
     "karsl/ml/src/preprocessing.py",
     "karsl/ml/training/train_gru_502.py",
 ]
